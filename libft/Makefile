@@ -1,21 +1,26 @@
-SRCS	= ${wildcard src/*.c}
+SRCS = \
+	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
+	ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c \
+	ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c \
+	ft_strrchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c ft_atoi.c \
+	ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c \
+	ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c \
+	ft_putendl_fd.c ft_putnbr_fd.c ft_abs_bonus.c ft_isspace_bonus.c \
+	ft_numlen_bonus.c ft_atol_bonus.c ft_itoa_base_bonus.c
+
 OBJS	= ${SRCS:.c=.o}
-INS	= includes
+HEADER	= includes
 NAME	= libft.a
-LIB	= ar rc
-RL	= ranlib
 CC		= gcc
 RM		= rm -f
-CFLAGS	= -Wall -Wextra -Werror
-
-.c.o:
-	${CC} ${CFLAGS} -c $< -o ${<:.c=.o} -I ${INS}
-
-${NAME}: ${OBJS}
-	${LIB} ${NAME} ${OBJS}
-	${RL} ${NAME}
 
 all: ${NAME}
+
+.c.o:
+	${CC} -Wall -Wextra -Werror  -c $< -o ${<:.c=.o} -I ${HEADER}
+
+${NAME}: ${OBJS}
+	ar -svrc ${NAME} ${OBJS}
 
 clean:
 	${RM} ${OBJS}
@@ -25,8 +30,4 @@ fclean: clean
 
 re: fclean all
 
-norm :
-	norminette -R CheckForbiddenSourceHeader *.c
-	norminette -R CheckDefine *.h
-
-.PHONY: all re clean fclean
+.PHONY: all bonus clean fclean re

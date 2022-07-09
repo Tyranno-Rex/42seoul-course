@@ -12,7 +12,6 @@
 
 #include "libft.h"
 
-
 char	*ft_strnstr(char *str, char *to_find, size_t len)
 {
 	int		i;

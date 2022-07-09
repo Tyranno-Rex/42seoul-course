@@ -25,17 +25,19 @@ int	ft_strlen(char *str)
 	return (the_num);
 }
 
-char *strrchr(const char *str, int ch)
+char	*strrchr(const char *str, int ch)
 {
-    int i;
-    int len = ft_strlen(str);
+	int		i;
+	int		len;
 
-    for (i = len - 1; i >= 0; i--)
-    {
-        if (str[i] == ch)
-            break;
-    }
-    if (i>=0)
-        return str+i;
-    return NULL;
+	len = ft_strlen(str);
+	while (len >= 0)
+	{
+		if (str[len] == ch)
+			break ;
+		len--;
+	}
+	if (i >= 0)
+		return (str + i);
+	return (NULL);
 }

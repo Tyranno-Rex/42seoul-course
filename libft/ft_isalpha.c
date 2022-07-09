@@ -9,10 +9,9 @@
 /*   Updated: 2022/07/09 14:53:54 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-#include <libft.h>
-
-int alpha(int a)
+int	alpha(int a)
 {
 	return ((a >= 65 && a <= 90) || (a >= 97 && a <= 122));
 }
