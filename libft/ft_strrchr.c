@@ -25,7 +25,7 @@ int	ft_strlen(char *str)
 	return (the_num);
 }
 
-char	*strrchr(const char *str, int ch)
+char	*strrchr(const char *str, int c)
 {
 	int		i;
 	int		len;
@@ -33,7 +33,7 @@ char	*strrchr(const char *str, int ch)
 	len = ft_strlen(str);
 	while (len >= 0)
 	{
-		if (str[len] == ch)
+		if (str[len] == c)
 			break ;
 		len--;
 	}

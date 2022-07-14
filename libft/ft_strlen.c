@@ -9,8 +9,9 @@
 /*   Updated: 2022/07/09 19:04:29 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
 	int		the_num;
 

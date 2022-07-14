@@ -14,8 +14,5 @@
 
 int	isprint(int c)
 {
-	if (c >= 32 && c <= 126)
-		return (c);
-	else
-		return (0);
+	return (c >= 32 && c <= 126);
 }

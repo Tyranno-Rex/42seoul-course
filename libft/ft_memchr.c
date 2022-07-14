@@ -12,15 +12,8 @@
 
 #include "libft.h"
 
-// void *f_memchr(register const *src_str, int c, size_t n)
-// {
-// 	const unsigned char *src = (const unsigned char *)src_str;
 
-// 	while (n-- > 0)
-// 	{
-// 		if (*src == c)
-// 			return (*src);
-// 		src++;
-// 	}
-// 	return	(NULL);
-// }
+void				*ft_memchr(const void *s, int c, size_t n)
+{
+    
+}

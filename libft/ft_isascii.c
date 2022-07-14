@@ -12,10 +12,7 @@
 
 #include "libft.h"
 
-int	isacsii(unsigned char c)
+int	isacsii(int c)
 {
-	if ((c >= 0) && (c <= 127))
-		return (c);
-	else
-		return (0);
+	return ((c >= 0) && (c <= 127));
 }
