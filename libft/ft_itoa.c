@@ -12,65 +12,51 @@
 
 #include "libft.h"
 
-char		*ft_strrev(char *str)
+long long	ft_abs(int n)
 {
-	int				idx;
-	int				size;
-	char			tmp;
+	long long long_n;
 
-	size = ft_strlen(str);
-	idx = 0;
-	while (idx < (size / 2))
-	{
-		tmp = str[idx];
-		str[idx] = str[size - idx - 1];
-		str[size - idx - 1] = tmp;
-		idx++;
-	}
-	return (str);
+	long_n = n;
+	if (n < 0)
+		return (long_n * -1);
+	return (long_n);
 }
 
-int			ft_intlen(int n)
+int		ft_len(int n)
 {
-	int				idx;
-	long long		tmp;
+	int			len;
+	long long	long_n;
 
-	tmp = n;
-	idx = 1;
-	if (tmp < 0)
-	{
-		tmp = tmp * -1;
-		idx++;
-	}
-	while (tmp >= 10)
-	{
-		tmp = tmp / 10;
-		idx++;
-	}
-	return (idx);
+	len = 1;
+	long_n = ft_abs(n);
+	while (long_n /= 10)
+		len++;
+	return (len);
 }
 
 char		*ft_itoa(int n)
 {
-	int				idx;
-	int				is_negative;
-	unsigned int	positive_n;
-	char			*value;
+	char		*str;
+	long long	long_n;
+	int			i;
+	int			len;
 
-	if (n == 0)
-		return (ft_strdup("0"));
-	if (!(value = (char *)malloc(sizeof(char) * (ft_intlen(n) + 1))))
+	long_n = ft_abs(n);
+	i = 1;
+	len = ft_len(n);
+	if (n < 0)
+		len++;
+	if (!(str = (char *)malloc(sizeof(char) * (len + 1))))
 		return (NULL);
-	ft_memset(value, '\0', (ft_intlen(n) + 1));
-	is_negative = n < 0 ? 1 : 0;
-	positive_n = n < 0 ? -n : n;
-	idx = 0;
-	while (positive_n != 0)
+	if (n < 0)
+		str[0] = '-';
+	while (i <= len)
 	{
-		value[idx++] = (positive_n % 10) + '0';
-		positive_n = positive_n / 10;
+		if (str[len - i] != '-')
+			str[len - i] = (long_n % 10) + '0';
+		long_n /= 10;
+		i++;
 	}
-	if (is_negative)
-		value[idx++] = '-';
-	return (ft_strrev(value));
+	str[len] = '\0';
+	return (str);
 }
