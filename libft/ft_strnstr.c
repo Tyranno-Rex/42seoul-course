@@ -20,7 +20,7 @@ char	*ft_strnstr(char *str, char *to_find, size_t len)
 
 	len_find = 0;
 	if (to_find[0] == '\0')
-		return (&str[0]);
+		return ((char *)str);
 	while (to_find[len_find] != '\0')
 		len_find++;
 	flag = -1;
