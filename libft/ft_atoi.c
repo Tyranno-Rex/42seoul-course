@@ -18,25 +18,22 @@ int	func_check(char *c, int the_result_plus, int i, long the_result)
 	while (c[i] == '\r' || c[i] == '\v' || c[i] == '\t' || c[i] == '\n' \
 		|| c[i] == 32 || c[i] == '\f')
 		i++;
-	while (c[i] == '-' || c[i] == '+')
-	{	
+	if (c[i] == '-' || c[i] == '+')
+	{
 		if (c[i] == '-')
 			the_result_plus *= -1;
 		i++;
 	}
-	if ((c[i] >= '0') && (c[i] <= '9'))
+	while ((c[i] >= '0') && (c[i] <= '9'))
 	{
-		while ((c[i] >= '0') && (c[i] <= '9'))
-		{
-			the_result = ((the_result * 10) + (c[i] - '0'));
-			i++;
-		}
-		return (the_result * the_result_plus);
+		if (the_result * the_result_plus > 2147483647)
+			return (-1);
+		else if (the_result * the_result_plus < -2147483648)
+			return (0);
+		the_result = ((the_result * 10) + (c[i] - '0'));
+		i++;
 	}
-	else
-		return (0);
-	i++;
-	return (0);
+	return (the_result * the_result_plus);
 }
 
 int	ft_atoi(char *the_char)

@@ -15,7 +15,7 @@
 char	*ft_strnstr(char *str, char *to_find, size_t len)
 {
 	int		i;
-	int		flag;
+	size_t	flag;
 	int		len_find;
 
 	len_find = 0;

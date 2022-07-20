@@ -9,13 +9,11 @@
 /*   Updated: 2022/07/09 19:04:58 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-#include <libft.h>
-
-int	toupper(int c)
+int	ft_toupper(int c)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - ('a' - 'A'));
-	else
-		return (0);
+	if (c >= 97 && c <= 122)
+		return (c - (32));
+	return (c);
 }
