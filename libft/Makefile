@@ -15,7 +15,7 @@ RM		= rm -rf
 all: ${NAME}
 
 .c.o:
-	${CC} -Wall -Wextra -Werror -c -o ${<:.c=.o} -I ${HEADER}
+	${CC} -Wall -Wextra -Werror -c -o ${.c=.o} -I ${HEADER}
 
 ${NAME}: ${OBJS}
 	ar -svrc ${NAME} ${OBJS}

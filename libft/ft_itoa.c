@@ -14,7 +14,7 @@
 
 long long	ft_abs(int n)
 {
-	long long long_n;
+	long long	long_n;
 
 	long_n = n;
 	if (n < 0)
@@ -22,19 +22,22 @@ long long	ft_abs(int n)
 	return (long_n);
 }
 
-int		ft_len(int n)
+int	ft_len(int n)
 {
 	int			len;
 	long long	long_n;
 
 	len = 1;
 	long_n = ft_abs(n);
-	while (long_n /= 10)
+	while (long_n > 0)
+	{
 		len++;
+		long_n /= 10;
+	}
 	return (len);
 }
 
-char		*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char		*str;
 	long long	long_n;
@@ -46,7 +49,8 @@ char		*ft_itoa(int n)
 	len = ft_len(n);
 	if (n < 0)
 		len++;
-	if (!(str = (char *)malloc(sizeof(char) * (len + 1))))
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (!str)
 		return (NULL);
 	if (n < 0)
 		str[0] = '-';
