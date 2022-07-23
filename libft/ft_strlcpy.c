@@ -11,34 +11,22 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-int	func_len(char *the_char)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	int		i;
+	size_t		i;
+	size_t		j;
 
 	i = 0;
-	while (the_char[i] != 0)
-		i++;
-	return (i);
-}
-
-size_t	ft_strlcpy(char *dest, char *src, size_t size)
-{
-	unsigned int	i;
-	unsigned int	j;
-
-	i = 0;
-	j = func_len(src);
+	j = 0;
+	while (src[j] != '\0')
+		j++;
 	if (size == 0)
 		return (j);
-	while (src[i] != '\0' && i < size)
+	while (src[i] != '\0' && i < size - 1)
 	{
-		if (i == size - 1)
-		{
-			dest[i] = '\0';
-			return (j);
-		}
 		dest[i] = src[i];
 		i++;
 	}
+	dest[i] = '\0';
 	return (j);
 }
