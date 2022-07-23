@@ -9,37 +9,33 @@
 /*   Updated: 2022/07/09 14:52:52 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-int	func_check(char *c, int the_result_plus, int i, long the_result)
+int	ft_atoi(const char *the_char)
 {
-	int		j;
+	int			i;
+	int			sign;
+	long long	n;
 
-	j = 0;
-	while (c[i] == '\r' || c[i] == '\v' || c[i] == '\t' || c[i] == '\n' \
-		|| c[i] == 32 || c[i] == '\f')
+	i = 0;
+	sign = 1;
+	n = 0;
+	while (the_char[i] == ' ' || the_char[i] == '\n' || the_char[i] == '\t' || \
+			the_char[i] == '\v' || the_char[i] == '\f' || the_char[i] == '\r')
 		i++;
-	if (c[i] == '-' || c[i] == '+')
-	{
-		if (c[i] == '-')
-			the_result_plus *= -1;
+	if (the_char[i] == '-')
+		sign *= -1;
+	if (the_char[i] == '-' || the_char[i] == '+')
 		i++;
-	}
-	while ((c[i] >= '0') && (c[i] <= '9'))
+	while (the_char[i] && the_char[i] >= '0' && the_char[i] <= '9')
 	{
-		if (the_result * the_result_plus > 2147483647)
+		if (n * sign > 2147483647)
 			return (-1);
-		else if (the_result * the_result_plus < -2147483648)
+		else if (n * sign < -2147483648)
 			return (0);
-		the_result = ((the_result * 10) + (c[i] - '0'));
+		else
+			n = n * 10 + (the_char[i] - '0');
 		i++;
 	}
-	return (the_result * the_result_plus);
-}
-
-int	ft_atoi(char *the_char)
-{
-	int		i;
-
-	i = func_check(the_char, 1, 0, 0);
-	return (i);
+	return (n * sign);
 }

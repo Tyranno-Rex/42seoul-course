@@ -9,22 +9,24 @@
 /*   Updated: 2022/07/09 15:19:12 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-#include <stdlib.h>
-
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
-	int		i;
-	char	*tmp;
-	char	*tmp_to_tmp;
+	char	*p;
+	size_t	slen;
+	size_t	index;
 
-	i = 0;
-	while (src[i])
-		i++;
-	tmp = malloc(sizeof(char) * i + 1);
-	tmp_to_tmp = tmp;
-	while (*src)
-		*(tmp_to_tmp++) = *(src++);
-	*tmp_to_tmp = '\0';
-	return (tmp);
+	index = 0;
+	slen = ft_strlen(src);
+	p = (char *)malloc(sizeof(char) * (slen + 1));
+	if (!p)
+		return (0);
+	while (index < slen)
+	{
+		p[index] = src[index];
+		index++;
+	}
+	p[index] = '\0';
+	return (p);
 }
