@@ -19,10 +19,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int	index;
 
 	index = 0;
-	str = NULL;
 	len = (unsigned int)(ft_strlen(s));
 	str = (char *)malloc(sizeof(char) * (len + 1));
-	if (!str)
+	if (!str || !s)
 		return (NULL);
 	while (index < len)
 	{
