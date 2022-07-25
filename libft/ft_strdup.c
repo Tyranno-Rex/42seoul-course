@@ -13,20 +13,20 @@
 
 char	*ft_strdup(const char *src)
 {
-	char	*p;
-	size_t	slen;
-	size_t	index;
+	char	*tmp;
+	size_t	len;
+	size_t	num;
 
-	index = 0;
-	slen = ft_strlen(src);
-	p = (char *)malloc(sizeof(char) * (slen + 1));
-	if (!p)
+	num = 0;
+	len = ft_strlen(src);
+	tmp = (char *)malloc(sizeof(char) * (len + 1));
+	if (!tmp)
 		return (0);
-	while (index < slen)
+	while (num < len)
 	{
-		p[index] = src[index];
-		index++;
+		tmp[num] = src[num];
+		num++;
 	}
-	p[index] = '\0';
-	return (p);
+	tmp[num] = '\0';
+	return (tmp);
 }

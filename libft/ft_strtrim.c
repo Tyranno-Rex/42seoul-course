@@ -3,33 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: eunjeong <eunjeong@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 22:16:45 by marvin            #+#    #+#             */
-/*   Updated: 2022/07/14 22:16:45 by marvin           ###   ########.fr       */
+/*   Updated: 2022/07/25 16:52:00 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(const char *s1, const char *set)
 {
-	size_t	front;
-	size_t	rear;
+	size_t	start;
+	size_t	end;
 	char	*str;
 
 	str = 0;
 	if (s1 != 0 && set != 0)
 	{
-		front = 0;
-		rear = ft_strlen(s1);
-		while (s1[front] && ft_strchr(set, s1[front]))
-			front++;
-		while (s1[rear - 1] && ft_strchr(set, s1[rear - 1]) && rear > front)
-			rear--;
-		str = (char *)malloc(sizeof(char) * (rear - front + 1));
+		start = 0;
+		end = ft_strlen(s1);
+		while (s1[start] && ft_strchr(set, s1[start]))
+			start++;
+		while (s1[end - 1] && ft_strchr(set, s1[end - 1]) && end > start)
+			end--;
+		str = (char *)malloc(sizeof(char) * (end - start + 1));
 		if (str)
-			ft_strlcpy(str, &s1[front], rear - front + 1);
+			ft_strlcpy(str, &s1[start], end - start + 1);
 	}
 	return (str);
 }

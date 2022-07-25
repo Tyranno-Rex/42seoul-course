@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: eunjeong <eunjeong@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 19:42:02 by marvin            #+#    #+#             */
-/*   Updated: 2022/07/15 19:42:02 by marvin           ###   ########.fr       */
+/*   Updated: 2022/07/25 16:53:12 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,11 +71,11 @@ char	**func_mem_free(char **tab)
 	return (NULL);
 }
 
-char	**ft_split(char const *str, char charset)
+char	**ft_split(const char *str, char charset)
 {
 	char	**tmp;
-	char	*next_str;
-	size_t	next_strlen;
+	char	*str_str;
+	size_t	str_len;
 	int		i;
 
 	if (!str)
@@ -84,15 +84,15 @@ char	**ft_split(char const *str, char charset)
 	if (!tmp)
 		return (NULL);
 	i = -1;
-	next_str = (char *)str;
-	next_strlen = 0;
+	str_str = (char *)str;
+	str_len = 0;
 	while (++i < func_str_num(str, charset))
 	{
-		func_find_next(&next_str, &next_strlen, charset);
-		tmp[i] = (char *)malloc(sizeof(char) * (next_strlen + 1));
+		func_find_next(&str_str, &str_len, charset);
+		tmp[i] = (char *)malloc(sizeof(char) * (str_len + 1));
 		if (!tmp[i])
 			return (func_mem_free(tmp));
-		ft_strlcpy(tmp[i], next_str, next_strlen + 1);
+		ft_strlcpy(tmp[i], str_str, str_len + 1);
 	}
 	tmp[i] = NULL;
 	return (tmp);
