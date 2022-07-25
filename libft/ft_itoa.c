@@ -11,23 +11,23 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-static char	*ft_array(char *x, unsigned int number, long int len)
+char	*func_arr(char *c, unsigned int number, int len)
 {
 	while (number > 0)
 	{
-		x[len--] = 48 + (number % 10);
+		c[len--] = 48 + (number % 10);
 		number = number / 10;
 	}
-	return (x);
+	return (c);
 }
 
-static long int	ft_len(int n)
+int	func_len(int n)
 {
-	int					len;
+	int		len;
 
 	len = 0;
 	if (n <= 0)
-		len = 1;
+		len += 1;
 	while (n != 0)
 	{
 		len++;
@@ -38,27 +38,27 @@ static long int	ft_len(int n)
 
 char	*ft_itoa(int n)
 {
-	char				*x;
-	long int			len;
 	unsigned int		number;
+	long int			len;
+	char				*result;
 	int					sign;
 
 	sign = 1;
-	len = ft_len(n);
-	x = (char *)malloc(sizeof(char) * (len + 1));
-	if (!(x))
+	len = func_len(n);
+	result = (char *)malloc(sizeof(char) * (len + 1));
+	if (!(result))
 		return (NULL);
-	x[len--] = '\0';
+	result[len--] = '\0';
 	if (n == 0)
-		x[0] = '0';
+		result[0] = '0';
 	if (n < 0)
 	{
 		sign *= -1;
 		number = n * -1;
-		x[0] = '-';
+		result[0] = '-';
 	}
 	else
 		number = n;
-	x = ft_array(x, number, len);
-	return (x);
+	result = func_arr(result, number, len);
+	return (result);
 }

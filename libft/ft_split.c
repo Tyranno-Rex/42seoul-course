@@ -12,13 +12,13 @@
 
 #include "libft.h"
 
-static int	find_str(char const *s, char c)
+int	func_str_num(char const *s, char c)
 {
 	int	i;
-	int	nb_str;
+	int	cnt;
 
 	i = 0;
-	nb_str = 0;
+	cnt = 0;
 	if (!s[0])
 		return (0);
 	while (s[i] && s[i] == c)
@@ -27,7 +27,7 @@ static int	find_str(char const *s, char c)
 	{
 		if (s[i] == c)
 		{
-			nb_str++;
+			cnt++;
 			while (s[i] && s[i] == c)
 				i++;
 			continue ;
@@ -35,29 +35,29 @@ static int	find_str(char const *s, char c)
 		i++;
 	}
 	if (s[i - 1] != c)
-		nb_str++;
-	return (nb_str);
+		cnt++;
+	return (cnt);
 }
 
-static void	get_next_str(char **next_str, size_t *next_strlen, char c)
+void	func_find_next(char **str, size_t *str_len, char c)
 {
 	size_t	i;
 
-	*next_str += *next_strlen;
-	*next_strlen = 0;
+	*str += *str_len;
+	*str_len = 0;
 	i = 0;
-	while (**next_str && **next_str == c)
-		(*next_str)++;
-	while ((*next_str)[i])
+	while (**str && **str == c)
+		(*str)++;
+	while ((*str)[i])
 	{
-		if ((*next_str)[i] == c)
+		if ((*str)[i] == c)
 			return ;
-		(*next_strlen)++;
+		(*str_len)++;
 		i++;
 	}
 }
 
-static char	**handle_malloc_err(char **tab)
+char	**func_mem_free(char **tab)
 {
 	int	i;
 
@@ -71,29 +71,29 @@ static char	**handle_malloc_err(char **tab)
 	return (NULL);
 }
 
-char	**ft_split(char const *s, char c)
+char	**ft_split(char const *str, char charset)
 {
-	char	**tab;
+	char	**tmp;
 	char	*next_str;
 	size_t	next_strlen;
 	int		i;
 
+	if (!str)
+		return (NULL);
+	tmp = malloc(sizeof(char *) * (func_str_num(str, charset) + 1));
+	if (!tmp)
+		return (NULL);
 	i = -1;
-	if (!s)
-		return (NULL);
-	tab = malloc(sizeof(char *) * (find_str(s, c) + 1));
-	if (!tab)
-		return (NULL);
-	next_str = (char *)s;
+	next_str = (char *)str;
 	next_strlen = 0;
-	while (++i < find_str(s, c))
+	while (++i < func_str_num(str, charset))
 	{
-		get_next_str(&next_str, &next_strlen, c);
-		tab[i] = (char *)malloc(sizeof(char) * (next_strlen + 1));
-		if (!tab[i])
-			return (handle_malloc_err(tab));
-		ft_strlcpy(tab[i], next_str, next_strlen + 1);
+		func_find_next(&next_str, &next_strlen, charset);
+		tmp[i] = (char *)malloc(sizeof(char) * (next_strlen + 1));
+		if (!tmp[i])
+			return (func_mem_free(tmp));
+		ft_strlcpy(tmp[i], next_str, next_strlen + 1);
 	}
-	tab[i] = NULL;
-	return (tab);
+	tmp[i] = NULL;
+	return (tmp);
 }

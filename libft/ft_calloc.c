@@ -18,8 +18,8 @@ void	*ft_calloc(size_t count, size_t size)
 
 	if (!count || !size)
 	{
-		size = 1;
 		count = 1;
+		size = 1;
 	}
 	ret = malloc(count * size);
 	if (ret)
