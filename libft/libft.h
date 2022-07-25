@@ -6,7 +6,7 @@
 /*   By: eunjeong <eunjeong@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 19:07:30 by marvin            #+#    #+#             */
-/*   Updated: 2022/07/25 16:58:23 by eunjeong         ###   ########.fr       */
+/*   Updated: 2022/07/25 19:11:43 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ size_t				ft_strlen(const char *str);
 
 int					ft_atoi(const char *the_char);
 void				ft_bzero(void *s, size_t n);
-void				*ft_calloc(size_t nmemb, size_t size);
+void				*ft_calloc(size_t cnt, size_t size);
 int					ft_isalnum(int c);
 int					ft_isalpha(int a);
 int					ft_isascii(int c);

@@ -6,23 +6,19 @@
 /*   By: eunjeong <eunjeong@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 14:53:26 by eunjeong          #+#    #+#             */
-/*   Updated: 2022/07/25 16:57:42 by eunjeong         ###   ########.fr       */
+/*   Updated: 2022/07/25 19:11:20 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t cnt, size_t size)
 {
-	void	*ret;
+	unsigned char	*tmp;
 
-	if (!count || !size)
-	{
-		count = 1;
-		size = 1;
-	}
-	ret = malloc(count * size);
-	if (ret)
-		ft_bzero(ret, count * size);
-	return (ret);
+	tmp = malloc(size * cnt);
+	if (!(tmp))
+		return (NULL);
+	ft_bzero(tmp, size * cnt);
+	return (tmp);
 }
