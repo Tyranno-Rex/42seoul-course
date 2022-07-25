@@ -7,26 +7,31 @@ SRCS =  ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c 
 		ft_toupper.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c \
 		ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_memccpy.c
 
-CFLAGS  = -Wall -Wextra -Werror
-OBJS	= ${SRCS:.c=.o}
-HEADER	= libft.h
-CC		= cc
-RM		= rm -rf
+BNS_SRCS = ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c \
+			ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c
 
-all: ${NAME}
+OBJS					= $(SRCS:%.c=%.o)
 
-.c.o:
-	${CC} ${CFLAGS} -c $< -o ${<:.c=.o} -I ${HEADER}
+BNS_OBJS				= $(BNS_SRCS:%.c=%.o)
 
-${NAME}: ${OBJS}
-	ar -rc ${NAME} ${OBJS}
+FLAGS					= -Wall -Wextra -Werror
 
-clean:
-	${RM} ${OBJS}
+$(NAME)		:	$(OBJS)
+			gcc $(FLAGS) -c $(SRCS) -I./
+			ar rc $(NAME) $(OBJS)
 
-fclean: clean
-	${RM} ${NAME}
+all	:	$(NAME)
 
-re: fclean all
+bonus	:	$(NAME)
+		gcc $(FLAGS) -c $(BNS_SRCS) -I./
+		ar rc $(NAME) $(BNS_OBJS)
 
-.PHONY: all clean fclean re
+clean	:
+		rm -f $(OBJS) $(BNS_OBJS)
+
+fclean	:	clean
+		rm -f $(NAME)
+
+re	:	fclean all
+
+.PHONY	:	all clean fclean re
