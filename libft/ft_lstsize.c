@@ -6,7 +6,7 @@
 /*   By: eunjeong <eunjeong@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 19:35:23 by eunjeong          #+#    #+#             */
-/*   Updated: 2022/07/27 13:06:10 by eunjeong         ###   ########.fr       */
+/*   Updated: 2022/07/27 13:46:40 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int	size;
+	int	len;
 
-	size = 0;
+	len = 0;
 	while (lst != NULL)
 	{
-		size++;
+		len++;
 		lst = lst->next;
 	}
-	return (size);
+	return (len);
 }
