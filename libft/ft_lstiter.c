@@ -1,15 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eunjeong <eunjeong@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/25 19:34:02 by eunjeong          #+#    #+#             */
-/*   Updated: 2022/07/25 19:34:46 by eunjeong         ###   ########.fr       */
+/*   Created: 2022/07/25 19:35:08 by eunjeong          #+#    #+#             */
+/*   Updated: 2022/07/27 11:37:26 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void				ft_lstadd_back(t_list **lst, t_list *new);
+void				ft_lstiter(t_list *lst, void (*f)(void *));
