@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+// 수정함 확인하기
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	len_s1;
@@ -25,8 +26,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ret = (char *)malloc(sizeof(char) * (len_s1 + len_s2 + 1));
 	if (!(ret))
 		return (0);
-	ft_memcpy(ret, s1, len_s1);
-	ft_memcpy(ret + len_s1, s2, len_s2);
-	ret[len_s1 + len_s2] = 0;
+	ft_strlcpy(ret, s1, len_s1 + 1);
+	ft_strlcpy(ret, s2, len_s1 + len_s2 + 1);
+	// ft_memcpy(ret, s1, len_s1);
+	// ft_memcpy(ret + len_s1, s2, len_s2);
+	// ret[len_s1 + len_s2] = 0;
 	return (ret);
 }
