@@ -6,7 +6,7 @@
 /*   By: eunjeong <eunjeong@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 19:34:02 by eunjeong          #+#    #+#             */
-/*   Updated: 2022/07/27 12:53:16 by eunjeong         ###   ########.fr       */
+/*   Updated: 2022/08/18 16:11:01 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list	*res;
+	t_list	*tmp;
 
-	res = *lst;
+	tmp = *lst;
 	if (*lst == NULL && new != NULL)
 	{
 		*lst = new;
@@ -27,5 +27,5 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	while ((*lst)->next != NULL)
 		*lst = (*lst)->next;
 	(*lst)->next = new;
-	*lst = res;
+	*lst = tmp;
 }
