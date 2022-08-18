@@ -6,7 +6,7 @@
 /*   By: eunjeong <eunjeong@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 20:03:24 by marvin            #+#    #+#             */
-/*   Updated: 2022/07/25 16:26:30 by eunjeong         ###   ########.fr       */
+/*   Updated: 2022/08/18 12:41:13 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		*(tmp + i) = f(i, *(s + i));
 		i++;
 	}
-	// 수정지점.
 	*(tmp + len) = 0;
 	return (tmp);
 }
