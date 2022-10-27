@@ -14,7 +14,7 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-#if Win_32
+#if _WIN32
     #include <io.h>
 #else
     # include <unistd.h>
