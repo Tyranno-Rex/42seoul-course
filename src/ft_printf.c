@@ -2,7 +2,11 @@
 
 
 int		ft_printf(const char *format, ...){
-    va_
-
-    ft_
+    va_list ap;
+    int len;
+    
+    if (format == NULL)
+        return (0);
+    va_start(ap, format);
+    
 }
