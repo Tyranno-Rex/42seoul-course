@@ -3,27 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eunjeong <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: eunjeong <eunjeong@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/19 11:55:22 by eunjeong          #+#    #+#             */
-/*   Updated: 2022/11/19 11:55:24 by eunjeong         ###   ########.fr       */
+/*   Created: 2022/10/15 12:03:22 by eunjeong          #+#    #+#             */
+/*   Updated: 2022/11/19 16:43:59 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
+# ifdef _WIN32
+#  include <io.h>
+# else
+#  include <unistd.h>
+# endif
 # include <stdlib.h>
-# include <unistd.h>
 
-size_t	ft_strlen(const char *s);
-char	*ft_strchr(const char *str, int c);
-char	*ft_substr(char const *s, unsigned int base, size_t len);
-char	*ft_strjoin(char *buf, char *s);
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
 
-char	*ft_update_str(char *buf);
-char	*ft_return_str(char *buf);
-char	*ft_read_str(int fd, char *buf);
-char	*get_next_line(int fd);
+size_t		ft_strlen(char const *str);
+char		*ft_strchr(char const *s, int c);
+char		*ft_strdup(char const *str);
+char		*ft_strjoin(char *s1, char *s2);
+char		*ft_substr(char const *str, unsigned int start, size_t len);
 
+char		*get_next_line(int fd);
 #endif
