@@ -1,5 +1,6 @@
+#include "../include/ft_printf.h"
 
-void putchar(char c)
+void ft_putchar(va_list info)
 {
-    write(1, &c, 1);
+    write(1, info, 1);
 }

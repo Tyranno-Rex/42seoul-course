@@ -1,24 +1,24 @@
-#include "include/ft_printf.h"
+#include "../include/ft_printf.h"
 
 // cspdiuxX
 void	ft_percent(const char format, va_list info)
 {
 	if (format == 'c')
 		ft_putchar(info);
-	else if (format == 's')
-		ft_putstring(info);
-	else if (format == 'p')
-		ft_putpointer(info);
+	// else if (format == 's')
+	// 	ft_putstring(info);
+	// else if (format == 'p')
+	// 	ft_putpointer(info);
 	else if (format == 'd' || format == 'i')
 		ft_putint(info);
-	else if (format == 'u')
-		ft_putNSint(info);
-	else if (format == 'x' || format == 'X')
-		ft_puthex(info, format);
-	else if (format == '%')
-		printf();
-	else
-		printf();
+	// else if (format == 'u')
+	// 	ft_putNSint(info);
+	// else if (format == 'x' || format == 'X')
+	// 	ft_puthex(info, format);
+	// else if (format == '%')
+	// 	printf("error");
+	// else
+	// 	printf("error");
 }
 
 int	ft_printf(const char *format, ...)
@@ -33,9 +33,12 @@ int	ft_printf(const char *format, ...)
 	while (format[i])  
 	{
 		if (format[i] == '%')
+		{
 			ft_percent(format[i + 1], ap);
+			i++;
+		}
 		else
-			ft_putchr(format[i + 1]);
+			printf("%c", format[i]);
 		i++;
 	}
 }
