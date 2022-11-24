@@ -12,7 +12,7 @@
 #include <stdarg.h>
 
 // void    ft_putstring(va_list info);
-void	ft_putchar(va_list info);
+void	ft_putchar(char *info);
 // int		ft_putpointer(va_list info);
 void	ft_putint(va_list the_char);
 // int		ft_putNSint(va_list info);

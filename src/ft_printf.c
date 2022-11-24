@@ -4,13 +4,13 @@
 void	ft_percent(const char format, va_list info)
 {
 	if (format == 'c')
-		ft_putchar(info);
+		ft_putchar(va_arg(info, char *));
 	// else if (format == 's')
 	// 	ft_putstring(info);
 	// else if (format == 'p')
 	// 	ft_putpointer(info);
 	else if (format == 'd' || format == 'i')
-		ft_putint(info);
+		ft_putint(va_arg(info, int));
 	// else if (format == 'u')
 	// 	ft_putNSint(info);
 	// else if (format == 'x' || format == 'X')
