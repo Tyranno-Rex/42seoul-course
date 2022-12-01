@@ -26,7 +26,7 @@ int	func_len(int n)
 }
 
 
-void ft_itoa(int n)
+char *ft_itoa(int n)
 {
 	unsigned int		number;
 	long int			len;
@@ -50,34 +50,34 @@ void ft_itoa(int n)
 	else
 		number = n;
 	result = func_arr(result, number, len);
-	write(1, result, func_len(result));
+	return (result);
 }
 
-void	ft_putint(va_list the_char)
+int ft_print_int(char *str)
 {
-	int			i;
-	int			sign;
-	long long	n;
+	int i = 0;
 
-	i = 0;
-	sign = 1;
-	n = 0;
-	while (the_char[i] == ' ' || the_char[i] == '\n' || the_char[i] == '\t' || \
-			the_char[i] == '\v' || the_char[i] == '\f' || the_char[i] == '\r')
-		i++;
-	if (the_char[i] == '-')
-		sign *= -1;
-	if (the_char[i] == '-' || the_char[i] == '+')
-		i++;
-	while (the_char[i] && the_char[i] >= '0' && the_char[i] <= '9')
+	if (!str)
 	{
-		if (n * sign > 2147483647)
-			return (-1);
-		else if (n * sign < -2147483648)
-			return (0);
-		else
-			n = n * 10 + (the_char[i] - '0');
+		ft_putstring("(null)");
+		return (6);
+	}
+	while (str[i])
+	{
+		write(1, &str[i], 1);
 		i++;
 	}
-	ft_itoa(n * sign);
+	return (i);
+}
+
+void ft_putint(int n)
+{
+	int len;
+	char *int_to_char;
+
+	len = 0;
+	int_to_char = ft_itoa(n);
+	// printf("printf test: %s\n", &int_to_char);
+	len = ft_print_int(int_to_char);
+	free (int_to_char);
 }

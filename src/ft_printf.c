@@ -5,10 +5,10 @@ void	ft_percent(const char format, va_list info)
 {
 	if (format == 'c')
 		ft_putchar(va_arg(info, char *));
-	// else if (format == 's')
-	// 	ft_putstring(info);
-	// else if (format == 'p')
-	// 	ft_putpointer(info);
+	else if (format == 's')
+		ft_putstring(va_arg(info, char *));
+	else if (format == 'p')
+		ft_putpointer(info);
 	else if (format == 'd' || format == 'i')
 		ft_putint(va_arg(info, int));
 	// else if (format == 'u')
@@ -41,4 +41,5 @@ int	ft_printf(const char *format, ...)
 			printf("%c", format[i]);
 		i++;
 	}
+	return (0);
 }

@@ -2,5 +2,5 @@
 
 void ft_putchar(char *info)
 {
-    write(1, info, 1);
+    write(1, &info, 1);
 }
