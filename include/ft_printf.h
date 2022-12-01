@@ -14,7 +14,7 @@
 void	ft_putchar(char *info);
 void    ft_putstring(char *info);
 void	ft_putint(int n);
-// int		ft_putpointer(va_list info);
+int		ft_putpointer(int info);
 // int		ft_putNSint(va_list info);
 // int		ft_puthex(va_list info, const char format);
 
