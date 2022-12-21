@@ -1,8 +1,11 @@
 NAME = libftprintf.a
 
-INC =  ./include/ft_printf.h
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
+AR_FLAG = ar rcs
+RM = rm -rf
 
-SRC_DIR = ./srcs/
+INC =  ./include/ft_printf.h
 
 SRC_NAME = 
 	ft_libft_util.c /
@@ -13,7 +16,16 @@ SRC_NAME =
 	# ft_putpointer.c /
 	# ft_putstring.c 
 
+SRC_DIR = ./srcs/
 SRC = $(addprefix $(SRC_DIR), $(SRC_NAME))
+
+
+
+
+LIB_DIR = ./libft
+
+
+
 
 OBJS = $(SRC:.c=.o)
 

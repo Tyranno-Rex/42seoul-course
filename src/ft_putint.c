@@ -25,7 +25,6 @@ int	func_len(int n)
 	return (len);
 }
 
-
 char *ft_itoa(int n)
 {
 	unsigned int		number;
@@ -70,14 +69,14 @@ int ft_print_int(char *str)
 	return (i);
 }
 
-void ft_putint(int n)
+int ft_putint(int n)
 {
 	int len;
 	char *int_to_char;
 
 	len = 0;
 	int_to_char = ft_itoa(n);
-	// printf("printf test: %s\n", &int_to_char);
 	len = ft_print_int(int_to_char);
 	free (int_to_char);
+	return (len);
 }
