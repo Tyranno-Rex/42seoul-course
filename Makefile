@@ -1,4 +1,7 @@
 NAME = libftprintf.a
+LIBFT = libft
+LIBFT_LIB = libft.a
+
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
@@ -19,13 +22,7 @@ SRC_NAME =
 SRC_DIR = ./srcs/
 SRC = $(addprefix $(SRC_DIR), $(SRC_NAME))
 
-
-
-
 LIB_DIR = ./libft
-
-
-
 
 OBJS = $(SRC:.c=.o)
 
