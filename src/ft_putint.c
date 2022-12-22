@@ -10,7 +10,7 @@ char	*func_arr(char *c, unsigned int number, int len)
 	return (c);
 }
 
-int	func_len(int n)
+int		ft_func_len(int n)
 {
 	int		len;
 
@@ -25,7 +25,7 @@ int	func_len(int n)
 	return (len);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	unsigned int		number;
 	long int			len;
@@ -33,7 +33,7 @@ char *ft_itoa(int n)
 	int					sign;
 
 	sign = 1;
-	len = func_len(n);
+	len = ft_func_len(n);
 	result = (char *)malloc(sizeof(char) * (len + 1));
 	if (!(result))
 		return (0);
@@ -52,7 +52,7 @@ char *ft_itoa(int n)
 	return (result);
 }
 
-int ft_print_int(char *str)
+int		ft_print_int(char *str)
 {
 	int i = 0;
 
@@ -68,7 +68,7 @@ int ft_print_int(char *str)
 	return (i);
 }
 
-int ft_putint(int n)
+int		ft_putint(int n)
 {
 	int len;
 	char *int_to_char;

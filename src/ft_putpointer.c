@@ -7,8 +7,8 @@ int ft_ptr_len(uintptr_t num)
     len = 0;
     while (num != 0)
     {
-        // num /= 16;
-        num = num / 16;
+        num /= 16;
+        // num = num / 16;
         len++;
     }
     return (len);
@@ -24,9 +24,9 @@ void ft_putPTR(uintptr_t n)
     else
     {
         if (n <= 9)
-            ft_putchar(n + '0');
+            ft_print_char(n + '0');
         else
-            ft_putchar(n - 10 + 'a');
+            ft_print_char(n - 10 + 'a');
     }
 }
 
