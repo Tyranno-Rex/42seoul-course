@@ -3,8 +3,8 @@
 
 void ft_putPTR(intptr_t n)
 {
-    int i = 0;
-    
+    char c;
+
     if (n >= 16)
     {
         ft_putPTR(n/16);
@@ -13,7 +13,16 @@ void ft_putPTR(intptr_t n)
     else
     {
         if (n <= 9)
-            
+        {
+            c = ft_itoa(n);
+            ft_putchar(c);
+        }
+        else
+        (
+            if (n == 10)
+                ft_putchar('A');
+
+        )
     }
 }
 
@@ -28,6 +37,7 @@ void ft_putpointer(int info)
     else
     {
         ft_putPTR(info);
-        ptr_len += p
+        ptr_len += ft_putPTR(info);
     }
+    return (ptr_len);
 }

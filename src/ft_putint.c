@@ -58,7 +58,6 @@ int ft_print_int(char *str)
 
 	if (!str)
 	{
-		ft_putstring("(null)");
 		return (6);
 	}
 	while (str[i])

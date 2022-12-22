@@ -15,10 +15,15 @@ void	ft_putchar(char *info);
 void    ft_putstring(char *info);
 int     ft_putint(int n);
 int		ft_putpointer(int info);
-// int		ft_putNSint(va_list info);
+int		ft_putNSint(unsigned int info);
 // int		ft_puthex(va_list info, const char format);
 
 int		ft_printf(const char *format, ...);
 int		ft_formats(va_list args, const char format);
+
+
+int     func_len(int n);
+char    *ft_itoa(int n);
+
 
 #endif
