@@ -1,10 +1,21 @@
 #include "../include/ft_printf.h"
 
-
-void ft_putPTR(intptr_t n)
+int ft_ptr_len(uintptr_t num)
 {
-    char c;
+    int len;
 
+    len = 0;
+    while (num != 0)
+    {
+        // num /= 16;
+        num = num / 16;
+        len++;
+    }
+    return (len);
+}
+
+void ft_putPTR(uintptr_t n)
+{
     if (n >= 16)
     {
         ft_putPTR(n/16);
@@ -13,20 +24,13 @@ void ft_putPTR(intptr_t n)
     else
     {
         if (n <= 9)
-        {
-            c = ft_itoa(n);
-            ft_putchar(c);
-        }
+            ft_putchar(n + '0');
         else
-        (
-            if (n == 10)
-                ft_putchar('A');
-
-        )
+            ft_putchar(n - 10 + 'a');
     }
 }
 
-void ft_putpointer(int info)
+int ft_putpointer(unsigned long long info)
 {
     int ptr_len;
 
@@ -37,7 +41,7 @@ void ft_putpointer(int info)
     else
     {
         ft_putPTR(info);
-        ptr_len += ft_putPTR(info);
+        ptr_len += ft_ptr_len(info);
     }
     return (ptr_len);
 }

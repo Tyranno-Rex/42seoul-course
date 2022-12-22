@@ -8,7 +8,7 @@ void	ft_percent(const char format, va_list info)
 	else if (format == 's')
 		ft_putstring(va_arg(info, char *));
 	else if (format == 'p')
-		ft_putpointer(va_arg(info, );
+		ft_putpointer(va_arg(info, unsigned long long));
 	else if (format == 'd' || format == 'i')
 		ft_putint(va_arg(info, int));
 	else if (format == 'u')

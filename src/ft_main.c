@@ -2,7 +2,7 @@
 
 int main()
 {
-    int a;
+    int a = 100;
     // printf("\n");
     ft_printf("c test result: %c\n", 'c');
     ft_printf("s test result: %s\n", "hello world");
