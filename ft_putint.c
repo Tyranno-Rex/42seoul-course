@@ -14,7 +14,7 @@
 
 size_t	ft_strlen(const char *s)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (s[i] != '\0')
@@ -22,24 +22,25 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-int	ft_putint(long int n)
+int	ft_putint(long long n)
 {
 	static int	i;
-	long int	nbr;
+	long long	nbr;
 
 	nbr = n;
 	i = 0;
 	if (n < 0)
 	{
 		ft_putchar('-');
-		n = (n * -1);
+		n *= -1;
 	}				
 	if (n > 9)
 	{
 		ft_putint(n / 10);
-		n = n % 10;
+		n %= 10;
 	}
-	i += ft_putchar(n + '0');
+	ft_putchar(n + '0');
+	i++;
 	if (nbr < 0)
 		i++;
 	return (i);

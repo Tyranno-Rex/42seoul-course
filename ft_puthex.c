@@ -22,6 +22,7 @@ int	ft_puthex(unsigned int nbr, char *b)
 		ft_puthex(nbr / ft_strlen(b), b);
 		nbr = nbr % ft_strlen(b);
 	}
-	i = i + ft_putchar(b[nbr]);
+	i += 1;
+	ft_putchar(b[nbr]);
 	return (i);
 }

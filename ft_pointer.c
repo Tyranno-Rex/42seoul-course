@@ -12,28 +12,31 @@
 
 #include "ft_printf.h"
 
-int	ft_pointer(void *p)
+int	ft_putptr(unsigned int n)
 {
-	size_t	nbr;
-
-	nbr = (size_t)p;
-	write(1, "0x", 2);
-	return (ft_putptr(nbr) + 2);
-}
-
-int	ft_putptr(size_t nbr)
-{
-	char		*base;
 	static int	i;
+	char		*base;
 
 	i = 0;
 	base = "0123456789abcdef";
-	if (nbr >= 16)
+	if (n >= 16)
 	{
-		ft_putptr(nbr / 16);
-		nbr = nbr % 16;
+		ft_putptr(n / 16);
+		n %= 16;
 	}
 	i++;
-	ft_putchar(base[nbr]);
+	ft_putchar(base[n]);
 	return (i);
+}
+
+int	ft_pointer(void *p)
+{
+	unsigned int	p_to_int;
+	int				len;
+
+	len = 0;
+	p_to_int = (unsigned int)p;
+	write(1, "0x", 2);
+	len = ft_putptr(p_to_int);
+	return (len + 2);
 }
