@@ -6,7 +6,7 @@
 /*   By: eunjeong <eunjeong@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/23 02:55:08 by eunjeong          #+#    #+#             */
-/*   Updated: 2022/12/23 03:25:17 by eunjeong         ###   ########.fr       */
+/*   Updated: 2022/12/23 15:48:29 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ int	ft_percent(const char format, va_list info)
 		info_len += ft_puthex(va_arg(info, int), "0123456789ABCDEF");
 	else if (format == '%')
 		info_len += ft_putchar('%');
+	else
+		info_len += ft_putchar(va_arg(info, int));
 	return (info_len);
 }
 
