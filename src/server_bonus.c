@@ -12,7 +12,7 @@
 
 #include "../includes/minitalk.h"
 
-void	get_sig(int signal)
+void	ft_signal_write(int signal)
 {
 	static int	bit;
 	static int	i;
@@ -34,8 +34,8 @@ int	main(void)
 
 	pid = getpid();
 	ft_printf("SERVER PID = %d\n\n", pid);
-	signal(SIGUSR1, get_sig);
-	signal(SIGUSR2, get_sig);
+	signal(SIGUSR1, ft_signal_write);
+	signal(SIGUSR2, ft_signal_write);
 	while (1)
 		pause();
 }

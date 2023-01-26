@@ -29,7 +29,7 @@ int	ft_string_is_num(char *c)
 	return (0);
 }
 
-void	ft_send_bits(int pid, char i)
+void	ft_CtoS(int pid, char i)
 {
 	int	bit;
 
@@ -57,10 +57,10 @@ int	main(int ac, char **av)
 		pid = ft_atoi(av[1]);
 		while (av[2][i] != '\0')
 		{
-			ft_send_bits(pid, av[2][i]);
+			ft_CtoS(pid, av[2][i]);
 			i++;
 		}
-		ft_send_bits(pid, '\n');
+		ft_CtoS(pid, '\n');
 	}
 	else
 	{
