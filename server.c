@@ -1,16 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server_1.c                                         :+:      :+:    :+:   */
+/*   server.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: eunjeong <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/24 20:10:55 by marvin            #+#    #+#             */
-/*   Updated: 2023/01/24 20:10:55 by marvin           ###   ########.fr       */
+/*   Created: 2023/01/26 15:43:00 by eunjeong          #+#    #+#             */
+/*   Updated: 2023/01/26 15:43:03 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
+#include "./ft_printf/ft_printf.h"
+#include "libft/libft.h"
 #include <signal.h>
 
 void	ft_sigusr_handler(int signum, siginfo_t *info, void *ucontent)
@@ -27,20 +29,17 @@ void	ft_sigusr_handler(int signum, siginfo_t *info, void *ucontent)
 	bit_itr--;
 	if (bit_itr < 0 && c)
 	{
-		ft_putchar_fd(c, 1);
+		ft_printf("%c", c);
 		c = 0;
         // siginfo_t 구조체의 si_pid값과 시그널 값을 프로세스에 전달한다. 만약 전달되지 못한다면 -1을 반환한다.
         if (kill(info->si_pid, SIGUSR2) == -1)
-            ft_putstr_fd("Server can't send SIGUSR2", 1);
+            ft_printf("Server can't send SIGUSR2");
 		return ; // 프로세스 중지
 	}
     // 
 	if (kill(info->si_pid, SIGUSR1) == -1)
-		ft_putstr_fd("Server fail to send SIGUSR1");
+		ft_printf("Server fail to send SIGUSR1");
 }
-
-// 1 -> 00000001
-// a -> 01100001
 
 void	ft_check_sig(void)
 {
@@ -55,9 +54,9 @@ void	ft_check_sig(void)
 	// 시그널, 구조체, 그리고 널 값을 가지고 이에 대한 시그널 값을 가져온다.
     // 만약 실패한다면 에러 메세지를 띄운다.
     if (sigaction(SIGUSR1, &sa_newsig, NULL) == -1)
-        ft_putstr_fd("you can't handle SIGUSR1 command", 1);
+        ft_printf("you can't handle SIGUSR1 command");
 	if (sigaction(SIGUSR2, &sa_newsig, NULL) == -1)
-        ft_putstr_fd("you can't handle SIGUSR1 command", 1);
+        ft_printf("you can't handle SIGUSR1 command");
 }
 
 int	main(void)
@@ -68,10 +67,7 @@ int	main(void)
     // pid 값 구하기
 	pid = getpid();
     // pid값 확인
-    ft_putstr_fd("PID : ", 1);
-    ft_putint_fd(pid, 1);
-    ft_putstr_fd("\n", 1);
-
+    ft_printf("PID : %d\n", pid);
 	while (1)
 		ft_check_sig();
 	return (0);
