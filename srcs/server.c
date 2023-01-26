@@ -28,14 +28,21 @@ void	ft_signal_write(int signal)
 	}
 }
 
-int	main(void)
+int	main(int ac, char **av)
 {
 	pid_t	pid;
 
+	(void)av;
+	if (ac != 1)
+	{
+		ft_printf("The number of arguments for server must be 1.");
+		return (0);
+	}
 	pid = getpid();
 	ft_printf("SERVER PID = %d\n\n", pid);
 	signal(SIGUSR1, ft_signal_write);
 	signal(SIGUSR2, ft_signal_write);
 	while (1)
 		pause();
+	return (0);
 }
