@@ -1,41 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_pointer.c                                       :+:      :+:    :+:   */
+/*   ft_puthex.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eunjeong <eunjeong@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/23 03:16:40 by eunjeong          #+#    #+#             */
-/*   Updated: 2022/12/23 15:35:36 by eunjeong         ###   ########.fr       */
+/*   Created: 2022/12/23 03:17:43 by eunjeong          #+#    #+#             */
+/*   Updated: 2022/12/23 03:22:15 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putptr(size_t n)
+int	ft_puthex_pf(unsigned int nbr, char *b)
 {
 	static int	i;
-	char		*base;
 
 	i = 0;
-	base = "0123456789abcdef";
-	if (n >= 16)
+	if (nbr >= ft_strlen_pf(b))
 	{
-		ft_putptr(n / 16);
-		n %= 16;
+		ft_puthex_pf(nbr / ft_strlen_pf(b), b);
+		nbr = nbr % ft_strlen_pf(b);
 	}
-	i += ft_putchar(base[n]);
+	i += 1;
+	ft_putchar_pf(b[nbr]);
 	return (i);
-}
-
-int	ft_pointer(void *p)
-{
-	size_t	p_to_int;
-	int		len;
-
-	len = 0;
-	p_to_int = (size_t)p;
-	write(1, "0x", 2);
-	len += ft_putptr(p_to_int);
-	return (len + 2);
 }

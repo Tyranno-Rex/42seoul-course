@@ -1,9 +1,9 @@
 SRC = ft_printf.c \
-	ft_pointer.c \
-	ft_putchar.c \
-	ft_puthex.c \
-	ft_putint.c \
-	ft_putstring.c
+	ft_pointer_pf.c \
+	ft_putchar_pf.c \
+	ft_puthex_pf.c \
+	ft_putint_pf.c \
+	ft_putstring_pf.c
 
 SRC_OBJ = $(SRC:.c=.o)
 
