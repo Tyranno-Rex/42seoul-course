@@ -12,6 +12,7 @@ int main()
 	void *img_5;
 	void *img_6;
 	void *img_7;
+	void *img_8;
 	int img_width;
 	int img_height;
 
@@ -27,6 +28,7 @@ int main()
 	img_5 = mlx_xpm_file_to_image(mlx, "./img/chimney.xpm", &img_width, &img_height);
 	img_6 = mlx_xpm_file_to_image(mlx, "./img/star.xpm", &img_width, &img_height);
 	img_7 = mlx_xpm_file_to_image(mlx, "./img/grass.xpm", &img_width, &img_height);
+	img_8 = mlx_xpm_file_to_image(mlx, "./img/brick.xpm", &img_width, &img_height);
 
 
     // xpm 이미지 띄우기
@@ -37,6 +39,7 @@ int main()
 	mlx_put_image_to_window(mlx, win, img_5, 400, 0);
 	mlx_put_image_to_window(mlx, win, img_6, 500, 0);
 	mlx_put_image_to_window(mlx, win, img_7, 600, 0);
+	mlx_put_image_to_window(mlx, win, img_8, 700, 0);
 	mlx_loop(mlx);
 	return (0);
 }
