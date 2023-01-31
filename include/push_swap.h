@@ -7,8 +7,6 @@
 #else
 	#include <unistd.h>
 #endif
-
-
 #include "../ft_printf/ft_printf.h"
 #include "../lib/libft.h"
 #include <stdlib.h>
