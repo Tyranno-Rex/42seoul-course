@@ -1,18 +1,21 @@
+
 #include "./../include/push_swap.h"
 
 
 int	ft_check_ac_av(int ac, char **av)
 {
+	int	i;
+
+	i = 1;
 	if (ac < 2)
 	{
-		write(1, "ac is must be more than 2");
+		ft_printf("")
 		return (0);
 	}
-	while (av)
+	while (av[i])
 	{
-		/* code */
+		
 	}
-	
 	return (1)
 }
 
