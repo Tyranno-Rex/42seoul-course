@@ -14,7 +14,12 @@
 # define GET_NEXT_LINE_H
 
 # include <stdlib.h>
-# include <unistd.h>
+
+#ifdef _WIN32
+    #include <io.h>
+#else
+    #include <unistd.h>
+#endif
 
 size_t	ft_strlen(const char *s);
 char	*ft_strchr(const char *str, int c);
