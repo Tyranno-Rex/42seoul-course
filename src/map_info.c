@@ -9,7 +9,10 @@ int	*ft_player_pos(const char **map)
 	y = 0;
 	xy = (int *)ft_calloc(2, sizeof(int));
 	if (!xy)
-		ft_show_error("Allocation of the fake map failed!");
+	{
+		ft_printf("Allocation of the fake map failed!");
+		exit(EXIT_FAILURE);
+	}
 	while (map[y])
 	{
 		x = 0;

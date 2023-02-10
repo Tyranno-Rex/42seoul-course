@@ -63,8 +63,8 @@ void		ft_flood_fill(char **map, int x, int y);
 
 /*map_checker.c*/
 void		ft_check_what(t_map *check, char element);
-void		ft_check_border(char **map);
-void		ft_check_character(char **map);
+void		ft_check_border(const char **map);
+void		ft_check_character(const char **map);
 void		ft_check_character_2(t_map *check);
 void		ft_check_element_init(t_map *check);
 
@@ -80,7 +80,7 @@ int			ft_check_line_len(int fd, int len, char *map_return, char *line);
 static char	*ft_static_strjoin(char *s1, char *s2);
 
 /*map_utils*/
-void 		ft_map_validator(char **map);
-int			ft_map_height(char** map);
+void 		ft_map_validator(const char **map);
+int			ft_map_height(const char** map);
 
 #endif

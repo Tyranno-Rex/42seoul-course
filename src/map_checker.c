@@ -1,6 +1,6 @@
 #include "./../include/so_long.h"
 
-void ft_check_border(char **map)
+void ft_check_border(const char **map)
 {
     int width;
     int height;
@@ -9,7 +9,7 @@ void ft_check_border(char **map)
 
     i = 0;
     width = ft_strlen(map[0]) - 1;
-    height = ft_map_height(map) - 1;
+    height = ft_map_height((const char**)map) - 1;
     while (map[i])
     {
         while (map[i][j])
@@ -73,7 +73,7 @@ void ft_check_element_init(t_map *check)
     check->star = 0;
 }
 
-void ft_check_character(char **map)
+void ft_check_character(const char **map)
 {
     t_map check_element;
     int i;

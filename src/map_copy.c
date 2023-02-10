@@ -6,7 +6,7 @@ char	**ft_copymap(const char **map)
 	int			i;
 
 	i = 0;
-	map_check = malloc((ft_tab_size((const char **)map) + 1) * sizeof(char *));
+	map_check = malloc((ft_map_height((const char **)map) + 1) * sizeof(char *));
 	if (!map_check)
 		ft_printf("Allocation of the check map failed!");
 	while (map[i])

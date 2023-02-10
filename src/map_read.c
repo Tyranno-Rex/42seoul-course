@@ -39,10 +39,13 @@ char	**ft_read_map(const char *path)
 	line = get_next_line(fd);
 	// 한줄을 읽어서 줄은 판단한다.
 	if (line == NULL && *line == '\n')
-		ft_show_error("The map isn't in shape!");
+	{
+		ft_printf("The map isn't in shape!");
+		exit(EXIT_FAILURE);
+	}
 	map_content = NULL;
 	line_len = ft_strlen(line);
-	if 	(ft_check_line_len(fd, line_len, &map_content, line) == 1)
+	if 	(ft_check_line_len(fd, line_len, map_content, line) == 1)
 		exit(EXIT_FAILURE);
 	// while (line != NULL)
 	// {

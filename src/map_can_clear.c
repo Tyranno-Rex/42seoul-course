@@ -3,7 +3,7 @@
 void	ft_flood_fill(char **map, int x, int y)
 {
 	if (x < 0 || x >= (int)ft_strlen(map[0]) || y < 0
-		|| y >= ft_tab_size((const char **)map) || map[y][x] == '1'
+		|| y >= ft_map_height((const char **)map) || map[y][x] == '1'
 		|| map[y][x] == 'V' || map[y][x] == 'E')
 		return ;
 	if (map[y][x] != 'P')
@@ -26,10 +26,16 @@ void	ft_check_can_clear(const char **map)
 		while (map[i][j])
 		{
 			if (map[i][j] == 'C')
-				ft_show_error("Something wrong with valid path!");
+			{
+				ft_printf("Something wrong with valid path!");
+				exit(EXIT_FAILURE);
+			}
 			if (map[i][j] == 'E' && map[i - 1][j] != 'V' && map[i + 1][j] != 'V'
 			&& map[i][j - 1] != 'V' && map[i][j + 1] != 'V')
-				ft_show_error("Something wrong with valid path!");
+			{
+				ft_printf("Something wrong with valid path!");
+				exit(EXIT_FAILURE);
+			}
 			j++;
 		}
 		i++;

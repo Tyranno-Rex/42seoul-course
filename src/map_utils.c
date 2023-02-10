@@ -1,6 +1,6 @@
 #include "./../include/so_long.h"
 
-int     ft_map_height(char **map)
+int     ft_map_height(const char **map)
 {
     int i;
 
@@ -12,15 +12,15 @@ int     ft_map_height(char **map)
     return (i);
 }
 
-void ft_map_validator(char **map)
+void ft_map_validator(const char **map)
 {
     if (!map)
     {
         ft_printf("map is nnot allocated!");
         exit(EXIT_FAILURE);
     }
-    ft_check_border(map);
-    ft_check_character(map);
+    ft_check_border((const char **) map);
+    ft_check_character((const char **) map);
 }
 
 
