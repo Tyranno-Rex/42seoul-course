@@ -16,10 +16,10 @@
 # define A 0
 # define S 1
 # define D 2
-# define UP -1
-# define DOWN 1
-# define LEFT -1
-# define RIGHT 1
+# define UP 126
+# define DOWN 125
+# define LEFT 123
+# define RIGHT 124
 
 // 이번 프로젝트에서 사용하는 구조체들 
 typedef struct s_map
@@ -34,44 +34,48 @@ typedef struct s_map
 typedef struct s_data
 {
 	char	**map;
+	char	player_aspect;
+
+	int		wh;
+	int		px;
+	int		py;
 	int		map_w;
 	int		map_h;
-	int		wh;
+	int		star_total;
+	int		moves_counter;
 
+	void	*star;
 	void	*mlx_p;
 	void	*mlx_w;
-
 	void	*brick;
 	void	*grass;
 	void	*player;
 	void	*chimney;
-	void	*star;
 
-	int		px;
-	int		py;
-	char	player_aspect;
-	int		moves_counter;
-	int		nb_collec;
 }	t_data;
 
 
-/*image_setting.c*/
+
+/*image.c*/
 void		ft_img_setting(t_data *data);
+void		ft_destroy_image(t_data *data);
 
 /*main.c*/
+static int	ft_end_game(t_data *data);
+static int 	ft_player_controller(int wasd, t_data *data);
 static void	ft_run_solong(const char *map_path);
 void 		ft_check_av(int ac, char **av);
 
 /*map_can_clear.c*/
-void		ft_check_can_clear(const char **map);
 void		ft_flood_fill(char **map, int x, int y);
+void		ft_check_can_clear(const char **map);
 
 /*map_checker.c*/
-void		ft_check_what(t_map *check, char element);
 void		ft_check_border(const char **map);
-void		ft_check_character(const char **map, t_map *g_elementx);
+void		ft_check_what(t_map *check, char element);
 void		ft_check_character_2(t_map *check);
 void		ft_check_element_init(t_map *check);
+void		ft_check_character(const char **map, t_map *g_elementx);
 
 /*map_copy.c*/
 char		**ft_copymap(const char **map);
@@ -80,19 +84,35 @@ char		**ft_copymap(const char **map);
 int 		*ft_player_pos(const char **map);
 
 /*map_read.c*/
-char		**ft_read_map(const char *path);
-int			ft_check_line_len(int fd, int len, char *map_return, char *line);
 static char	*ft_static_strjoin(char *s1, char *s2);
+int			ft_check_line_len(int fd, int len, char *map_return, char *line);
+char		**ft_read_map(const char *path);
 
-/*map_utils*/
+/*map_utils.c*/
 void 		ft_map_validator(const char **map, t_map *g_element);
 int			ft_map_height(const char** map);
 
+/*player_controller.c*/
+static void	ft_moveleft(t_data *data);
+static void	ft_moveright(t_data *data);
+static void	ft_movedown(t_data *data);
+static void	ft_moveup(t_data *data);
+void		ft_player_update(int keycode, t_data *data);
+
+/*player_state.c*/
+void		ft_star_collect(t_data *data);
+void		ft_check_finish(t_data *data);
 
 /*struct_init.c*/
 void		ft_struct_init(t_data *data, t_map *g_element);
 
-/*window_create*/
+/*window_create.c*/
 void		*ft_create_window(t_data *data);
+
+/*window_draw.c*/
+int			ft_put_img(t_data *data, void *img, int x, int y);
+void		ft_draw_window(t_data *data);
+
+
 
 #endif

@@ -2,20 +2,23 @@
 
 char	**ft_copymap(const char **map)
 {
-	char		**map_check;
+	char		**copy_map;
 	int			i;
 
 	i = 0;
-	map_check = malloc((ft_map_height((const char **)map) + 1) * sizeof(char *));
-	if (!map_check)
-		ft_printf("Allocation of the check map failed!");
+	copy_map = malloc((ft_map_height((const char **)map) + 1) * sizeof(char *));
+	if (!copy_map)
+	{
+		ft_printf("Copy Map allocationi is failed!");
+		exit(EXIT_FAILURE);
+	}
 	while (map[i])
 	{
-		map_check[i] = ft_strdup(map[i]);
-		if (!map_check[i])
-			ft_printf("Allocation of the check map failed!");
+		copy_map[i] = ft_strdup(map[i]);
+		if (!copy_map[i])
+			ft_printf("Copy Map allocation is failed!");
 		i++;
 	}
-	map_check[i] = NULL;
-	return (map_check);
+	copy_map[i] = NULL;
+	return (copy_map);
 }

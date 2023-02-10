@@ -1,6 +1,6 @@
 #include "./../include/so_long.h"
 
-
+// 새로운 윈도우창을 생성하는 코드
 void *ft_create_window(t_data *data)
 {
     void *R_ptr;

@@ -27,6 +27,12 @@ int	ft_check_line_len(int fd, int len, char *map_return, char *line)
 	}
 }
 
+/*맵을 읽어서 이차원 char 배열로 반환하는 함수이다.
+1. 파일을 열어 읽는다.
+2. 한줄을 가져오기 때문에 while문을 돌면서 line이 반환되지 않을 때까지 진행한다.
+3. 한줄씩 가져온 라인 데이터를 이차원 배열에 넣는다.
+4. 해당 함수는 '\n'을 문자열로 가지고 있기 때문에 \n를 제거한후에 2차원 배열로 넣어준다.
+*/
 char	**ft_read_map(const char *path)
 {
 	int		fd;
@@ -37,7 +43,6 @@ char	**ft_read_map(const char *path)
 
 	fd = open(path, O_RDONLY);
 	line = get_next_line(fd);
-	// 한줄을 읽어서 줄은 판단한다.
 	if (line == NULL && *line == '\n')
 	{
 		ft_printf("The map isn't in shape!");
@@ -45,16 +50,16 @@ char	**ft_read_map(const char *path)
 	}
 	map_content = NULL;
 	line_len = ft_strlen(line);
-	if 	(ft_check_line_len(fd, line_len, map_content, line) == 1)
-		exit(EXIT_FAILURE);
-	// while (line != NULL)
-	// {
-	// 	ft_check_map_lines(line);
-	// 	map_content = ft_call_strjoin(map_content, line);
-	// 	free(line);
-	// 	line = NULL;
-	// 	line = get_next_line(fd);
-	// }
+	// if 	(ft_check_line_len(fd, line_len, map_content, line) == 1)
+	// 	exit(EXIT_FAILURE);
+	while (line != NULL)
+	{
+		ft_check_map_lines(line);
+		map_content = ft_call_strjoin(map_content, line);
+		free(line);
+		line = NULL;
+		line = get_next_line(fd);
+	}
 	map_tab = ft_split(map_content, '\n');
 	free(map_content);
 	close(fd);

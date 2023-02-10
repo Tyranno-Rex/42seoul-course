@@ -1,5 +1,12 @@
 #include "./../include/so_long.h"
 
+/*맵의 가장자리에 대한 유효성을 검증하는 함수
+1. 가로의 길이와 세로의 길이를 구해준다.
+2. while문을 통해서 맵을 전체를 확인한다 
+  -> 4가지 중 하나만 선택이 되어도 검사한다.
+  -> 가로 위치가 0 또는 최대 높이이거나, 세로 위치가 0이거나 최대 너비이면 검사한다.
+  -> 1이 아니라면 이는 틀렸다. 
+*/
 void ft_check_border(const char **map)
 {
     int width;
@@ -15,7 +22,7 @@ void ft_check_border(const char **map)
         while (map[i][j])
         {
             j = 0 ;
-            if (i == 0 || j == 0 || j == height || i == width)
+            if (i == 0 || j == 0 || i == height || j == width)
                 if (map[i][j] != '1')
                 {
                     ft_printf("map's border is wrong!");
