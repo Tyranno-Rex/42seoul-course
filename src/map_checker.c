@@ -1,0 +1,117 @@
+#include "./../include/so_long.h"
+
+int     ft_map_height(char **map)
+{
+    int i;
+    i = 0;
+    while (map[i])
+    {
+        i++;
+    }
+    return (i);
+}
+
+void ft_check_border(char **map)
+{
+    int width;
+    int height;
+    int i;
+    int j;
+
+    i = 0;
+    width = ft_strlen(map[0]) - 1;
+    height = ft_map_height(map) - 1;
+    while (map[i])
+    {
+        while (map[i][j])
+        {
+            j = 0 ;
+            if (i == 0 || j == 0 || j == height || i == width)
+                if (map[i][j] != '1')
+                {
+                    ft_printf("map's border is wrong!");
+                    exit(EXIT_FAILURE);
+                }
+            j++;
+        }
+        i++;
+    }
+}
+
+// 각 요소가 몇 개 있는 지 확인하는 과정이다.
+void ft_check_what(t_map *check, char element)
+{
+    int     i;
+
+    if (element == '1' || element == '0')
+        i = 1;
+    else if (element == 'p')
+        check->character += 1;
+    else if (element == 'C')
+        check->star += 1;
+    else if (element == 'E')
+        check->exit += 1;
+    else
+    {
+        ft_printf("your map elements have another letter!");
+        exit(EXIT_FAILURE);
+    }
+    if (check->character > 1 || check->exit > 1)
+    {
+        ft_printf("your map element is wrong");
+        exit(EXIT_FAILURE);
+    }
+}
+
+void ft_check_character_2(t_map *check)
+{
+    if (check->character != 1)
+    {
+        ft_printf("character element must be one");
+        exit(EXIT_FAILURE);
+    }
+    if (check->exit != 1)
+    {
+        ft_printf("exit element must be one!");
+        exit(EXIT_FAILURE);
+    }
+}
+
+void ft_check_element_init(t_map *check)
+{
+    check->character = 0;
+    check->exit = 0;
+    check->star = 0;
+}
+
+void ft_check_character(char **map)
+{
+    t_map check_element;
+    int i;
+    int j;
+
+    i = 0;
+    ft_check_element_init(&check_element);
+    while (map[i])
+    {
+        j = 0;
+        while (map[i][j])
+        {
+            ft_check_what(&check_element, map[i][j]);
+            j++;
+        }
+        i++;
+    }
+    ft_check_character_2(&check_element);
+}
+
+void ft_map_validator(char **map)
+{
+    if (!map)
+    {
+        ft_printf("map is nnot allocated!");
+        exit(EXIT_FAILURE);
+    }
+    ft_check_border(map);
+    ft_check_character(map);
+}

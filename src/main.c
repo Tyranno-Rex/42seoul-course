@@ -1,61 +1,38 @@
 #include "./../include/so_long.h"
 
-int	ft_exit(t_data *data)
-/* will show a message in the terminal and exit the process */
+static void	ft_run_solong(const char *map_path)
 {
-	mlx_destroy_window(data->mlx, data->win);
-	printf("You gave up :(\n");
-	printf("Is the map to hard for you?\n");
-	exit(EXIT_SUCCESS);
-}
+	t_gameinfo	g_data;
+	char		**map;
+	char		**map_check;
+	int			*xy;
 
-static int	ft_render_next_frame(t_data *data)
-/* checks for keyboard or mouse input */
-{
-	ft_put_background(data);
-	ft_create_map(data);
-	mlx_hook(data->win, 17, 1L << 2, ft_exit, data);
-	mlx_key_hook(data->win, ft_key_hook, data);
-	return (0);
-}
-
-
-
-int main(int ac, char **av)
-{
-    t_data data;
-    t_map   map;
-
-    ft_window_size
+	// 맵을 읽어 드리고, 맵의 2차원 배열의 값을 반환한다.
+	map = ft_read_map(map_path);
+	// 맵이 게임에 이용가능한 형태인지 확인한다.
+	ft_map_validator((const char **)map);
+	map_check = ft_create_fakemap((const char **)map);
+	xy = ft_choose_xy((const char **)map_check);
+	ft_flood_fill(map_check, xy[0], xy[1]);
+	ft_check_validpath((const char **)map_check);
 }
 
 
-
-int	main(int argc, char **argv)
-/* runs the mlx loop */
+void ft_check_av(int ac, char **av)
 {
-	t_data	data;
-	t_map	map;
-
-	ft_window_size(&data, argv);
-	map.map = ft_calloc(data.size_y + 1, sizeof(char *));
-	if (!map.map)
+	if (ac != 2 || ft_strnstr(av[1], ".ber", ft_strlen(av[1]) == 0))
 	{
-		perror("Error\ncalloc failed\n");
+		if (ac != 2)
+			ft_printf("ac must be two, your ac isn't two");
+		else
+			ft_printf("your map format must be \".ber\"");
 		exit(EXIT_FAILURE);
 	}
-	ft_init(&data, &map);
-	ft_parse_input(&data, argv, argc);
-	data.mlx = mlx_init();
-	if (!data.mlx)
-	{
-		perror("Error\nprogramm init failed\n");
-		exit(EXIT_FAILURE);
-	}
-	data.win = mlx_new_window(data.mlx, data.size_x,
-			data.size_y, "./so_long");
-	ft_render_next_frame(&data);
-	mlx_loop(data.mlx);
-	perror("Error\nloop failed\n");
-	exit(EXIT_FAILURE);
 }
+
+int	main(int ac, char **av)
+{
+	ft_check_av(ac, av);	
+	ft_run_solong(av[1]);
+}
+
