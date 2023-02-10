@@ -54,8 +54,6 @@ typedef struct s_data
 
 }	t_data;
 
-
-
 /*image.c*/
 void		ft_img_setting(t_data *data);
 void		ft_destroy_image(t_data *data);
@@ -68,7 +66,8 @@ void 		ft_check_av(int ac, char **av);
 
 /*map_can_clear.c*/
 void		ft_flood_fill(char **map, int x, int y);
-void		ft_check_can_clear(const char **map);
+void		ft_check_can_clear(char **map);
+void		ft_check_map_clear(char **map, int x, int y);
 
 /*map_checker.c*/
 void		ft_check_border(const char **map);
@@ -93,10 +92,10 @@ void 		ft_map_validator(const char **map, t_map *g_element);
 int			ft_map_height(const char** map);
 
 /*player_controller.c*/
-static void	ft_moveleft(t_data *data);
-static void	ft_moveright(t_data *data);
-static void	ft_movedown(t_data *data);
-static void	ft_moveup(t_data *data);
+static void	ft_player_front(t_data *data);
+static void	ft_player_left(t_data *data);
+static void	ft_player_down(t_data *data);
+static void	ft_player_right(t_data *data);
 void		ft_player_update(int keycode, t_data *data);
 
 /*player_state.c*/
@@ -112,7 +111,5 @@ void		*ft_create_window(t_data *data);
 /*window_draw.c*/
 int			ft_put_img(t_data *data, void *img, int x, int y);
 void		ft_draw_window(t_data *data);
-
-
 
 #endif

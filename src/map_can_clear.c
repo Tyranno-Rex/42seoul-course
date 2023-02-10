@@ -14,7 +14,7 @@ void	ft_flood_fill(char **map, int x, int y)
 	ft_flood_fill(map, x, y + 1);
 }
 
-void	ft_check_can_clear(const char **map)
+void	ft_check_can_clear(char **map)
 {
 	int	i;
 	int	j;
@@ -40,4 +40,11 @@ void	ft_check_can_clear(const char **map)
 		}
 		i++;
 	}
+}
+
+
+void ft_check_map_clear(char **map, int x, int y)
+{
+	ft_flood_fill(map, x, y);
+	ft_check_can_clear(map);
 }
