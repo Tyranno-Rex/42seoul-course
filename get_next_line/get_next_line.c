@@ -12,7 +12,7 @@
 
 #include "get_next_line.h"
 
-char	*ft_return_str(char *buf)
+char	*ft_gnl_return_str(char *buf)
 {
 	char	*result;
 	int		i;
@@ -24,7 +24,7 @@ char	*ft_return_str(char *buf)
 		i++;
 	if (buf[i] == '\n')
 		i++;
-	result = ft_substr(buf, 0, i);
+	result = ft_gnl_substr(buf, 0, i);
 	if (!result)
 	{
 		free(result);
@@ -33,7 +33,7 @@ char	*ft_return_str(char *buf)
 	return (result);
 }
 
-char	*ft_update_str(char *buf)
+char	*ft_gnl_update_str(char *buf)
 {
 	char	*result;
 	int		i;
@@ -47,7 +47,7 @@ char	*ft_update_str(char *buf)
 		free(buf);
 		return (NULL);
 	}
-	result = malloc(sizeof(char) * (ft_strlen(buf) - i + 1));
+	result = malloc(sizeof(char) * (ft_gnl_strlen(buf) - i + 1));
 	if (!result)
 	{
 		free(result);
@@ -62,7 +62,7 @@ char	*ft_update_str(char *buf)
 	return (result);
 }
 
-char	*ft_read_str(int fd, char *buf)
+char	*ft_gnl_read_str(int fd, char *buf)
 {
 	int		check_byte;
 	char	*temp;
@@ -71,7 +71,7 @@ char	*ft_read_str(int fd, char *buf)
 	if (!temp)
 		return (NULL);
 	check_byte = 1;
-	while (!ft_strchr(buf, '\n') && check_byte != 0)
+	while (!ft_gnl_strchr(buf, '\n') && check_byte != 0)
 	{
 		check_byte = read(fd, temp, BUFFER_SIZE);
 		if (check_byte < 0)
@@ -80,7 +80,7 @@ char	*ft_read_str(int fd, char *buf)
 			return (NULL);
 		}
 		temp[check_byte] = '\0';
-		buf = ft_strjoin(buf, temp);
+		buf = ft_gnl_strjoin(buf, temp);
 	}
 	free(temp);
 	return (buf);
@@ -93,10 +93,10 @@ char	*get_next_line(int fd)
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (0);
-	static_str = ft_read_str(fd, static_str);
+	static_str = ft_gnl_read_str(fd, static_str);
 	if (!static_str)
 		return (NULL);
-	result = ft_return_str(static_str);
-	static_str = ft_update_str(static_str);
+	result = ft_gnl_return_str(static_str);
+	static_str = ft_gnl_update_str(static_str);
 	return (result);
 }

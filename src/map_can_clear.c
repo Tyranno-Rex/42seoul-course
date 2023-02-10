@@ -2,7 +2,7 @@
 
 void	ft_flood_fill(char **map, int x, int y)
 {
-	if (x < 0 || x >= (int)ft_strlen_pro(map[0], '\n') || y < 0
+	if (x < 0 || x >= (int)ft_strlen(map[0]) || y < 0
 		|| y >= ft_tab_size((const char **)map) || map[y][x] == '1'
 		|| map[y][x] == 'V' || map[y][x] == 'E')
 		return ;

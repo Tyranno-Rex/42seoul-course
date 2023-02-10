@@ -21,14 +21,14 @@
     #include <unistd.h>
 #endif
 
-size_t	ft_strlen(const char *s);
-char	*ft_strchr(const char *str, int c);
-char	*ft_substr(char const *s, unsigned int base, size_t len);
-char	*ft_strjoin(char *buf, char *s);
+size_t	ft_gnl_strlen(const char *s);
+char	*ft_gnl_strchr(const char *str, int c);
+char	*ft_gnl_substr(char const *s, unsigned int base, size_t len);
+char	*ft_gnl_strjoin(char *buf, char *s);
 
-char	*ft_update_str(char *buf);
-char	*ft_return_str(char *buf);
-char	*ft_read_str(int fd, char *buf);
+char	*ft_gnl_update_str(char *buf);
+char	*ft_gnl_return_str(char *buf);
+char	*ft_gnl_read_str(int fd, char *buf);
 char	*get_next_line(int fd);
 
 #endif

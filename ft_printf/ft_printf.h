@@ -13,24 +13,20 @@
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-#ifdef _WIN32
-    #include <io.h>
-#else
-    #include <unistd.h>
-#endif
-
+# include <unistd.h>
 # include <stdlib.h>
 # include <stdarg.h>
 
 int		ft_printf(const char *format, ...);
-int		ft_percent(const char format, va_list info);
+int		ft_percent_pf(const char format, va_list info);
 
-int		ft_pointer(void *p);
-int		ft_putptr(size_t nbr);
-int		ft_putchar(int c);
-int		ft_puthex(unsigned int nbr, char *b);
-int		ft_putint(long long n);
-int		ft_putstring(char *info);
+int		ft_pointer_pf(void *p);
+int		ft_putptr_pf(size_t nbr);
+int		ft_puthex_pf(unsigned int nbr, char *b);
+int		ft_putstring_pf(char *info);
 
-size_t	ft_strlen(const char *s);
+int		ft_putchar_pf(int c);
+int		ft_putint_pf(long long n);
+size_t	ft_strlen_pf(const char *s);
+
 #endif

@@ -12,7 +12,7 @@
 
 #include "get_next_line.h"
 
-size_t	ft_strlen(const char *s)
+size_t	ft_gnl_strlen(const char *s)
 {
 	size_t	i;
 
@@ -22,7 +22,7 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-char	*ft_strchr(const char *str, int c)
+char	*ft_gnl_strchr(const char *str, int c)
 {
 	char	*new;
 	int		i;
@@ -40,7 +40,7 @@ char	*ft_strchr(const char *str, int c)
 	return (0);
 }
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_gnl_substr(char const *s, unsigned int start, size_t len)
 {
 	char			*result;
 	unsigned int	len_s;
@@ -48,7 +48,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-	len_s = ft_strlen(s);
+	len_s = ft_gnl_strlen(s);
 	if (start < len_s)
 		result = malloc((sizeof(char) * len_s + 1));
 	else if (start > len_s)
@@ -67,7 +67,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (result);
 }
 
-char	*ft_strjoin(char *s1, char *s2)
+char	*ft_gnl_strjoin(char *s1, char *s2)
 {
 	char	*line;
 	size_t	i;
@@ -78,7 +78,7 @@ char	*ft_strjoin(char *s1, char *s2)
 		s1 = malloc(sizeof(char));
 		s1[0] = '\0';
 	}
-	line = malloc(sizeof(char) * ((ft_strlen(s1) + ft_strlen(s2)) + 1));
+	line = malloc(sizeof(char) * ((ft_gnl_strlen(s1) + ft_gnl_strlen(s2)) + 1));
 	if (!line)
 		return (NULL);
 	i = 0;

@@ -1,31 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstring.c                                     :+:      :+:    :+:   */
+/*   ft_pointer.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eunjeong <eunjeong@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/23 02:54:58 by eunjeong          #+#    #+#             */
-/*   Updated: 2022/12/23 03:22:19 by eunjeong         ###   ########.fr       */
+/*   Created: 2022/12/23 03:16:40 by eunjeong          #+#    #+#             */
+/*   Updated: 2022/12/23 15:35:36 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putstring(char *info)
+int	ft_putptr_pf(size_t n)
 {
-	int	i;
+	static int	i;
+	char		*base;
 
 	i = 0;
-	if (!info)
+	base = "0123456789abcdef";
+	if (n >= 16)
 	{
-		ft_putstring("(null)");
-		return (6);
+		ft_putptr_pf(n / 16);
+		n %= 16;
 	}
-	while (info[i])
-	{
-		write(1, &info[i], 1);
-		i++;
-	}
+	i += ft_putchar_pf(base[n]);
 	return (i);
+}
+
+int	ft_pointer_pf(void *p)
+{
+	size_t	p_to_int;
+	int		len;
+
+	len = 0;
+	p_to_int = (size_t)p;
+	write(1, "0x", 2);
+	len += ft_putptr_pf(p_to_int);
+	return (len + 2);
 }

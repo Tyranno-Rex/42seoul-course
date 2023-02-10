@@ -12,29 +12,29 @@
 
 #include "ft_printf.h"
 
-int	ft_percent(const char format, va_list info)
+int	ft_percent_pf(const char format, va_list info)
 {
 	int	info_len;
 
 	info_len = 0;
 	if (format == 'c')
-		info_len += ft_putchar(va_arg(info, int));
+		info_len += ft_putchar_pf(va_arg(info, int));
 	else if (format == 's')
-		info_len += ft_putstring(va_arg(info, char *));
+		info_len += ft_putstring_pf(va_arg(info, char *));
 	else if (format == 'p')
-		info_len += ft_pointer(va_arg(info, void *));
+		info_len += ft_pointer_pf(va_arg(info, void *));
 	else if (format == 'd' || format == 'i')
-		info_len += ft_putint(va_arg(info, int));
+		info_len += ft_putint_pf(va_arg(info, int));
 	else if (format == 'u')
-		info_len += ft_puthex(va_arg(info, int), "0123456789");
+		info_len += ft_puthex_pf(va_arg(info, int), "0123456789");
 	else if (format == 'x')
-		info_len += ft_puthex(va_arg(info, int), "0123456789abcdef");
+		info_len += ft_puthex_pf(va_arg(info, int), "0123456789abcdef");
 	else if (format == 'X')
-		info_len += ft_puthex(va_arg(info, int), "0123456789ABCDEF");
+		info_len += ft_puthex_pf(va_arg(info, int), "0123456789ABCDEF");
 	else if (format == '%')
-		info_len += ft_putchar('%');
+		info_len += ft_putchar_pf('%');
 	else
-		info_len += ft_putchar(va_arg(info, int));
+		info_len += ft_putchar_pf(va_arg(info, int));
 	return (info_len);
 }
 
@@ -53,11 +53,11 @@ int	ft_printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			len += ft_percent(format[i + 1], ap);
+			len += ft_percent_pf(format[i + 1], ap);
 			i++;
 		}
 		else
-			len += ft_putchar(format[i]);
+			len += ft_putchar_pf(format[i]);
 		i++;
 	}
 	va_end(ap);
