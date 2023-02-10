@@ -1,6 +1,6 @@
 #include "./../include/so_long.h"
 
-int	*ft_choose_xy(const char **map)
+int	*ft_player_pos(const char **map)
 {
 	int			x;
 	int			y;

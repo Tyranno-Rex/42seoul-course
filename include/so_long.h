@@ -21,7 +21,7 @@
 # define LEFT -1
 # define RIGHT 1
 
-
+// 이번 프로젝트에서 사용하는 구조체들 
 typedef struct s_map
 {
 	int character;
@@ -52,8 +52,28 @@ typedef struct s_gameinfo
 	int		nb_collec;
 }	t_gameinfo;
 
-/*기존 함수*/
 
+/*main.c*/
+static void	ft_run_solong(const char *map_path);
+void 		ft_check_av(int ac, char **av);
 
+/*map_can_clear.c*/
+void		ft_check_can_clear(const char **map);
+void		ft_flood_fill(char **map, int x, int y);
+
+/*map_checker.c*/
+int			ft_map_height(char** map);
+void		ft_check_border(char **map);
+
+/*map_copy.c*/
+char		**ft_copymap(const char **map);
+
+/*map_info.c*/
+int 		*ft_player_pos(const char **map);
+
+/*map_read.c*/
+char		**ft_read_map(const char *path);
+int			ft_check_line_len(int fd, int len, char *map_return, char *line);
+static char	*ft_static_strjoin(char *s1, char *s2);
 
 #endif

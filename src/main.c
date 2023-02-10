@@ -11,10 +11,10 @@ static void	ft_run_solong(const char *map_path)
 	map = ft_read_map(map_path);
 	// 맵이 게임에 이용가능한 형태인지 확인한다.
 	ft_map_validator((const char **)map);
-	map_check = ft_create_fakemap((const char **)map);
-	xy = ft_choose_xy((const char **)map_check);
+	map_check = ft_copymap((const char **)map);
+	xy = ft_player_pos((const char **)map_check);
 	ft_flood_fill(map_check, xy[0], xy[1]);
-	ft_check_validpath((const char **)map_check);
+	ft_check_can_clear((const char **)map_check);
 }
 
 

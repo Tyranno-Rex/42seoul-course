@@ -1,6 +1,6 @@
 #include "./../include/so_long.h"
 
-char	**ft_create_fakemap(const char **map)
+char	**ft_copymap(const char **map)
 {
 	char		**map_check;
 	int			i;
