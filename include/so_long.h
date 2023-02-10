@@ -25,11 +25,13 @@
 typedef struct s_map
 {
 	int character;
+	int character_x;
+	int character_y;
 	int	star;
 	int exit;
 } t_map;
 
-typedef struct s_gameinfo
+typedef struct s_data
 {
 	char	**map;
 	int		map_w;
@@ -39,19 +41,22 @@ typedef struct s_gameinfo
 	void	*mlx_p;
 	void	*mlx_w;
 
-	void	*wall;
-	void	*space;
+	void	*brick;
+	void	*grass;
 	void	*player;
-	void	*collec;
-	void	*exit;
+	void	*chimney;
+	void	*star;
 
 	int		px;
 	int		py;
-	char	player_side;
+	char	player_aspect;
 	int		moves_counter;
 	int		nb_collec;
-}	t_gameinfo;
+}	t_data;
 
+
+/*image_setting.c*/
+void		ft_img_setting(t_data *data);
 
 /*main.c*/
 static void	ft_run_solong(const char *map_path);
@@ -64,7 +69,7 @@ void		ft_flood_fill(char **map, int x, int y);
 /*map_checker.c*/
 void		ft_check_what(t_map *check, char element);
 void		ft_check_border(const char **map);
-void		ft_check_character(const char **map);
+void		ft_check_character(const char **map, t_map *g_elementx);
 void		ft_check_character_2(t_map *check);
 void		ft_check_element_init(t_map *check);
 
@@ -80,7 +85,14 @@ int			ft_check_line_len(int fd, int len, char *map_return, char *line);
 static char	*ft_static_strjoin(char *s1, char *s2);
 
 /*map_utils*/
-void 		ft_map_validator(const char **map);
+void 		ft_map_validator(const char **map, t_map *g_element);
 int			ft_map_height(const char** map);
+
+
+/*struct_init.c*/
+void		ft_struct_init(t_data *data, t_map *g_element);
+
+/*window_create*/
+void		*ft_create_window(t_data *data);
 
 #endif

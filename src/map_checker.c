@@ -73,23 +73,22 @@ void ft_check_element_init(t_map *check)
     check->star = 0;
 }
 
-void ft_check_character(const char **map)
+void ft_check_character(const char **map, t_map *g_element)
 {
-    t_map check_element;
     int i;
     int j;
 
     i = 0;
-    ft_check_element_init(&check_element);
+    ft_check_element_init(&g_element);
     while (map[i])
     {
         j = 0;
         while (map[i][j])
         {
-            ft_check_what(&check_element, map[i][j]);
+            ft_check_what(&g_element, map[i][j]);
             j++;
         }
         i++;
     }
-    ft_check_character_2(&check_element);
+    ft_check_character_2(&g_element);
 }
