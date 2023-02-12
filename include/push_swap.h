@@ -7,11 +7,13 @@
 #else
 	#include <unistd.h>
 #endif
-#include "../ft_printf/ft_printf.h"
-#include "../lib/libft.h"
+#include <stddef.h>
 #include <stdlib.h>
 #include <stddef.h>
 #include <limits.h>
+
+#include "../ft_printf/ft_printf.h"
+#include "../lib/libft.h"
 
 typedef struct s_push_swap
 {

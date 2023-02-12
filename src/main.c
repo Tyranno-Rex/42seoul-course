@@ -75,4 +75,6 @@ int main(int ac, char **av)
 		return (0);
 	stack_b = NULL;
 	stack_a = ft_push_stack(stack_len, av);
+	stack_len = ft_stack_size();
+	
 }

@@ -1,6 +1,5 @@
 #include "./../include/push_swap.h"
 
-
 t_push_swap *stack_init(int nb)
 {
     t_push_swap *tmp_stack;
@@ -17,7 +16,6 @@ t_push_swap *stack_init(int nb)
     return (tmp_stack);
 }
 
-
 void stack_add_bottom(t_push_swap **stack, t_push_swap *new)
 {
     t_push_swap  *tail;
@@ -32,8 +30,6 @@ void stack_add_bottom(t_push_swap **stack, t_push_swap *new)
     tail = get_stack_bottom(*stack);
 
 }
-
-
 
 t_push_swap *ft_push_stack(int len, char **av)
 {
