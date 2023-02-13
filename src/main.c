@@ -66,15 +66,12 @@ int	ft_check_ac_av(int ac, char **av)
 int main(int ac, char **av)
 {
     int			stack_len;
-    t_push_swap *stack_a;
-    t_push_swap *stack_b;
+	t_stack		stack_a;
+	t_stack		stack_b;
 
 	// 숫자의 값이 잘못 됨 -> stack의 초기화를 진행해야함.
 	stack_len = ac - 1;
 	if (ft_check_ac_av(ac, av))
 		return (0);
-	stack_b = NULL;
 	stack_a = ft_push_stack(stack_len, av);
-	stack_len = ft_stack_size();
-	
 }
