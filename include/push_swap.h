@@ -40,11 +40,13 @@ int 		ft_check_is_number(char *num);
 int			ft_check_is_double();
 int 		ft_check_ac_av(int ac, char **av);
 
+/*main.c*/
+
 /*stack_init.c*/
 static void ft_setting_a(int len, char **av, t_stack *push_swap);
 t_stack		*ft_push_swap_init(int len, char **av, t_stack *push_swap);
 
 /*push_stack.c*/
-int			ft_push_add_bottom();
+t_push_swap	*ft_push_add_bottom(int value);
 
 #endif

@@ -11,5 +11,5 @@ int main(int ac, char **av)
 	stack_len = ac - 1;
 	if (ft_check_ac_av(ac, av))
 		return (0);
-	push_swap = ft_push_stack(stack_len, av, push_swap);
+	push_swap = ft_push_swap_init(stack_len, av, push_swap);
 }

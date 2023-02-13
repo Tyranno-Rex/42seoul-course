@@ -1,7 +1,7 @@
 #include "./../include/push_swap.h"
 
 
-
+// s_2
 static void ft_setting_a(int len, char **av, t_stack *push_swap)
 {
     int i;
@@ -20,7 +20,7 @@ static void ft_setting_a(int len, char **av, t_stack *push_swap)
     }
 }
 
-
+// s_1
 t_stack *ft_push_swap_init(int len, char **av, t_stack *push_swap)
 {
     push_swap->a = NULL;
