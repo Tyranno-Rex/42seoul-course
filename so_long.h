@@ -5,7 +5,7 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <fcntl.h>
-#include "./../lib/libft.h"
+#include "./lib/libft.h"
 
 # define IMG_W 32
 # define IMG_H 32

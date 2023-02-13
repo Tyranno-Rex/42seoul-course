@@ -1,41 +1,35 @@
-SO_LONG = SO_LONG
+NAME = so_long
 
-SO_LONG_SRCS = src/image.c src/main.c src/map_can_clear.c \
+SRCS = src/image.c src/main.c src/map_can_clear.c \
 			src/map_checker.c src/map_copy.c src/map_info.c \
 			src/map_read.c src/map_utils.c src/player_controller.c \
 			src/player_state.c src/struct_init.c src/window_create.c \
 			src/window_draw.c
 
-SO_LONG_OBJS = $(SO_LONG_SRCS:.c=.o)
+OBJS = $(SRCS:.c=.o)
+COMPILER = cc
+CFLAGS = -Wall -Werror -Wextra
+MLX = -lmlx -framework OpenGL -framework AppKit
 
-AR = ar rcs
-CC = cc
-CFLAGS = -Wextra -Werror
-INC = ./include
+all: extern $(NAME)
 
-RM = rm -rf
-MLX = -L./mlx_lib -lmxl -framework OpenGL -framework Appkit
+extern:
+	make -C lib/
 
+$(NAME): $(OBJS)
+	$(COMPILER) -o $(NAME) $(OBJS) lib/libft.a $(MLX)
 
-LIBFT = ./lib/libft.a
-
-
-all: $(SO_LONG)
-
-$(LIBFT):
-	$(MAKE) -C ./libft
-
-$(SO_LONG): $(SO_LONG_OBJS) $(LIBFT)
-	$(CC) $(CFLAGS) $(SO_LONG_OBJS) -I $(INC) $(LIBFT) $(MLX) -o SO_LONG
+%.o: %.c so_long.h
+	$(COMPILER) $(CFLAGS) -c $<
 
 clean:
-	$(MAKE) clean -C ./libft
-	$(RM) $(SO_LONG_OBJS)
+	make clean -C lib/
+	rm -rf $(OBJS)
 
 fclean: clean
-	$(MAKE) fclean -C ./libft ./ft_printf
-	$(RM) $(SO_LONG)
+	rm -rf lib/libft.a
+	rm -rf $(NAME)
 
 re: fclean all
 
-.PHONY : all re fclean clean bonus
+.PHONY: all extern clean fclean re
