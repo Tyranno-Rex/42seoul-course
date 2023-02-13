@@ -1,4 +1,4 @@
-#include "./../include/so_long.h"
+#include "so_long.h"
 
 static int	ft_end_game(t_data *data)
 {

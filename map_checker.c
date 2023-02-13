@@ -1,4 +1,4 @@
-#include "./../include/so_long.h"
+#include "so_long.h"
 
 /*맵의 가장자리에 대한 유효성을 검증하는 함수
 1. 가로의 길이와 세로의 길이를 구해준다.

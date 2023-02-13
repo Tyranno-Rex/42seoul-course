@@ -1,4 +1,4 @@
-#include "./../include/so_long.h"
+#include "so_long.h"
 
 static void	ft_player_front(t_data *data)
 {

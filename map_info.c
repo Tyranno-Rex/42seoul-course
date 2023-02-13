@@ -1,4 +1,4 @@
-#include "./../include/so_long.h"
+#include "so_long.h"
 
 int	*ft_player_pos(const char **map)
 {

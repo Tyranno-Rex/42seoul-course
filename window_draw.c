@@ -1,4 +1,4 @@
-#include "./../include/so_long.h"
+#include "so_long.h"
 
 int ft_put_img(t_data *data, void *img, int x, int y)
 {

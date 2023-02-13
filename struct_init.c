@@ -1,4 +1,4 @@
-#include "./../include/so_long.h"
+#include "so_long.h"
 
 void ft_struct_init(t_data *data, t_map *g_element)
 {

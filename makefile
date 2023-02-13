@@ -1,35 +1,75 @@
-NAME = so_long
+# NAME = so_long
 
-SRCS = src/image.c src/main.c src/map_can_clear.c \
-			src/map_checker.c src/map_copy.c src/map_info.c \
-			src/map_read.c src/map_utils.c src/player_controller.c \
-			src/player_state.c src/struct_init.c src/window_create.c \
-			src/window_draw.c
+# SRCS = image.c main.c map_can_clear.c \
+# 			map_checker.c map_copy.c map_info.c \
+# 			map_read.c map_utils.c player_controller.c \
+# 			player_state.c struct_init.c window_create.c \
+# 			window_draw.c
 
-OBJS = $(SRCS:.c=.o)
-COMPILER = cc
-CFLAGS = -Wall -Werror -Wextra
+# OBJS = $(SRCS:.c=.o)
+# COMPILER = cc
+# CFLAGS = -Werror -Wextra
+
+# all: $(NAME)
+
+# LIB:
+# 	$(make) -C ./lib
+
+# $(NAME): $(OBJS)
+# 	$(COMPILER) -o $(NAME) $(OBJS) $(LIB) $(MLX)
+
+# %.o: %.c so_long.h
+# 	$(COMPILER) $(CFLAGS) -c $<
+
+# clean:
+# 	make clean -C lib/
+# 	rm -rf $(OBJS)
+
+# fclean: clean
+# 	rm -rf lib/libft.a
+# 	rm -rf $(NAME)
+
+# re: fclean all
+
+# .PHONY: all extern clean fclean re
+
+
+
+SO_LONG = so_long
+
+SO_LONG_SRC = image.c main.c map_can_clear.c \
+			map_checker.c map_copy.c map_info.c \
+			map_read.c map_utils.c player_controller.c \
+			player_state.c struct_init.c window_create.c \
+			window_draw.c
+
+
+SO_LONG_OBJS = $(SO_LONG_SRC:.c=.o)
+
+CC = cc
+CFLAGS = -Wextra -Werror
 MLX = -lmlx -framework OpenGL -framework AppKit
+RM = rm -rf
 
-all: extern $(NAME)
+LIB = ./lib/libft.a
 
-extern:
-	make -C lib/
+all: $(SO_LONG)
 
-$(NAME): $(OBJS)
-	$(COMPILER) -o $(NAME) $(OBJS) lib/libft.a $(MLX)
+$(LIB):
+	$(MAKE) -C ./lib
 
-%.o: %.c so_long.h
-	$(COMPILER) $(CFLAGS) -c $<
+
+$(SO_LONG) : $(SO_LONG_OBJS) $(LIB)
+	$(CC) $(CFLAGS) $(SO_LONG_OBJS) $(LIBFT) $(MLX) -o so_long
 
 clean:
-	make clean -C lib/
-	rm -rf $(OBJS)
+	$(MAKE) clean -C ./lib
+	$(RM) $(SO_LONG_OBJS)
 
 fclean: clean
-	rm -rf lib/libft.a
-	rm -rf $(NAME)
+	$(MAKE) fclean -C ./lib
+	$(RM) $(SO_LONG)
 
 re: fclean all
 
-.PHONY: all extern clean fclean re
+.PHONY : all re fclean clean bonus

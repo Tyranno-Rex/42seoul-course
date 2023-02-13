@@ -1,4 +1,4 @@
-#include "./../include/so_long.h"
+#include "so_long.h"
 
 static char	*ft_static_strjoin(char *s1, char *s2)
 {
