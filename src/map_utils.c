@@ -25,5 +25,5 @@ void ft_map_validator(const char **map, t_map *g_element)
         exit(EXIT_FAILURE);
     }
     ft_check_border((const char **) map);
-    ft_check_character((const char **) map, &g_element);
+    ft_check_character((const char **) map, g_element);
 }

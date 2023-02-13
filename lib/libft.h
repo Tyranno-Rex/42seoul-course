@@ -21,6 +21,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <stdio.h>
+# include <stdarg.h>
 
 typedef struct s_list
 {
@@ -70,12 +71,31 @@ void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 char				*ft_strnstr(const char *str, const char \
 						*to_find, size_t len);
-
 void				ft_lstadd_front(t_list **lst, t_list *new);
 void				ft_lstadd_back(t_list **lst, t_list *new);
 int					ft_lstsize(t_list *lst);
 void				ft_lstdelone(t_list *lst, void (*del)(void*));
 void				ft_lstclear(t_list **lst, void (*del)(void *));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
+int					ft_printf(const char *format, ...);
+int					ft_percent_pf(const char format, va_list info);
+
+/*Get Next Line*/
+size_t				ft_gnl_strlen(const char *s);
+char				*ft_gnl_strchr(const char *str, int c);
+char				*ft_gnl_substr(char const *s, unsigned int base, size_t len);
+char				*ft_gnl_strjoin(char *buf, char *s);
+char				*ft_gnl_update_str(char *buf);
+char				*ft_gnl_return_str(char *buf);
+char				*ft_gnl_read_str(int fd, char *buf);
+char				*get_next_line(int fd);
+/*ft_printf*/
+int					ft_pointer_pf(void *p);
+int					ft_putptr_pf(size_t nbr);
+int					ft_puthex_pf(unsigned int nbr, char *b);
+int					ft_putstring_pf(char *info);
+int					ft_putchar_pf(int c);
+int					ft_putint_pf(long long n);
+size_t				ft_strlen_pf(const char *s);
 
 #endif

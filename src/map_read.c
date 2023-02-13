@@ -11,19 +11,34 @@ static char	*ft_static_strjoin(char *s1, char *s2)
 	return (result);
 }
 
-int	ft_check_line_len(int fd, int len, char *map_return, char *line)
+// void ft_check_line_len(int fd, int len, char *map_return, char *line)
+// {
+// 	int i;
+
+// 	while (line != NULL)
+// 	{
+// 		i = ft_strlen(line);
+// 		if (i != len)
+// 		{
+// 			ft_printf("map's width isn't right");
+// 			exit(EXIT_FAILURE);
+// 		}
+// 		map_return = ft_static_strjoin(map_return, line);
+// 		free(line);
+// 		line = NULL;
+// 		line = get_next_line(fd);
+// 	}
+// }
+
+
+void ft_check_line_len(char *line, int len)
 {
-	while (line != NULL)
+	int i;
+	i = ft_strlen(line);
+	if (i != len)
 	{
-		if (ft_strlen(line) != len);
-		{
-			ft_printf("map's width isn't right");
-			return (1);
-		}
-		map_return = ft_static_strjoin(map_return, line);
-		free(line);
-		line = NULL;
-		line = get_next_line(fd);
+		ft_printf("your map width isn't right!");
+		exit(EXIT_FAILURE);
 	}
 }
 
@@ -52,10 +67,13 @@ char	**ft_read_map(const char *path)
 	line_len = ft_strlen(line);
 	// if 	(ft_check_line_len(fd, line_len, map_content, line) == 1)
 	// 	exit(EXIT_FAILURE);
+
+	// 이거 체크해야함.
+	// ft_check_map_lines(line);
 	while (line != NULL)
 	{
-		ft_check_map_lines(line);
-		map_content = ft_call_strjoin(map_content, line);
+		ft_check_line_len(line, line_len);
+		map_content = ft_static_strjoin(map_content, line);
 		free(line);
 		line = NULL;
 		line = get_next_line(fd);

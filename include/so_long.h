@@ -1,13 +1,11 @@
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
-// # include <mlx.h>
+# include <mlx.h>
 # include <stdlib.h>
 # include <stdio.h>
 # include <fcntl.h>
-#include "./../get_next_line/get_next_line.h"
-#include "./../ft_printf/ft_printf.h"
-#include "./../libft/libft.h"
+#include "./../lib/libft.h"
 
 # define IMG_W 32
 # define IMG_H 32
@@ -84,12 +82,12 @@ int 		*ft_player_pos(const char **map);
 
 /*map_read.c*/
 static char	*ft_static_strjoin(char *s1, char *s2);
-int			ft_check_line_len(int fd, int len, char *map_return, char *line);
+void		ft_check_line_len(char *line, int len);
 char		**ft_read_map(const char *path);
 
 /*map_utils.c*/
 void 		ft_map_validator(const char **map, t_map *g_element);
-int			ft_map_height(const char** map);
+int			ft_map_height(const char **map);
 
 /*player_controller.c*/
 static void	ft_player_front(t_data *data);

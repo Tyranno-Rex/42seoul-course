@@ -22,15 +22,15 @@ void    ft_draw_window(t_data *data)
         while (data->map[i][j])
         {
             if (data->map[i][j] == '1')
-                ft_put_img(&data, data->brick, j, i);
-            else if (data->map[i][j] == "0")
-                ft_put_img(&data, data->grass, j, i);
-            else if (data->map[i][j] == "C")
-                ft_put_img(&data, data->star, j, i);
-            else if (data->map[i][j] == "P")
-                ft_put_img(&data, data->player, j, i);
-            else if (data->map[i][j] == "E")
-                ft_put_img(&data, data->chimney, j, i);
+                ft_put_img(data, data->brick, j, i);
+            else if (data->map[i][j] == '0')
+                ft_put_img(data, data->grass, j, i);
+            else if (data->map[i][j] == 'C')
+                ft_put_img(data, data->star, j, i);
+            else if (data->map[i][j] == 'P')
+                ft_put_img(data, data->player, j, i);
+            else if (data->map[i][j] == 'E')
+                ft_put_img(data, data->chimney, j, i);
             j++;
         }
         i++;

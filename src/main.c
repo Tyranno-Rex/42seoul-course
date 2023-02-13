@@ -10,7 +10,7 @@ static int	ft_end_game(t_data *data)
 static int	ft_player_controller(int wasd, t_data *data)
 {
 	if (wasd == 53)
-		ft_end_game(&data);
+		ft_end_game(data);
 	if (wasd == W || wasd == UP || wasd == A || wasd == LEFT ||
 		wasd == S || wasd == DOWN || wasd == D || wasd == RIGHT)
 	{
@@ -19,6 +19,7 @@ static int	ft_player_controller(int wasd, t_data *data)
 		ft_img_setting(data);
 		ft_draw_window(data);
 	}
+	return (1);
 }
 
 /* 함수 설명 :

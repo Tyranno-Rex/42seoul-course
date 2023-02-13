@@ -86,16 +86,16 @@ void ft_check_character(const char **map, t_map *g_element)
     int j;
 
     i = 0;
-    ft_check_element_init(&g_element);
+    ft_check_element_init(g_element);
     while (map[i])
     {
         j = 0;
         while (map[i][j])
         {
-            ft_check_what(&g_element, map[i][j]);
+            ft_check_what(g_element, map[i][j]);
             j++;
         }
         i++;
     }
-    ft_check_character_2(&g_element);
+    ft_check_character_2(g_element);
 }
