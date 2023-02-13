@@ -28,18 +28,23 @@ typedef struct s_stack
 	t_push_swap	*a;
 	t_push_swap	*b;
 	t_push_swap	*sort;
+	
 	int			a_len;
 	int			b_len;
+	int			cmd_cnt;
 }	t_stack;
 
-/*main.c*/
-int ft_check_is_sign(char c);
-int ft_check_is_number(char *num);
-int ft_check_ac_av(int ac, char **av);
+/*av_checker.c*/
+int 		ft_check_is_sign(char c);
+int 		ft_check_is_number(char *num);
+int			ft_check_is_double();
+int 		ft_check_ac_av(int ac, char **av);
 
-/*push_value.c*/
-t_push_swap	*stack_init(int nb);
-void 		stack_add_bottom(t_push_swap **stack, t_push_swap *new);
-t_stack		ft_push_stack(int len, char **av);
+/*stack_init.c*/
+static void ft_setting_a(int len, char **av, t_stack *push_swap);
+t_stack		*ft_push_swap_init(int len, char **av, t_stack *push_swap);
+
+/*push_stack.c*/
+int			ft_push_add_bottom();
 
 #endif
