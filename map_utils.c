@@ -1,29 +1,61 @@
 #include "so_long.h"
 
-int     ft_map_height(const char **map)
+int	ft_count_collect(const char **map)
 {
-    int i;
+	int	i;
+	int	j;
+	int	count;
 
-    i = 0;
-    while (map[i])
-    {
-        i++;
-    }
-    return (i);
+	i = 0;
+	count = 0;
+	while (map[i])
+	{
+		j = 0;
+		while (map[i][j])
+		{
+			if (map[i][j] == 'C')
+				count++;
+			j++;
+		}
+		i++;
+	}
+	return (count);
 }
 
-/* 해당 함수는 맵의 유효성을 검증하는 함수로 유효성 검증의 메인 함수이다.
-1. 맵이 할당되었는지 확인한다.
-2. 맵의 가장자리에 대한 유효성 검증
-3. 맵의 각 요소가 제대로 들어갔는지 검증
-*/
-void ft_map_validator(const char **map, t_map *g_element)
+void	ft_collect(t_data *g_data)
 {
-    if (!map)
-    {
-        ft_printf("map isn't allocated!");
-        exit(EXIT_FAILURE);
-    }
-    ft_check_border((const char **) map);
-    ft_check_character((const char **) map, g_element);
+	g_data->nb_collec--;
+	ft_printf("Move: %d\n", ++g_data->moves_counter);
+	ft_printf("star collected!\n");
 }
+
+int	ft_search_tab(const char **tab, char c)
+{
+	int	i;
+	int	j;
+
+	i = 0;
+	while (tab[i])
+	{
+		j = 0;
+		while (tab[i][j])
+		{
+			if (tab[i][j] == c)
+				return (1);
+			j++;
+		}
+		i++;
+	}
+	return (0);
+}
+
+int	ft_tab_size(const char **tab)
+{
+	int	i;
+
+	i = 0;
+	while (tab[i])
+		i++;
+	return (i);
+}
+

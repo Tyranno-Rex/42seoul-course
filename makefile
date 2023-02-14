@@ -1,75 +1,37 @@
-# NAME = so_long
+NAME = so_long
+SRCS = image.c main.c map_can_clear.c map_checker.c map_copy.c map_info.c \
+		map_read.c map_utils.c player_controller.c palyer_state.c struct_init.c \
+		window_create.c window_draw.c
 
-# SRCS = image.c main.c map_can_clear.c \
-# 			map_checker.c map_copy.c map_info.c \
-# 			map_read.c map_utils.c player_controller.c \
-# 			player_state.c struct_init.c window_create.c \
-# 			window_draw.c
-
-# OBJS = $(SRCS:.c=.o)
-# COMPILER = cc
-# CFLAGS = -Werror -Wextra
-
-# all: $(NAME)
-
-# LIB:
-# 	$(make) -C ./lib
-
-# $(NAME): $(OBJS)
-# 	$(COMPILER) -o $(NAME) $(OBJS) $(LIB) $(MLX)
-
-# %.o: %.c so_long.h
-# 	$(COMPILER) $(CFLAGS) -c $<
-
-# clean:
-# 	make clean -C lib/
-# 	rm -rf $(OBJS)
-
-# fclean: clean
-# 	rm -rf lib/libft.a
-# 	rm -rf $(NAME)
-
-# re: fclean all
-
-# .PHONY: all extern clean fclean re
-
-
-
-SO_LONG = so_long
-
-SO_LONG_SRC = image.c main.c map_can_clear.c \
-			map_checker.c map_copy.c map_info.c \
-			map_read.c map_utils.c player_controller.c \
-			player_state.c struct_init.c window_create.c \
-			window_draw.c
-
-
-SO_LONG_OBJS = $(SO_LONG_SRC:.c=.o)
-
+OBJS = $(SRCS:.c=.o)
 CC = cc
-CFLAGS = -Wextra -Werror
+CFLAG = -Wall -Werror -Wextra
 MLX = -lmlx -framework OpenGL -framework AppKit
-RM = rm -rf
 
-LIB = ./lib/libft.a
+all : extern $(NAME)
 
-all: $(SO_LONG)
+extern :
+	make -C libft/
+	make -C get_next_line/
+	make -C ft_printf/
 
-$(LIB):
-	$(MAKE) -C ./lib
+$(NAME): $(OBJS)
+	$(CC) -o $(NAME) $(OBJS)
+	libft/libft.a get_next_line/libft_getnextline.a\
+	ft_printf/libftprintf.a $(MLX)
 
+%.o: %.c so_long.h
+	make clean -C libft/
+	make clean -C get_next_line/
+	make clean -C ft_printf/
+	rm -rf $(OBJS)
 
-$(SO_LONG) : $(SO_LONG_OBJS) $(LIB)
-	$(CC) $(CFLAGS) $(SO_LONG_OBJS) $(LIBFT) $(MLX) -o so_long
+fclean : clean
+	rm -rf libft/libft.a
+	rm -rf get_next_line/libft_getnextline.a
+	rm -rf ft_printf/libftprintf.a
+	rm -rf $(NAME)
 
-clean:
-	$(MAKE) clean -C ./lib
-	$(RM) $(SO_LONG_OBJS)
+re : fclean all
 
-fclean: clean
-	$(MAKE) fclean -C ./lib
-	$(RM) $(SO_LONG)
-
-re: fclean all
-
-.PHONY : all re fclean clean bonus
+.PHONY : all extern clean fclean re

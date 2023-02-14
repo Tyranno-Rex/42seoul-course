@@ -5,7 +5,10 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <fcntl.h>
-#include "./lib/libft.h"
+
+# include "libft/libft.h"
+# include "ft_printf/ft_printf.h"
+# include "get_next_line/get_next_line.h"
 
 # define IMG_W 32
 # define IMG_H 32
@@ -31,83 +34,68 @@ typedef struct s_map
 
 typedef struct s_data
 {
-	char	**map;
-	char	player_aspect;
+	void	*mario;
+	void	*star;
+	void	*pipe;
+	void	*brick;
+	void	*grass;
+	void	*mlx_p;
+	void	*mlx_w;
 
+	char	**map;
+	char	aspect;
+
+	int		map_w;
+	int		map_h;
 	int		wh;
 	int		px;
 	int		py;
-	int		map_w;
-	int		map_h;
-	int		star_total;
 	int		moves_counter;
-
-	void	*star;
-	void	*mlx_p;
-	void	*mlx_w;
-	void	*brick;
-	void	*grass;
-	void	*player;
-	void	*chimney;
-
+	int		nb_collec;
 }	t_data;
 
-/*image.c*/
-void		ft_img_setting(t_data *data);
-void		ft_destroy_image(t_data *data);
+/*image_render*/
+void		ft_destory_images(t_data *data);
+int			ft_put_image(t_data *data, void *img, int x, int y);
+void		*ft_xpm2image(void *mlx_p, char *xpm);
+void		*ft_new_window(t_data *data);
 
-/*main.c*/
-static int	ft_end_game(t_data *data);
-static int 	ft_player_controller(int wasd, t_data *data);
-static void	ft_run_solong(const char *map_path);
+/*image_setting*/
+void		ft_load_images(t_data *data);
+void		ft_draw_characters(t_data *data);
+
+/*main*/
 void 		ft_check_av(int ac, char **av);
 
-/*map_can_clear.c*/
-void		ft_flood_fill(char **map, int x, int y);
-void		ft_check_can_clear(char **map);
-void		ft_check_map_clear(char **map, int x, int y);
+/*map_checker*/
+void		ft_map_validator(const char **map, t_map *t_data);
 
-/*map_checker.c*/
-void		ft_check_border(const char **map);
-void		ft_check_what(t_map *check, char element);
-void		ft_check_character_2(t_map *check);
-void		ft_check_element_init(t_map *check);
-void		ft_check_character(const char **map, t_map *g_elementx);
-
-/*map_copy.c*/
+/*map is clear*/
+int			*ft_choose_xy(const char **map);
 char		**ft_copymap(const char **map);
+void		ft_flood_fill(char **map, int x, int y);
+void		ft_check_validpath(const char **map);
 
-/*map_info.c*/
-int 		*ft_player_pos(const char **map);
-
-/*map_read.c*/
-static char	*ft_static_strjoin(char *s1, char *s2);
-void		ft_check_line_len(char *line, int len);
+/*map_reader*/
 char		**ft_read_map(const char *path);
 
-/*map_utils.c*/
-void 		ft_map_validator(const char **map, t_map *g_element);
-int			ft_map_height(const char **map);
 
-/*player_controller.c*/
-static void	ft_player_front(t_data *data);
-static void	ft_player_left(t_data *data);
-static void	ft_player_down(t_data *data);
-static void	ft_player_right(t_data *data);
-void		ft_player_update(int keycode, t_data *data);
+/*map_utils*/
+int			ft_count_collect(const char **map);
+void		ft_collect(t_data *data);
+int			ft_search_tab(const char **tab, char c);
+int			ft_tab_size(const char **tab);
 
-/*player_state.c*/
-void		ft_star_collect(t_data *data);
-void		ft_check_finish(t_data *data);
+/*player_controller*/
+void		ft_move_player(int keycode, t_data *data);
 
-/*struct_init.c*/
-void		ft_struct_init(t_data *data, t_map *g_element);
+/*so_long_utils*/
+int			ft_strlen_n(const char *str, char c);
+void		ft_show_error(const char *msg);
+void		ft_finish_game(t_data *data);
 
-/*window_create.c*/
-void		*ft_create_window(t_data *data);
-
-/*window_draw.c*/
-int			ft_put_img(t_data *data, void *img, int x, int y);
-void		ft_draw_window(t_data *data);
+/*struct_init*/
+void		ft_struct_initializer(t_data *data);
+void		ft_struct_initializer_2(t_map *m_data);
 
 #endif

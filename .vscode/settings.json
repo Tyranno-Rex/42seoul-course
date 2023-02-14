@@ -4,6 +4,7 @@
         "ft_printf.h": "c",
         "string": "c",
         "xstring": "c",
-        "xutility": "c"
+        "xutility": "c",
+        "libft.h": "c"
     }
 }
