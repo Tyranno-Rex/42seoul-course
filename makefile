@@ -8,9 +8,6 @@ CFLAGS = -Wall -Werror -Wextra
 
 all: extern $(NAME)
 
-bonus: extern
-	make -C bonus_src/
-
 extern:
 	make -C libft/
 	make -C ft_printf/
