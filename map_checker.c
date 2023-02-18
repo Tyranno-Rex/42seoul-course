@@ -1,4 +1,14 @@
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   map_checker.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: eunjeong <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/18 12:38:46 by eunjeong          #+#    #+#             */
+/*   Updated: 2023/02/18 12:38:47 by eunjeong         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "so_long.h"
 
 static void	ft_check_begin_end(const char **map)
@@ -61,24 +71,19 @@ static void	ft_check_characters(const char **map, t_map *m_data)
 				m_data->star += 1;
 			else if (map[i][j] == 'E')
 				m_data->exit += 1;
-			else if (map[i][j] == '1' || map[i][j] == '0')
-				m_data->wall += 1;
-			else
+			else if (map[i][j] != '1' && map[i][j] != '0')
 				ft_show_error("The map contains an unknown character!");
 			j++;
 		}
 		i++;
 	}
-	if (m_data->character < 1 || m_data->star < 1 || 
-		m_data->exit < 1 || m_data->wall < 1)
+	if (m_data->character < 1 || m_data->star < 1
+		|| m_data->exit < 1)
 		ft_show_error("One or some of the characters are missing!");
 }
 
-static void	ft_check_duplication(const char **map, t_map *m_data)
+static void	ft_check_duplication(t_map *m_data)
 {
-	int i = 0;
-	if (map[1][1] == 'K')
-		i++;
 	if (m_data->character != 1 || m_data->exit != 1)
 		ft_show_error("There's a duplication of characters!");
 }
@@ -87,5 +92,5 @@ void	ft_map_validator(const char **map, t_map *t_data)
 {
 	ft_map_closed(map);
 	ft_check_characters(map, t_data);
-	ft_check_duplication(map, t_data);
+	ft_check_duplication(t_data);
 }

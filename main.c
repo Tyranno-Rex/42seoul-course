@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: eunjeong <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/18 12:37:13 by eunjeong          #+#    #+#             */
+/*   Updated: 2023/02/18 12:37:40 by eunjeong         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "so_long.h"
 
 static int	ft_close_game(t_data *data)
@@ -38,6 +50,7 @@ static void	ft_run_solong(const char *map_path)
 	xy = ft_choose_xy((const char **)map_check);
 	ft_flood_fill(map_check, xy[0], xy[1]);
 	ft_check_validpath((const char **)map_check);
+	free(map_check);
 	data.map = map;
 	ft_struct_initializer(&data);
 	ft_draw_characters(&data);
@@ -46,20 +59,15 @@ static void	ft_run_solong(const char *map_path)
 	mlx_loop(data.mlx_p);
 }
 
-void ft_check_av(int ac, char **av)
+void	ft_check_av(int ac, char **av)
 {
-	if (ac != 2 || ft_strnstr(av[1], ".ber", ft_strlen(av[1]) == 0))
-	{
-		if (ac != 2)
-			ft_printf("ac must be two, your ac isn't two");
-		else
-			ft_printf("your map format must be \".ber\"");
-		exit(EXIT_FAILURE);
-	}
+	if (ac != 2)
+		ft_printf("ac must be two, your ac isn't two");
+	ft_check_ber(av[1]);
 }
 
 int	main(int ac, char **av)
 {
-	ft_check_av(ac, av);	
+	ft_check_av(ac, av);
 	ft_run_solong(av[1]);
 }

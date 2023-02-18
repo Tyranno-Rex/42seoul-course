@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   map_is_clear.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: eunjeong <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/18 12:38:52 by eunjeong          #+#    #+#             */
+/*   Updated: 2023/02/18 12:38:54 by eunjeong         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "so_long.h"
 
 int	*ft_choose_xy(const char **map)
@@ -50,7 +62,7 @@ char	**ft_copymap(const char **map)
 
 void	ft_flood_fill(char **map, int x, int y)
 {
-	if (x < 0 || x >= (int)ft_strlen_n(map[0], '\n') || y < 0
+	if (x < 0 || x >= (int)ft_strlen_pro(map[0], '\n') || y < 0
 		|| y >= ft_tab_size((const char **)map) || map[y][x] == '1'
 		|| map[y][x] == 'V' || map[y][x] == 'E')
 		return ;

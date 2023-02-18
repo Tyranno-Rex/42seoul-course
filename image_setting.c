@@ -1,4 +1,14 @@
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   image_setting.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: eunjeong <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/18 12:37:59 by eunjeong          #+#    #+#             */
+/*   Updated: 2023/02/18 12:38:01 by eunjeong         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "so_long.h"
 
 void	ft_load_images(t_data *data)
@@ -6,13 +16,13 @@ void	ft_load_images(t_data *data)
 	data->brick = ft_xpm2image(data->mlx_p, "image/brick.xpm");
 	data->grass = ft_xpm2image(data->mlx_p, "image/grass.xpm");
 	if (data->aspect == 'L')
-		data->mario = ft_xpm2image(data->mlx_p, "image/p_left.xpm");
+		data->mario = ft_xpm2image(data->mlx_p, "image/mario_left.xpm");
 	else if (data->aspect == 'R')
-		data->mario = ft_xpm2image(data->mlx_p, "image/p_right.xpm");
+		data->mario = ft_xpm2image(data->mlx_p, "image/mario_right.xpm");
 	else if (data->aspect == 'F')
-		data->mario = ft_xpm2image(data->mlx_p, "image/p_front.xpm");
+		data->mario = ft_xpm2image(data->mlx_p, "image/mario_front.xpm");
 	else if (data->aspect == 'B')
-		data->mario = ft_xpm2image(data->mlx_p, "image/p_back.xpm");
+		data->mario = ft_xpm2image(data->mlx_p, "image/mario_back.xpm");
 	data->star = ft_xpm2image(data->mlx_p, "image/star.xpm");
 	data->pipe = ft_xpm2image(data->mlx_p, "image/pipe.xpm");
 }
