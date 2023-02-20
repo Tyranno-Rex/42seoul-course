@@ -62,7 +62,7 @@ static void	ft_run_solong(const char *map_path)
 void	ft_check_av(int ac, char **av)
 {
 	if (ac != 2)
-		ft_printf("ac must be two, your ac isn't two");
+		ft_show_error("ac must be two, your ac isn't two");
 	ft_check_ber(av[1]);
 }
 
