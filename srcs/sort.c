@@ -8,8 +8,7 @@ void	stack_norm(t_stacks *stks)
 	stks->max_sort = get_max_sort(stks->a);
 	stks->len_a = get_count_nod(stks->a);
 	if (stks->len_a - stks->max_sort->i - stks->max_sort->sort > 0)
-		com = stks->len_a - (stks->len_a
-				- stks->max_sort->i - stks->max_sort->sort);
+		com = stks->len_a - (stks->len_a- stks->max_sort->i - stks->max_sort->sort);
 	else
 		com = ft_abs(stks->len_a - stks->max_sort->i - stks->max_sort->sort);
 	com = nod_itr_up(stks->len_a, com);

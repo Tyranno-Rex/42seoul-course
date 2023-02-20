@@ -10,15 +10,11 @@ static void	sort_three(t_stacks *stks)
 {
 	while (!sort_stacks_check(stks))
 	{
-		if ((stks->a->val < stks->a->next->val && stks->a->val
-				> stks->a->next->next->val) && (stks->a->next->val
-				> stks->a->val && stks->a->next->val
-				> stks->a->next->next->val))
+		if ((stks->a->val < stks->a->next->val && stks->a->val > stks->a->next->next->val) 
+			&& (stks->a->next->val > stks->a->val && stks->a->next->val > stks->a->next->next->val))
 			cmd_aap_cnt("rra", 1, stks);
-		else if ((stks->a->val > stks->a->next->val && stks->a->val
-				> stks->a->next->next->val) && (stks->a->next->val
-				< stks->a->val && stks->a->next->val
-				< stks->a->next->next->val))
+		else if ((stks->a->val > stks->a->next->val && stks->a->val > stks->a->next->next->val) && 
+				(stks->a->next->val	< stks->a->val && stks->a->next->val < stks->a->next->next->val))
 			cmd_aap_cnt("ra", 1, stks);
 		else
 			cmd_aap_cnt("sa", 1, stks);

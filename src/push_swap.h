@@ -7,6 +7,8 @@
 #else
 	#include <unistd.h>
 #endif
+
+#include <stdbool.h>
 #include <stddef.h>
 #include <stdlib.h>
 #include <stddef.h>
@@ -34,19 +36,16 @@ typedef struct s_stack
 	int			cmd_cnt;
 }	t_stack;
 
-/*av_checker.c*/
-int 		ft_check_is_sign(char c);
-int 		ft_check_is_number(char *num);
-int			ft_check_is_double();
-int 		ft_check_ac_av(int ac, char **av);
+
+/*checker_ac_av.c*/
+int	ft_check_ac_av(int ac, char **av);
 
 /*main.c*/
 
 /*stack_init.c*/
-static void ft_setting_a(int len, char **av, t_stack *push_swap);
-t_stack		*ft_push_swap_init(int len, char **av, t_stack *push_swap);
+void ft_stack_init(int ac, char **av, t_stack *push_swap);
 
-/*push_stack.c*/
-t_push_swap	*ft_push_add_bottom(int value);
+/*utils.c*/
+void ft_show_error(char *msg);
 
 #endif

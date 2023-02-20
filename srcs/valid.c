@@ -14,7 +14,7 @@ int	valid_int(int val_i, char *val_c)
 	return (res);
 }
 
-int	not_dubl(t_stack *stk, int val)
+int	not_dubl(t_push_swap *stk, int val)
 {
 	while (stk)
 	{
@@ -27,7 +27,7 @@ int	not_dubl(t_stack *stk, int val)
 
 int	sort_stacks(t_stacks *stks)
 {
-	t_stack	*stk_a;
+	t_push_swap	*stk_a;
 	int		last_val;
 
 	if (stks->b != NULL)
@@ -46,7 +46,7 @@ int	sort_stacks(t_stacks *stks)
 
 int	sort_stacks_check(t_stacks *stks)
 {
-	t_stack	*stk_a;
+	t_push_swap	*stk_a;
 	int		last_val;
 
 	stk_a = stks->a;
