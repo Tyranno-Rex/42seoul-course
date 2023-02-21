@@ -62,8 +62,8 @@ char	**ft_copymap(const char **map)
 
 void	ft_flood_fill(char **map, int x, int y)
 {
-	if ( x < 0 || y < 0 || x >= (int)ft_strlen_pro(map[0], '\n') ||
-		y >= ft_tab_size((const char **)map) || map[y][x] == '1' || 
+	if (x < 0 || y < 0 || x >= (int)ft_strlen_pro(map[0], '\n')
+		|| y >= ft_tab_size((const char **)map) || map[y][x] == '1'
 		|| map[y][x] == 'V' || map[y][x] == 'E')
 		return ;
 	if (map[y][x] != 'P')

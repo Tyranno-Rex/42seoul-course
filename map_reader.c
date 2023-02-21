@@ -42,8 +42,6 @@ char	**ft_read_map(const char *path)
 		free(line);
 		line = NULL;
 		line = get_next_line(fd);
-		if (line != NULL && *line == '\n')
-			break ;
 	}
 	map_tab = ft_split(map_content, '\n');
 	free(map_content);
