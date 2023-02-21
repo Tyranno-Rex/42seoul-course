@@ -23,4 +23,4 @@ void        ft_can_clear(int ac, char **av, t_data *data);
 void        ft_cant_clear(int ac, char **av, t_data *data);
 
 /*check.c*/
-void        ft_check_ac_av(int ac, char **av, t_data *data)
+void        ft_check_ac_av(int ac, char **av, t_data *data, pthread_mutex_t fork);

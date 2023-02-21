@@ -13,7 +13,7 @@ void    ft_check_av_number(char *av)
 	}
 }
 
-void ft_check_ac_av(int ac, char **av, t_data *data)
+void ft_check_ac_av(int ac, char **av, t_data *data, pthread_mutex_t fork)
 {
 	int i = 0;
 
