@@ -51,6 +51,7 @@ static void	ft_run_solong(const char *map_path)
 	ft_flood_fill(map_check, xy[0], xy[1]);
 	ft_check_validpath((const char **)map_check);
 	free(map_check);
+	free(map_check);
 	data.map = map;
 	ft_struct_initializer(&data);
 	ft_draw_characters(&data);
@@ -66,8 +67,14 @@ void	ft_check_av(int ac, char **av)
 	ft_check_ber(av[1]);
 }
 
+void	check_leak(void)
+{
+	system("leaks --list -- so_long");
+}
+
 int	main(int ac, char **av)
 {
+	atexit(check_leak);
 	ft_check_av(ac, av);
 	ft_run_solong(av[1]);
 }

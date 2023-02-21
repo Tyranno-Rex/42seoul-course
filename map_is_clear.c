@@ -43,6 +43,7 @@ int	*ft_choose_xy(const char **map)
 char	**ft_copymap(const char **map)
 {
 	char		**map_check;
+	char		*tmp;
 	int			i;
 
 	i = 0;
