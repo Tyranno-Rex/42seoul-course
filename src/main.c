@@ -1,7 +1,5 @@
 #include "push_swap.h"
 
-
-
 void	set_index(t_push_swap *stack)
 {
 	int i;

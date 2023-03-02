@@ -36,6 +36,23 @@ typedef struct s_stack
 	int			cmd_cnt;
 }	t_stack;
 
+typedef struct s_input
+{
+	int		ac;
+	char	**ag;
+}	t_input;
+
+typedef struct s_structure
+{
+	int		*arr;
+	int		*c_arr;
+	int		top;
+	int		size;
+	char	*line;
+	t_input	input;
+}	t_stack;
+
+
 
 /*checker_ac_av.c*/
 int	ft_check_ac_av(int ac, char **av);
