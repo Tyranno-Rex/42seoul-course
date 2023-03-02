@@ -1,12 +1,13 @@
 PUSH_SWAP = push_swap
-PUSH_SWAP_SRC = src/main.c
+PUSH_SWAP_SRC = src/main.c src/check_ac_av.c src/parsing.c src/stack_init.c src/utils.c
 PUSH_SWAP_OBJS = $(PUSH_SWAP_SRC:.c=.o)
 
 CC = cc
+# CFLAGS = 
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 
-LIBFT = ./lib/libft.a
+LIBFT = ./libft/libft.a
 FT_PRINTF = ./ft_printf/libftprintf.a
 
 all: $(PUSH_SWAP)
