@@ -15,7 +15,4 @@ int main(int ac, char **av)
 	ft_put_av2stack(&push_swap_a, line_2d);
 	free(line_2d);
 	ft_bubble_sort(&push_swap_a);
-	for (int i = 0; push_swap_a.check_arr[i]; i++){
-		ft_printf("%d\n", push_swap_a.check_arr[i]);
-	}
 }

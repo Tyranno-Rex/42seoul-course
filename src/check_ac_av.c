@@ -69,10 +69,7 @@ int	ft_check_ac_av(int ac, char **av)
     if (!is_valid_input(ac, av))
         ft_show_error("av and ac isn't right\n");
     if (ac == 2)
-    {
-        ft_printf("%s\n", av[1]);
         exit(EXIT_SUCCESS);
-    }
     ft_printf("Input is valid\n");
     return 0;
 }

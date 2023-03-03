@@ -23,14 +23,13 @@ $(PUSH_SWAP) : $(PUSH_SWAP_OBJS) $(LIBFT) $(FT_PRINTF)
 
 clean:
 	$(MAKE) clean -C ./libft
-	$(RM) $(SERVER_OBJS) $(CLIENT_OBJS)
-	$(RM) $(SERVER_BONUS_OBJS) $(CLIENT_BONUS_OBJS) 
-fclean: clean
-	$(MAKE) fclean -C ./libft
-	$(RM) $(SERVER) $(CLIENT)
-	$(RM) $(SERVER_BONUS) $(CLIENT_BONUS)
+	$(MAKE) clean -C ./ft_printf
+	$(RM) $(PUSH_SWAP_OBJS)
 
-bonus: $(SERVER_BONUS) $(CLIENT_BONUS)
+fclean: clean
+	$(RM) ./libft/libft.a
+	$(RM) ./ft_printf/libftprintf.a
+	$(RM) $(PUSH_SWAP)
 
 re: fclean all
 
