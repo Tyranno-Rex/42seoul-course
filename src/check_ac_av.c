@@ -18,7 +18,8 @@ bool is_valid_number(const char* str) {
     return true;
 }
 
-bool has_duplicates(int argc, char** argv) {
+bool has_duplicates(int argc, char** argv) 
+{
     int i;
     int j;
     
@@ -48,7 +49,7 @@ bool is_valid_input(int argc, char** argv)
     {
         if (!is_valid_number(argv[i])) 
             ft_show_error("Error: not a valid number\n");
-        int num = atoi(argv[i]);
+        int num = ft_atoi_pro(argv[i]);
         if (num == 0 && strcmp(argv[i], "0") != 0) 
             ft_show_error("Error: not a valid number\n");
         if (has_sign && (num < 0 || argv[i][0] == '+')) 
@@ -63,10 +64,15 @@ bool is_valid_input(int argc, char** argv)
 
 int	ft_check_ac_av(int ac, char **av)
 {
-    if (ac < 2) 
-        ft_show_error("Error: argc must be at least 2\n");
+    if (ac == 1)
+        ft_show_error("");
     if (!is_valid_input(ac, av))
-        return 1;
+        ft_show_error("av and ac isn't right\n");
+    if (ac == 2)
+    {
+        ft_printf("%s\n", av[1]);
+        exit(EXIT_SUCCESS);
+    }
     ft_printf("Input is valid\n");
     return 0;
 }

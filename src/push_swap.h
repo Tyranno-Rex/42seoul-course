@@ -44,13 +44,15 @@ char	**ft_parsing_stack_a(t_stack *push_swap_a);
 void	ft_put_av2stack(t_stack *push_swap_a, char **line_2d);
 
 /*sort.c*/
-void bubble_sort(t_stack *push_swap_a);
+void	ft_bubble_sort(t_stack *push_swap_a);
 
 /*stack_init.c*/
 void	ft_stack_init(int ac, char **av, t_stack *push_swap_a, t_stack *push_swap_b);
 
 /*utils.c*/
 void	ft_show_error(char *msg);
+void	ft_copy_stack(t_stack *push_swap);
 int		ft_array_size(char **line_2d);
+int		ft_atoi_pro(const char *the_char);
 
 #endif
