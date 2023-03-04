@@ -5,28 +5,35 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: eunjeong <eunjeong@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/09 19:04:07 by marvin            #+#    #+#             */
+/*   Created: 2022/07/09 19:04:07 by eunjeong          #+#    #+#             */
 /*   Updated: 2022/08/18 12:02:36 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char *s1, const char *s2)
 {
-	size_t	len_s1;
-	size_t	len_s2;
-	char	*ret;
+	int		i;
+	int		j;
+	char	*final_str;
 
-	if (!s1 || !s2)
-		return (0);
-	len_s1 = ft_strlen(s1);
-	len_s2 = ft_strlen(s2);
-	ret = (char *)malloc(sizeof(char) * (len_s1 + len_s2 + 1));
-	if (!(ret))
-		return (0);
-	ft_memcpy(ret, s1, len_s1);
-	ft_memcpy(ret + len_s1, s2, len_s2);
-	ret[len_s1 + len_s2] = 0;
-	return (ret);
+	i = 0;
+	j = 0;
+	final_str = ft_calloc(sizeof(char), (ft_strlen(s1) + ft_strlen(s2) + 3));
+	if (!final_str)
+		return (NULL);
+	ft_memcpy(final_str, s1, ft_strlen(s1));
+	i = 0;
+	j = ft_strlen(final_str);
+	while (s2[i] != '\0')
+	{
+		final_str[j] = s2[i];
+		i++;
+		j++;
+	}
+	final_str[j] = ' ';
+	final_str[j + 1] = '\0';
+	free(s1);
+	return (final_str);
 }

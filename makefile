@@ -1,36 +1,46 @@
-PUSH_SWAP = push_swap
-PUSH_SWAP_SRC = src/main.c src/check_ac_av.c src/parsing.c \
-		src/stack_init.c src/utils.c src/sort.c
-PUSH_SWAP_OBJS = $(PUSH_SWAP_SRC:.c=.o)
 
-CC = cc
-# CFLAGS = 
-CFLAGS = -Wall -Wextra -Werror
-RM = rm -rf
+NAME		= push_swap
 
-LIBFT = ./libft/libft.a
-FT_PRINTF = ./ft_printf/libftprintf.a
+SRCS		= \
+			src/arguments.c			\
+			src/argv_checker.c		\
+			src/argv_checker_utils.c\
+			src/free.c				\
+			src/hard_case.c			\
+			src/main.c				\
+			src/movements.c			\
+			src/radix.c				\
+			src/stack.c				\
+			src/utils.c
 
-all: $(PUSH_SWAP)
+CC			= cc
+CFLAGS		= -Wall -Wextra -Werror -g
+RM			= rm -f
+OBJS		= $(SRCS:.c=.o)
+LIBFT		= libft
 
-$(LIBFT):
-	$(MAKE) -C ./libft
-$(FT_PRINTF):
-	$(MAKE) -C ./ft_printf
+all: $(NAME)
 
-$(PUSH_SWAP) : $(PUSH_SWAP_OBJS) $(LIBFT) $(FT_PRINTF)
-	$(CC) $(CFLAGS) $(PUSH_SWAP_OBJS) $(LIBFT) $(FT_PRINTF) -o push_swap
+%.o: %.c
+		@$(CC) $(CFLAGS) -c $^ -o $@
+
+$(NAME): $(OBJS)
+		@$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+
+$(NAME): $(OBJS) lib
+		@$(CC) $(CFLAGS) -L $(LIBFT) -o $(NAME) $(OBJS) -l:libft.a
+
+lib:
+	@$(MAKE) -s -C $(LIBFT) bonus
 
 clean:
-	$(MAKE) clean -C ./libft
-	$(MAKE) clean -C ./ft_printf
-	$(RM) $(PUSH_SWAP_OBJS)
+	@$(RM) $(OBJS)
+	@$(MAKE) -s -C $(LIBFT) clean
 
 fclean: clean
-	$(RM) ./libft/libft.a
-	$(RM) ./ft_printf/libftprintf.a
-	$(RM) $(PUSH_SWAP)
+	@$(RM) $(NAME)
+	@$(MAKE) -s -C $(LIBFT) fclean
 
-re: fclean all
+re: fclean $(NAME)
 
-.PHONY : all re fclean clean bonus
+.PHONY: all lib clean fclean re create_progressbar
