@@ -1,4 +1,4 @@
-#include "../push_swap.h"
+#include "push_swap.h"
 
 void	free_lst(t_stack **stack)
 {

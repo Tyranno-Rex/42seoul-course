@@ -1,4 +1,4 @@
-#include "../push_swap.h"
+#include "push_swap.h"
 
 void	check_dup(int argc_len, int *str_int)
 {

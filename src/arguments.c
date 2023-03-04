@@ -1,4 +1,4 @@
-#include "../push_swap.h"
+#include "push_swap.h"
 
 char	*parsing_argv(int argc, char **argv)
 {
@@ -15,7 +15,7 @@ char	*parsing_argv(int argc, char **argv)
 	while (++i != argc)
 	{
 		if (argv[i][0] == '\0')
-			show_free_error("error", str);
+			show_free_error("Error\n", str);
 		str = ft_strjoin(str, argv[i]);
 	}
 	return (str);

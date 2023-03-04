@@ -1,4 +1,4 @@
-#include "../push_swap.h"
+#include "push_swap.h"
 
 void    atoi_pro(const char *the_char)
 {
@@ -22,9 +22,9 @@ void    atoi_pro(const char *the_char)
 		i++;
 	}
 	if (n * sign > 2147483647)
-        show_error("Error");
+        show_error("Error\n");
     else if (n * sign < -2147483648)
-        show_error("Error");
+        show_error("Error\n");
 }
 
 void	verif_args(char *argv)
@@ -37,15 +37,15 @@ void	verif_args(char *argv)
 	while (argv[i] != '\0')
 	{
 		if ((argv[i] == '+' || argv[i] == '-') && argv[i - 1] != ' ' && i != 0)
-            show_error("Error");
+            show_error("Error\n");
 		if ((argv[i] == '+' || argv[i] == '-') && ft_isdigit(argv[i + 1]) == 0)
-            show_error("Error");
+            show_error("Error\n");
 		if (ft_isdigit(argv[i]) == 1 || argv[i] == ' ')
 			is_sign = 0;
 		else if ((argv[i] == '+' || argv[i] == '-') && is_sign < 2)
 			is_sign += 1;
         else
-            show_error("Error");
+            show_error("Error\n");
 		i++;
 	}
 }

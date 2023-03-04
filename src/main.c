@@ -1,4 +1,4 @@
-#include "../push_swap.h"
+#include "push_swap.h"
 
 void run(t_stack *stack_a, t_stack *stack_b, int argc_len)
 {
