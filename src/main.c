@@ -9,11 +9,6 @@ void run(t_stack **stack_a, t_stack **stack_b, int argc_len)
 }
 
 
-void	check_leak(void)
-{
-	system("leaks --list -- push_swap");
-}
-
 int	main(int argc, char **argv)
 {
 	t_stack	*stack_a;
@@ -35,6 +30,5 @@ int	main(int argc, char **argv)
 	run(&stack_a, &stack_b, argc - 1);
 	free_lst(&stack_a);
 	free_lst(&stack_b);
-	atexit(check_leak);
 	return (0);
 }
