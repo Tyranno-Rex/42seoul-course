@@ -1,4 +1,4 @@
-#include "../push_swap.h"
+#include "push_swap.h"
 
 void	check_dup(int argc_len, int *str_int)
 {
@@ -14,7 +14,7 @@ void	check_dup(int argc_len, int *str_int)
 			if (str_int[j] == ' ')
 				j++;
 			else if (str_int[i] == str_int[j])
-				show_free_error_2("Error", str_int);
+				show_free_error_2("Error\n", str_int);
 			j++;
 		}
 		i++;

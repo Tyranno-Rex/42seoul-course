@@ -1,4 +1,4 @@
-#include "../push_swap.h"
+#include "push_swap.h"
 
 void run(t_stack **stack_a, t_stack **stack_b, int argc_len)
 {
@@ -7,6 +7,7 @@ void run(t_stack **stack_a, t_stack **stack_b, int argc_len)
 	else
 		radix_algo(stack_a, stack_b, argc_len);
 }
+
 
 int	main(int argc, char **argv)
 {

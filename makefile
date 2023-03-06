@@ -1,5 +1,4 @@
-
-NAME		= push_swap
+NAME = push_swap
 
 SRCS		= \
 			src/arguments.c			\
@@ -13,34 +12,29 @@ SRCS		= \
 			src/stack.c				\
 			src/utils.c
 
-CC			= cc
-CFLAGS		= -Wall -Wextra -Werror -g
-RM			= rm -f
-OBJS		= $(SRCS:.c=.o)
-LIBFT		= libft
+OBJS = $(SRCS:.c=.o)
+COMPILER = cc
+CFLAGS = -Wall -Werror -Wextra
 
-all: $(NAME)
+all: extern $(NAME)
 
-%.o: %.c
-		@$(CC) $(CFLAGS) -c $^ -o $@
+extern:
+	make -C libft/
 
 $(NAME): $(OBJS)
-		@$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+	$(COMPILER) -o $(NAME) $(OBJS) libft/libft.a
 
-$(NAME): $(OBJS) lib
-		@$(CC) $(CFLAGS) -L $(LIBFT) -o $(NAME) $(OBJS) -l:libft.a
-
-lib:
-	@$(MAKE) -s -C $(LIBFT) bonus
+%.o: %.c push_swap.h
+	$(COMPILER) $(CFLAGS) -c $<
 
 clean:
-	@$(RM) $(OBJS)
-	@$(MAKE) -s -C $(LIBFT) clean
+	make clean -C libft/
+	rm -rf $(OBJS)
 
 fclean: clean
-	@$(RM) $(NAME)
-	@$(MAKE) -s -C $(LIBFT) fclean
+	rm -rf libft/libft.a
+	rm -rf $(NAME)
 
-re: fclean $(NAME)
+re: fclean all
 
-.PHONY: all lib clean fclean re create_progressbar
+.PHONY: all extern clean fclean re
