@@ -26,7 +26,7 @@ void	sort_three(t_stack **stack_a)
 		|| (*stack_a)->value + 2 == (*stack_a)->next->value)
 		move_swap(stack_a, 'a');
 	if ((*stack_a)->value + 1 == (*stack_a)->next->value
-		&& (*stack_a)->next->next->value + 1 == (*stack_a)->value)
+		&& (*stack_a)->value == (*stack_a)->next->next->value + 1)
 		move_rev_rotate(stack_a, 'a');
 	else if ((*stack_a)->value - 2 == (*stack_a)->next->value)
 		move_rotate(stack_a, 'a');
