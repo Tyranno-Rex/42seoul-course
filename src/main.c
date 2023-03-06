@@ -1,11 +1,11 @@
 #include "../push_swap.h"
 
-void run(t_stack *stack_a, t_stack *stack_b, int argc_len)
+void run(t_stack **stack_a, t_stack **stack_b, int argc_len)
 {
 	if (argc_len >= 2 && argc_len <= 5)
-		hard_case(&stack_a, &stack_b, argc_len);
+		hard_case(stack_a, stack_b, argc_len);
 	else
-		radix_algo(&stack_a, &stack_b, argc_len);
+		radix_algo(stack_a, stack_b, argc_len);
 }
 
 int	main(int argc, char **argv)
@@ -24,8 +24,9 @@ int	main(int argc, char **argv)
 	str_int = put_tab_int(argc - 1, str_2D);
 	check_dup(argc - 1, str_int);
 	create_stack_a(&stack_a, argc - 1, str_int);
+	free(str_char);
 	check_order(stack_a);
-	run(stack_a, stack_b, argc - 1);
+	run(&stack_a, &stack_b, argc - 1);
 	free_lst(&stack_a);
 	free_lst(&stack_b);
 	return (0);
