@@ -14,12 +14,6 @@ void	ft_putnbr(long number, unsigned length, char *sign, int *size)
 	*size += (int) write(1, &sign[number % length], 1);
 }
 
-void	ft_puthex(long number, int length, char *sign, int *size)
-{
-	(number < 0) ? (*size += (int) write(1, "-", 1), \
-		ft_putnbr(-number, length, sign, size)) : (ft_putnbr(number, length, sign, size));
-}
-
 int	ft_printf(char *format, ...)
 {
 	int		size = 0;
@@ -33,9 +27,16 @@ int	ft_printf(char *format, ...)
 		else if (*format == '%' && *(format + 1) == 'x' && (format += 2))
 			ft_putnbr(va_arg(ap, int), 16, "0123456789abcdef", &size);
 		else if (*format == '%' && *(format + 1) == 'd' && (format += 2))
-			ft_puthex(va_arg(ap, int), 10, "0123456789", &size);
+			ft_putnbr(va_arg(ap, int), 10, "0123456789", &size);
 		else
 			size += (int) write(1, format++, 1);
 	}
 	return (va_end(ap), size);
+}
+
+int main()
+{
+	ft_printf("s test : %s\n", "hello my name is jeong eun seong");
+	ft_printf("d test : %d\n", 123456);
+	ft_printf("d test : %x\n", 123456);
 }
