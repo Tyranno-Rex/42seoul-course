@@ -10,6 +10,8 @@ typedef struct s_data
     int philo_eat;
     int philo_sleep;
     int philo_clear;
+
+    pthread_mutex_t *fork;
 }   t_data;
 
 
