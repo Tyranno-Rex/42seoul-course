@@ -36,7 +36,7 @@ int	ft_printf(char *format, ...)
 
 int main()
 {
-	ft_printf("s test : %s\n", "hello my name is jeong eun seong");
-	ft_printf("d test : %d\n", 123456);
-	ft_printf("d test : %x\n", 123456);
+    ft_printf("%s\n", "hello my name is eunseong");
+    ft_printf("%d\n", 12345678);
+    ft_printf("%x\n", 12345678);
 }
