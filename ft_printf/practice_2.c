@@ -1,34 +1,47 @@
 #include <unistd.h>
-#include <fcntl.h>
+#include <stdio.h>
 #include <stdarg.h>
 
-int ft_putstr(char *str, int len)
+
+
+size_t ft_putstr(char *string, int size)
 {
-    while (str && str[len], len++)
-    {
-        /* code */
-    }
-    
+    while (string && string[size] && ++size);
+    return (string ? write(1, string, size) : write(1, "(null)", 6));
 }
 
 
-
-int ft_printf(char *str, ...)
+int ft_putint(int number, char *base, int length, int *size)
 {
-    va_list ap;
+    if (number >= length)
+        ft_putint(number/length, base, length, size);
+    size += (int) write(1, &base[number % length], 1);
+}
+
+int ft_printf(char *format, ...)
+{
     int     size = 0;
+    va_list ap;
 
-    va_start(ap, str);
-
-    while (*str)
+    va_start(ap, format);
+    while (*format)
     {
-        if (*str == '%' && (*str + 1) == 's' && (*str += 2))
-            size += ft_putstr(va_arg(ap, char *), 0);
+        if (*format == '%' && *(format + 1) == 's' && (format += 2))
+            size += (int)ft_putstr(va_arg(ap, char *), 0);
+        else if (*format == '%' && *(format + 1) == 'd' && (format += 2))
+            ft_putint(va_arg(ap, int),"0123456789", 10, &size);
+        else if (*format == '%' && *(format + 1) == 'x' && (format += 2))
+            ft_putint(va_arg(ap, int),"0123456789abcdef", 16, &size);
+        else
+            size += (int)write(1, format++, 1);
     }
     return (va_end(ap), size);
 }
 
+
 int main()
 {
     ft_printf("%s\n", "hello my name is eunseong");
+    ft_printf("%d\n", 12345678);
+    ft_printf("%x\n", 12345678);
 }
