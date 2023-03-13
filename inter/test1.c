@@ -1,11 +1,10 @@
 #include <unistd.h>
 
-
 int main(int argc, char **argv)
 {
-    int     i;
-    int     j;
-    char    str[256];
+    static char str[256];
+    int         i;
+    int         j;
 
     if (argc == 3)
     {

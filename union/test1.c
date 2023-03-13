@@ -2,14 +2,14 @@
 
 int main(int argc, char **argv)
 {
-    int         i = 0;
-    int         j = 0;
-    char        str[256];
+    int         i;
+    int         j;
+    static char str[256];
 
     if (argc == 3)
     {
         i = 1;
-        while (argv[i])
+        while (i <= 2)
         {
             j = 0;
             while (argv[i][j])
@@ -27,16 +27,3 @@ int main(int argc, char **argv)
     write(1, "\n", 1);
     return (0);
 }
-
-// $>./union zpadinton "paqefwtdjetyiytjneytjoeyjnejeyj" | cat -e
-// zpadintoqefwjy$
-// $>./union zpadinton "paqefwtdjetyiytjneytjoeyjnejeyj" | cat -e
-// df6vewg4thras$
-// $>./union "rien" "cette phrase ne cache rien" | cat -e
-// rienct phas$
-// $>./union | cat -e
-// $
-// $>
-// $>./union "rien" | cat -e
-// $
-// $>
