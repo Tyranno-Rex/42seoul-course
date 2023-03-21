@@ -15,5 +15,5 @@ void ft_cant_clear(int ac, char **av, t_data *data)
 	data->philo_span = ft_atoi(av[2]);
 	data->philo_eat = ft_atoi(av[3]);
 	data->philo_sleep = ft_atoi(av[4]);
-	data->philo_clear = INT32_MAX;
+	data->philo_clear = -1;
 }

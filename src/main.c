@@ -1,24 +1,27 @@
 #include "philosopher.h"
 
-static void ft_philo_eat_and_sleep(t_data *data)
-{
-	pthread_mutex_lock(data->fork);
-	usleep(data->philo_eat);
-	pthread_mutex_unlock(data->fork);
-	usleep(data->philo_sleep);
-}
 
-static void ft_philo_run(t_data *data)
-{
-	int i = -1;
 
-	while (++i < num)
+
+int ft_init_data(int ac, char **av, t_data *data)
+{
+	data->total_philo = ft_atoi(av[1]);
+	data->dead_time = ft_atoi(av[2]);
+	data->eat_time = ft_atoi(av[3]);
+	data->sleep_time = ft_atoi(av[4]);
+	if (ac == 6)
+		data->goal_of_eat = ft_atoi(av[5]);
+	data->alive = 0;
+	if (data->total_philo <= 0 || data->dead_time <= 0
+	|| data->eat_time < 0 || data->sleep_time < 0)
 	{
-		if (pthread_create(&philo[i], NULL, ft_philo_eat_and_sleep, data));
-			ft_showe_error("thread creat error!");
+		ft_showe_error("your input wrong value");
+		free(data);
+		return (1);
 	}
-	pthread_detach(&philo[i]);
+	return (0);
 }
+
 
 int main(int ac, char **av)
 {
@@ -26,17 +29,6 @@ int main(int ac, char **av)
 	int			i;
 
 	i = 0;
-	// ft_check_ac_av(ac, av, &data);
-	// data.fork = (pthread_mutex_t)malloc(sizeof(pthread_mutex_t) * ac);
-	// if (!data.fork)
-	// 	printf("error malloc isn't allocated");
-	// else
-	// 	printf("malloc is allocated");
-	// while (i < ac - 1)
-	// {
-	// 	printf("pthread is allocated!");
-	// 	pthread_mutex_init(&data.fork[i], NULL);
-	// 	i++;
-	// }
-	// ft_philo_run(&data, fork);
+	ft_check_ac_av(ac, av);
+	if (ft_init_data(ac, av, &data) )
 }

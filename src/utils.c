@@ -21,7 +21,7 @@ int	ft_atoi(const char *the_char)
 		if (n * sign > 2147483647)
 			return (-1);
 		else if (n * sign < -2147483648)
-			return (0);
+			return (-1);
 		else
 			n = n * 10 + (the_char[i] - '0');
 		i++;
@@ -29,10 +29,10 @@ int	ft_atoi(const char *the_char)
 	return (n * sign);
 }
 
-int	ft_isdigit(int c)
+int	ft_isdigit(char c)
 {
 	if (c >= 48 && c <= 57)
-		return (c);
+		return (1);
 	else
 		return (0);
 }
