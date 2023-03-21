@@ -1,22 +1,26 @@
 #include "philosopher.h"
 
-
-
-
-void ft_run_simulator(t_data *data)
-{
-	mutex_lock()
-	data->
-}
-
-
 int		ft_init_mutex(int ac, char **av, t_data *data)
 {
-	int philo_num = data->total_philo;
-	data->fork = (pthread_mutex_t)malloc(sizeof(pthread_mutex_t) * philo_num);
+	int			i;
+	int 		philo_num;
+
+	i = -1;
+	philo_num = data->total_philo;
+	data->eat_time = (pthread_mutex_t)malloc(sizeof(pthread_mutex_t)* philo_num);
+	data->fork = (pthread_mutex_t)malloc(sizeof(pthread_mutex_t)* philo_num);
 	if (!data->fork)
 		return (1);
-	
+	while (++i < data->total_philo)
+	{
+		if (!pthread_mutex_init(&data->fork[i], NULL))
+			ft_showe_error("fork isn't made");
+		if (!pthread_mutex_init(&data->eat_time[i], NULL))
+			ft_showe_error("eat_time isn't made");
+	}
+	if (pthread_mutex_init(&data->alive_mutex, NULL))
+		ft_showe_error("alive mutex is'nt made");
+	return (0);
 }
 
 int		ft_init_data(int ac, char **av, t_data *data)
@@ -27,6 +31,8 @@ int		ft_init_data(int ac, char **av, t_data *data)
 	data->sleep_time = ft_atoi(av[4]);
 	if (ac == 6)
 		data->goal_of_eat = ft_atoi(av[5]);
+	else
+		data->goal_of_eat = -1;
 	data->alive = 0;
 	if (data->total_philo <= 0 || data->dead_time <= 0
 	|| data->eat_time < 0 || data->sleep_time < 0)
@@ -36,6 +42,17 @@ int		ft_init_data(int ac, char **av, t_data *data)
 		return (1);
 	}
 	return (0);
+}
+
+
+
+void ft_run_simulator(t_data *data)
+{
+	int i;
+
+	i = -1;
+	data->philo = (t_philo *)malloc(sizeof(t_philo) * (data->total_philo));
+	if (!data->philo)
 }
 
 
