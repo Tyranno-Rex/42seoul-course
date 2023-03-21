@@ -3,7 +3,23 @@
 
 
 
-int ft_init_data(int ac, char **av, t_data *data)
+void ft_run_simulator(t_data *data)
+{
+	mutex_lock()
+	data->
+}
+
+
+int		ft_init_mutex(int ac, char **av, t_data *data)
+{
+	int philo_num = data->total_philo;
+	data->fork = (pthread_mutex_t)malloc(sizeof(pthread_mutex_t) * philo_num);
+	if (!data->fork)
+		return (1);
+	
+}
+
+int		ft_init_data(int ac, char **av, t_data *data)
 {
 	data->total_philo = ft_atoi(av[1]);
 	data->dead_time = ft_atoi(av[2]);
@@ -30,5 +46,7 @@ int main(int ac, char **av)
 
 	i = 0;
 	ft_check_ac_av(ac, av);
-	if (ft_init_data(ac, av, &data) )
+	if (ft_init_data(ac, av, &data) || ft_init_mutex(ac, av, &data))
+		return (0);
+	ft_run_simulator(&data);	
 }

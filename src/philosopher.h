@@ -38,6 +38,9 @@ typedef struct s_data
     int                 check_dead;
     int                 goal_of_eat;
     
+    t_philo             *philo;
+
+    pthread_mutex_t     *fork;
 }   t_data;
 
 
