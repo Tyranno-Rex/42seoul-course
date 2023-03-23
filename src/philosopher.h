@@ -15,9 +15,6 @@ typedef struct s_philo
     pthread_t           thread;
 }   t_philo;
 
-
-
-
 /*전체 데이터 구조체*/
 /*
 1. 게임 시작 시간 데이터
