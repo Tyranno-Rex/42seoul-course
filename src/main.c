@@ -45,6 +45,32 @@ int		ft_init_data(int ac, char **av, t_data *data)
 }
 
 
+int ft_check_alive(t_data *data)
+{
+	int check;
+
+	if (pthread_mutex_lock(&data->alive))
+		return (-1);
+	chekc = data->alive;
+	if (pthread_mutex_unlock(&data->alive))
+		return (-1);
+	return (check);
+}
+
+
+void 	*launch_thread(void *content)
+{
+	t_philo 		*ph;
+	struct timeval	time;
+
+	ph = (t_philo *)content;
+	while (!ft_check_alive(ph->data))
+	{
+		if (ft_manage_fork(ph) || pthread_mutex_lock(&data->data->))
+	}
+		
+}
+
 
 void ft_run_simulator(t_data *data)
 {
@@ -52,7 +78,17 @@ void ft_run_simulator(t_data *data)
 
 	i = -1;
 	data->philo = (t_philo *)malloc(sizeof(t_philo) * (data->total_philo));
-	if (!data->philo)
+	if (!data->philo || ft_init_eat_time(data))
+		return (1);
+	while (++i < data->total_philo)
+	{
+		data->philo.name = i;
+		data->philo->how_many_eat = data->how_many_;
+		data->philo->data = data;
+		if (pthread_create(&data->philo[i].thread))
+	}
+
+	
 }
 
 

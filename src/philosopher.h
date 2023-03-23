@@ -1,18 +1,25 @@
+
+
+
 #include <pthread.h>
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/timeb.h>
+#include <string.h>
+
 
 
 typedef struct s_data t_data;
 
 typedef struct s_philo
 {
-    int                 name;
     struct timeval      when_eat;
-    int                 what_eat;
-
+    int                 name;
+    int                 how_many_eat;
     pthread_t           thread;
+
+    t_data              *data;
 }   t_philo;
 
 /*전체 데이터 구조체*/
