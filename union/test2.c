@@ -2,10 +2,8 @@
 
 int main(int argc, char **argv)
 {
-    int         i;
-    int         j;
+    int         i, j;
     static char str[256];
-
     if (argc == 3)
     {
         i = 1;
@@ -14,10 +12,10 @@ int main(int argc, char **argv)
             j = 0;
             while (argv[i][j])
             {
-                if (str[(int)argv[i][j]] == 0)
+                if (str[argv[i][j]] == 0)
                 {
                     write(1, &argv[i][j], 1);
-                    str[(int)argv[i][j]] = 1;
+                    str[argv[i][j]] = 1;
                 }
                 j++;
             }

@@ -1,44 +1,41 @@
-#include <unistd.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <stdio.h>
-
-#ifndef BUFFER_SIZE
-#define BUFFER_SIZE 42
-#endif  
+#include "test1.h"
 
 char *get_next_line(int fd)
 {
     int     i = 0;
     int     rd;
     char    character;
-    char    *buffer;
+    char    *buffer = malloc(1000000);
 
-    if (fd < 0 || BUFFER_SIZE <= 0)
-        return (NULL);
-    buffer = (char *)malloc(sizeof(char)*1000000);
-    if (!buffer)
+    if (BUFFER_SIZE <= 0 || fd < 0)
         return (free(buffer), NULL);
-    rd = read(fd, &character, 1);
-    while (rd > 0)
+    while ((rd = read(fd, &character, 1)) > 0)
     {
         buffer[i++] = character;
         if (character == '\n')
             break;
-        rd = read(fd, &character, 1);
+    }
+    if ((!buffer[i - 1] && !rd) || rd == -1)
+    {
+        free(buffer);
+        return (NULL);
     }
     buffer[i] = '\0';
     return (buffer);
 }
 
-
+#include <fcntl.h>
+#include <stdio.h>
 
 int main()
 {
-    char *str;
     int fd;
+    char *line;
 
-    fd = open("text.txt", O_RDONLY); 
-    str = get_next_line(fd);
-    write(1, str, 5);
+    fd = open("text.txt", O_RDONLY);
+    while ((line = get_next_line(fd)) != NULL)
+    {
+        printf("%s", line);
+    }
+    
 }

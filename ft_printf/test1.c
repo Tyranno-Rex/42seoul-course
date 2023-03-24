@@ -1,35 +1,36 @@
 #include <unistd.h>
 #include <stdarg.h>
 
-size_t ft_putstr(char *string, int length)
+
+int ft_putstr(char *string, int size)
 {
-    while (string && string[length] && ++length);
-    return (string ? write(1, string, length) : write(1, "(null)", 6));
+    while (string && string[size] && ++size);
+    return (string ? write(1, string, size) : write(1, "(null)", 6));
 }
 
-void ft_putnbr(long long number, char *base, unsigned int length, int *size)
+
+void ft_putnbr(long number, char *base, int len, int *size)
 {
     if (number < 0)
     {
-        number = number * -1;
-        *size += write(1, "-", 1);
+        number = -number;
+        *size += (int)write(1, "-", 1);
     }
-    if (number >= length)
-        ft_putnbr(number/length, base, length, size);
-    *size += write(1, &base[number%length], 1);
+    if (number >= len)
+        ft_putnbr(number/len, base, len, size);
+    *size += (int)write(1, &base[number%len], 1);
 }
 
 
 int ft_printf(char *format, ...)
 {
-    int size = 0;
-    va_list ap;
+    int         size = 0;
+    va_list     ap;
     va_start(ap, format);
-
     while (*format)
     {
         if (*format == '%' && *(format + 1) == 's' && (format += 2))
-            size += (int) ft_putstr(va_arg(ap, char *), 0);
+            size += ft_putstr(va_arg(ap, char *), 0);
         else if (*format == '%' && *(format + 1) == 'd' && (format += 2))
             ft_putnbr(va_arg(ap, int), "0123456789", 10, &size);
         else if (*format == '%' && *(format + 1) == 'x' && (format += 2))
