@@ -11,7 +11,7 @@ void ft_putnbr(long number, char *base, int length, int *size)
     if (number < 0)
     {
         number = number * -1;
-        *size += write(1, "-", 1);
+        *size +=write(1, "-", 1);
     }
     if (number >= length)
         ft_putnbr(number/length, base, length, size);
