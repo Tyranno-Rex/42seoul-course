@@ -87,9 +87,8 @@ void ft_run_simulator(t_data *data)
 		data->philo->data = data;
 		if (pthread_create(&data->philo[i].thread))
 	}
-
-	
 }
+
 
 
 int main(int ac, char **av)
@@ -98,8 +97,11 @@ int main(int ac, char **av)
 	int			i;
 
 	i = 0;
+	if (gettimeofday(&data.game_start, NULL) != 0)
+		return (ft_showe_error("init time isn't success"));
 	ft_check_ac_av(ac, av);
 	if (ft_init_data(ac, av, &data) || ft_init_mutex(ac, av, &data))
 		return (0);
 	ft_run_simulator(&data);	
+	
 }
