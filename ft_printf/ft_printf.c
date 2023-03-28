@@ -41,7 +41,10 @@ int	ft_printf(char *format, ...)
 
 int main()
 {
-    ft_printf("%s\n", "hello my name is eunseong");
-    ft_printf("%d\n", -12345678);
-    ft_printf("%x\n", 12345678);
+    int size = 0;
+    size += ft_printf("%s\n", "hello my name is jeongeunseong");
+    ft_printf("%d\n", size);
+    ft_printf("%x\n", size);
+    ft_printf("%d\n", -size);
+    ft_printf("%x\n", -size);
 }
