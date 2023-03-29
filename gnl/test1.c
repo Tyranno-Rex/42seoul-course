@@ -1,16 +1,14 @@
-#include "get_next_line.h"
-#include <fcntl.h>
+#include "test1.h"
 
-/*gnl 함수 설명*/
 char *get_next_line(int fd)
 {
     int     i = 0;
     int     rd;
     char    character;
-    char     *buffer = malloc(10000);
+    char    *buffer = malloc(1000000);
 
-    if (fd < 0 || BUFFER_SIZE <= 0)
-	    return (free(buffer), NULL);
+    if (BUFFER_SIZE <= 0 || fd < 0)
+        return (free(buffer), NULL);
     while ((rd = read(fd, &character, 1)) > 0)
     {
         buffer[i++] = character;
@@ -22,19 +20,22 @@ char *get_next_line(int fd)
         free(buffer);
         return (NULL);
     }
-    buffer[i] =  '\0';
-    return(buffer);
+    buffer[i] = '\0';
+    return (buffer);
 }
 
+#include <fcntl.h>
 #include <stdio.h>
 
 int main()
 {
-    char *line;
     int fd;
+    char *line;
 
-    fd = open("text.txt", O_RDONLY); 
+    fd = open("text.txt", O_RDONLY);
     while ((line = get_next_line(fd)) != NULL)
+    {
         printf("%s", line);
-    return (0);
+    }
+    
 }
