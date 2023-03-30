@@ -1,0 +1,4182 @@
+0ms philo 2 has taken a fork
+0ms philo 4 has taken a fork
+0ms philo 1 has taken a fork
+1ms philo 1 has taken a fork
+1ms philo 1 is eating
+0ms philo 8 has taken a fork
+0ms philo 6 has taken a fork
+1ms philo 4 has taken a fork
+1ms philo 4 is eating
+2ms philo 8 has taken a fork
+2ms philo 8 is eating
+2ms philo 6 has taken a fork
+2ms philo 6 is eating
+201ms philo 4 is sleeping
+201ms philo 1 is sleeping
+201ms philo 10 has taken a fork
+201ms philo 2 has taken a fork
+201ms philo 2 is eating
+201ms philo 5 has taken a fork
+201ms philo 10 has taken a fork
+201ms philo 10 is eating
+202ms philo 8 is sleeping
+202ms philo 9 has taken a fork
+202ms philo 5 has taken a fork
+202ms philo 5 is eating
+202ms philo 6 is sleeping
+202ms philo 7 has taken a fork
+202ms philo 7 has taken a fork
+202ms philo 7 is eating
+401ms philo 1 is thinking
+401ms philo 4 is thinking
+401ms philo 10 is sleeping
+401ms philo 2 is sleeping
+401ms philo 3 has taken a fork
+401ms philo 3 has taken a fork
+401ms philo 3 is eating
+401ms philo 9 has taken a fork
+401ms philo 9 is eating
+401ms philo 1 has taken a fork
+401ms philo 1 has taken a fork
+401ms philo 1 is eating
+402ms philo 6 is thinking
+402ms philo 8 is thinking
+402ms philo 5 is sleeping
+402ms philo 4 has taken a fork
+402ms philo 7 is sleeping
+402ms philo 6 has taken a fork
+402ms philo 6 has taken a fork
+402ms philo 6 is eating
+601ms philo 10 is thinking
+601ms philo 2 is thinking
+601ms philo 1 is sleeping
+601ms philo 10 has taken a fork
+601ms philo 2 has taken a fork
+601ms philo 9 is sleeping
+601ms philo 3 is sleeping
+601ms philo 8 has taken a fork
+601ms philo 4 has taken a fork
+601ms philo 4 is eating
+601ms philo 2 has taken a fork
+601ms philo 2 is eating
+601ms philo 10 has taken a fork
+601ms philo 10 is eating
+601ms philo 8 has taken a fork
+601ms philo 8 is eating
+602ms philo 6 is sleeping
+602ms philo 7 is thinking
+602ms philo 5 is thinking
+602ms philo 7 has taken a fork
+801ms philo 8 is sleeping
+801ms philo 4 is sleeping
+801ms philo 5 has taken a fork
+801ms philo 5 has taken a fork
+801ms philo 5 is eating
+801ms philo 2 is sleeping
+801ms philo 9 is thinking
+801ms philo 7 has taken a fork
+801ms philo 1 is thinking
+801ms philo 7 is eating
+801ms philo 3 is thinking
+801ms philo 10 is sleeping
+801ms philo 1 has taken a fork
+801ms philo 1 has taken a fork
+801ms philo 1 is eating
+801ms philo 9 has taken a fork
+801ms philo 9 has taken a fork
+801ms philo 9 is eating
+801ms philo 3 has taken a fork
+801ms philo 3 has taken a fork
+801ms philo 3 is eating
+802ms philo 6 is thinking
+1001ms philo 5 is sleeping
+1001ms philo 3 is sleeping
+1001ms philo 4 is thinking
+1001ms philo 4 has taken a fork
+1001ms philo 8 is thinking
+1001ms philo 1 is sleeping
+1001ms philo 7 is sleeping
+1001ms philo 4 has taken a fork
+1001ms philo 4 is eating
+1001ms philo 10 is thinking
+1001ms philo 10 has taken a fork
+1001ms philo 9 is sleeping
+1001ms philo 8 has taken a fork
+1001ms philo 6 has taken a fork
+1001ms philo 2 is thinking
+1001ms philo 2 has taken a fork
+1001ms philo 10 has taken a fork
+1001ms philo 10 is eating
+1001ms philo 8 has taken a fork
+1001ms philo 8 is eating
+1001ms philo 6 has taken a fork
+1001ms philo 6 is eating
+1001ms philo 2 has taken a fork
+1001ms philo 2 is eating
+1201ms philo 1 is thinking
+1201ms philo 10 is sleeping
+1201ms philo 3 is thinking
+1201ms philo 7 is thinking
+1201ms philo 5 is thinking
+1201ms philo 2 is sleeping
+1201ms philo 9 is thinking
+1201ms philo 1 has taken a fork
+1201ms philo 1 has taken a fork
+1201ms philo 1 is eating
+1201ms philo 8 is sleeping
+1201ms philo 4 is sleeping
+1201ms philo 3 has taken a fork
+1201ms philo 3 has taken a fork
+1201ms philo 3 is eating
+1201ms philo 6 is sleeping
+1201ms philo 9 has taken a fork
+1201ms philo 9 has taken a fork
+1201ms philo 9 is eating
+1201ms philo 5 has taken a fork
+1201ms philo 5 has taken a fork
+1201ms philo 5 is eating
+1201ms philo 7 has taken a fork
+1201ms philo 7 has taken a fork
+1201ms philo 7 is eating
+1401ms philo 10 is thinking
+1401ms philo 5 is sleeping
+1401ms philo 6 is thinking
+1401ms philo 4 is thinking
+1401ms philo 3 is sleeping
+1401ms philo 4 has taken a fork
+1401ms philo 9 is sleeping
+1401ms philo 2 is thinking
+1401ms philo 2 has taken a fork
+1401ms philo 1 is sleeping
+1401ms philo 10 has taken a fork
+1401ms philo 7 is sleeping
+1402ms philo 2 has taken a fork
+1402ms philo 2 is eating
+1402ms philo 10 has taken a fork
+1402ms philo 10 is eating
+1401ms philo 8 is thinking
+1402ms philo 8 has taken a fork
+1401ms philo 6 has taken a fork
+1401ms philo 4 has taken a fork
+1402ms philo 4 is eating
+1402ms philo 8 has taken a fork
+1402ms philo 8 is eating
+1402ms philo 6 has taken a fork
+1402ms philo 6 is eating
+1601ms philo 5 is thinking
+1601ms philo 3 is thinking
+1601ms philo 7 is thinking
+1601ms philo 1 is thinking
+1601ms philo 9 is thinking
+1602ms philo 2 is sleeping
+1602ms philo 10 is sleeping
+1602ms philo 3 has taken a fork
+1602ms philo 1 has taken a fork
+1602ms philo 1 has taken a fork
+1602ms philo 1 is eating
+1602ms philo 6 is sleeping
+1602ms philo 7 has taken a fork
+1602ms philo 7 has taken a fork
+1602ms philo 7 is eating
+1602ms philo 3 has taken a fork
+1602ms philo 3 is eating
+1602ms philo 9 has taken a fork
+1602ms philo 9 has taken a fork
+1602ms philo 9 is eating
+1602ms philo 4 is sleeping
+1602ms philo 8 is sleeping
+1602ms philo 5 has taken a fork
+1602ms philo 5 has taken a fork
+1602ms philo 5 is eating
+1802ms philo 6 is thinking
+1802ms philo 7 is sleeping
+1802ms philo 6 has taken a fork
+1802ms philo 10 is thinking
+1802ms philo 9 is sleeping
+1802ms philo 5 is sleeping
+1802ms philo 2 is thinking
+1802ms philo 1 is sleeping
+1802ms philo 10 has taken a fork
+1802ms philo 4 is thinking
+1802ms philo 4 has taken a fork
+1802ms philo 6 has taken a fork
+1802ms philo 6 is eating
+1802ms philo 3 is sleeping
+1802ms philo 8 is thinking
+1802ms philo 8 has taken a fork
+1802ms philo 2 has taken a fork
+1802ms philo 4 has taken a fork
+1802ms philo 4 is eating
+1802ms philo 10 has taken a fork
+1802ms philo 10 is eating
+1802ms philo 8 has taken a fork
+1802ms philo 8 is eating
+1802ms philo 2 has taken a fork
+1802ms philo 2 is eating
+2002ms philo 9 is thinking
+2002ms philo 7 is thinking
+2002ms philo 6 is sleeping
+2002ms philo 1 is thinking
+2002ms philo 4 is sleeping
+2002ms philo 3 is thinking
+2002ms philo 5 is thinking
+2002ms philo 10 is sleeping
+2002ms philo 2 is sleeping
+2002ms philo 8 is sleeping
+2002ms philo 3 has taken a fork
+2002ms philo 3 has taken a fork
+2002ms philo 1 has taken a fork
+2002ms philo 3 is eating
+2002ms philo 1 has taken a fork
+2002ms philo 1 is eating
+2002ms philo 9 has taken a fork
+2002ms philo 9 has taken a fork
+2002ms philo 9 is eating
+2002ms philo 7 has taken a fork
+2002ms philo 7 has taken a fork
+2002ms philo 7 is eating
+2002ms philo 5 has taken a fork
+2002ms philo 5 has taken a fork
+2002ms philo 5 is eating
+2202ms philo 5 is sleeping
+2202ms philo 9 is sleeping
+2202ms philo 8 is thinking
+2202ms philo 10 is thinking
+2202ms philo 3 is sleeping
+2202ms philo 10 has taken a fork
+2202ms philo 8 has taken a fork
+2202ms philo 2 is thinking
+2202ms philo 2 has taken a fork
+2202ms philo 4 is thinking
+2202ms philo 4 has taken a fork
+2202ms philo 1 is sleeping
+2202ms philo 7 is sleeping
+2202ms philo 6 is thinking
+2202ms philo 6 has taken a fork
+2202ms philo 4 has taken a fork
+2202ms philo 4 is eating
+2202ms philo 2 has taken a fork
+2202ms philo 2 is eating
+2202ms philo 10 has taken a fork
+2202ms philo 8 has taken a fork
+2202ms philo 10 is eating
+2202ms philo 8 is eating
+2202ms philo 6 has taken a fork
+2202ms philo 6 is eating
+2402ms philo 9 is thinking
+2402ms philo 8 is sleeping
+2402ms philo 2 is sleeping
+2402ms philo 7 is thinking
+2402ms philo 1 is thinking
+2402ms philo 4 is sleeping
+2402ms philo 6 is sleeping
+2402ms philo 10 is sleeping
+2402ms philo 5 is thinking
+2402ms philo 3 is thinking
+2402ms philo 9 has taken a fork
+2402ms philo 9 has taken a fork
+2402ms philo 9 is eating
+2402ms philo 7 has taken a fork
+2402ms philo 7 has taken a fork
+2402ms philo 7 is eating
+2402ms philo 1 has taken a fork
+2402ms philo 1 has taken a fork
+2402ms philo 1 is eating
+2402ms philo 5 has taken a fork
+2402ms philo 5 has taken a fork
+2402ms philo 5 is eating
+2402ms philo 3 has taken a fork
+2402ms philo 3 has taken a fork
+2402ms philo 3 is eating
+2602ms philo 4 is thinking
+2602ms philo 3 is sleeping
+2602ms philo 9 is sleeping
+2602ms philo 10 is thinking
+2602ms philo 5 is sleeping
+2602ms philo 8 is thinking
+2602ms philo 8 has taken a fork
+2602ms philo 7 is sleeping
+2602ms philo 2 is thinking
+2602ms philo 1 is sleeping
+2602ms philo 2 has taken a fork
+2602ms philo 4 has taken a fork
+2602ms philo 10 has taken a fork
+2602ms philo 6 is thinking
+2602ms philo 6 has taken a fork
+2602ms philo 2 has taken a fork
+2602ms philo 2 is eating
+2602ms philo 10 has taken a fork
+2602ms philo 10 is eating
+2602ms philo 8 has taken a fork
+2602ms philo 8 is eating
+2602ms philo 6 has taken a fork
+2602ms philo 6 is eating
+2602ms philo 4 has taken a fork
+2602ms philo 4 is eating
+2802ms philo 6 is sleeping
+2802ms philo 8 is sleeping
+2802ms philo 5 is thinking
+2802ms philo 7 is thinking
+2802ms philo 4 is sleeping
+2802ms philo 3 is thinking
+2802ms philo 1 is thinking
+2802ms philo 10 is sleeping
+2802ms philo 7 has taken a fork
+2802ms philo 7 has taken a fork
+2802ms philo 7 is eating
+2802ms philo 5 has taken a fork
+2802ms philo 5 has taken a fork
+2802ms philo 5 is eating
+2802ms philo 2 is sleeping
+2802ms philo 3 has taken a fork
+2802ms philo 3 has taken a fork
+2802ms philo 3 is eating
+2802ms philo 9 is thinking
+2802ms philo 1 has taken a fork
+2802ms philo 1 has taken a fork
+2802ms philo 1 is eating
+2802ms philo 9 has taken a fork
+2802ms philo 9 has taken a fork
+2802ms philo 9 is eating
+3002ms philo 2 is thinking
+3002ms philo 7 is sleeping
+3002ms philo 5 is sleeping
+3002ms philo 4 is thinking
+3002ms philo 4 has taken a fork
+3002ms philo 8 is thinking
+3002ms philo 1 is sleeping
+3002ms philo 6 is thinking
+3002ms philo 9 is sleeping
+3002ms philo 6 has taken a fork
+3002ms philo 8 has taken a fork
+3002ms philo 10 is thinking
+3002ms philo 10 has taken a fork
+3002ms philo 3 is sleeping
+3002ms philo 2 has taken a fork
+3002ms philo 4 has taken a fork
+3002ms philo 4 is eating
+3002ms philo 6 has taken a fork
+3002ms philo 6 is eating
+3002ms philo 2 has taken a fork
+3002ms philo 2 is eating
+3002ms philo 10 has taken a fork
+3002ms philo 10 is eating
+3002ms philo 8 has taken a fork
+3002ms philo 8 is eating
+3202ms philo 10 is sleeping
+3202ms philo 5 is thinking
+3202ms philo 1 is thinking
+3202ms philo 9 is thinking
+3202ms philo 3 is thinking
+3202ms philo 8 is sleeping
+3202ms philo 7 is thinking
+3202ms philo 1 has taken a fork
+3202ms philo 4 is sleeping
+3202ms philo 5 has taken a fork
+3202ms philo 6 is sleeping
+3202ms philo 5 has taken a fork
+3202ms philo 5 is eating
+3202ms philo 9 has taken a fork
+3202ms philo 9 has taken a fork
+3202ms philo 9 is eating
+3202ms philo 1 has taken a fork
+3202ms philo 1 is eating
+3202ms philo 2 is sleeping
+3202ms philo 7 has taken a fork
+3202ms philo 7 has taken a fork
+3202ms philo 7 is eating
+3202ms philo 3 has taken a fork
+3202ms philo 3 has taken a fork
+3202ms philo 3 is eating
+3402ms philo 1 is sleeping
+3402ms philo 2 is thinking
+3402ms philo 2 has taken a fork
+3402ms philo 3 is sleeping
+3402ms philo 6 is thinking
+3402ms philo 8 is thinking
+3402ms philo 4 is thinking
+3402ms philo 5 is sleeping
+3402ms philo 10 is thinking
+3402ms philo 9 is sleeping
+3402ms philo 8 has taken a fork
+3402ms philo 2 has taken a fork
+3402ms philo 2 is eating
+3402ms philo 10 has taken a fork
+3402ms philo 4 has taken a fork
+3402ms philo 7 is sleeping
+3402ms philo 6 has taken a fork
+3402ms philo 8 has taken a fork
+3402ms philo 8 is eating
+3402ms philo 4 has taken a fork
+3402ms philo 4 is eating
+3402ms philo 6 has taken a fork
+3402ms philo 6 is eating
+3402ms philo 10 has taken a fork
+3402ms philo 10 is eating
+3602ms philo 5 is thinking
+3602ms philo 4 is sleeping
+3602ms philo 1 is thinking
+3602ms philo 10 is sleeping
+3602ms philo 3 is thinking
+3602ms philo 8 is sleeping
+3602ms philo 2 is sleeping
+3602ms philo 7 is thinking
+3602ms philo 6 is sleeping
+3602ms philo 1 has taken a fork
+3602ms philo 1 has taken a fork
+3602ms philo 1 is eating
+3602ms philo 5 has taken a fork
+3602ms philo 5 has taken a fork
+3602ms philo 5 is eating
+3602ms philo 9 is thinking
+3602ms philo 3 has taken a fork
+3602ms philo 3 has taken a fork
+3602ms philo 3 is eating
+3602ms philo 9 has taken a fork
+3602ms philo 9 has taken a fork
+3602ms philo 9 is eating
+3602ms philo 7 has taken a fork
+3602ms philo 7 has taken a fork
+3602ms philo 7 is eating
+3802ms philo 2 is thinking
+3802ms philo 5 is sleeping
+3802ms philo 9 is sleeping
+3802ms philo 4 is thinking
+3802ms philo 4 has taken a fork
+3802ms philo 8 is thinking
+3802ms philo 8 has taken a fork
+3802ms philo 7 is sleeping
+3802ms philo 3 is sleeping
+3802ms philo 2 has taken a fork
+3802ms philo 10 is thinking
+3802ms philo 6 is thinking
+3802ms philo 6 has taken a fork
+3802ms philo 1 is sleeping
+3802ms philo 10 has taken a fork
+3802ms philo 4 has taken a fork
+3802ms philo 4 is eating
+3802ms philo 8 has taken a fork
+3802ms philo 8 is eating
+3802ms philo 2 has taken a fork
+3802ms philo 2 is eating
+3802ms philo 6 has taken a fork
+3802ms philo 6 is eating
+3802ms philo 10 has taken a fork
+3802ms philo 10 is eating
+4002ms philo 4 is sleeping
+4002ms philo 3 is thinking
+4002ms philo 10 is sleeping
+4002ms philo 9 is thinking
+4002ms philo 8 is sleeping
+4002ms philo 7 is thinking
+4002ms philo 2 is sleeping
+4002ms philo 5 is thinking
+4002ms philo 6 is sleeping
+4002ms philo 3 has taken a fork
+4002ms philo 3 has taken a fork
+4002ms philo 3 is eating
+4002ms philo 1 is thinking
+4002ms philo 9 has taken a fork
+4002ms philo 9 has taken a fork
+4002ms philo 9 is eating
+4002ms philo 7 has taken a fork
+4002ms philo 7 has taken a fork
+4002ms philo 7 is eating
+4002ms philo 5 has taken a fork
+4002ms philo 5 has taken a fork
+4002ms philo 5 is eating
+4002ms philo 1 has taken a fork
+4002ms philo 1 has taken a fork
+4002ms philo 1 is eating
+4202ms philo 10 is thinking
+4202ms philo 2 is thinking
+4202ms philo 6 is thinking
+4202ms philo 8 is thinking
+4202ms philo 6 has taken a fork
+4202ms philo 1 is sleeping
+4202ms philo 10 has taken a fork
+4202ms philo 3 is sleeping
+4202ms philo 4 is thinking
+4202ms philo 7 is sleeping
+4202ms philo 2 has taken a fork
+4202ms philo 9 is sleeping
+4202ms philo 5 is sleeping
+4202ms philo 8 has taken a fork
+4202ms philo 4 has taken a fork
+4202ms philo 6 has taken a fork
+4202ms philo 6 is eating
+4202ms philo 8 has taken a fork
+4202ms philo 8 is eating
+4202ms philo 10 has taken a fork
+4202ms philo 10 is eating
+4202ms philo 2 has taken a fork
+4202ms philo 2 is eating
+4202ms philo 4 has taken a fork
+4202ms philo 4 is eating
+4402ms philo 6 is sleeping
+4402ms philo 8 is sleeping
+4402ms philo 2 is sleeping
+4402ms philo 3 is thinking
+4402ms philo 1 is thinking
+4402ms philo 9 is thinking
+4402ms philo 5 is thinking
+4402ms philo 4 is sleeping
+4402ms philo 7 is thinking
+4402ms philo 10 is sleeping
+4402ms philo 1 has taken a fork
+4402ms philo 1 has taken a fork
+4402ms philo 1 is eating
+4402ms philo 3 has taken a fork
+4402ms philo 3 has taken a fork
+4402ms philo 3 is eating
+4402ms philo 5 has taken a fork
+4402ms philo 5 has taken a fork
+4402ms philo 5 is eating
+4402ms philo 9 has taken a fork
+4402ms philo 9 has taken a fork
+4402ms philo 9 is eating
+4402ms philo 7 has taken a fork
+4402ms philo 7 has taken a fork
+4402ms philo 7 is eating
+4602ms philo 10 is thinking
+4602ms philo 8 is thinking
+4602ms philo 6 is thinking
+4602ms philo 3 is sleeping
+4602ms philo 1 is sleeping
+4602ms philo 2 is thinking
+4602ms philo 2 has taken a fork
+4602ms philo 10 has taken a fork
+4602ms philo 4 is thinking
+4602ms philo 4 has taken a fork
+4602ms philo 5 is sleeping
+4602ms philo 7 is sleeping
+4602ms philo 6 has taken a fork
+4602ms philo 9 is sleeping
+4602ms philo 8 has taken a fork
+4602ms philo 6 has taken a fork
+4602ms philo 10 has taken a fork
+4602ms philo 6 is eating
+4602ms philo 10 is eating
+4602ms philo 2 has taken a fork
+4602ms philo 2 is eating
+4602ms philo 4 has taken a fork
+4602ms philo 4 is eating
+4602ms philo 8 has taken a fork
+4602ms philo 8 is eating
+4802ms philo 7 is thinking
+4802ms philo 5 is thinking
+4802ms philo 1 is thinking
+4802ms philo 3 is thinking
+4802ms philo 6 is sleeping
+4802ms philo 7 has taken a fork
+4802ms philo 9 is thinking
+4802ms philo 4 is sleeping
+4802ms philo 5 has taken a fork
+4802ms philo 5 has taken a fork
+4802ms philo 5 is eating
+4802ms philo 10 is sleeping
+4802ms philo 1 has taken a fork
+4802ms philo 1 has taken a fork
+4802ms philo 1 is eating
+4802ms philo 2 is sleeping
+4802ms philo 3 has taken a fork
+4802ms philo 3 has taken a fork
+4802ms philo 3 is eating
+4802ms philo 8 is sleeping
+4802ms philo 7 has taken a fork
+4803ms philo 7 is eating
+4802ms philo 9 has taken a fork
+4803ms philo 9 has taken a fork
+4803ms philo 9 is eating
+5002ms philo 3 is sleeping
+5002ms philo 5 is sleeping
+5002ms philo 8 is thinking
+5002ms philo 10 is thinking
+5002ms philo 1 is sleeping
+5002ms philo 10 has taken a fork
+5002ms philo 6 is thinking
+5002ms philo 2 is thinking
+5002ms philo 2 has taken a fork
+5002ms philo 4 is thinking
+5002ms philo 4 has taken a fork
+5002ms philo 4 has taken a fork
+5002ms philo 4 is eating
+5002ms philo 2 has taken a fork
+5002ms philo 2 is eating
+5003ms philo 7 is sleeping
+5003ms philo 6 has taken a fork
+5003ms philo 6 has taken a fork
+5003ms philo 6 is eating
+5003ms philo 9 is sleeping
+5003ms philo 8 has taken a fork
+5003ms philo 10 has taken a fork
+5003ms philo 10 is eating
+5003ms philo 8 has taken a fork
+5003ms philo 8 is eating
+5202ms philo 5 is thinking
+5202ms philo 3 is thinking
+5202ms philo 2 is sleeping
+5202ms philo 4 is sleeping
+5202ms philo 1 is thinking
+5202ms philo 3 has taken a fork
+5202ms philo 3 has taken a fork
+5202ms philo 3 is eating
+5202ms philo 5 has taken a fork
+5203ms philo 10 is sleeping
+5203ms philo 1 has taken a fork
+5203ms philo 1 has taken a fork
+5203ms philo 1 is eating
+5203ms philo 9 is thinking
+5203ms philo 7 is thinking
+5203ms philo 6 is sleeping
+5203ms philo 5 has taken a fork
+5203ms philo 5 is eating
+5203ms philo 7 has taken a fork
+5203ms philo 8 is sleeping
+5203ms philo 7 has taken a fork
+5203ms philo 7 is eating
+5203ms philo 9 has taken a fork
+5203ms philo 9 has taken a fork
+5203ms philo 9 is eating
+5402ms philo 4 is thinking
+5402ms philo 3 is sleeping
+5402ms philo 2 is thinking
+5402ms philo 2 has taken a fork
+5403ms philo 9 is sleeping
+5403ms philo 1 is sleeping
+5403ms philo 2 has taken a fork
+5403ms philo 2 is eating
+5403ms philo 7 is sleeping
+5403ms philo 8 is thinking
+5403ms philo 8 has taken a fork
+5403ms philo 10 is thinking
+5403ms philo 10 has taken a fork
+5403ms philo 5 is sleeping
+5403ms philo 6 is thinking
+5403ms philo 6 has taken a fork
+5403ms philo 4 has taken a fork
+5403ms philo 4 has taken a fork
+5403ms philo 4 is eating
+5403ms philo 10 has taken a fork
+5403ms philo 10 is eating
+5403ms philo 8 has taken a fork
+5403ms philo 8 is eating
+5403ms philo 6 has taken a fork
+5403ms philo 6 is eating
+5602ms philo 3 is thinking
+5603ms philo 1 is thinking
+5603ms philo 6 is sleeping
+5603ms philo 7 is thinking
+5603ms philo 4 is sleeping
+5603ms philo 10 is sleeping
+5603ms philo 9 is thinking
+5603ms philo 1 has taken a fork
+5603ms philo 1 has taken a fork
+5603ms philo 1 is eating
+5603ms philo 2 is sleeping
+5603ms philo 3 has taken a fork
+5603ms philo 3 has taken a fork
+5603ms philo 3 is eating
+5603ms philo 7 has taken a fork
+5603ms philo 8 is sleeping
+5603ms philo 7 has taken a fork
+5603ms philo 7 is eating
+5603ms philo 5 is thinking
+5603ms philo 9 has taken a fork
+5603ms philo 9 has taken a fork
+5603ms philo 9 is eating
+5603ms philo 5 has taken a fork
+5603ms philo 5 has taken a fork
+5603ms philo 5 is eating
+5803ms philo 6 is thinking
+5803ms philo 5 is sleeping
+5803ms philo 10 is thinking
+5803ms philo 6 has taken a fork
+5803ms philo 7 is sleeping
+5803ms philo 8 is thinking
+5803ms philo 4 is thinking
+5803ms philo 4 has taken a fork
+5803ms philo 9 is sleeping
+5803ms philo 8 has taken a fork
+5803ms philo 2 is thinking
+5803ms philo 1 is sleeping
+5803ms philo 3 is sleeping
+5803ms philo 10 has taken a fork
+5803ms philo 2 has taken a fork
+5803ms philo 6 has taken a fork
+5803ms philo 6 is eating
+5803ms philo 4 has taken a fork
+5803ms philo 4 is eating
+5803ms philo 10 has taken a fork
+5803ms philo 10 is eating
+5803ms philo 8 has taken a fork
+5803ms philo 8 is eating
+5803ms philo 2 has taken a fork
+5803ms philo 2 is eating
+6003ms philo 3 is thinking
+6003ms philo 5 is thinking
+6003ms philo 9 is thinking
+6003ms philo 10 is sleeping
+6003ms philo 8 is sleeping
+6003ms philo 2 is sleeping
+6003ms philo 9 has taken a fork
+6003ms philo 9 has taken a fork
+6003ms philo 9 is eating
+6003ms philo 5 has taken a fork
+6003ms philo 5 has taken a fork
+6003ms philo 5 is eating
+6003ms philo 1 is thinking
+6003ms philo 3 has taken a fork
+6004ms philo 3 has taken a fork
+6004ms philo 3 is eating
+6003ms philo 7 is thinking
+6003ms philo 4 is sleeping
+6003ms philo 6 is sleeping
+6004ms philo 1 has taken a fork
+6004ms philo 1 has taken a fork
+6004ms philo 1 is eating
+6004ms philo 7 has taken a fork
+6004ms philo 7 has taken a fork
+6004ms philo 7 is eating
+6203ms philo 8 is thinking
+6203ms philo 2 is thinking
+6203ms philo 5 is sleeping
+6203ms philo 10 is thinking
+6203ms philo 9 is sleeping
+6203ms philo 8 has taken a fork
+6204ms philo 1 is sleeping
+6204ms philo 8 has taken a fork
+6204ms philo 8 is eating
+6204ms philo 7 is sleeping
+6204ms philo 10 has taken a fork
+6204ms philo 6 is thinking
+6204ms philo 6 has taken a fork
+6204ms philo 10 has taken a fork
+6204ms philo 10 is eating
+6204ms philo 3 is sleeping
+6204ms philo 4 is thinking
+6204ms philo 4 has taken a fork
+6204ms philo 2 has taken a fork
+6204ms philo 6 has taken a fork
+6204ms philo 6 is eating
+6204ms philo 4 has taken a fork
+6204ms philo 4 is eating
+6204ms philo 2 has taken a fork
+6204ms philo 2 is eating
+6403ms philo 5 is thinking
+6403ms philo 9 is thinking
+6404ms philo 6 is sleeping
+6404ms philo 3 is thinking
+6404ms philo 7 is thinking
+6404ms philo 8 is sleeping
+6404ms philo 9 has taken a fork
+6404ms philo 10 is sleeping
+6404ms philo 2 is sleeping
+6404ms philo 7 has taken a fork
+6404ms philo 7 has taken a fork
+6404ms philo 7 is eating
+6404ms philo 9 has taken a fork
+6404ms philo 9 is eating
+6404ms philo 3 has taken a fork
+6404ms philo 3 has taken a fork
+6404ms philo 3 is eating
+6404ms philo 1 is thinking
+6404ms philo 4 is sleeping
+6404ms philo 5 has taken a fork
+6404ms philo 5 has taken a fork
+6404ms philo 5 is eating
+6404ms philo 1 has taken a fork
+6404ms philo 1 has taken a fork
+6404ms philo 1 is eating
+6604ms philo 8 is thinking
+6604ms philo 10 is thinking
+6604ms philo 8 has taken a fork
+6604ms philo 5 is sleeping
+6604ms philo 3 is sleeping
+6604ms philo 6 is thinking
+6604ms philo 2 is thinking
+6604ms philo 2 has taken a fork
+6604ms philo 4 is thinking
+6604ms philo 4 has taken a fork
+6604ms philo 9 is sleeping
+6604ms philo 7 is sleeping
+6604ms philo 6 has taken a fork
+6604ms philo 8 has taken a fork
+6604ms philo 8 is eating
+6604ms philo 1 is sleeping
+6604ms philo 2 has taken a fork
+6604ms philo 2 is eating
+6604ms philo 10 has taken a fork
+6604ms philo 6 has taken a fork
+6604ms philo 6 is eating
+6604ms philo 4 has taken a fork
+6604ms philo 4 is eating
+6604ms philo 10 has taken a fork
+6604ms philo 10 is eating
+6804ms philo 8 is sleeping
+6804ms philo 5 is thinking
+6804ms philo 10 is sleeping
+6804ms philo 6 is sleeping
+6804ms philo 1 is thinking
+6804ms philo 3 is thinking
+6804ms philo 4 is sleeping
+6804ms philo 9 is thinking
+6804ms philo 2 is sleeping
+6804ms philo 7 is thinking
+6804ms philo 5 has taken a fork
+6804ms philo 5 has taken a fork
+6804ms philo 5 is eating
+6804ms philo 1 has taken a fork
+6804ms philo 1 has taken a fork
+6804ms philo 1 is eating
+6804ms philo 3 has taken a fork
+6804ms philo 3 has taken a fork
+6804ms philo 3 is eating
+6804ms philo 9 has taken a fork
+6804ms philo 9 has taken a fork
+6804ms philo 9 is eating
+6804ms philo 7 has taken a fork
+6804ms philo 7 has taken a fork
+6804ms philo 7 is eating
+7004ms philo 10 is thinking
+7004ms philo 1 is sleeping
+7004ms philo 5 is sleeping
+7004ms philo 10 has taken a fork
+7004ms philo 2 is thinking
+7004ms philo 3 is sleeping
+7004ms philo 2 has taken a fork
+7004ms philo 4 is thinking
+7004ms philo 4 has taken a fork
+7004ms philo 9 is sleeping
+7004ms philo 6 is thinking
+7004ms philo 8 is thinking
+7004ms philo 8 has taken a fork
+7004ms philo 7 is sleeping
+7004ms philo 2 has taken a fork
+7004ms philo 2 is eating
+7004ms philo 10 has taken a fork
+7004ms philo 10 is eating
+7004ms philo 6 has taken a fork
+7004ms philo 4 has taken a fork
+7004ms philo 4 is eating
+7004ms philo 8 has taken a fork
+7004ms philo 8 is eating
+7004ms philo 6 has taken a fork
+7004ms philo 6 is eating
+7204ms philo 2 is sleeping
+7204ms philo 5 is thinking
+7204ms philo 3 is thinking
+7204ms philo 10 is sleeping
+7204ms philo 8 is sleeping
+7204ms philo 7 is thinking
+7204ms philo 6 is sleeping
+7204ms philo 1 is thinking
+7204ms philo 3 has taken a fork
+7204ms philo 7 has taken a fork
+7204ms philo 7 has taken a fork
+7204ms philo 7 is eating
+7204ms philo 9 is thinking
+7204ms philo 4 is sleeping
+7204ms philo 5 has taken a fork
+7204ms philo 5 has taken a fork
+7204ms philo 5 is eating
+7204ms philo 3 has taken a fork
+7204ms philo 3 is eating
+7204ms philo 1 has taken a fork
+7204ms philo 1 has taken a fork
+7204ms philo 1 is eating
+7204ms philo 9 has taken a fork
+7204ms philo 9 has taken a fork
+7204ms philo 9 is eating
+7404ms philo 7 is sleeping
+7404ms philo 1 is sleeping
+7404ms philo 2 is thinking
+7404ms philo 8 is thinking
+7404ms philo 3 is sleeping
+7404ms philo 5 is sleeping
+7404ms philo 2 has taken a fork
+7404ms philo 6 is thinking
+7404ms philo 6 has taken a fork
+7404ms philo 9 is sleeping
+7404ms philo 10 is thinking
+7404ms philo 8 has taken a fork
+7404ms philo 10 has taken a fork
+7404ms philo 4 is thinking
+7404ms philo 4 has taken a fork
+7404ms philo 6 has taken a fork
+7404ms philo 6 is eating
+7404ms philo 10 has taken a fork
+7404ms philo 10 is eating
+7404ms philo 2 has taken a fork
+7404ms philo 2 is eating
+7404ms philo 8 has taken a fork
+7404ms philo 8 is eating
+7404ms philo 4 has taken a fork
+7404ms philo 4 is eating
+7604ms philo 9 is thinking
+7604ms philo 6 is sleeping
+7604ms philo 10 is sleeping
+7604ms philo 7 is thinking
+7604ms philo 4 is sleeping
+7604ms philo 5 is thinking
+7604ms philo 3 is thinking
+7604ms philo 1 is thinking
+7604ms philo 2 is sleeping
+7604ms philo 8 is sleeping
+7604ms philo 9 has taken a fork
+7604ms philo 9 has taken a fork
+7604ms philo 9 is eating
+7604ms philo 7 has taken a fork
+7604ms philo 7 has taken a fork
+7604ms philo 7 is eating
+7604ms philo 1 has taken a fork
+7604ms philo 1 has taken a fork
+7604ms philo 1 is eating
+7604ms philo 5 has taken a fork
+7604ms philo 5 has taken a fork
+7604ms philo 5 is eating
+7604ms philo 3 has taken a fork
+7604ms philo 3 has taken a fork
+7604ms philo 3 is eating
+7804ms philo 9 is sleeping
+7804ms philo 1 is sleeping
+7804ms philo 10 is thinking
+7804ms philo 10 has taken a fork
+7804ms philo 8 is thinking
+7804ms philo 8 has taken a fork
+7804ms philo 6 is thinking
+7804ms philo 4 is thinking
+7804ms philo 2 is thinking
+7804ms philo 7 is sleeping
+7804ms philo 10 has taken a fork
+7804ms philo 10 is eating
+7804ms philo 8 has taken a fork
+7804ms philo 8 is eating
+7804ms philo 3 is sleeping
+7804ms philo 2 has taken a fork
+7804ms philo 6 has taken a fork
+7804ms philo 5 is sleeping
+7804ms philo 4 has taken a fork
+7804ms philo 2 has taken a fork
+7804ms philo 2 is eating
+7804ms philo 6 has taken a fork
+7804ms philo 6 is eating
+7804ms philo 4 has taken a fork
+7804ms philo 4 is eating
+8004ms philo 1 is thinking
+8004ms philo 10 is sleeping
+8004ms philo 5 is thinking
+8004ms philo 3 is thinking
+8004ms philo 4 is sleeping
+8004ms philo 7 is thinking
+8004ms philo 2 is sleeping
+8004ms philo 8 is sleeping
+8004ms philo 6 is sleeping
+8004ms philo 9 is thinking
+8004ms philo 1 has taken a fork
+8004ms philo 1 has taken a fork
+8004ms philo 1 is eating
+8004ms philo 9 has taken a fork
+8004ms philo 9 has taken a fork
+8004ms philo 9 is eating
+8004ms philo 3 has taken a fork
+8004ms philo 3 has taken a fork
+8004ms philo 3 is eating
+8004ms philo 5 has taken a fork
+8004ms philo 5 has taken a fork
+8004ms philo 5 is eating
+8004ms philo 7 has taken a fork
+8004ms philo 7 has taken a fork
+8004ms philo 7 is eating
+8204ms philo 8 is thinking
+8204ms philo 2 is thinking
+8204ms philo 5 is sleeping
+8204ms philo 4 is thinking
+8204ms philo 4 has taken a fork
+8204ms philo 7 is sleeping
+8204ms philo 3 is sleeping
+8204ms philo 1 is sleeping
+8204ms philo 9 is sleeping
+8204ms philo 10 is thinking
+8204ms philo 10 has taken a fork
+8204ms philo 8 has taken a fork
+8204ms philo 6 is thinking
+8204ms philo 2 has taken a fork
+8204ms philo 6 has taken a fork
+8204ms philo 4 has taken a fork
+8204ms philo 4 is eating
+8204ms philo 10 has taken a fork
+8204ms philo 10 is eating
+8204ms philo 8 has taken a fork
+8204ms philo 6 has taken a fork
+8204ms philo 8 is eating
+8204ms philo 6 is eating
+8204ms philo 2 has taken a fork
+8204ms philo 2 is eating
+8404ms philo 1 is thinking
+8404ms philo 5 is thinking
+8404ms philo 4 is sleeping
+8404ms philo 6 is sleeping
+8404ms philo 9 is thinking
+8404ms philo 2 is sleeping
+8404ms philo 3 is thinking
+8404ms philo 7 is thinking
+8404ms philo 8 is sleeping
+8404ms philo 10 is sleeping
+8404ms philo 5 has taken a fork
+8404ms philo 5 has taken a fork
+8404ms philo 5 is eating
+8404ms philo 9 has taken a fork
+8404ms philo 9 has taken a fork
+8404ms philo 9 is eating
+8404ms philo 1 has taken a fork
+8404ms philo 1 has taken a fork
+8404ms philo 1 is eating
+8404ms philo 3 has taken a fork
+8404ms philo 3 has taken a fork
+8404ms philo 3 is eating
+8404ms philo 7 has taken a fork
+8404ms philo 7 has taken a fork
+8404ms philo 7 is eating
+8604ms philo 1 is sleeping
+8604ms philo 5 is sleeping
+8604ms philo 9 is sleeping
+8604ms philo 8 is thinking
+8604ms philo 8 has taken a fork
+8604ms philo 4 is thinking
+8604ms philo 10 is thinking
+8604ms philo 4 has taken a fork
+8604ms philo 10 has taken a fork
+8604ms philo 6 is thinking
+8604ms philo 2 is thinking
+8604ms philo 7 is sleeping
+8604ms philo 2 has taken a fork
+8604ms philo 3 is sleeping
+8604ms philo 6 has taken a fork
+8604ms philo 4 has taken a fork
+8604ms philo 4 is eating
+8604ms philo 8 has taken a fork
+8604ms philo 8 is eating
+8604ms philo 10 has taken a fork
+8604ms philo 10 is eating
+8604ms philo 6 has taken a fork
+8604ms philo 6 is eating
+8604ms philo 2 has taken a fork
+8604ms philo 2 is eating
+8804ms philo 3 is thinking
+8804ms philo 2 is sleeping
+8804ms philo 1 is thinking
+8804ms philo 10 is sleeping
+8804ms philo 7 is thinking
+8804ms philo 9 is thinking
+8804ms philo 8 is sleeping
+8804ms philo 5 is thinking
+8804ms philo 4 is sleeping
+8804ms philo 6 is sleeping
+8804ms philo 3 has taken a fork
+8804ms philo 3 has taken a fork
+8804ms philo 3 is eating
+8804ms philo 5 has taken a fork
+8804ms philo 1 has taken a fork
+8804ms philo 5 has taken a fork
+8804ms philo 1 has taken a fork
+8804ms philo 5 is eating
+8804ms philo 1 is eating
+8804ms philo 7 has taken a fork
+8804ms philo 7 has taken a fork
+8804ms philo 7 is eating
+8804ms philo 9 has taken a fork
+8804ms philo 9 has taken a fork
+8804ms philo 9 is eating
+9004ms philo 10 is thinking
+9004ms philo 4 is thinking
+9004ms philo 9 is sleeping
+9004ms philo 2 is thinking
+9004ms philo 5 is sleeping
+9004ms philo 1 is sleeping
+9004ms philo 4 has taken a fork
+9004ms philo 7 is sleeping
+9004ms philo 10 has taken a fork
+9004ms philo 6 is thinking
+9004ms philo 6 has taken a fork
+9004ms philo 8 is thinking
+9004ms philo 8 has taken a fork
+9004ms philo 3 is sleeping
+9004ms philo 2 has taken a fork
+9004ms philo 10 has taken a fork
+9004ms philo 10 is eating
+9004ms philo 6 has taken a fork
+9004ms philo 6 is eating
+9004ms philo 8 has taken a fork
+9004ms philo 8 is eating
+9004ms philo 4 has taken a fork
+9004ms philo 4 is eating
+9004ms philo 2 has taken a fork
+9004ms philo 2 is eating
+9204ms philo 8 is sleeping
+9204ms philo 7 is thinking
+9204ms philo 2 is sleeping
+9204ms philo 3 is thinking
+9204ms philo 10 is sleeping
+9204ms philo 4 is sleeping
+9204ms philo 1 is thinking
+9204ms philo 6 is sleeping
+9204ms philo 5 is thinking
+9204ms philo 9 is thinking
+9204ms philo 7 has taken a fork
+9204ms philo 7 has taken a fork
+9204ms philo 7 is eating
+9204ms philo 3 has taken a fork
+9204ms philo 3 has taken a fork
+9204ms philo 5 has taken a fork
+9204ms philo 5 has taken a fork
+9204ms philo 5 is eating
+9204ms philo 3 is eating
+9204ms philo 9 has taken a fork
+9204ms philo 9 has taken a fork
+9204ms philo 9 is eating
+9204ms philo 1 has taken a fork
+9204ms philo 1 has taken a fork
+9204ms philo 1 is eating
+9404ms philo 9 is sleeping
+9404ms philo 7 is sleeping
+9404ms philo 2 is thinking
+9404ms philo 8 is thinking
+9404ms philo 8 has taken a fork
+9404ms philo 4 is thinking
+9404ms philo 4 has taken a fork
+9404ms philo 10 is thinking
+9404ms philo 1 is sleeping
+9404ms philo 10 has taken a fork
+9404ms philo 5 is sleeping
+9404ms philo 6 is thinking
+9404ms philo 6 has taken a fork
+9404ms philo 3 is sleeping
+9404ms philo 4 has taken a fork
+9404ms philo 4 is eating
+9404ms philo 2 has taken a fork
+9404ms philo 10 has taken a fork
+9404ms philo 10 is eating
+9404ms philo 8 has taken a fork
+9404ms philo 8 is eating
+9404ms philo 6 has taken a fork
+9404ms philo 6 is eating
+9405ms philo 2 has taken a fork
+9405ms philo 2 is eating
+9604ms philo 10 is sleeping
+9604ms philo 6 is sleeping
+9604ms philo 5 is thinking
+9604ms philo 9 is thinking
+9604ms philo 3 is thinking
+9604ms philo 7 is thinking
+9604ms philo 1 is thinking
+9604ms philo 8 is sleeping
+9604ms philo 4 is sleeping
+9604ms philo 9 has taken a fork
+9604ms philo 9 has taken a fork
+9604ms philo 9 is eating
+9604ms philo 5 has taken a fork
+9604ms philo 5 has taken a fork
+9604ms philo 5 is eating
+9604ms philo 1 has taken a fork
+9604ms philo 7 has taken a fork
+9604ms philo 7 has taken a fork
+9604ms philo 7 is eating
+9605ms philo 1 has taken a fork
+9605ms philo 1 is eating
+9605ms philo 2 is sleeping
+9605ms philo 3 has taken a fork
+9605ms philo 3 has taken a fork
+9605ms philo 3 is eating
+9804ms philo 6 is thinking
+9804ms philo 7 is sleeping
+9804ms philo 6 has taken a fork
+9804ms philo 5 is sleeping
+9804ms philo 4 is thinking
+9804ms philo 4 has taken a fork
+9804ms philo 9 is sleeping
+9804ms philo 8 is thinking
+9804ms philo 8 has taken a fork
+9804ms philo 10 is thinking
+9804ms philo 6 has taken a fork
+9804ms philo 6 is eating
+9804ms philo 8 has taken a fork
+9804ms philo 8 is eating
+9805ms philo 3 is sleeping
+9805ms philo 4 has taken a fork
+9805ms philo 4 is eating
+9805ms philo 2 is thinking
+9805ms philo 2 has taken a fork
+9805ms philo 1 is sleeping
+9805ms philo 10 has taken a fork
+9805ms philo 2 has taken a fork
+9805ms philo 2 is eating
+9805ms philo 10 has taken a fork
+9805ms philo 10 is eating
+10004ms philo 9 is thinking
+10004ms philo 7 is thinking
+10004ms philo 8 is sleeping
+10004ms philo 9 has taken a fork
+10004ms philo 6 is sleeping
+10004ms philo 5 is thinking
+10004ms philo 7 has taken a fork
+10004ms philo 7 has taken a fork
+10004ms philo 7 is eating
+10005ms philo 3 is thinking
+10005ms philo 1 is thinking
+10005ms philo 2 is sleeping
+10005ms philo 4 is sleeping
+10005ms philo 5 has taken a fork
+10005ms philo 10 is sleeping
+10005ms philo 5 has taken a fork
+10005ms philo 5 is eating
+10005ms philo 9 has taken a fork
+10005ms philo 9 is eating
+10005ms philo 3 has taken a fork
+10005ms philo 3 has taken a fork
+10005ms philo 3 is eating
+10005ms philo 1 has taken a fork
+10005ms philo 1 has taken a fork
+10005ms philo 1 is eating
+10204ms philo 7 is sleeping
+10204ms philo 8 is thinking
+10204ms philo 6 is thinking
+10204ms philo 6 has taken a fork
+10205ms philo 2 is thinking
+10205ms philo 10 is thinking
+10205ms philo 5 is sleeping
+10205ms philo 6 has taken a fork
+10205ms philo 6 is eating
+10205ms philo 3 is sleeping
+10205ms philo 10 has taken a fork
+10205ms philo 2 has taken a fork
+10205ms philo 9 is sleeping
+10205ms philo 1 is sleeping
+10205ms philo 8 has taken a fork
+10205ms philo 4 is thinking
+10205ms philo 4 has taken a fork
+10205ms philo 8 has taken a fork
+10205ms philo 8 is eating
+10205ms philo 2 has taken a fork
+10205ms philo 2 is eating
+10205ms philo 10 has taken a fork
+10205ms philo 10 is eating
+10205ms philo 4 has taken a fork
+10205ms philo 4 is eating
+10404ms philo 7 is thinking
+10405ms philo 4 is sleeping
+10405ms philo 5 is thinking
+10405ms philo 9 is thinking
+10405ms philo 10 is sleeping
+10405ms philo 3 is thinking
+10405ms philo 8 is sleeping
+10405ms philo 2 is sleeping
+10405ms philo 1 is thinking
+10405ms philo 6 is sleeping
+10405ms philo 7 has taken a fork
+10405ms philo 7 has taken a fork
+10405ms philo 7 is eating
+10405ms philo 5 has taken a fork
+10405ms philo 5 has taken a fork
+10405ms philo 5 is eating
+10405ms philo 9 has taken a fork
+10405ms philo 9 has taken a fork
+10405ms philo 9 is eating
+10405ms philo 1 has taken a fork
+10405ms philo 1 has taken a fork
+10405ms philo 1 is eating
+10405ms philo 3 has taken a fork
+10405ms philo 3 has taken a fork
+10405ms philo 3 is eating
+10605ms philo 1 is sleeping
+10605ms philo 4 is thinking
+10605ms philo 8 is thinking
+10605ms philo 7 is sleeping
+10605ms philo 9 is sleeping
+10605ms philo 8 has taken a fork
+10605ms philo 2 is thinking
+10605ms philo 6 is thinking
+10605ms philo 6 has taken a fork
+10605ms philo 2 has taken a fork
+10605ms philo 3 is sleeping
+10605ms philo 5 is sleeping
+10605ms philo 10 is thinking
+10605ms philo 10 has taken a fork
+10605ms philo 4 has taken a fork
+10605ms philo 6 has taken a fork
+10605ms philo 6 is eating
+10605ms philo 8 has taken a fork
+10605ms philo 8 is eating
+10605ms philo 10 has taken a fork
+10605ms philo 10 is eating
+10605ms philo 4 has taken a fork
+10605ms philo 4 is eating
+10605ms philo 2 has taken a fork
+10605ms philo 2 is eating
+10805ms philo 5 is thinking
+10805ms philo 6 is sleeping
+10805ms philo 4 is sleeping
+10805ms philo 2 is sleeping
+10805ms philo 1 is thinking
+10805ms philo 7 is thinking
+10805ms philo 3 is thinking
+10805ms philo 9 is thinking
+10805ms philo 10 is sleeping
+10805ms philo 8 is sleeping
+10805ms philo 5 has taken a fork
+10805ms philo 5 has taken a fork
+10805ms philo 5 is eating
+10805ms philo 3 has taken a fork
+10805ms philo 3 has taken a fork
+10805ms philo 3 is eating
+10805ms philo 7 has taken a fork
+10805ms philo 7 has taken a fork
+10805ms philo 7 is eating
+10805ms philo 9 has taken a fork
+10805ms philo 9 has taken a fork
+10805ms philo 9 is eating
+10805ms philo 1 has taken a fork
+10805ms philo 1 has taken a fork
+10805ms philo 1 is eating
+11005ms philo 1 is sleeping
+11005ms philo 5 is sleeping
+11005ms philo 10 is thinking
+11005ms philo 10 has taken a fork
+11005ms philo 8 is thinking
+11005ms philo 3 is sleeping
+11005ms philo 2 is thinking
+11005ms philo 7 is sleeping
+11005ms philo 2 has taken a fork
+11005ms philo 8 has taken a fork
+11005ms philo 9 is sleeping
+11005ms philo 4 is thinking
+11005ms philo 4 has taken a fork
+11005ms philo 6 is thinking
+11005ms philo 6 has taken a fork
+11005ms philo 10 has taken a fork
+11005ms philo 10 is eating
+11005ms philo 2 has taken a fork
+11005ms philo 2 is eating
+11005ms philo 8 has taken a fork
+11005ms philo 8 is eating
+11005ms philo 6 has taken a fork
+11005ms philo 6 is eating
+11005ms philo 4 has taken a fork
+11005ms philo 4 is eating
+11205ms philo 7 is thinking
+11205ms philo 1 is thinking
+11205ms philo 10 is sleeping
+11205ms philo 6 is sleeping
+11205ms philo 4 is sleeping
+11205ms philo 8 is sleeping
+11205ms philo 5 is thinking
+11205ms philo 3 is thinking
+11205ms philo 9 is thinking
+11205ms philo 2 is sleeping
+11205ms philo 1 has taken a fork
+11205ms philo 1 has taken a fork
+11205ms philo 1 is eating
+11205ms philo 7 has taken a fork
+11205ms philo 7 has taken a fork
+11205ms philo 7 is eating
+11205ms philo 5 has taken a fork
+11205ms philo 5 has taken a fork
+11205ms philo 5 is eating
+11205ms philo 3 has taken a fork
+11205ms philo 3 has taken a fork
+11205ms philo 3 is eating
+11205ms philo 9 has taken a fork
+11205ms philo 9 has taken a fork
+11205ms philo 9 is eating
+11405ms philo 8 is thinking
+11405ms philo 3 is sleeping
+11405ms philo 2 is thinking
+11405ms philo 2 has taken a fork
+11405ms philo 5 is sleeping
+11405ms philo 4 is thinking
+11405ms philo 4 has taken a fork
+11405ms philo 10 is thinking
+11405ms philo 9 is sleeping
+11405ms philo 7 is sleeping
+11405ms philo 1 is sleeping
+11405ms philo 8 has taken a fork
+11405ms philo 10 has taken a fork
+11405ms philo 6 is thinking
+11405ms philo 6 has taken a fork
+11405ms philo 4 has taken a fork
+11405ms philo 4 is eating
+11405ms philo 2 has taken a fork
+11405ms philo 2 is eating
+11405ms philo 10 has taken a fork
+11405ms philo 10 is eating
+11405ms philo 6 has taken a fork
+11405ms philo 6 is eating
+11405ms philo 8 has taken a fork
+11405ms philo 8 is eating
+11605ms philo 8 is sleeping
+11605ms philo 5 is thinking
+11605ms philo 7 is thinking
+11605ms philo 3 is thinking
+11605ms philo 9 is thinking
+11605ms philo 4 is sleeping
+11605ms philo 10 is sleeping
+11605ms philo 1 is thinking
+11605ms philo 2 is sleeping
+11605ms philo 6 is sleeping
+11605ms philo 3 has taken a fork
+11605ms philo 7 has taken a fork
+11605ms philo 3 has taken a fork
+11605ms philo 3 is eating
+11605ms philo 7 has taken a fork
+11605ms philo 7 is eating
+11605ms philo 5 has taken a fork
+11605ms philo 9 has taken a fork
+11605ms philo 5 has taken a fork
+11605ms philo 5 is eating
+11605ms philo 9 has taken a fork
+11605ms philo 9 is eating
+11605ms philo 1 has taken a fork
+11605ms philo 1 has taken a fork
+11605ms philo 1 is eating
+11805ms philo 7 is sleeping
+11805ms philo 2 is thinking
+11805ms philo 9 is sleeping
+11805ms philo 6 is thinking
+11805ms philo 6 has taken a fork
+11805ms philo 8 is thinking
+11805ms philo 8 has taken a fork
+11805ms philo 3 is sleeping
+11805ms philo 2 has taken a fork
+11805ms philo 10 is thinking
+11805ms philo 1 is sleeping
+11805ms philo 10 has taken a fork
+11805ms philo 5 is sleeping
+11805ms philo 4 is thinking
+11805ms philo 4 has taken a fork
+11805ms philo 6 has taken a fork
+11805ms philo 6 is eating
+11805ms philo 8 has taken a fork
+11805ms philo 8 is eating
+11805ms philo 4 has taken a fork
+11805ms philo 4 is eating
+11805ms philo 2 has taken a fork
+11805ms philo 2 is eating
+11805ms philo 10 has taken a fork
+11805ms philo 10 is eating
+12005ms philo 9 is thinking
+12005ms philo 1 is thinking
+12005ms philo 3 is thinking
+12005ms philo 10 is sleeping
+12005ms philo 5 is thinking
+12005ms philo 7 is thinking
+12005ms philo 6 is sleeping
+12005ms philo 8 is sleeping
+12005ms philo 9 has taken a fork
+12005ms philo 9 has taken a fork
+12005ms philo 9 is eating
+12005ms philo 4 is sleeping
+12005ms philo 2 is sleeping
+12005ms philo 3 has taken a fork
+12005ms philo 3 has taken a fork
+12005ms philo 3 is eating
+12005ms philo 5 has taken a fork
+12005ms philo 5 has taken a fork
+12005ms philo 5 is eating
+12005ms philo 1 has taken a fork
+12005ms philo 1 has taken a fork
+12005ms philo 1 is eating
+12005ms philo 7 has taken a fork
+12005ms philo 7 has taken a fork
+12005ms philo 7 is eating
+12205ms philo 1 is sleeping
+12205ms philo 3 is sleeping
+12205ms philo 9 is sleeping
+12205ms philo 6 is thinking
+12205ms philo 8 is thinking
+12205ms philo 8 has taken a fork
+12205ms philo 5 is sleeping
+12205ms philo 4 is thinking
+12205ms philo 4 has taken a fork
+12205ms philo 10 is thinking
+12205ms philo 7 is sleeping
+12205ms philo 10 has taken a fork
+12205ms philo 2 is thinking
+12205ms philo 2 has taken a fork
+12205ms philo 6 has taken a fork
+12205ms philo 4 has taken a fork
+12205ms philo 8 has taken a fork
+12205ms philo 4 is eating
+12205ms philo 8 is eating
+12205ms philo 10 has taken a fork
+12205ms philo 10 is eating
+12205ms philo 2 has taken a fork
+12205ms philo 2 is eating
+12205ms philo 6 has taken a fork
+12205ms philo 6 is eating
+12405ms philo 1 is thinking
+12405ms philo 3 is thinking
+12405ms philo 9 is thinking
+12405ms philo 4 is sleeping
+12405ms philo 10 is sleeping
+12405ms philo 6 is sleeping
+12405ms philo 7 is thinking
+12405ms philo 2 is sleeping
+12405ms philo 8 is sleeping
+12405ms philo 3 has taken a fork
+12405ms philo 3 has taken a fork
+12405ms philo 3 is eating
+12405ms philo 1 has taken a fork
+12405ms philo 9 has taken a fork
+12405ms philo 1 has taken a fork
+12405ms philo 1 is eating
+12405ms philo 9 has taken a fork
+12405ms philo 9 is eating
+12405ms philo 5 is thinking
+12405ms philo 7 has taken a fork
+12405ms philo 7 has taken a fork
+12405ms philo 7 is eating
+12405ms philo 5 has taken a fork
+12405ms philo 5 has taken a fork
+12405ms philo 5 is eating
+12605ms philo 1 is sleeping
+12605ms philo 9 is sleeping
+12605ms philo 5 is sleeping
+12605ms philo 4 is thinking
+12605ms philo 4 has taken a fork
+12605ms philo 3 is sleeping
+12605ms philo 2 is thinking
+12605ms philo 2 has taken a fork
+12605ms philo 6 is thinking
+12605ms philo 8 is thinking
+12605ms philo 8 has taken a fork
+12605ms philo 7 is sleeping
+12605ms philo 10 is thinking
+12605ms philo 10 has taken a fork
+12605ms philo 6 has taken a fork
+12605ms philo 2 has taken a fork
+12605ms philo 2 is eating
+12605ms philo 4 has taken a fork
+12605ms philo 4 is eating
+12605ms philo 8 has taken a fork
+12605ms philo 8 is eating
+12605ms philo 6 has taken a fork
+12605ms philo 6 is eating
+12605ms philo 10 has taken a fork
+12605ms philo 10 is eating
+12805ms philo 8 is sleeping
+12805ms philo 9 is thinking
+12805ms philo 1 is thinking
+12805ms philo 6 is sleeping
+12805ms philo 5 is thinking
+12805ms philo 4 is sleeping
+12805ms philo 10 is sleeping
+12805ms philo 3 is thinking
+12805ms philo 9 has taken a fork
+12805ms philo 9 has taken a fork
+12805ms philo 9 is eating
+12805ms philo 7 is thinking
+12805ms philo 1 has taken a fork
+12805ms philo 2 is sleeping
+12805ms philo 1 has taken a fork
+12805ms philo 1 is eating
+12805ms philo 5 has taken a fork
+12805ms philo 5 has taken a fork
+12805ms philo 5 is eating
+12805ms philo 3 has taken a fork
+12805ms philo 3 has taken a fork
+12805ms philo 3 is eating
+12805ms philo 7 has taken a fork
+12805ms philo 7 has taken a fork
+12805ms philo 7 is eating
+13005ms philo 4 is thinking
+13005ms philo 7 is sleeping
+13005ms philo 2 is thinking
+13005ms philo 2 has taken a fork
+13005ms philo 3 is sleeping
+13005ms philo 10 is thinking
+13005ms philo 9 is sleeping
+13005ms philo 6 is thinking
+13005ms philo 6 has taken a fork
+13005ms philo 8 is thinking
+13005ms philo 8 has taken a fork
+13005ms philo 5 is sleeping
+13005ms philo 4 has taken a fork
+13005ms philo 10 has taken a fork
+13005ms philo 2 has taken a fork
+13005ms philo 2 is eating
+13005ms philo 6 has taken a fork
+13005ms philo 6 is eating
+13005ms philo 8 has taken a fork
+13005ms philo 8 is eating
+13005ms philo 1 is sleeping
+13005ms philo 4 has taken a fork
+13005ms philo 4 is eating
+13005ms philo 10 has taken a fork
+13005ms philo 10 is eating
+13205ms philo 9 is thinking
+13205ms philo 4 is sleeping
+13205ms philo 3 is thinking
+13205ms philo 2 is sleeping
+13205ms philo 6 is sleeping
+13205ms philo 10 is sleeping
+13205ms philo 7 is thinking
+13205ms philo 5 is thinking
+13205ms philo 9 has taken a fork
+13205ms philo 9 has taken a fork
+13205ms philo 9 is eating
+13205ms philo 1 is thinking
+13205ms philo 8 is sleeping
+13205ms philo 3 has taken a fork
+13205ms philo 3 has taken a fork
+13205ms philo 3 is eating
+13205ms philo 5 has taken a fork
+13205ms philo 5 has taken a fork
+13205ms philo 5 is eating
+13205ms philo 1 has taken a fork
+13205ms philo 1 has taken a fork
+13205ms philo 1 is eating
+13205ms philo 7 has taken a fork
+13205ms philo 7 has taken a fork
+13205ms philo 7 is eating
+13405ms philo 6 is thinking
+13405ms philo 8 is thinking
+13405ms philo 2 is thinking
+13405ms philo 9 is sleeping
+13405ms philo 5 is sleeping
+13405ms philo 8 has taken a fork
+13405ms philo 10 is thinking
+13405ms philo 7 is sleeping
+13405ms philo 6 has taken a fork
+13405ms philo 1 is sleeping
+13405ms philo 10 has taken a fork
+13405ms philo 4 is thinking
+13405ms philo 4 has taken a fork
+13405ms philo 3 is sleeping
+13405ms philo 2 has taken a fork
+13405ms philo 10 has taken a fork
+13405ms philo 8 has taken a fork
+13405ms philo 10 is eating
+13405ms philo 8 is eating
+13405ms philo 4 has taken a fork
+13405ms philo 4 is eating
+13405ms philo 6 has taken a fork
+13405ms philo 6 is eating
+13405ms philo 2 has taken a fork
+13405ms philo 2 is eating
+13605ms philo 7 is thinking
+13605ms philo 4 is sleeping
+13605ms philo 5 is thinking
+13605ms philo 3 is thinking
+13605ms philo 9 is thinking
+13605ms philo 1 is thinking
+13605ms philo 6 is sleeping
+13605ms philo 8 is sleeping
+13605ms philo 10 is sleeping
+13605ms philo 2 is sleeping
+13605ms philo 7 has taken a fork
+13605ms philo 7 has taken a fork
+13605ms philo 7 is eating
+13605ms philo 5 has taken a fork
+13605ms philo 5 has taken a fork
+13605ms philo 5 is eating
+13605ms philo 9 has taken a fork
+13605ms philo 9 has taken a fork
+13605ms philo 9 is eating
+13605ms philo 3 has taken a fork
+13605ms philo 3 has taken a fork
+13605ms philo 3 is eating
+13605ms philo 1 has taken a fork
+13605ms philo 1 has taken a fork
+13605ms philo 1 is eating
+13805ms philo 7 is sleeping
+13805ms philo 10 is thinking
+13805ms philo 10 has taken a fork
+13805ms philo 3 is sleeping
+13805ms philo 1 is sleeping
+13805ms philo 2 is thinking
+13805ms philo 8 is thinking
+13805ms philo 2 has taken a fork
+13805ms philo 5 is sleeping
+13805ms philo 9 is sleeping
+13805ms philo 6 is thinking
+13805ms philo 6 has taken a fork
+13805ms philo 8 has taken a fork
+13805ms philo 4 is thinking
+13805ms philo 4 has taken a fork
+13805ms philo 10 has taken a fork
+13805ms philo 10 is eating
+13805ms philo 2 has taken a fork
+13805ms philo 2 is eating
+13805ms philo 6 has taken a fork
+13805ms philo 6 is eating
+13805ms philo 8 has taken a fork
+13805ms philo 8 is eating
+13806ms philo 4 has taken a fork
+13806ms philo 4 is eating
+14005ms philo 1 is thinking
+14005ms philo 8 is sleeping
+14005ms philo 6 is sleeping
+14005ms philo 10 is sleeping
+14005ms philo 3 is thinking
+14005ms philo 9 is thinking
+14005ms philo 1 has taken a fork
+14005ms philo 5 is thinking
+14005ms philo 7 is thinking
+14005ms philo 2 is sleeping
+14005ms philo 1 has taken a fork
+14005ms philo 1 is eating
+14005ms philo 3 has taken a fork
+14005ms philo 7 has taken a fork
+14005ms philo 7 has taken a fork
+14005ms philo 7 is eating
+14005ms philo 9 has taken a fork
+14005ms philo 9 has taken a fork
+14005ms philo 9 is eating
+14006ms philo 3 has taken a fork
+14006ms philo 3 is eating
+14006ms philo 4 is sleeping
+14006ms philo 5 has taken a fork
+14006ms philo 5 has taken a fork
+14006ms philo 5 is eating
+14205ms philo 1 is sleeping
+14205ms philo 8 is thinking
+14205ms philo 6 is thinking
+14205ms philo 9 is sleeping
+14205ms philo 2 is thinking
+14205ms philo 8 has taken a fork
+14205ms philo 10 is thinking
+14205ms philo 10 has taken a fork
+14205ms philo 7 is sleeping
+14205ms philo 6 has taken a fork
+14205ms philo 10 has taken a fork
+14205ms philo 10 is eating
+14205ms philo 8 has taken a fork
+14205ms philo 8 is eating
+14206ms philo 5 is sleeping
+14206ms philo 6 has taken a fork
+14206ms philo 6 is eating
+14206ms philo 4 is thinking
+14206ms philo 4 has taken a fork
+14206ms philo 3 is sleeping
+14206ms philo 2 has taken a fork
+14206ms philo 4 has taken a fork
+14206ms philo 4 is eating
+14206ms philo 2 has taken a fork
+14206ms philo 2 is eating
+14405ms philo 8 is sleeping
+14405ms philo 9 is thinking
+14405ms philo 7 is thinking
+14405ms philo 1 is thinking
+14405ms philo 10 is sleeping
+14405ms philo 9 has taken a fork
+14405ms philo 9 has taken a fork
+14405ms philo 9 is eating
+14405ms philo 1 has taken a fork
+14406ms philo 4 is sleeping
+14406ms philo 2 is sleeping
+14406ms philo 1 has taken a fork
+14406ms philo 1 is eating
+14406ms philo 6 is sleeping
+14406ms philo 5 is thinking
+14406ms philo 7 has taken a fork
+14406ms philo 7 has taken a fork
+14406ms philo 7 is eating
+14406ms philo 3 is thinking
+14406ms philo 5 has taken a fork
+14406ms philo 5 has taken a fork
+14406ms philo 5 is eating
+14406ms philo 3 has taken a fork
+14406ms philo 3 has taken a fork
+14406ms philo 3 is eating
+14605ms philo 8 is thinking
+14605ms philo 10 is thinking
+14605ms philo 9 is sleeping
+14605ms philo 8 has taken a fork
+14606ms philo 3 is sleeping
+14606ms philo 7 is sleeping
+14606ms philo 2 is thinking
+14606ms philo 2 has taken a fork
+14606ms philo 4 is thinking
+14606ms philo 6 is thinking
+14606ms philo 6 has taken a fork
+14606ms philo 1 is sleeping
+14606ms philo 8 has taken a fork
+14606ms philo 8 is eating
+14606ms philo 10 has taken a fork
+14606ms philo 5 is sleeping
+14606ms philo 4 has taken a fork
+14606ms philo 6 has taken a fork
+14606ms philo 6 is eating
+14606ms philo 2 has taken a fork
+14606ms philo 2 is eating
+14606ms philo 10 has taken a fork
+14606ms philo 10 is eating
+14606ms philo 4 has taken a fork
+14606ms philo 4 is eating
+14805ms philo 9 is thinking
+14806ms philo 5 is thinking
+14806ms philo 2 is sleeping
+14806ms philo 1 is thinking
+14806ms philo 10 is sleeping
+14806ms philo 3 is thinking
+14806ms philo 7 is thinking
+14806ms philo 4 is sleeping
+14806ms philo 6 is sleeping
+14806ms philo 8 is sleeping
+14806ms philo 9 has taken a fork
+14806ms philo 9 has taken a fork
+14806ms philo 9 is eating
+14806ms philo 5 has taken a fork
+14806ms philo 5 has taken a fork
+14806ms philo 5 is eating
+14806ms philo 3 has taken a fork
+14806ms philo 3 has taken a fork
+14806ms philo 3 is eating
+14806ms philo 1 has taken a fork
+14806ms philo 1 has taken a fork
+14806ms philo 1 is eating
+14806ms philo 7 has taken a fork
+14806ms philo 7 has taken a fork
+14806ms philo 7 is eating
+15006ms philo 6 is thinking
+15006ms philo 3 is sleeping
+15006ms philo 10 is thinking
+15006ms philo 5 is sleeping
+15006ms philo 8 is thinking
+15006ms philo 8 has taken a fork
+15006ms philo 7 is sleeping
+15006ms philo 9 is sleeping
+15006ms philo 4 is thinking
+15006ms philo 4 has taken a fork
+15006ms philo 2 is thinking
+15006ms philo 2 has taken a fork
+15006ms philo 1 is sleeping
+15006ms philo 6 has taken a fork
+15006ms philo 10 has taken a fork
+15006ms philo 8 has taken a fork
+15006ms philo 8 is eating
+15006ms philo 4 has taken a fork
+15006ms philo 4 is eating
+15006ms philo 2 has taken a fork
+15006ms philo 2 is eating
+15006ms philo 6 has taken a fork
+15006ms philo 6 is eating
+15006ms philo 10 has taken a fork
+15006ms philo 10 is eating
+15206ms philo 1 is thinking
+15206ms philo 7 is thinking
+15206ms philo 9 is thinking
+15206ms philo 6 is sleeping
+15206ms philo 3 is thinking
+15206ms philo 5 is thinking
+15206ms philo 2 is sleeping
+15206ms philo 8 is sleeping
+15206ms philo 1 has taken a fork
+15206ms philo 1 has taken a fork
+15206ms philo 1 is eating
+15206ms philo 9 has taken a fork
+15206ms philo 9 has taken a fork
+15206ms philo 9 is eating
+15206ms philo 4 is sleeping
+15206ms philo 10 is sleeping
+15206ms philo 3 has taken a fork
+15206ms philo 3 has taken a fork
+15206ms philo 3 is eating
+15206ms philo 7 has taken a fork
+15206ms philo 7 has taken a fork
+15206ms philo 7 is eating
+15206ms philo 5 has taken a fork
+15206ms philo 5 has taken a fork
+15206ms philo 5 is eating
+15406ms philo 8 is thinking
+15406ms philo 8 has taken a fork
+15406ms philo 3 is sleeping
+15406ms philo 5 is sleeping
+15406ms philo 4 is thinking
+15406ms philo 4 has taken a fork
+15406ms philo 9 is sleeping
+15406ms philo 1 is sleeping
+15406ms philo 6 is thinking
+15406ms philo 2 is thinking
+15406ms philo 2 has taken a fork
+15406ms philo 7 is sleeping
+15406ms philo 10 is thinking
+15406ms philo 10 has taken a fork
+15406ms philo 6 has taken a fork
+15406ms philo 8 has taken a fork
+15406ms philo 8 is eating
+15406ms philo 4 has taken a fork
+15406ms philo 4 is eating
+15406ms philo 2 has taken a fork
+15406ms philo 2 is eating
+15406ms philo 6 has taken a fork
+15406ms philo 6 is eating
+15406ms philo 10 has taken a fork
+15406ms philo 10 is eating
+15606ms philo 4 is sleeping
+15606ms philo 8 is sleeping
+15606ms philo 6 is sleeping
+15606ms philo 3 is thinking
+15606ms philo 1 is thinking
+15606ms philo 10 is sleeping
+15606ms philo 7 is thinking
+15606ms philo 5 is thinking
+15606ms philo 9 is thinking
+15606ms philo 2 is sleeping
+15606ms philo 1 has taken a fork
+15606ms philo 1 has taken a fork
+15606ms philo 1 is eating
+15606ms philo 5 has taken a fork
+15606ms philo 5 has taken a fork
+15606ms philo 5 is eating
+15606ms philo 3 has taken a fork
+15606ms philo 3 has taken a fork
+15606ms philo 7 has taken a fork
+15606ms philo 3 is eating
+15606ms philo 7 has taken a fork
+15606ms philo 7 is eating
+15606ms philo 9 has taken a fork
+15606ms philo 9 has taken a fork
+15606ms philo 9 is eating
+15806ms philo 4 is thinking
+15806ms philo 5 is sleeping
+15806ms philo 4 has taken a fork
+15806ms philo 9 is sleeping
+15806ms philo 7 is sleeping
+15806ms philo 1 is sleeping
+15806ms philo 8 is thinking
+15806ms philo 8 has taken a fork
+15806ms philo 6 is thinking
+15806ms philo 6 has taken a fork
+15806ms philo 2 is thinking
+15806ms philo 10 is thinking
+15806ms philo 10 has taken a fork
+15806ms philo 8 has taken a fork
+15806ms philo 8 is eating
+15806ms philo 6 has taken a fork
+15806ms philo 6 is eating
+15806ms philo 2 has taken a fork
+15806ms philo 3 is sleeping
+15806ms philo 10 has taken a fork
+15806ms philo 10 is eating
+15806ms philo 2 has taken a fork
+15806ms philo 2 is eating
+15806ms philo 4 has taken a fork
+15806ms philo 4 is eating
+16006ms philo 7 is thinking
+16006ms philo 2 is sleeping
+16006ms philo 4 is sleeping
+16006ms philo 1 is thinking
+16006ms philo 9 is thinking
+16006ms philo 8 is sleeping
+16006ms philo 3 is thinking
+16006ms philo 5 is thinking
+16006ms philo 10 is sleeping
+16006ms philo 9 has taken a fork
+16006ms philo 9 has taken a fork
+16006ms philo 9 is eating
+16006ms philo 1 has taken a fork
+16006ms philo 1 has taken a fork
+16006ms philo 1 is eating
+16006ms philo 6 is sleeping
+16006ms philo 7 has taken a fork
+16006ms philo 7 has taken a fork
+16006ms philo 7 is eating
+16006ms philo 3 has taken a fork
+16006ms philo 3 has taken a fork
+16006ms philo 3 is eating
+16006ms philo 5 has taken a fork
+16007ms philo 5 has taken a fork
+16007ms philo 5 is eating
+16206ms philo 9 is sleeping
+16206ms philo 10 is thinking
+16206ms philo 8 is thinking
+16206ms philo 8 has taken a fork
+16206ms philo 6 is thinking
+16206ms philo 3 is sleeping
+16206ms philo 1 is sleeping
+16206ms philo 7 is sleeping
+16206ms philo 4 is thinking
+16206ms philo 2 is thinking
+16206ms philo 2 has taken a fork
+16206ms philo 6 has taken a fork
+16206ms philo 10 has taken a fork
+16206ms philo 8 has taken a fork
+16206ms philo 8 is eating
+16206ms philo 2 has taken a fork
+16206ms philo 2 is eating
+16206ms philo 10 has taken a fork
+16206ms philo 10 is eating
+16207ms philo 4 has taken a fork
+16207ms philo 5 is sleeping
+16207ms philo 6 has taken a fork
+16207ms philo 6 is eating
+16207ms philo 4 has taken a fork
+16207ms philo 4 is eating
+16406ms philo 9 is thinking
+16406ms philo 3 is thinking
+16406ms philo 7 is thinking
+16406ms philo 2 is sleeping
+16406ms philo 10 is sleeping
+16406ms philo 1 is thinking
+16406ms philo 8 is sleeping
+16406ms philo 9 has taken a fork
+16406ms philo 9 has taken a fork
+16406ms philo 9 is eating
+16406ms philo 1 has taken a fork
+16406ms philo 3 has taken a fork
+16406ms philo 1 has taken a fork
+16406ms philo 1 is eating
+16407ms philo 4 is sleeping
+16407ms philo 3 has taken a fork
+16407ms philo 3 is eating
+16407ms philo 5 is thinking
+16407ms philo 6 is sleeping
+16407ms philo 7 has taken a fork
+16407ms philo 7 has taken a fork
+16407ms philo 7 is eating
+16407ms philo 5 has taken a fork
+16407ms philo 5 has taken a fork
+16407ms philo 5 is eating
+16606ms philo 1 is sleeping
+16606ms philo 10 is thinking
+16606ms philo 10 has taken a fork
+16606ms philo 8 is thinking
+16606ms philo 2 is thinking
+16606ms philo 9 is sleeping
+16606ms philo 10 has taken a fork
+16606ms philo 10 is eating
+16606ms philo 8 has taken a fork
+16607ms philo 6 is thinking
+16607ms philo 6 has taken a fork
+16607ms philo 7 is sleeping
+16607ms philo 3 is sleeping
+16607ms philo 8 has taken a fork
+16607ms philo 8 is eating
+16607ms philo 5 is sleeping
+16607ms philo 4 is thinking
+16607ms philo 4 has taken a fork
+16607ms philo 2 has taken a fork
+16607ms philo 6 has taken a fork
+16607ms philo 6 is eating
+16607ms philo 4 has taken a fork
+16607ms philo 4 is eating
+16607ms philo 2 has taken a fork
+16607ms philo 2 is eating
+16806ms philo 1 is thinking
+16806ms philo 10 is sleeping
+16806ms philo 9 is thinking
+16806ms philo 1 has taken a fork
+16807ms philo 3 is thinking
+16807ms philo 7 is thinking
+16807ms philo 2 is sleeping
+16807ms philo 1 has taken a fork
+16807ms philo 1 is eating
+16807ms philo 6 is sleeping
+16807ms philo 4 is sleeping
+16807ms philo 5 is thinking
+16807ms philo 8 is sleeping
+16807ms philo 9 has taken a fork
+16807ms philo 9 has taken a fork
+16807ms philo 9 is eating
+16807ms philo 7 has taken a fork
+16807ms philo 7 has taken a fork
+16807ms philo 7 is eating
+16807ms philo 5 has taken a fork
+16807ms philo 5 has taken a fork
+16807ms philo 5 is eating
+16807ms philo 3 has taken a fork
+16807ms philo 3 has taken a fork
+16807ms philo 3 is eating
+17006ms philo 10 is thinking
+17007ms philo 1 is sleeping
+17007ms philo 9 is sleeping
+17007ms philo 10 has taken a fork
+17007ms philo 4 is thinking
+17007ms philo 5 is sleeping
+17007ms philo 4 has taken a fork
+17007ms philo 3 is sleeping
+17007ms philo 7 is sleeping
+17007ms philo 8 is thinking
+17007ms philo 8 has taken a fork
+17007ms philo 6 is thinking
+17007ms philo 6 has taken a fork
+17007ms philo 4 has taken a fork
+17007ms philo 4 is eating
+17007ms philo 10 has taken a fork
+17007ms philo 10 is eating
+17007ms philo 2 is thinking
+17007ms philo 2 has taken a fork
+17007ms philo 8 has taken a fork
+17007ms philo 8 is eating
+17007ms philo 6 has taken a fork
+17007ms philo 6 is eating
+17007ms philo 2 has taken a fork
+17007ms philo 2 is eating
+17207ms philo 10 is sleeping
+17207ms philo 2 is sleeping
+17207ms philo 7 is thinking
+17207ms philo 3 is thinking
+17207ms philo 6 is sleeping
+17207ms philo 1 is thinking
+17207ms philo 7 has taken a fork
+17207ms philo 7 has taken a fork
+17207ms philo 8 is sleeping
+17207ms philo 7 is eating
+17207ms philo 4 is sleeping
+17207ms philo 1 has taken a fork
+17207ms philo 1 has taken a fork
+17207ms philo 1 is eating
+17207ms philo 9 is thinking
+17207ms philo 5 is thinking
+17207ms philo 3 has taken a fork
+17207ms philo 3 has taken a fork
+17207ms philo 3 is eating
+17207ms philo 9 has taken a fork
+17207ms philo 9 has taken a fork
+17207ms philo 9 is eating
+17207ms philo 5 has taken a fork
+17207ms philo 5 has taken a fork
+17207ms philo 5 is eating
+17407ms philo 1 is sleeping
+17407ms philo 10 is thinking
+17407ms philo 10 has taken a fork
+17407ms philo 2 is thinking
+17407ms philo 3 is sleeping
+17407ms philo 7 is sleeping
+17407ms philo 6 is thinking
+17407ms philo 6 has taken a fork
+17407ms philo 5 is sleeping
+17407ms philo 2 has taken a fork
+17407ms philo 9 is sleeping
+17407ms philo 8 is thinking
+17407ms philo 8 has taken a fork
+17407ms philo 4 is thinking
+17407ms philo 4 has taken a fork
+17407ms philo 10 has taken a fork
+17407ms philo 10 is eating
+17407ms philo 2 has taken a fork
+17407ms philo 2 is eating
+17407ms philo 6 has taken a fork
+17407ms philo 6 is eating
+17407ms philo 8 has taken a fork
+17407ms philo 8 is eating
+17407ms philo 4 has taken a fork
+17407ms philo 4 is eating
+17607ms philo 6 is sleeping
+17607ms philo 8 is sleeping
+17607ms philo 7 is thinking
+17607ms philo 1 is thinking
+17607ms philo 3 is thinking
+17607ms philo 4 is sleeping
+17607ms philo 2 is sleeping
+17607ms philo 5 is thinking
+17607ms philo 7 has taken a fork
+17607ms philo 7 has taken a fork
+17607ms philo 7 is eating
+17607ms philo 3 has taken a fork
+17607ms philo 3 has taken a fork
+17607ms philo 3 is eating
+17607ms philo 10 is sleeping
+17607ms philo 9 is thinking
+17607ms philo 1 has taken a fork
+17607ms philo 1 has taken a fork
+17607ms philo 1 is eating
+17607ms philo 5 has taken a fork
+17607ms philo 5 has taken a fork
+17607ms philo 5 is eating
+17608ms philo 9 has taken a fork
+17608ms philo 9 has taken a fork
+17608ms philo 9 is eating
+17807ms philo 4 is thinking
+17807ms philo 8 is thinking
+17807ms philo 1 is sleeping
+17807ms philo 7 is sleeping
+17807ms philo 2 is thinking
+17807ms philo 10 is thinking
+17807ms philo 10 has taken a fork
+17807ms philo 6 is thinking
+17807ms philo 6 has taken a fork
+17807ms philo 5 is sleeping
+17807ms philo 4 has taken a fork
+17807ms philo 3 is sleeping
+17807ms philo 4 has taken a fork
+17807ms philo 2 has taken a fork
+17807ms philo 4 is eating
+17807ms philo 6 has taken a fork
+17807ms philo 6 is eating
+17807ms philo 2 has taken a fork
+17807ms philo 2 is eating
+17808ms philo 9 is sleeping
+17808ms philo 8 has taken a fork
+17808ms philo 10 has taken a fork
+17808ms philo 10 is eating
+17808ms philo 8 has taken a fork
+17808ms philo 8 is eating
+18007ms philo 7 is thinking
+18007ms philo 4 is sleeping
+18007ms philo 1 is thinking
+18007ms philo 5 is thinking
+18007ms philo 3 is thinking
+18007ms philo 6 is sleeping
+18007ms philo 2 is sleeping
+18007ms philo 7 has taken a fork
+18007ms philo 5 has taken a fork
+18007ms philo 5 has taken a fork
+18007ms philo 5 is eating
+18007ms philo 3 has taken a fork
+18007ms philo 3 has taken a fork
+18007ms philo 3 is eating
+18008ms philo 9 is thinking
+18008ms philo 10 is sleeping
+18008ms philo 8 is sleeping
+18008ms philo 9 has taken a fork
+18008ms philo 9 has taken a fork
+18008ms philo 7 has taken a fork
+18008ms philo 9 is eating
+18008ms philo 1 has taken a fork
+18008ms philo 7 is eating
+18008ms philo 1 has taken a fork
+18008ms philo 1 is eating
+18207ms philo 5 is sleeping
+18207ms philo 6 is thinking
+18207ms philo 3 is sleeping
+18207ms philo 4 is thinking
+18207ms philo 4 has taken a fork
+18207ms philo 2 is thinking
+18207ms philo 2 has taken a fork
+18207ms philo 4 has taken a fork
+18207ms philo 4 is eating
+18208ms philo 7 is sleeping
+18208ms philo 8 is thinking
+18208ms philo 8 has taken a fork
+18208ms philo 8 has taken a fork
+18208ms philo 8 is eating
+18208ms philo 9 is sleeping
+18208ms philo 6 has taken a fork
+18208ms philo 1 is sleeping
+18209ms philo 6 has taken a fork
+18209ms philo 6 is eating
+18208ms philo 10 is thinking
+18209ms philo 10 has taken a fork
+18208ms philo 2 has taken a fork
+18209ms philo 2 is eating
+18209ms philo 10 has taken a fork
+18209ms philo 10 is eating
+18407ms philo 5 is thinking
+18407ms philo 3 is thinking
+18407ms philo 4 is sleeping
+18407ms philo 5 has taken a fork
+18408ms philo 7 is thinking
+18408ms philo 8 is sleeping
+18409ms philo 10 is sleeping
+18409ms philo 9 is thinking
+18409ms philo 6 is sleeping
+18409ms philo 7 has taken a fork
+18409ms philo 7 has taken a fork
+18409ms philo 7 is eating
+18409ms philo 1 is thinking
+18409ms philo 2 is sleeping
+18409ms philo 3 has taken a fork
+18409ms philo 3 has taken a fork
+18409ms philo 3 is eating
+18409ms philo 9 has taken a fork
+18409ms philo 9 has taken a fork
+18409ms philo 9 is eating
+18409ms philo 5 has taken a fork
+18409ms philo 5 is eating
+18409ms philo 1 has taken a fork
+18409ms philo 1 has taken a fork
+18409ms philo 1 is eating
+18607ms philo 4 is thinking
+18609ms philo 9 is sleeping
+18609ms philo 6 is thinking
+18609ms philo 3 is sleeping
+18609ms philo 7 is sleeping
+18609ms philo 6 has taken a fork
+18611ms philo 10 is thinking
+18612ms philo 1 is sleeping
+18612ms philo 5 is sleeping
+18612ms philo 6 has taken a fork
+18612ms philo 6 is eating
+18612ms philo 4 has taken a fork
+18612ms philo 8 is thinking
+18612ms philo 8 has taken a fork
+18612ms philo 2 is thinking
+18612ms philo 2 has taken a fork
+18612ms philo 10 has taken a fork
+18612ms philo 4 has taken a fork
+18612ms philo 4 is eating
+18612ms philo 8 has taken a fork
+18612ms philo 8 is eating
+18612ms philo 2 has taken a fork
+18612ms philo 2 is eating
+18612ms philo 10 has taken a fork
+18612ms philo 10 is eating
+18809ms philo 3 is thinking
+18809ms philo 9 is thinking
+18809ms philo 7 is thinking
+18812ms philo 5 is thinking
+18812ms philo 10 is sleeping
+18812ms philo 8 is sleeping
+18812ms philo 2 is sleeping
+18812ms philo 9 has taken a fork
+18812ms philo 9 has taken a fork
+18812ms philo 3 has taken a fork
+18812ms philo 9 is eating
+18812ms philo 6 is sleeping
+18812ms philo 1 is thinking
+18812ms philo 7 has taken a fork
+18812ms philo 7 has taken a fork
+18812ms philo 4 is sleeping
+18812ms philo 7 is eating
+18812ms philo 3 has taken a fork
+18812ms philo 3 is eating
+18812ms philo 5 has taken a fork
+18812ms philo 5 has taken a fork
+18812ms philo 5 is eating
+18812ms philo 1 has taken a fork
+18812ms philo 1 has taken a fork
+18812ms philo 1 is eating
+19012ms philo 10 is thinking
+19012ms philo 4 is thinking
+19012ms philo 8 is thinking
+19012ms philo 1 is sleeping
+19012ms philo 5 is sleeping
+19012ms philo 10 has taken a fork
+19012ms philo 4 has taken a fork
+19012ms philo 7 is sleeping
+19012ms philo 6 is thinking
+19012ms philo 6 has taken a fork
+19012ms philo 3 is sleeping
+19012ms philo 2 is thinking
+19012ms philo 2 has taken a fork
+19012ms philo 9 is sleeping
+19012ms philo 10 has taken a fork
+19012ms philo 10 is eating
+19012ms philo 8 has taken a fork
+19012ms philo 4 has taken a fork
+19012ms philo 4 is eating
+19012ms philo 6 has taken a fork
+19012ms philo 6 is eating
+19012ms philo 2 has taken a fork
+19012ms philo 2 is eating
+19012ms philo 8 has taken a fork
+19012ms philo 8 is eating
+19212ms philo 6 is sleeping
+19212ms philo 10 is sleeping
+19212ms philo 3 is thinking
+19212ms philo 4 is sleeping
+19212ms philo 2 is sleeping
+19212ms philo 5 is thinking
+19212ms philo 7 is thinking
+19212ms philo 8 is sleeping
+19212ms philo 9 is thinking
+19212ms philo 1 is thinking
+19212ms philo 3 has taken a fork
+19212ms philo 3 has taken a fork
+19212ms philo 3 is eating
+19212ms philo 5 has taken a fork
+19212ms philo 5 has taken a fork
+19212ms philo 5 is eating
+19212ms philo 7 has taken a fork
+19212ms philo 7 has taken a fork
+19212ms philo 7 is eating
+19212ms philo 9 has taken a fork
+19212ms philo 9 has taken a fork
+19212ms philo 9 is eating
+19212ms philo 1 has taken a fork
+19212ms philo 1 has taken a fork
+19212ms philo 1 is eating
+19412ms philo 5 is sleeping
+19412ms philo 9 is sleeping
+19412ms philo 7 is sleeping
+19412ms philo 6 is thinking
+19412ms philo 6 has taken a fork
+19412ms philo 4 is thinking
+19412ms philo 4 has taken a fork
+19412ms philo 2 is thinking
+19412ms philo 8 is thinking
+19412ms philo 8 has taken a fork
+19412ms philo 10 is thinking
+19412ms philo 1 is sleeping
+19412ms philo 10 has taken a fork
+19412ms philo 6 has taken a fork
+19412ms philo 6 is eating
+19412ms philo 2 has taken a fork
+19412ms philo 3 is sleeping
+19412ms philo 4 has taken a fork
+19412ms philo 4 is eating
+19412ms philo 8 has taken a fork
+19412ms philo 8 is eating
+19412ms philo 2 has taken a fork
+19412ms philo 2 is eating
+19412ms philo 10 has taken a fork
+19412ms philo 10 is eating
+19612ms philo 9 is thinking
+19612ms philo 1 is thinking
+19612ms philo 4 is sleeping
+19612ms philo 2 is sleeping
+19612ms philo 7 is thinking
+19612ms philo 8 is sleeping
+19612ms philo 5 is thinking
+19612ms philo 6 is sleeping
+19612ms philo 3 is thinking
+19612ms philo 10 is sleeping
+19612ms philo 9 has taken a fork
+19612ms philo 9 has taken a fork
+19612ms philo 9 is eating
+19612ms philo 1 has taken a fork
+19612ms philo 1 has taken a fork
+19612ms philo 1 is eating
+19612ms philo 7 has taken a fork
+19612ms philo 7 has taken a fork
+19612ms philo 7 is eating
+19612ms philo 5 has taken a fork
+19612ms philo 5 has taken a fork
+19612ms philo 5 is eating
+19612ms philo 3 has taken a fork
+19612ms philo 3 has taken a fork
+19612ms philo 3 is eating
+19812ms philo 4 is thinking
+19812ms philo 3 is sleeping
+19812ms philo 5 is sleeping
+19812ms philo 4 has taken a fork
+19812ms philo 9 is sleeping
+19812ms philo 2 is thinking
+19812ms philo 2 has taken a fork
+19812ms philo 7 is sleeping
+19812ms philo 1 is sleeping
+19812ms philo 8 is thinking
+19812ms philo 8 has taken a fork
+19812ms philo 10 is thinking
+19812ms philo 10 has taken a fork
+19812ms philo 6 is thinking
+19812ms philo 6 has taken a fork
+19812ms philo 4 has taken a fork
+19812ms philo 4 is eating
+19812ms philo 2 has taken a fork
+19812ms philo 2 is eating
+19812ms philo 8 has taken a fork
+19812ms philo 8 is eating
+19812ms philo 10 has taken a fork
+19812ms philo 10 is eating
+19812ms philo 6 has taken a fork
+19812ms philo 6 is eating
+20012ms philo 2 is sleeping
+20012ms philo 6 is sleeping
+20012ms philo 10 is sleeping
+20012ms philo 9 is thinking
+20012ms philo 7 is thinking
+20012ms philo 5 is thinking
+20012ms philo 3 is thinking
+20012ms philo 8 is sleeping
+20012ms philo 1 is thinking
+20012ms philo 4 is sleeping
+20012ms philo 5 has taken a fork
+20012ms philo 5 has taken a fork
+20012ms philo 5 is eating
+20012ms philo 9 has taken a fork
+20012ms philo 7 has taken a fork
+20012ms philo 9 has taken a fork
+20012ms philo 7 has taken a fork
+20012ms philo 9 is eating
+20012ms philo 7 is eating
+20012ms philo 3 has taken a fork
+20012ms philo 3 has taken a fork
+20012ms philo 3 is eating
+20012ms philo 1 has taken a fork
+20012ms philo 1 has taken a fork
+20012ms philo 1 is eating
+20212ms philo 7 is sleeping
+20212ms philo 8 is thinking
+20212ms philo 9 is sleeping
+20212ms philo 8 has taken a fork
+20212ms philo 2 is thinking
+20212ms philo 5 is sleeping
+20212ms philo 6 is thinking
+20212ms philo 6 has taken a fork
+20212ms philo 3 is sleeping
+20212ms philo 2 has taken a fork
+20212ms philo 10 is thinking
+20212ms philo 1 is sleeping
+20212ms philo 8 has taken a fork
+20212ms philo 8 is eating
+20212ms philo 10 has taken a fork
+20212ms philo 2 has taken a fork
+20212ms philo 2 is eating
+20212ms philo 6 has taken a fork
+20212ms philo 6 is eating
+20212ms philo 4 is thinking
+20212ms philo 4 has taken a fork
+20212ms philo 10 has taken a fork
+20212ms philo 10 is eating
+20212ms philo 4 has taken a fork
+20212ms philo 4 is eating
+20412ms philo 1 is thinking
+20412ms philo 7 is thinking
+20412ms philo 9 is thinking
+20412ms philo 10 is sleeping
+20412ms philo 8 is sleeping
+20412ms philo 3 is thinking
+20412ms philo 6 is sleeping
+20412ms philo 2 is sleeping
+20412ms philo 5 is thinking
+20412ms philo 4 is sleeping
+20412ms philo 1 has taken a fork
+20412ms philo 1 has taken a fork
+20412ms philo 1 is eating
+20412ms philo 9 has taken a fork
+20412ms philo 9 has taken a fork
+20412ms philo 9 is eating
+20412ms philo 7 has taken a fork
+20412ms philo 7 has taken a fork
+20412ms philo 7 is eating
+20412ms philo 3 has taken a fork
+20412ms philo 3 has taken a fork
+20412ms philo 3 is eating
+20412ms philo 5 has taken a fork
+20412ms philo 5 has taken a fork
+20412ms philo 5 is eating
+20612ms philo 2 is thinking
+20612ms philo 4 is thinking
+20612ms philo 6 is thinking
+20612ms philo 9 is sleeping
+20612ms philo 5 is sleeping
+20612ms philo 8 is thinking
+20612ms philo 8 has taken a fork
+20612ms philo 4 has taken a fork
+20612ms philo 1 is sleeping
+20612ms philo 3 is sleeping
+20612ms philo 2 has taken a fork
+20612ms philo 7 is sleeping
+20612ms philo 4 has taken a fork
+20612ms philo 4 is eating
+20612ms philo 10 is thinking
+20612ms philo 10 has taken a fork
+20612ms philo 8 has taken a fork
+20612ms philo 8 is eating
+20612ms philo 2 has taken a fork
+20612ms philo 6 has taken a fork
+20612ms philo 2 is eating
+20612ms philo 10 has taken a fork
+20612ms philo 10 is eating
+20612ms philo 6 has taken a fork
+20612ms philo 6 is eating
+20812ms philo 7 is thinking
+20812ms philo 3 is thinking
+20812ms philo 8 is sleeping
+20812ms philo 5 is thinking
+20812ms philo 10 is sleeping
+20812ms philo 2 is sleeping
+20812ms philo 4 is sleeping
+20812ms philo 9 is thinking
+20812ms philo 1 is thinking
+20812ms philo 6 is sleeping
+20812ms philo 7 has taken a fork
+20812ms philo 7 has taken a fork
+20812ms philo 7 is eating
+20812ms philo 3 has taken a fork
+20812ms philo 5 has taken a fork
+20812ms philo 5 has taken a fork
+20812ms philo 5 is eating
+20812ms philo 1 has taken a fork
+20812ms philo 1 has taken a fork
+20812ms philo 1 is eating
+20812ms philo 3 has taken a fork
+20812ms philo 9 has taken a fork
+20812ms philo 9 has taken a fork
+20812ms philo 9 is eating
+20812ms philo 3 is eating
+21012ms philo 2 is thinking
+21012ms philo 1 is sleeping
+21012ms philo 5 is sleeping
+21012ms philo 8 is thinking
+21012ms philo 6 is thinking
+21012ms philo 3 is sleeping
+21012ms philo 2 has taken a fork
+21012ms philo 7 is sleeping
+21012ms philo 9 is sleeping
+21012ms philo 4 is thinking
+21012ms philo 4 has taken a fork
+21012ms philo 6 has taken a fork
+21012ms philo 10 is thinking
+21012ms philo 10 has taken a fork
+21012ms philo 8 has taken a fork
+21012ms philo 2 has taken a fork
+21012ms philo 2 is eating
+21012ms philo 4 has taken a fork
+21012ms philo 4 is eating
+21012ms philo 10 has taken a fork
+21012ms philo 10 is eating
+21012ms philo 8 has taken a fork
+21012ms philo 8 is eating
+21012ms philo 6 has taken a fork
+21012ms philo 6 is eating
+21212ms philo 4 is sleeping
+21212ms philo 7 is thinking
+21212ms philo 1 is thinking
+21212ms philo 10 is sleeping
+21212ms philo 3 is thinking
+21212ms philo 9 is thinking
+21212ms philo 6 is sleeping
+21212ms philo 5 is thinking
+21212ms philo 2 is sleeping
+21212ms philo 8 is sleeping
+21212ms philo 7 has taken a fork
+21212ms philo 7 has taken a fork
+21212ms philo 7 is eating
+21212ms philo 1 has taken a fork
+21212ms philo 1 has taken a fork
+21212ms philo 1 is eating
+21212ms philo 9 has taken a fork
+21212ms philo 9 has taken a fork
+21212ms philo 9 is eating
+21212ms philo 5 has taken a fork
+21212ms philo 5 has taken a fork
+21212ms philo 5 is eating
+21212ms philo 3 has taken a fork
+21212ms philo 3 has taken a fork
+21212ms philo 3 is eating
+21412ms philo 4 is thinking
+21412ms philo 6 is thinking
+21412ms philo 9 is sleeping
+21412ms philo 1 is sleeping
+21412ms philo 10 is thinking
+21412ms philo 10 has taken a fork
+21412ms philo 8 is thinking
+21412ms philo 8 has taken a fork
+21412ms philo 3 is sleeping
+21412ms philo 2 is thinking
+21412ms philo 2 has taken a fork
+21412ms philo 5 is sleeping
+21412ms philo 4 has taken a fork
+21412ms philo 7 is sleeping
+21412ms philo 8 has taken a fork
+21412ms philo 8 is eating
+21412ms philo 2 has taken a fork
+21412ms philo 2 is eating
+21412ms philo 10 has taken a fork
+21412ms philo 10 is eating
+21412ms philo 6 has taken a fork
+21412ms philo 4 has taken a fork
+21412ms philo 4 is eating
+21412ms philo 6 has taken a fork
+21412ms philo 6 is eating
+21612ms philo 1 is thinking
+21612ms philo 10 is sleeping
+21612ms philo 3 is thinking
+21612ms philo 2 is sleeping
+21612ms philo 8 is sleeping
+21612ms philo 3 has taken a fork
+21612ms philo 1 has taken a fork
+21612ms philo 1 has taken a fork
+21612ms philo 1 is eating
+21612ms philo 9 is thinking
+21612ms philo 5 is thinking
+21613ms philo 7 is thinking
+21613ms philo 9 has taken a fork
+21613ms philo 9 has taken a fork
+21613ms philo 9 is eating
+21613ms philo 4 is sleeping
+21613ms philo 3 has taken a fork
+21613ms philo 3 is eating
+21613ms philo 5 has taken a fork
+21613ms philo 6 is sleeping
+21613ms philo 7 has taken a fork
+21613ms philo 7 has taken a fork
+21613ms philo 7 is eating
+21613ms philo 5 has taken a fork
+21613ms philo 5 is eating
+21812ms philo 8 is thinking
+21812ms philo 2 is thinking
+21812ms philo 1 is sleeping
+21812ms philo 10 is thinking
+21812ms philo 10 has taken a fork
+21813ms philo 9 is sleeping
+21813ms philo 10 has taken a fork
+21813ms philo 10 is eating
+21813ms philo 4 is thinking
+21813ms philo 8 has taken a fork
+21813ms philo 6 is thinking
+21813ms philo 3 is sleeping
+21813ms philo 5 is sleeping
+21813ms philo 7 is sleeping
+21813ms philo 2 has taken a fork
+21813ms philo 4 has taken a fork
+21813ms philo 8 has taken a fork
+21813ms philo 8 is eating
+21813ms philo 6 has taken a fork
+21813ms philo 6 has taken a fork
+21813ms philo 6 is eating
+21813ms philo 4 has taken a fork
+21813ms philo 4 is eating
+21813ms philo 2 has taken a fork
+21813ms philo 2 is eating
+22012ms philo 1 is thinking
+22013ms philo 4 is sleeping
+22013ms philo 3 is thinking
+22013ms philo 5 is thinking
+22013ms philo 6 is sleeping
+22013ms philo 10 is sleeping
+22013ms philo 1 has taken a fork
+22013ms philo 9 is thinking
+22013ms philo 2 is sleeping
+22013ms philo 1 has taken a fork
+22013ms philo 1 is eating
+22013ms philo 8 is sleeping
+22013ms philo 7 is thinking
+22013ms philo 5 has taken a fork
+22013ms philo 5 has taken a fork
+22013ms philo 5 is eating
+22013ms philo 9 has taken a fork
+22013ms philo 9 has taken a fork
+22013ms philo 9 is eating
+22013ms philo 3 has taken a fork
+22013ms philo 3 has taken a fork
+22013ms philo 3 is eating
+22013ms philo 7 has taken a fork
+22013ms philo 7 has taken a fork
+22013ms philo 7 is eating
+22213ms philo 10 is thinking
+22213ms philo 5 is sleeping
+22213ms philo 4 is thinking
+22213ms philo 4 has taken a fork
+22213ms philo 7 is sleeping
+22213ms philo 9 is sleeping
+22213ms philo 2 is thinking
+22213ms philo 8 is thinking
+22213ms philo 8 has taken a fork
+22213ms philo 3 is sleeping
+22213ms philo 2 has taken a fork
+22213ms philo 6 is thinking
+22213ms philo 6 has taken a fork
+22213ms philo 4 has taken a fork
+22213ms philo 4 is eating
+22213ms philo 8 has taken a fork
+22213ms philo 8 is eating
+22213ms philo 1 is sleeping
+22213ms philo 10 has taken a fork
+22213ms philo 10 has taken a fork
+22213ms philo 10 is eating
+22213ms philo 2 has taken a fork
+22213ms philo 2 is eating
+22213ms philo 6 has taken a fork
+22213ms philo 6 is eating
+22413ms philo 4 is sleeping
+22413ms philo 7 is thinking
+22413ms philo 6 is sleeping
+22413ms philo 2 is sleeping
+22413ms philo 3 is thinking
+22413ms philo 9 is thinking
+22413ms philo 10 is sleeping
+22413ms philo 5 is thinking
+22413ms philo 7 has taken a fork
+22413ms philo 5 has taken a fork
+22413ms philo 5 has taken a fork
+22413ms philo 5 is eating
+22413ms philo 3 has taken a fork
+22413ms philo 3 has taken a fork
+22413ms philo 3 is eating
+22413ms philo 8 is sleeping
+22413ms philo 7 has taken a fork
+22413ms philo 7 is eating
+22413ms philo 1 is thinking
+22413ms philo 9 has taken a fork
+22413ms philo 9 has taken a fork
+22413ms philo 9 is eating
+22413ms philo 1 has taken a fork
+22413ms philo 1 has taken a fork
+22413ms philo 1 is eating
+22613ms philo 3 is sleeping
+22613ms philo 5 is sleeping
+22613ms philo 1 is sleeping
+22613ms philo 6 is thinking
+22613ms philo 8 is thinking
+22613ms philo 4 is thinking
+22613ms philo 4 has taken a fork
+22613ms philo 9 is sleeping
+22613ms philo 8 has taken a fork
+22613ms philo 10 is thinking
+22613ms philo 10 has taken a fork
+22613ms philo 2 is thinking
+22613ms philo 2 has taken a fork
+22613ms philo 8 has taken a fork
+22613ms philo 8 is eating
+22613ms philo 4 has taken a fork
+22613ms philo 4 is eating
+22613ms philo 7 is sleeping
+22613ms philo 10 has taken a fork
+22613ms philo 2 has taken a fork
+22613ms philo 2 is eating
+22613ms philo 10 is eating
+22613ms philo 6 has taken a fork
+22614ms philo 6 has taken a fork
+22614ms philo 6 is eating
+22813ms philo 4 is sleeping
+22813ms philo 1 is thinking
+22813ms philo 9 is thinking
+22813ms philo 2 is sleeping
+22813ms philo 7 is thinking
+22813ms philo 10 is sleeping
+22813ms philo 5 is thinking
+22813ms philo 3 is thinking
+22813ms philo 8 is sleeping
+22813ms philo 1 has taken a fork
+22813ms philo 1 has taken a fork
+22813ms philo 1 is eating
+22813ms philo 9 has taken a fork
+22813ms philo 9 has taken a fork
+22813ms philo 9 is eating
+22813ms philo 5 has taken a fork
+22813ms philo 3 has taken a fork
+22813ms philo 3 has taken a fork
+22813ms philo 3 is eating
+22814ms philo 6 is sleeping
+22814ms philo 7 has taken a fork
+22814ms philo 7 has taken a fork
+22814ms philo 7 is eating
+22814ms philo 5 has taken a fork
+22814ms philo 5 is eating
+23013ms philo 8 is thinking
+23013ms philo 3 is sleeping
+23013ms philo 2 is thinking
+23013ms philo 2 has taken a fork
+23013ms philo 10 is thinking
+23013ms philo 1 is sleeping
+23013ms philo 10 has taken a fork
+23013ms philo 9 is sleeping
+23013ms philo 8 has taken a fork
+23013ms philo 4 is thinking
+23013ms philo 2 has taken a fork
+23013ms philo 2 is eating
+23013ms philo 10 has taken a fork
+23013ms philo 10 is eating
+23014ms philo 6 is thinking
+23014ms philo 5 is sleeping
+23014ms philo 4 has taken a fork
+23014ms philo 6 has taken a fork
+23014ms philo 7 is sleeping
+23014ms philo 4 has taken a fork
+23014ms philo 4 is eating
+23014ms philo 8 has taken a fork
+23014ms philo 8 is eating
+23014ms philo 6 has taken a fork
+23014ms philo 6 is eating
+23213ms philo 9 is thinking
+23213ms philo 3 is thinking
+23214ms philo 7 is thinking
+23214ms philo 1 is thinking
+23214ms philo 2 is sleeping
+23214ms philo 10 is sleeping
+23214ms philo 3 has taken a fork
+23214ms philo 5 is thinking
+23214ms philo 6 is sleeping
+23214ms philo 7 has taken a fork
+23214ms philo 8 is sleeping
+23214ms philo 7 has taken a fork
+23214ms philo 7 is eating
+23214ms philo 9 has taken a fork
+23214ms philo 9 has taken a fork
+23214ms philo 9 is eating
+23215ms philo 1 has taken a fork
+23215ms philo 1 has taken a fork
+23215ms philo 1 is eating
+23215ms philo 4 is sleeping
+23215ms philo 3 has taken a fork
+23215ms philo 3 is eating
+23215ms philo 5 has taken a fork
+23215ms philo 5 has taken a fork
+23215ms philo 5 is eating
+23414ms philo 9 is sleeping
+23414ms philo 2 is thinking
+23414ms philo 6 is thinking
+23414ms philo 8 is thinking
+23414ms philo 8 has taken a fork
+23414ms philo 10 is thinking
+23414ms philo 7 is sleeping
+23414ms philo 6 has taken a fork
+23414ms philo 8 has taken a fork
+23414ms philo 8 is eating
+23415ms philo 5 is sleeping
+23415ms philo 6 has taken a fork
+23415ms philo 6 is eating
+23415ms philo 1 is sleeping
+23415ms philo 10 has taken a fork
+23415ms philo 3 is sleeping
+23415ms philo 4 is thinking
+23415ms philo 4 has taken a fork
+23415ms philo 2 has taken a fork
+23415ms philo 10 has taken a fork
+23415ms philo 10 is eating
+23415ms philo 2 has taken a fork
+23415ms philo 2 is eating
+23415ms philo 4 has taken a fork
+23415ms philo 4 is eating
+23614ms philo 8 is sleeping
+23614ms philo 9 is thinking
+23614ms philo 7 is thinking
+23614ms philo 9 has taken a fork
+23615ms philo 3 is thinking
+23615ms philo 6 is sleeping
+23615ms philo 1 is thinking
+23615ms philo 7 has taken a fork
+23615ms philo 7 has taken a fork
+23615ms philo 7 is eating
+23615ms philo 10 is sleeping
+23615ms philo 9 has taken a fork
+23615ms philo 9 is eating
+23615ms philo 2 is sleeping
+23615ms philo 4 is sleeping
+23615ms philo 5 is thinking
+23615ms philo 3 has taken a fork
+23615ms philo 3 has taken a fork
+23615ms philo 3 is eating
+23615ms philo 1 has taken a fork
+23615ms philo 1 has taken a fork
+23615ms philo 1 is eating
+23615ms philo 5 has taken a fork
+23615ms philo 5 has taken a fork
+23615ms philo 5 is eating
+23814ms philo 8 is thinking
+23815ms philo 1 is sleeping
+23815ms philo 2 is thinking
+23815ms philo 9 is sleeping
+23815ms philo 5 is sleeping
+23815ms philo 10 is thinking
+23815ms philo 10 has taken a fork
+23815ms philo 8 has taken a fork
+23815ms philo 7 is sleeping
+23815ms philo 6 is thinking
+23815ms philo 6 has taken a fork
+23815ms philo 4 is thinking
+23815ms philo 4 has taken a fork
+23815ms philo 3 is sleeping
+23815ms philo 2 has taken a fork
+23815ms philo 10 has taken a fork
+23815ms philo 10 is eating
+23815ms philo 6 has taken a fork
+23815ms philo 6 is eating
+23815ms philo 4 has taken a fork
+23815ms philo 4 is eating
+23815ms philo 8 has taken a fork
+23815ms philo 8 is eating
+23815ms philo 2 has taken a fork
+23815ms philo 2 is eating
+24015ms philo 6 is sleeping
+24015ms philo 8 is sleeping
+24015ms philo 5 is thinking
+24015ms philo 3 is thinking
+24015ms philo 7 is thinking
+24015ms philo 1 is thinking
+24015ms philo 10 is sleeping
+24015ms philo 9 is thinking
+24015ms philo 4 is sleeping
+24015ms philo 2 is sleeping
+24015ms philo 3 has taken a fork
+24015ms philo 3 has taken a fork
+24015ms philo 3 is eating
+24015ms philo 7 has taken a fork
+24015ms philo 7 has taken a fork
+24015ms philo 7 is eating
+24015ms philo 5 has taken a fork
+24015ms philo 5 has taken a fork
+24015ms philo 5 is eating
+24015ms philo 9 has taken a fork
+24015ms philo 9 has taken a fork
+24015ms philo 9 is eating
+24015ms philo 1 has taken a fork
+24015ms philo 1 has taken a fork
+24015ms philo 1 is eating
+24215ms philo 3 is sleeping
+24215ms philo 4 is thinking
+24215ms philo 10 is thinking
+24215ms philo 2 is thinking
+24215ms philo 2 has taken a fork
+24215ms philo 8 is thinking
+24215ms philo 6 is thinking
+24215ms philo 1 is sleeping
+24215ms philo 9 is sleeping
+24215ms philo 5 is sleeping
+24215ms philo 10 has taken a fork
+24215ms philo 4 has taken a fork
+24215ms philo 8 has taken a fork
+24215ms philo 7 is sleeping
+24215ms philo 2 has taken a fork
+24215ms philo 2 is eating
+24215ms philo 10 has taken a fork
+24215ms philo 10 is eating
+24215ms philo 4 has taken a fork
+24215ms philo 4 is eating
+24215ms philo 8 has taken a fork
+24215ms philo 8 is eating
+24215ms philo 6 has taken a fork
+24215ms philo 6 has taken a fork
+24215ms philo 6 is eating
+24415ms philo 10 is sleeping
+24415ms philo 7 is thinking
+24415ms philo 9 is thinking
+24415ms philo 6 is sleeping
+24415ms philo 5 is thinking
+24415ms philo 3 is thinking
+24415ms philo 8 is sleeping
+24415ms philo 4 is sleeping
+24415ms philo 1 is thinking
+24415ms philo 7 has taken a fork
+24415ms philo 7 has taken a fork
+24415ms philo 7 is eating
+24415ms philo 9 has taken a fork
+24415ms philo 9 has taken a fork
+24415ms philo 9 is eating
+24415ms philo 5 has taken a fork
+24415ms philo 5 has taken a fork
+24415ms philo 5 is eating
+24415ms philo 2 is sleeping
+24415ms philo 1 has taken a fork
+24415ms philo 1 has taken a fork
+24415ms philo 1 is eating
+24415ms philo 3 has taken a fork
+24415ms philo 3 has taken a fork
+24415ms philo 3 is eating
+24615ms philo 9 is sleeping
+24615ms philo 10 is thinking
+24615ms philo 1 is sleeping
+24615ms philo 10 has taken a fork
+24615ms philo 4 is thinking
+24615ms philo 8 is thinking
+24615ms philo 8 has taken a fork
+24615ms philo 7 is sleeping
+24615ms philo 3 is sleeping
+24615ms philo 5 is sleeping
+24615ms philo 4 has taken a fork
+24615ms philo 10 has taken a fork
+24615ms philo 10 is eating
+24615ms philo 2 is thinking
+24615ms philo 2 has taken a fork
+24615ms philo 8 has taken a fork
+24615ms philo 8 is eating
+24615ms philo 6 is thinking
+24615ms philo 6 has taken a fork
+24615ms philo 4 has taken a fork
+24615ms philo 4 is eating
+24615ms philo 6 has taken a fork
+24615ms philo 6 is eating
+24615ms philo 2 has taken a fork
+24615ms philo 2 is eating
+24815ms philo 5 is thinking
+24815ms philo 9 is thinking
+24815ms philo 2 is sleeping
+24815ms philo 8 is sleeping
+24815ms philo 1 is thinking
+24815ms philo 6 is sleeping
+24815ms philo 7 is thinking
+24815ms philo 3 is thinking
+24815ms philo 4 is sleeping
+24815ms philo 10 is sleeping
+24815ms philo 5 has taken a fork
+24815ms philo 5 has taken a fork
+24815ms philo 5 is eating
+24815ms philo 1 has taken a fork
+24816ms philo 1 has taken a fork
+24816ms philo 1 is eating
+24815ms philo 9 has taken a fork
+24816ms philo 9 has taken a fork
+24816ms philo 9 is eating
+24815ms philo 3 has taken a fork
+24816ms philo 3 has taken a fork
+24816ms philo 3 is eating
+24815ms philo 7 has taken a fork
+24816ms philo 7 has taken a fork
+24816ms philo 7 is eating
+25015ms philo 8 is thinking
+25015ms philo 2 is thinking
+25015ms philo 5 is sleeping
+25015ms philo 10 is thinking
+25015ms philo 4 is thinking
+25015ms philo 4 has taken a fork
+25015ms philo 6 is thinking
+25016ms philo 7 is sleeping
+25016ms philo 6 has taken a fork
+25016ms philo 1 is sleeping
+25016ms philo 10 has taken a fork
+25016ms philo 3 is sleeping
+25016ms philo 2 has taken a fork
+25016ms philo 9 is sleeping
+25016ms philo 4 has taken a fork
+25016ms philo 4 is eating
+25016ms philo 6 has taken a fork
+25016ms philo 6 is eating
+25016ms philo 8 has taken a fork
+25016ms philo 8 has taken a fork
+25016ms philo 2 has taken a fork
+25016ms philo 8 is eating
+25016ms philo 2 is eating
+25016ms philo 10 has taken a fork
+25016ms philo 10 is eating
+25215ms philo 5 is thinking
+25216ms philo 8 is sleeping
+25216ms philo 10 is sleeping
+25216ms philo 7 is thinking
+25216ms philo 3 is thinking
+25216ms philo 4 is sleeping
+25216ms philo 5 has taken a fork
+25216ms philo 2 is sleeping
+25216ms philo 1 is thinking
+25216ms philo 3 has taken a fork
+25216ms philo 3 has taken a fork
+25216ms philo 3 is eating
+25216ms philo 9 is thinking
+25216ms philo 6 is sleeping
+25216ms philo 5 has taken a fork
+25216ms philo 5 is eating
+25216ms philo 7 has taken a fork
+25216ms philo 7 has taken a fork
+25216ms philo 7 is eating
+25216ms philo 1 has taken a fork
+25216ms philo 1 has taken a fork
+25216ms philo 1 is eating
+25217ms philo 9 has taken a fork
+25217ms philo 9 has taken a fork
+25217ms philo 9 is eating
+25416ms philo 5 is sleeping
+25416ms philo 8 is thinking
+25416ms philo 2 is thinking
+25416ms philo 4 is thinking
+25416ms philo 4 has taken a fork
+25416ms philo 6 is thinking
+25416ms philo 1 is sleeping
+25416ms philo 3 is sleeping
+25416ms philo 2 has taken a fork
+25416ms philo 7 is sleeping
+25416ms philo 10 is thinking
+25416ms philo 10 has taken a fork
+25416ms philo 4 has taken a fork
+25416ms philo 4 is eating
+25416ms philo 6 has taken a fork
+25416ms philo 2 has taken a fork
+25416ms philo 2 is eating
+25416ms philo 6 has taken a fork
+25416ms philo 6 is eating
+25417ms philo 9 is sleeping
+25417ms philo 10 has taken a fork
+25417ms philo 10 is eating
+25417ms philo 8 has taken a fork
+25417ms philo 8 has taken a fork
+25417ms philo 8 is eating
+25616ms philo 6 is sleeping
+25616ms philo 3 is thinking
+25616ms philo 4 is sleeping
+25616ms philo 5 is thinking
+25616ms philo 7 is thinking
+25616ms philo 1 is thinking
+25616ms philo 7 has taken a fork
+25616ms philo 2 is sleeping
+25616ms philo 3 has taken a fork
+25616ms philo 3 has taken a fork
+25616ms philo 3 is eating
+25616ms philo 5 has taken a fork
+25616ms philo 5 has taken a fork
+25616ms philo 5 is eating
+25617ms philo 9 is thinking
+25617ms philo 8 is sleeping
+25617ms philo 7 has taken a fork
+25617ms philo 7 is eating
+25617ms philo 10 is sleeping
+25617ms philo 1 has taken a fork
+25617ms philo 1 has taken a fork
+25617ms philo 1 is eating
+25617ms philo 9 has taken a fork
+25617ms philo 9 has taken a fork
+25617ms philo 9 is eating
+25816ms philo 3 is sleeping
+25816ms philo 5 is sleeping
+25816ms philo 2 is thinking
+25816ms philo 2 has taken a fork
+25816ms philo 4 is thinking
+25816ms philo 4 has taken a fork
+25816ms philo 4 has taken a fork
+25816ms philo 4 is eating
+25816ms philo 6 is thinking
+25817ms philo 9 is sleeping
+25817ms philo 8 is thinking
+25817ms philo 8 has taken a fork
+25817ms philo 10 is thinking
+25817ms philo 10 has taken a fork
+25817ms philo 1 is sleeping
+25817ms philo 2 has taken a fork
+25817ms philo 2 is eating
+25817ms philo 7 is sleeping
+25817ms philo 6 has taken a fork
+25817ms philo 8 has taken a fork
+25817ms philo 8 is eating
+25817ms philo 10 has taken a fork
+25817ms philo 10 is eating
+25817ms philo 6 has taken a fork
+25817ms philo 6 is eating
+26016ms philo 5 is thinking
+26016ms philo 4 is sleeping
+26016ms philo 3 is thinking
+26016ms philo 5 has taken a fork
+26017ms philo 10 is sleeping
+26017ms philo 7 is thinking
+26017ms philo 1 is thinking
+26017ms philo 9 is thinking
+26017ms philo 6 is sleeping
+26017ms philo 5 has taken a fork
+26017ms philo 5 is eating
+26017ms philo 2 is sleeping
+26017ms philo 8 is sleeping
+26017ms philo 3 has taken a fork
+26017ms philo 3 has taken a fork
+26017ms philo 3 is eating
+26017ms philo 1 has taken a fork
+26017ms philo 1 has taken a fork
+26017ms philo 1 is eating
+26017ms philo 7 has taken a fork
+26017ms philo 7 has taken a fork
+26017ms philo 7 is eating
+26017ms philo 9 has taken a fork
+26017ms philo 9 has taken a fork
+26017ms philo 9 is eating
+26216ms philo 4 is thinking
+26217ms philo 3 is sleeping
+26217ms philo 7 is sleeping
+26217ms philo 9 is sleeping
+26217ms philo 10 is thinking
+26217ms philo 6 is thinking
+26217ms philo 6 has taken a fork
+26217ms philo 2 is thinking
+26217ms philo 2 has taken a fork
+26217ms philo 5 is sleeping
+26217ms philo 4 has taken a fork
+26217ms philo 1 is sleeping
+26217ms philo 8 is thinking
+26217ms philo 8 has taken a fork
+26217ms philo 10 has taken a fork
+26217ms philo 6 has taken a fork
+26217ms philo 6 is eating
+26217ms philo 2 has taken a fork
+26217ms philo 2 is eating
+26217ms philo 10 has taken a fork
+26217ms philo 10 is eating
+26217ms philo 4 has taken a fork
+26217ms philo 4 is eating
+26217ms philo 8 has taken a fork
+26217ms philo 8 is eating
+26417ms philo 5 is thinking
+26417ms philo 4 is sleeping
+26417ms philo 7 is thinking
+26417ms philo 9 is thinking
+26417ms philo 6 is sleeping
+26417ms philo 2 is sleeping
+26417ms philo 3 is thinking
+26417ms philo 1 is thinking
+26417ms philo 10 is sleeping
+26417ms philo 8 is sleeping
+26417ms philo 7 has taken a fork
+26417ms philo 7 has taken a fork
+26417ms philo 7 is eating
+26417ms philo 9 has taken a fork
+26417ms philo 9 has taken a fork
+26417ms philo 9 is eating
+26417ms philo 3 has taken a fork
+26417ms philo 3 has taken a fork
+26417ms philo 3 is eating
+26417ms philo 1 has taken a fork
+26417ms philo 1 has taken a fork
+26417ms philo 1 is eating
+26417ms philo 5 has taken a fork
+26417ms philo 5 has taken a fork
+26417ms philo 5 is eating
+26617ms philo 7 is sleeping
+26617ms philo 6 is thinking
+26617ms philo 1 is sleeping
+26617ms philo 9 is sleeping
+26617ms philo 4 is thinking
+26617ms philo 6 has taken a fork
+26617ms philo 10 is thinking
+26617ms philo 10 has taken a fork
+26617ms philo 3 is sleeping
+26617ms philo 5 is sleeping
+26617ms philo 4 has taken a fork
+26617ms philo 8 is thinking
+26617ms philo 8 has taken a fork
+26617ms philo 4 has taken a fork
+26617ms philo 4 is eating
+26617ms philo 10 has taken a fork
+26617ms philo 10 is eating
+26617ms philo 6 has taken a fork
+26617ms philo 6 is eating
+26617ms philo 8 has taken a fork
+26617ms philo 8 is eating
+26617ms philo 2 is thinking
+26617ms philo 2 has taken a fork
+26617ms philo 2 has taken a fork
+26617ms philo 2 is eating
+26817ms philo 6 is sleeping
+26817ms philo 2 is sleeping
+26817ms philo 7 is thinking
+26817ms philo 9 is thinking
+26817ms philo 8 is sleeping
+26817ms philo 1 is thinking
+26817ms philo 5 is thinking
+26817ms philo 10 is sleeping
+26817ms philo 3 is thinking
+26817ms philo 4 is sleeping
+26817ms philo 7 has taken a fork
+26817ms philo 7 has taken a fork
+26817ms philo 7 is eating
+26817ms philo 9 has taken a fork
+26817ms philo 9 has taken a fork
+26817ms philo 9 is eating
+26817ms philo 1 has taken a fork
+26817ms philo 1 has taken a fork
+26817ms philo 1 is eating
+26817ms philo 5 has taken a fork
+26817ms philo 5 has taken a fork
+26817ms philo 5 is eating
+26817ms philo 3 has taken a fork
+26817ms philo 3 has taken a fork
+26817ms philo 3 is eating
+27017ms philo 2 is thinking
+27017ms philo 4 is thinking
+27017ms philo 10 is thinking
+27017ms philo 1 is sleeping
+27017ms philo 10 has taken a fork
+27017ms philo 7 is sleeping
+27017ms philo 8 is thinking
+27017ms philo 9 is sleeping
+27017ms philo 8 has taken a fork
+27017ms philo 5 is sleeping
+27017ms philo 10 has taken a fork
+27017ms philo 10 is eating
+27017ms philo 6 is thinking
+27017ms philo 6 has taken a fork
+27017ms philo 8 has taken a fork
+27017ms philo 3 is sleeping
+27017ms philo 2 has taken a fork
+27017ms philo 4 has taken a fork
+27017ms philo 6 has taken a fork
+27017ms philo 6 is eating
+27017ms philo 8 is eating
+27018ms philo 2 has taken a fork
+27018ms philo 2 is eating
+27018ms philo 4 has taken a fork
+27018ms philo 4 is eating
+27217ms philo 10 is sleeping
+27217ms philo 9 is thinking
+27217ms philo 1 is thinking
+27217ms philo 3 is thinking
+27217ms philo 8 is sleeping
+27217ms philo 5 is thinking
+27217ms philo 9 has taken a fork
+27217ms philo 9 has taken a fork
+27217ms philo 9 is eating
+27217ms philo 1 has taken a fork
+27217ms philo 7 is thinking
+27217ms philo 6 is sleeping
+27217ms philo 7 has taken a fork
+27217ms philo 7 has taken a fork
+27217ms philo 7 is eating
+27218ms philo 1 has taken a fork
+27218ms philo 1 is eating
+27218ms philo 3 has taken a fork
+27218ms philo 2 is sleeping
+27218ms philo 3 has taken a fork
+27218ms philo 3 is eating
+27218ms philo 4 is sleeping
+27218ms philo 5 has taken a fork
+27218ms philo 5 has taken a fork
+27218ms philo 5 is eating
+27417ms philo 7 is sleeping
+27417ms philo 6 is thinking
+27417ms philo 6 has taken a fork
+27417ms philo 9 is sleeping
+27417ms philo 10 is thinking
+27417ms philo 8 is thinking
+27417ms philo 8 has taken a fork
+27417ms philo 8 has taken a fork
+27417ms philo 8 is eating
+27418ms philo 10 has taken a fork
+27418ms philo 1 is sleeping
+27418ms philo 2 is thinking
+27418ms philo 3 is sleeping
+27418ms philo 2 has taken a fork
+27418ms philo 5 is sleeping
+27418ms philo 6 has taken a fork
+27418ms philo 6 is eating
+27418ms philo 4 is thinking
+27418ms philo 4 has taken a fork
+27418ms philo 10 has taken a fork
+27418ms philo 10 is eating
+27418ms philo 4 has taken a fork
+27418ms philo 4 is eating
+27418ms philo 2 has taken a fork
+27418ms philo 2 is eating
+27617ms philo 8 is sleeping
+27617ms philo 9 is thinking
+27617ms philo 9 has taken a fork
+27617ms philo 7 is thinking
+27618ms philo 10 is sleeping
+27618ms philo 1 is thinking
+27618ms philo 9 has taken a fork
+27618ms philo 9 is eating
+27618ms philo 2 is sleeping
+27618ms philo 3 is thinking
+27618ms philo 4 is sleeping
+27618ms philo 5 is thinking
+27618ms philo 6 is sleeping
+27618ms philo 7 has taken a fork
+27618ms philo 7 has taken a fork
+27618ms philo 7 is eating
+27618ms philo 1 has taken a fork
+27618ms philo 1 has taken a fork
+27618ms philo 1 is eating
+27618ms philo 3 has taken a fork
+27618ms philo 3 has taken a fork
+27618ms philo 3 is eating
+27618ms philo 5 has taken a fork
+27618ms philo 5 has taken a fork
+27618ms philo 5 is eating
+27817ms philo 8 is thinking
+27818ms philo 3 is sleeping
+27818ms philo 10 is thinking
+27818ms philo 2 is thinking
+27818ms philo 2 has taken a fork
+27818ms philo 6 is thinking
+27818ms philo 1 is sleeping
+27818ms philo 5 is sleeping
+27818ms philo 4 is thinking
+27818ms philo 4 has taken a fork
+27818ms philo 7 is sleeping
+27818ms philo 10 has taken a fork
+27818ms philo 6 has taken a fork
+27818ms philo 9 is sleeping
+27818ms philo 2 has taken a fork
+27818ms philo 2 is eating
+27818ms philo 8 has taken a fork
+27818ms philo 6 has taken a fork
+27818ms philo 6 is eating
+27818ms philo 4 has taken a fork
+27818ms philo 4 is eating
+27818ms philo 10 has taken a fork
+27818ms philo 10 is eating
+27818ms philo 8 has taken a fork
+27818ms philo 8 is eating
+28018ms philo 7 is thinking
+28018ms philo 3 is thinking
+28018ms philo 4 is sleeping
+28018ms philo 1 is thinking
+28018ms philo 2 is sleeping
+28018ms philo 6 is sleeping
+28018ms philo 10 is sleeping
+28018ms philo 5 is thinking
+28018ms philo 7 has taken a fork
+28018ms philo 3 has taken a fork
+28018ms philo 9 is thinking
+28018ms philo 3 has taken a fork
+28018ms philo 3 is eating
+28018ms philo 8 is sleeping
+28018ms philo 1 has taken a fork
+28018ms philo 1 has taken a fork
+28018ms philo 1 is eating
+28018ms philo 7 has taken a fork
+28018ms philo 7 is eating
+28018ms philo 5 has taken a fork
+28018ms philo 5 has taken a fork
+28018ms philo 5 is eating
+28018ms philo 9 has taken a fork
+28018ms philo 9 has taken a fork
+28018ms philo 9 is eating
+28218ms philo 10 is thinking
+28218ms philo 2 is thinking
+28218ms philo 2 has taken a fork
+28218ms philo 7 is sleeping
+28218ms philo 6 is thinking
+28218ms philo 6 has taken a fork
+28218ms philo 9 is sleeping
+28218ms philo 5 is sleeping
+28218ms philo 8 is thinking
+28218ms philo 8 has taken a fork
+28218ms philo 3 is sleeping
+28218ms philo 4 is thinking
+28218ms philo 1 is sleeping
+28218ms philo 6 has taken a fork
+28218ms philo 6 is eating
+28218ms philo 2 has taken a fork
+28218ms philo 2 is eating
+28218ms philo 4 has taken a fork
+28218ms philo 8 has taken a fork
+28218ms philo 8 is eating
+28218ms philo 10 has taken a fork
+28218ms philo 4 has taken a fork
+28218ms philo 4 is eating
+28218ms philo 10 has taken a fork
+28218ms philo 10 is eating
+28418ms philo 8 is sleeping
+28418ms philo 7 is thinking
+28418ms philo 9 is thinking
+28418ms philo 6 is sleeping
+28418ms philo 10 is sleeping
+28418ms philo 2 is sleeping
+28418ms philo 3 is thinking
+28418ms philo 1 is thinking
+28418ms philo 4 is sleeping
+28418ms philo 5 is thinking
+28418ms philo 7 has taken a fork
+28418ms philo 7 has taken a fork
+28418ms philo 7 is eating
+28418ms philo 9 has taken a fork
+28418ms philo 9 has taken a fork
+28418ms philo 9 is eating
+28418ms philo 1 has taken a fork
+28418ms philo 1 has taken a fork
+28418ms philo 1 is eating
+28418ms philo 3 has taken a fork
+28418ms philo 3 has taken a fork
+28418ms philo 3 is eating
+28418ms philo 5 has taken a fork
+28418ms philo 5 has taken a fork
+28418ms philo 5 is eating
+28618ms philo 9 is sleeping
+28618ms philo 2 is thinking
+28618ms philo 5 is sleeping
+28618ms philo 7 is sleeping
+28618ms philo 4 is thinking
+28618ms philo 4 has taken a fork
+28618ms philo 1 is sleeping
+28618ms philo 6 is thinking
+28618ms philo 6 has taken a fork
+28618ms philo 6 has taken a fork
+28618ms philo 6 is eating
+28618ms philo 8 is thinking
+28618ms philo 8 has taken a fork
+28618ms philo 2 has taken a fork
+28618ms philo 3 is sleeping
+28618ms philo 4 has taken a fork
+28618ms philo 4 is eating
+28618ms philo 10 is thinking
+28618ms philo 10 has taken a fork
+28618ms philo 8 has taken a fork
+28618ms philo 8 is eating
+28618ms philo 2 has taken a fork
+28618ms philo 2 is eating
+28618ms philo 10 has taken a fork
+28618ms philo 10 is eating
+28818ms philo 3 is thinking
+28818ms philo 8 is sleeping
+28818ms philo 10 is sleeping
+28818ms philo 4 is sleeping
+28818ms philo 1 is thinking
+28818ms philo 2 is sleeping
+28818ms philo 6 is sleeping
+28818ms philo 5 is thinking
+28818ms philo 7 is thinking
+28818ms philo 9 is thinking
+28818ms philo 3 has taken a fork
+28818ms philo 1 has taken a fork
+28818ms philo 3 has taken a fork
+28818ms philo 1 has taken a fork
+28818ms philo 3 is eating
+28818ms philo 1 is eating
+28818ms philo 5 has taken a fork
+28818ms philo 5 has taken a fork
+28818ms philo 5 is eating
+28818ms philo 7 has taken a fork
+28818ms philo 7 has taken a fork
+28818ms philo 7 is eating
+28818ms philo 9 has taken a fork
+28818ms philo 9 has taken a fork
+28818ms philo 9 is eating
+29018ms philo 6 is thinking
+29018ms philo 3 is sleeping
+29018ms philo 10 is thinking
+29018ms philo 2 is thinking
+29018ms philo 2 has taken a fork
+29018ms philo 4 is thinking
+29018ms philo 1 is sleeping
+29018ms philo 8 is thinking
+29018ms philo 7 is sleeping
+29018ms philo 5 is sleeping
+29018ms philo 9 is sleeping
+29018ms philo 10 has taken a fork
+29018ms philo 4 has taken a fork
+29018ms philo 6 has taken a fork
+29018ms philo 8 has taken a fork
+29018ms philo 2 has taken a fork
+29018ms philo 2 is eating
+29018ms philo 4 has taken a fork
+29018ms philo 4 is eating
+29018ms philo 6 has taken a fork
+29018ms philo 10 has taken a fork
+29018ms philo 6 is eating
+29018ms philo 10 is eating
+29018ms philo 8 has taken a fork
+29018ms philo 8 is eating
+29218ms philo 6 is sleeping
+29218ms philo 9 is thinking
+29218ms philo 2 is sleeping
+29218ms philo 5 is thinking
+29218ms philo 3 is thinking
+29218ms philo 1 is thinking
+29218ms philo 10 is sleeping
+29218ms philo 4 is sleeping
+29218ms philo 8 is sleeping
+29218ms philo 7 is thinking
+29218ms philo 9 has taken a fork
+29218ms philo 9 has taken a fork
+29218ms philo 9 is eating
+29218ms philo 5 has taken a fork
+29218ms philo 5 has taken a fork
+29218ms philo 1 has taken a fork
+29218ms philo 1 has taken a fork
+29218ms philo 1 is eating
+29218ms philo 3 has taken a fork
+29218ms philo 5 is eating
+29218ms philo 3 has taken a fork
+29218ms philo 3 is eating
+29218ms philo 7 has taken a fork
+29218ms philo 7 has taken a fork
+29218ms philo 7 is eating
+29418ms philo 7 is sleeping
+29418ms philo 8 is thinking
+29418ms philo 2 is thinking
+29418ms philo 10 is thinking
+29418ms philo 6 is thinking
+29418ms philo 6 has taken a fork
+29418ms philo 9 is sleeping
+29418ms philo 1 is sleeping
+29418ms philo 5 is sleeping
+29418ms philo 10 has taken a fork
+29418ms philo 8 has taken a fork
+29418ms philo 3 is sleeping
+29418ms philo 4 is thinking
+29418ms philo 4 has taken a fork
+29418ms philo 2 has taken a fork
+29418ms philo 6 has taken a fork
+29418ms philo 6 is eating
+29418ms philo 8 has taken a fork
+29418ms philo 8 is eating
+29418ms philo 10 has taken a fork
+29418ms philo 10 is eating
+29418ms philo 2 has taken a fork
+29418ms philo 2 is eating
+29418ms philo 4 has taken a fork
+29418ms philo 4 is eating
+29618ms philo 3 is thinking
+29618ms philo 6 is sleeping
+29618ms philo 2 is sleeping
+29618ms philo 5 is thinking
+29618ms philo 4 is sleeping
+29618ms philo 8 is sleeping
+29618ms philo 9 is thinking
+29618ms philo 10 is sleeping
+29618ms philo 1 is thinking
+29618ms philo 7 is thinking
+29618ms philo 3 has taken a fork
+29618ms philo 3 has taken a fork
+29618ms philo 3 is eating
+29618ms philo 5 has taken a fork
+29618ms philo 5 has taken a fork
+29618ms philo 5 is eating
+29618ms philo 1 has taken a fork
+29618ms philo 1 has taken a fork
+29618ms philo 1 is eating
+29618ms philo 9 has taken a fork
+29618ms philo 9 has taken a fork
+29618ms philo 9 is eating
+29618ms philo 7 has taken a fork
+29618ms philo 7 has taken a fork
+29618ms philo 7 is eating
+29818ms philo 9 is sleeping
+29818ms philo 7 is sleeping
+29818ms philo 10 is thinking
+29818ms philo 1 is sleeping
+29818ms philo 4 is thinking
+29818ms philo 5 is sleeping
+29818ms philo 4 has taken a fork
+29818ms philo 10 has taken a fork
+29818ms philo 2 is thinking
+29818ms philo 8 is thinking
+29818ms philo 8 has taken a fork
+29818ms philo 6 is thinking
+29818ms philo 6 has taken a fork
+29818ms philo 3 is sleeping
+29818ms philo 2 has taken a fork
+29818ms philo 4 has taken a fork
+29818ms philo 4 is eating
+29818ms philo 10 has taken a fork
+29818ms philo 10 is eating
+29818ms philo 8 has taken a fork
+29818ms philo 8 is eating
+29818ms philo 6 has taken a fork
+29818ms philo 6 is eating
+29818ms philo 2 has taken a fork
+29818ms philo 2 is eating
+30018ms philo 5 is thinking
+30018ms philo 1 is thinking
+30018ms philo 10 is sleeping
+30018ms philo 7 is thinking
+30018ms philo 6 is sleeping
+30018ms philo 8 is sleeping
+30018ms philo 2 is sleeping
+30018ms philo 3 is thinking
+30018ms philo 4 is sleeping
+30018ms philo 9 is thinking
+30018ms philo 1 has taken a fork
+30018ms philo 1 has taken a fork
+30018ms philo 1 is eating
+30018ms philo 5 has taken a fork
+30018ms philo 5 has taken a fork
+30018ms philo 5 is eating
+30018ms philo 7 has taken a fork
+30018ms philo 7 has taken a fork
+30018ms philo 7 is eating
+30018ms philo 3 has taken a fork
+30018ms philo 3 has taken a fork
+30018ms philo 3 is eating
+30018ms philo 9 has taken a fork
+30018ms philo 9 has taken a fork
+30018ms philo 9 is eating
+30218ms philo 4 is thinking
+30218ms philo 10 is thinking
+30218ms philo 6 is thinking
+30218ms philo 9 is sleeping
+30218ms philo 1 is sleeping
+30218ms philo 10 has taken a fork
+30218ms philo 5 is sleeping
+30218ms philo 4 has taken a fork
+30218ms philo 3 is sleeping
+30218ms philo 8 is thinking
+30218ms philo 8 has taken a fork
+30218ms philo 7 is sleeping
+30218ms philo 2 is thinking
+30218ms philo 2 has taken a fork
+30218ms philo 6 has taken a fork
+30218ms philo 4 has taken a fork
+30218ms philo 4 is eating
+30218ms philo 10 has taken a fork
+30218ms philo 10 is eating
+30218ms philo 8 has taken a fork
+30218ms philo 8 is eating
+30218ms philo 2 has taken a fork
+30218ms philo 2 is eating
+30218ms philo 6 has taken a fork
+30218ms philo 6 is eating
+30418ms philo 4 is sleeping
+30418ms philo 3 is thinking
+30418ms philo 7 is thinking
+30418ms philo 3 has taken a fork
+30418ms philo 3 has taken a fork
+30418ms philo 3 is eating
+30418ms philo 6 is sleeping
+30418ms philo 7 has taken a fork
+30418ms philo 7 has taken a fork
+30418ms philo 7 is eating
+30418ms philo 9 is thinking
+30418ms philo 8 is sleeping
+30418ms philo 10 is sleeping
+30418ms philo 5 is thinking
+30418ms philo 1 is thinking
+30418ms philo 2 is sleeping
+30418ms philo 5 has taken a fork
+30418ms philo 5 has taken a fork
+30418ms philo 5 is eating
+30418ms philo 9 has taken a fork
+30418ms philo 9 has taken a fork
+30418ms philo 9 is eating
+30419ms philo 1 has taken a fork
+30419ms philo 1 has taken a fork
+30419ms philo 1 is eating
+30618ms philo 10 is thinking
+30618ms philo 6 is thinking
+30618ms philo 8 is thinking
+30618ms philo 5 is sleeping
+30618ms philo 2 is thinking
+30618ms philo 3 is sleeping
+30618ms philo 2 has taken a fork
+30618ms philo 9 is sleeping
+30618ms philo 7 is sleeping
+30618ms philo 8 has taken a fork
+30618ms philo 6 has taken a fork
+30618ms philo 4 is thinking
+30618ms philo 4 has taken a fork
+30618ms philo 8 has taken a fork
+30618ms philo 8 is eating
+30618ms philo 6 has taken a fork
+30618ms philo 6 is eating
+30618ms philo 4 has taken a fork
+30618ms philo 4 is eating
+30619ms philo 1 is sleeping
+30619ms philo 2 has taken a fork
+30619ms philo 2 is eating
+30619ms philo 10 has taken a fork
+30619ms philo 10 has taken a fork
+30619ms philo 10 is eating
+30818ms philo 4 is sleeping
+30818ms philo 7 is thinking
+30818ms philo 6 is sleeping
+30818ms philo 3 is thinking
+30818ms philo 5 is thinking
+30818ms philo 9 is thinking
+30818ms philo 8 is sleeping
+30818ms philo 7 has taken a fork
+30818ms philo 7 has taken a fork
+30818ms philo 7 is eating
+30818ms philo 5 has taken a fork
+30818ms philo 5 has taken a fork
+30818ms philo 5 is eating
+30818ms philo 9 has taken a fork
+30819ms philo 10 is sleeping
+30819ms philo 9 has taken a fork
+30819ms philo 9 is eating
+30819ms philo 2 is sleeping
+30819ms philo 3 has taken a fork
+30819ms philo 3 has taken a fork
+30819ms philo 1 is thinking
+30819ms philo 3 is eating
+30819ms philo 1 has taken a fork
+30819ms philo 1 has taken a fork
+30819ms philo 1 is eating
+31018ms philo 6 is thinking
+31018ms philo 5 is sleeping
+31018ms philo 8 is thinking
+31018ms philo 4 is thinking
+31018ms philo 4 has taken a fork
+31018ms philo 7 is sleeping
+31018ms philo 6 has taken a fork
+31018ms philo 6 has taken a fork
+31018ms philo 6 is eating
+31019ms philo 2 is thinking
+31019ms philo 9 is sleeping
+31019ms philo 8 has taken a fork
+31019ms philo 10 is thinking
+31019ms philo 1 is sleeping
+31019ms philo 10 has taken a fork
+31019ms philo 2 has taken a fork
+31019ms philo 3 is sleeping
+31019ms philo 8 has taken a fork
+31019ms philo 8 is eating
+31019ms philo 10 has taken a fork
+31019ms philo 10 is eating
+31019ms philo 4 has taken a fork
+31019ms philo 4 is eating
+31019ms philo 2 has taken a fork
+31019ms philo 2 is eating
+31218ms philo 6 is sleeping
+31218ms philo 5 is thinking
+31218ms philo 7 is thinking
+31218ms philo 7 has taken a fork
+31219ms philo 4 is sleeping
+31219ms philo 2 is sleeping
+31219ms philo 5 has taken a fork
+31219ms philo 5 has taken a fork
+31219ms philo 5 is eating
+31219ms philo 1 is thinking
+31219ms philo 8 is sleeping
+31219ms philo 7 has taken a fork
+31219ms philo 7 is eating
+31220ms philo 3 is thinking
+31220ms philo 9 is thinking
+31220ms philo 10 is sleeping
+31220ms philo 1 has taken a fork
+31220ms philo 1 has taken a fork
+31220ms philo 1 is eating
+31220ms philo 9 has taken a fork
+31220ms philo 9 has taken a fork
+31220ms philo 9 is eating
+31220ms philo 3 has taken a fork
+31220ms philo 3 has taken a fork
+31220ms philo 3 is eating
+31418ms philo 6 is thinking
+31419ms philo 7 is sleeping
+31419ms philo 8 is thinking
+31419ms philo 6 has taken a fork
+31419ms philo 5 is sleeping
+31419ms philo 2 is thinking
+31419ms philo 4 is thinking
+31419ms philo 4 has taken a fork
+31419ms philo 6 has taken a fork
+31419ms philo 6 is eating
+31420ms philo 9 is sleeping
+31420ms philo 10 is thinking
+31420ms philo 8 has taken a fork
+31420ms philo 1 is sleeping
+31420ms philo 2 has taken a fork
+31420ms philo 10 has taken a fork
+31420ms philo 3 is sleeping
+31420ms philo 4 has taken a fork
+31420ms philo 4 is eating
+31420ms philo 8 has taken a fork
+31421ms philo 8 is eating
+31420ms philo 2 has taken a fork
+31421ms philo 2 is eating
+31421ms philo 10 has taken a fork
+31421ms philo 10 is eating
+31619ms philo 6 is sleeping
+31619ms philo 7 is thinking
+31619ms philo 5 is thinking
+31619ms philo 7 has taken a fork
+31620ms philo 1 is thinking
+31620ms philo 3 is thinking
+31620ms philo 9 is thinking
+31620ms philo 4 is sleeping
+31620ms philo 5 has taken a fork
+31620ms philo 5 has taken a fork
+31620ms philo 5 is eating
+31621ms philo 10 is sleeping
+31621ms philo 1 has taken a fork
+31621ms philo 2 is sleeping
+31621ms philo 7 has taken a fork
+31621ms philo 1 has taken a fork
+31621ms philo 7 is eating
+31621ms philo 1 is eating
+31621ms philo 8 is sleeping
+31621ms philo 3 has taken a fork
+31621ms philo 3 has taken a fork
+31621ms philo 3 is eating
+31621ms philo 9 has taken a fork
+31621ms philo 9 has taken a fork
+31621ms philo 9 is eating
+31819ms philo 6 is thinking
+31820ms philo 4 is thinking
+31820ms philo 5 is sleeping
+31820ms philo 4 has taken a fork
+31821ms philo 10 is thinking
+31821ms philo 3 is sleeping
+31821ms philo 4 has taken a fork
+31821ms philo 9 is sleeping
+31821ms philo 4 is eating
+31821ms philo 7 is sleeping
+31821ms philo 6 has taken a fork
+31821ms philo 8 is thinking
+31821ms philo 8 has taken a fork
+31821ms philo 8 has taken a fork
+31821ms philo 8 is eating
+31821ms philo 1 is sleeping
+31821ms philo 10 has taken a fork
+31821ms philo 6 has taken a fork
+31821ms philo 6 is eating
+31821ms philo 2 is thinking
+31821ms philo 2 has taken a fork
+31821ms philo 10 has taken a fork
+31821ms philo 10 is eating
+31821ms philo 2 has taken a fork
+31821ms philo 2 is eating
+32020ms philo 5 is thinking
+32021ms philo 7 is thinking
+32021ms philo 4 is sleeping
+32021ms philo 8 is sleeping
+32021ms philo 5 has taken a fork
+32021ms philo 1 is thinking
+32021ms philo 3 is thinking
+32021ms philo 2 is sleeping
+32021ms philo 9 is thinking
+32021ms philo 6 is sleeping
+32021ms philo 7 has taken a fork
+32021ms philo 7 has taken a fork
+32021ms philo 7 is eating
+32021ms philo 10 is sleeping
+32021ms philo 3 has taken a fork
+32021ms philo 3 has taken a fork
+32021ms philo 3 is eating
+32021ms philo 9 has taken a fork
+32021ms philo 9 has taken a fork
+32021ms philo 9 is eating
+32021ms philo 1 has taken a fork
+32021ms philo 1 has taken a fork
+32021ms philo 1 is eating
+32021ms philo 5 has taken a fork
+32021ms philo 5 is eating
+32221ms philo 4 is thinking
+32221ms philo 6 is thinking
+32221ms philo 9 is sleeping
+32221ms philo 3 is sleeping
+32221ms philo 1 is sleeping
+32221ms philo 10 is thinking
+32221ms philo 10 has taken a fork
+32221ms philo 2 is thinking
+32221ms philo 2 has taken a fork
+32221ms philo 7 is sleeping
+32221ms philo 8 is thinking
+32221ms philo 8 has taken a fork
+32221ms philo 6 has taken a fork
+32221ms philo 5 is sleeping
+32221ms philo 10 has taken a fork
+32221ms philo 10 is eating
+32221ms philo 4 has taken a fork
+32221ms philo 2 has taken a fork
+32221ms philo 2 is eating
+32221ms philo 6 has taken a fork
+32221ms philo 6 is eating
+32221ms philo 4 has taken a fork
+32221ms philo 4 is eating
+32221ms philo 8 has taken a fork
+32221ms philo 8 is eating
+32421ms philo 7 is thinking
+32421ms philo 8 is sleeping
+32421ms philo 3 is thinking
+32421ms philo 6 is sleeping
+32421ms philo 4 is sleeping
+32421ms philo 9 is thinking
+32421ms philo 2 is sleeping
+32421ms philo 10 is sleeping
+32421ms philo 5 is thinking
+32421ms philo 1 is thinking
+32421ms philo 7 has taken a fork
+32421ms philo 7 has taken a fork
+32421ms philo 7 is eating
+32421ms philo 3 has taken a fork
+32421ms philo 3 has taken a fork
+32421ms philo 3 is eating
+32421ms philo 9 has taken a fork
+32421ms philo 9 has taken a fork
+32421ms philo 9 is eating
+32421ms philo 5 has taken a fork
+32421ms philo 5 has taken a fork
+32421ms philo 5 is eating
+32421ms philo 1 has taken a fork
+32421ms philo 1 has taken a fork
+32421ms philo 1 is eating
+32621ms philo 4 is thinking
+32621ms philo 6 is thinking
+32621ms philo 1 is sleeping
+32621ms philo 7 is sleeping
+32621ms philo 6 has taken a fork
+32621ms philo 2 is thinking
+32621ms philo 2 has taken a fork
+32621ms philo 9 is sleeping
+32621ms philo 5 is sleeping
+32621ms philo 2 has taken a fork
+32621ms philo 2 is eating
+32621ms philo 6 has taken a fork
+32621ms philo 6 is eating
+32621ms philo 10 is thinking
+32621ms philo 10 has taken a fork
+32621ms philo 3 is sleeping
+32621ms philo 8 is thinking
+32622ms philo 8 has taken a fork
+32621ms philo 4 has taken a fork
+32622ms philo 10 has taken a fork
+32622ms philo 10 is eating
+32622ms philo 8 has taken a fork
+32622ms philo 8 is eating
+32622ms philo 4 has taken a fork
+32622ms philo 4 is eating
+32821ms philo 1 is thinking
+32821ms philo 5 is thinking
+32821ms philo 6 is sleeping
+32821ms philo 2 is sleeping
+32821ms philo 7 is thinking
+32821ms philo 9 is thinking
+32821ms philo 7 has taken a fork
+32822ms philo 3 is thinking
+32822ms philo 4 is sleeping
+32822ms philo 7 has taken a fork
+32822ms philo 10 is sleeping
+32822ms philo 7 is eating
+32822ms philo 5 has taken a fork
+32822ms philo 8 is sleeping
+32822ms philo 1 has taken a fork
+32822ms philo 1 has taken a fork
+32822ms philo 1 is eating
+32822ms philo 9 has taken a fork
+32822ms philo 9 has taken a fork
+32822ms philo 9 is eating
+32822ms philo 5 has taken a fork
+32822ms philo 5 is eating
+32822ms philo 3 has taken a fork
+32822ms philo 3 has taken a fork
+32822ms philo 3 is eating
+33021ms philo 2 is thinking
+33021ms philo 6 is thinking
+33022ms philo 10 is thinking
+33022ms philo 4 is thinking
+33022ms philo 9 is sleeping
+33022ms philo 5 is sleeping
+33022ms philo 1 is sleeping
+33022ms philo 7 is sleeping
+33022ms philo 3 is sleeping
+33022ms philo 10 has taken a fork
+33022ms philo 8 is thinking
+33022ms philo 6 has taken a fork
+33022ms philo 8 has taken a fork
+33022ms philo 4 has taken a fork
+33022ms philo 2 has taken a fork
+33022ms philo 4 has taken a fork
+33022ms philo 4 is eating
+33022ms philo 6 has taken a fork
+33022ms philo 10 has taken a fork
+33022ms philo 6 is eating
+33022ms philo 10 is eating
+33022ms philo 8 has taken a fork
+33022ms philo 8 is eating
+33022ms philo 2 has taken a fork
+33022ms philo 2 is eating
+33222ms philo 2 is sleeping
+33222ms philo 5 is thinking
+33222ms philo 1 is thinking
+33222ms philo 10 is sleeping
+33222ms philo 4 is sleeping
+33222ms philo 7 is thinking
+33222ms philo 9 is thinking
+33222ms philo 3 is thinking
+33222ms philo 6 is sleeping
+33222ms philo 8 is sleeping
+33222ms philo 5 has taken a fork
+33222ms philo 5 has taken a fork
+33222ms philo 5 is eating
+33222ms philo 1 has taken a fork
+33222ms philo 1 has taken a fork
+33222ms philo 1 is eating
+33222ms philo 7 has taken a fork
+33222ms philo 7 has taken a fork
+33222ms philo 7 is eating
+33222ms philo 9 has taken a fork
+33222ms philo 9 has taken a fork
+33222ms philo 9 is eating
+33222ms philo 3 has taken a fork
+33222ms philo 3 has taken a fork
+33222ms philo 3 is eating
+33422ms philo 6 is thinking
+33422ms philo 2 is thinking
+33422ms philo 5 is sleeping
+33422ms philo 1 is sleeping
+33422ms philo 9 is sleeping
+33422ms philo 10 is thinking
+33422ms philo 10 has taken a fork
+33422ms philo 4 is thinking
+33422ms philo 4 has taken a fork
+33422ms philo 8 is thinking
+33422ms philo 8 has taken a fork
+33422ms philo 7 is sleeping
+33422ms philo 6 has taken a fork
+33422ms philo 3 is sleeping
+33422ms philo 2 has taken a fork
+33422ms philo 10 has taken a fork
+33422ms philo 10 is eating
+33422ms philo 4 has taken a fork
+33422ms philo 4 is eating
+33422ms philo 6 has taken a fork
+33422ms philo 6 is eating
+33422ms philo 8 has taken a fork
+33422ms philo 8 is eating
+33422ms philo 2 has taken a fork
+33422ms philo 2 is eating
+33622ms philo 5 is thinking
+33622ms philo 3 is thinking
+33622ms philo 8 is sleeping
+33622ms philo 4 is sleeping
+33622ms philo 9 is thinking
+33622ms philo 7 is thinking
+33622ms philo 2 is sleeping
+33622ms philo 6 is sleeping
+33622ms philo 1 is thinking
+33622ms philo 10 is sleeping
+33622ms philo 5 has taken a fork
+33622ms philo 5 has taken a fork
+33622ms philo 5 is eating
+33622ms philo 1 has taken a fork
+33622ms philo 1 has taken a fork
+33622ms philo 1 is eating
+33622ms philo 3 has t
