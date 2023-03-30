@@ -1,10 +1,11 @@
-NAME = philo
+NAME = philo_one
 
-SRCS =  philo.c			\
-		philo_utils.c	\
-		philo_utils_2.c	\
-		init_thread.c	\
+SRCS =  main.c			\
+		utils.c			\
+		utils2.c		\
+		check_argv.c	\
 		init_mutex.c	\
+		init_thread.c	\
 		launch_thread.c	\
 		launch_waiter.c
 

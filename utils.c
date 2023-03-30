@@ -1,26 +1,5 @@
 #include "philo.h"
 
-// int	ft_atoi(const char *str)
-// {
-// 	int			i;
-// 	long		res;
-// 	int			signe;
-// 	int			tmp;
-
-// 	i = 0;
-// 	res = 0;
-// 	signe = 1;
-// 	tmp = i;
-// 	while (str[i] >= '0' && str[i] <= '9')
-// 		res = res * 10 + str[i++] - 48;
-// 	if ((res > 9223372036854775807 || (i - tmp) > 20) && signe == -1)
-// 		return (0);
-// 	else if ((res > 9223372036854775807 || (i - tmp) > 20) && signe == 1)
-// 		return (-1);
-// 	else
-// 		return (res * signe);
-// }
-
 int	ft_atoi(const char *the_char)
 {
 	int			i;

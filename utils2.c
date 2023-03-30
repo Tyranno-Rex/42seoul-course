@@ -10,13 +10,11 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-int	print_error(char *error, int retur)
+int	ft_print_error(char *error, int retur)
 {
 	if (error == NULL)
 		return (retur);
-	write(2, "PHILO : ", 8);
-	write(2, error, ft_strlen(error));
-	write(2, "\n", 1);
+	printf("PHILO : %s\n", error);
 	return (retur);
 }
 
@@ -30,7 +28,7 @@ int	ft_itoa(long num, char *retur)
 	count = 0;
 	tmp = num;
 	if (num < 0)
-		return (print_error("TIME ERROR", -1));
+		return (ft_print_error("TIME ERROR", -1));
 	if (num == 0)
 	{
 		retur[0] = '0';
@@ -79,13 +77,13 @@ int	ft_strcat(char *time, char *philo, char *msg, char *retur)
 
 int	print_result(long elapsed_time, int philo, char *msg)
 {
-	char	time[LONG_MAX_LENGTH + 1];
-	char	id[LONG_MAX_LENGTH + 1];
+	char	time[11];
+	char	id[11];
 	char	str[40];
 
 	ft_itoa(elapsed_time, time);
 	ft_itoa((long)philo, id);
 	ft_strcat(time, id, msg, str);
-	write(1, str, ft_strlen(str));
+	printf("%s", str);
 	return (0);
 }

@@ -20,11 +20,11 @@ int	ft_init_meal_time(t_env *env)
 	while (i < env->philo_number)
 	{
 		if (pthread_mutex_lock(&env->mutex_eat_time[i]))
-			return (print_error("MUTEX LOCK ERROR (meal_time)", -1));
+			return (ft_print_error("MUTEX LOCK ERROR (meal_time)", -1));
 		env->ph[i].meal_time.tv_sec = env->start.tv_sec;
 		env->ph[i].meal_time.tv_usec = env->start.tv_usec;
 		if (pthread_mutex_unlock(&env->mutex_eat_time[i]))
-			return (print_error("MUTEX UNLOCK ERROR (meal_time)", -1));
+			return (ft_print_error("MUTEX UNLOCK ERROR (meal_time)", -1));
 		i++;
 	}
 	return (0);
