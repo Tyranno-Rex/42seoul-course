@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: eunjeong <eunjeong@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/18 12:38:52 by eunjeong          #+#    #+#             */
-/*   Updated: 2023/03/31 14:10:20 by eunjeong         ###   ########.fr       */
+/*   Created: 2023/03/31 12:44:42 by eunjeong          #+#    #+#             */
+/*   Updated: 2023/03/31 13:31:22 by eunjeong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
-int	*ft_choose_xy(const char **map)
+int	*ft_choose_xy(const char **m)
 {
 	int			x;
 	int			y;
@@ -21,13 +21,13 @@ int	*ft_choose_xy(const char **map)
 	y = 0;
 	xy = (int *)ft_calloc(2, sizeof(int));
 	if (!xy)
-		ft_show_error("allocation failed!");
-	while (map[y])
+		ft_show_error("Allocation of the fake map failed!");
+	while (m[y])
 	{
 		x = 0;
-		while (map[y][x])
+		while (m[y][x])
 		{
-			if (map[y][x] == 'P')
+			if (m[y][x] == 'P')
 			{
 				xy[0] = x;
 				xy[1] = y;
@@ -40,38 +40,38 @@ int	*ft_choose_xy(const char **map)
 	return (xy);
 }
 
-char	**ft_copymap(const char **map)
+char	**ft_create_fakemap(const char **map)
 {
-	char		**map_check;
+	char		**fake_map;
 	int			i;
 
 	i = 0;
-	map_check = malloc((ft_tab_size((const char **)map) + 1) * sizeof(char *));
-	if (!map_check)
-		ft_show_error("allcation failed!");
+	fake_map = malloc((ft_tab_size((const char **)map) + 1) * sizeof(char *));
+	if (!fake_map)
+		ft_show_error("Allocation of the fake map failed!");
 	while (map[i])
 	{
-		map_check[i] = ft_strdup(map[i]);
-		if (!map_check[i])
-			ft_show_error("allcation failed!");
+		fake_map[i] = ft_strdup(map[i]);
+		if (!fake_map[i])
+			ft_show_error("Allocation of the fake map failed!");
 		i++;
 	}
-	map_check[i] = NULL;
-	return (map_check);
+	fake_map[i] = NULL;
+	return (fake_map);
 }
 
-void	ft_flood_fill(char **map, int x, int y)
+void	fill_flood(char **map, int x, int y)
 {
-	if (x < 0 || y < 0 || x >= (int)ft_strlen_pro(map[0], '\n')
+	if (x < 0 || x >= (int)ft_strlen_pro(map[0], '\n') || y < 0
 		|| y >= ft_tab_size((const char **)map) || map[y][x] == '1'
-		|| map[y][x] == 'V' || map[y][x] == 'E')
+		|| map[y][x] == 'V' || map[y][x] == 'E' || map[y][x] == 'D')
 		return ;
 	if (map[y][x] != 'P')
 		map[y][x] = 'V';
-	ft_flood_fill(map, x - 1, y);
-	ft_flood_fill(map, x + 1, y);
-	ft_flood_fill(map, x, y - 1);
-	ft_flood_fill(map, x, y + 1);
+	fill_flood(map, x - 1, y);
+	fill_flood(map, x + 1, y);
+	fill_flood(map, x, y - 1);
+	fill_flood(map, x, y + 1);
 }
 
 void	ft_check_validpath(const char **map)
