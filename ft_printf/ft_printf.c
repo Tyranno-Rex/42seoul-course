@@ -1,50 +1,81 @@
 #include <unistd.h>
 #include <stdarg.h>
+#include "ft_printf.h"
 
-size_t	ft_putstr(char *string, int length)
+int putchar(char c)
 {
-	while (string && string[length] && ++length);
-	return (string ? write(1, string, length) : write(1, "(null)", 6));
+	write(1, &c, 1);
+	return (1);
 }
 
-void	ft_putnbr(long number, unsigned length, char *sign, int *size)
+int	putstr(char *s)
 {
-	if (number < 0)
+	int	len = 0;
+
+	if (!s)
+		s = "(null)";
+	while (*s)
+		len += write(1, s++, 1);
+	return (len);
+}
+
+int	putnbr(int nb)
+{
+	long long n;
+	int	len = 0;
+
+	n = nb;
+	if (n < 0)
 	{
-		*size += (int)write(1, "-", 1);
-		number = number * -1;
+		len += write(1, "-", 1);
+		n *= -1;
 	}
-	if (number >= length)
-		ft_putnbr(number / length, length, sign, size);
-	*size += (int) write(1, &sign[number % length], 1);
+	if (n > 9)
+	{
+		len += putnbr(n / 10);
+		len += putnbr(n % 10);
+	}
+	else
+		len += putchar(n + 48);
+	return len;
 }
 
-int	ft_printf(char *format, ...)
+int puthex(unsigned int n)
 {
-	int		size = 0;
+	int	len = 0;
+
+	if (n > 15)
+	{
+		len += puthex(n / 16);
+		len += puthex(n % 16);
+	}
+	else
+		len += write(1, &"0123456789abcdef"[n], 1);
+	return len;
+}
+
+int	ft_printf(const char *format, ...)
+{
 	va_list	ap;
+	int	i = -1;
+	int	len = 0;
 
 	va_start(ap, format);
-	while (*format)
+	while (format[++i])
 	{
-		if (*format == '%' && *(format + 1) == 's' && (format += 2))
-			size += (int) ft_putstr(va_arg(ap, char *), 0);
-		else if (*format == '%' && *(format + 1) == 'x' && (format += 2))
-			ft_putnbr(va_arg(ap, int), 16, "0123456789abcdef", &size);
-		else if (*format == '%' && *(format + 1) == 'd' && (format += 2))
-			ft_putnbr(va_arg(ap, int), 10, "0123456789", &size);
-		else
-			size += (int) write(1, format++, 1);
+		if (format[i] != '%')
+			len += write(1, &format[i], 1);
+		else if (format[i] == '%' && format[i+1])
+		{
+			i++;
+			if (format[i] == 's')
+				len += putstr(va_arg(ap, char *));
+			else if (format[i] == 'd')
+				len += putnbr(va_arg(ap, int));
+			else if (format[i] == 'x')
+				len += puthex(va_arg(ap, unsigned int));
+		}
 	}
-	return (va_end(ap), size);
-}
-
-int main()
-{
-    int size = 0;
-    size += ft_printf("%s\n", "hello my name is jeongeunseong");
-    ft_printf("%d\n", size);
-    ft_printf("%x\n", size);
-    ft_printf("%d\n", -size);
-    ft_printf("%x\n", -size);
+	va_end(ap);
+	return len;
 }

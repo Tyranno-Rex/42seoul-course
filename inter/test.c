@@ -1,8 +1,7 @@
 #include <unistd.h>
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv){
     int         i, j;
-    static int  str[256];
+    static int  str[256]; 
     if (argc == 3)
     {
         i = 0;
