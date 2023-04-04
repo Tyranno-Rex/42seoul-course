@@ -37,7 +37,6 @@ struct s_env
 	pthread_mutex_t	*mutex_nb_eat;
 };
 
-
 /*CHECK_ARGV*/
 int		ft_check_env(t_env *env);
 int		ft_init_env(int ac, char **av, t_env *env);
@@ -45,12 +44,11 @@ int		ft_init_env(int ac, char **av, t_env *env);
 /*INIT_MUTEX.C*/
 int		take_a_fork(t_env *env, int n, int fork);
 int		ft_init_forks(t_env *env);
-int		ft_init_mutex_meal_time(t_env *env);
 
 /*INIT_THREAD.C*/
+int		check_alive(t_env *env);
 int		ft_init_meal_time(t_env *env);
 int		ft_init_thread(t_env *env);
-int		check_alive(t_env *env);
 
 /*LAUNCH_THREAD.C*/
 int		eating(t_philo *ph);
@@ -60,18 +58,21 @@ int		ft_manage_forks(t_philo *ph);
 void	*launch_thread(void *arg);
 
 /*LAUNCH_WAITER.C*/
-void	*launch_waiter(t_env *env);
 int		check_time_last_meal(t_env *env, int i, int *ret);
+int		check_nb_of_meal(t_env *env, int *ret);
+void	*launch_waiter(t_env *env);
 
-/*PHILO_UTILS.C*/
-int		ft_atoi(const char *the_char);
-void	ft_free(t_env *env);
+/*UTILS.C*/
 long	get_time_in_ms(struct timeval time);
-int		ft_usleep(long time, t_env *env);
-int		ft_join_thread(t_env *env);
 int		print_result(long elapsed_time, int philo, char *msg);
-
-/* PHILO_UTILS.C*/
 int		ft_print_error(char *error, int retur);
+void	ft_free(t_env *env);
+int		ft_usleep(long time, t_env *env);
+
+/*UTILS2.C*/
+int		ft_strlen(char *str);
+int		ft_atoi(const char *the_char);
+int		ft_itoa(long num, char *retur);
+int		ft_strcat(char *time, char *philo, char *msg, char *retur);
 
 #endif
