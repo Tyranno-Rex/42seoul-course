@@ -7,7 +7,7 @@ HumanA::HumanA(std::string NewName, Weapon &NewWeapon)
 
 HumanA::~HumanA(void)
 {
-    // std::cout << Human_Name << "is destroyed" << "\n";
+    std::cout << Human_Name << "is destroyed" << "\n";
 }
 
 void HumanA::attack(void)

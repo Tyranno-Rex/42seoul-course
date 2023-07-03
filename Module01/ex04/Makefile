@@ -1,11 +1,10 @@
-NAME		= ex05
+NAME		= replace
 
 CXX			= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
 
 SRCS		= \
-			main.cpp\
-			karen.cpp
+			main.cpp
 
 OBJS		= $(SRCS:.cpp=.o)
 

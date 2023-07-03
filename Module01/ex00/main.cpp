@@ -7,8 +7,7 @@ int main()
     Zombie zombie1("eunseong");
     zombie1.announce();
 
-
-    std::cout << "RandomChump function make Extra Zombie\n";
+    std::cout << "\nRandomChump function make Extra Zombie\n";
     for (int i = 0; i < 5; i++)
     {
         std::stringstream ss;
@@ -17,7 +16,7 @@ int main()
         randomChump(InstanceZombie);
     }
     
-    std::cout << "NewZombie function make Extra Zombie\n";
+    std::cout << "\nNewZombie function make Extra Zombie\n";
     Zombie *zombie2;
     zombie2 = newZombie("eunjeong");
     zombie2->announce();

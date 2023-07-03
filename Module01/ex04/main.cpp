@@ -13,7 +13,7 @@ int main(int argc, char **argv)
         return (1);
     }
     std::string filename = argv[1];
-    std::cout << filename << "\n";
+    std::cout << "input file name : " << filename << "\n";
     std::ifstream file(filename);
 
     if (!file.is_open()) {
@@ -31,13 +31,22 @@ int main(int argc, char **argv)
 
     std::string s1 = argv[2];
     std::string s2 = argv[3];
+    if (s1.length() == 0 || s1.empty() == 1)
+    {
+        std::cout << "ERROR: String1 is Emtpy\n";
+        return (1);
+    }
+    if  (s2.length() == 0 || s2.empty() == 1)
+    {
+        std::cout << "ERROR: String2 is Emtpy\n";
+        return (1);
+    }
 
     unsigned int linepos = 0;
     unsigned int pos = 0;
     
     unsigned int fileBufferLen = fileBuffer.size();
     unsigned int s1_Len = s1.size();
-    unsigned int s2_Len = s2.size();
 
     std::string result;
 

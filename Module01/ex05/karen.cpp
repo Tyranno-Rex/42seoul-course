@@ -28,12 +28,25 @@ void Karen::ERROR(void)
 
 void Karen::complain(std::string level)
 {
-    std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
-	void (Karen::*f[4])(void) = {&Karen::DEBUG, &Karen::INFO, &Karen::WARNING, &Karen::ERROR};
+    // Karen 클래스의 complain 함수입니다.
+    // 이 함수는 문자열 level을 매개변수로 받으며, 해당하는 레벨의 함수를 호출합니다.
 
-	for (int i = 0; i < 4; i++)
-	{
-		if (levels[i] == level) 
+    // levels 배열은 각 레벨을 문자열로 저장합니다.
+    std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+
+    // 함수 포인터 배열 f는 complain 함수에서 각 레벨에 해당하는 함수를 가리킵니다.
+    void (Karen::*f[4])(void) = { &Karen::DEBUG, &Karen::INFO, &Karen::WARNING, &Karen::ERROR };
+
+    // levels 배열과 매개변수로 받은 level을 비교하여 해당하는 레벨의 함수를 호출합니다.
+    for (int i = 0; i < 4; i++)
+    {
+        if (levels[i] == level)
+        {
+            // 함수 포인터를 사용하여 해당 레벨에 해당하는 함수를 호출합니다.
             (this->*f[i])();
+            // 위의 코드는 (*this.*f[i])(); 와 동일한 역할을 합니다.
+            // complain 함수가 Karen 객체 내부에서 실행되기 때문에 this를 사용하여 객체 자신을 참조합니다.
+            // 함수 포인터는 객체의 멤버 함수를 가리키므로 ->* 연산자를 사용하여 해당하는 멤버 함수를 호출합니다.
+        }
     }
 }

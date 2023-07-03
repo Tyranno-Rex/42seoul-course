@@ -6,7 +6,7 @@ HumanB::HumanB(std::string Newname)
 
 HumanB::~HumanB(void)
 {
-    // std::cout << Human_name << "is destroyed\n";
+    std::cout << Human_name << "is destroyed\n";
 }
 
 void HumanB::attack(void)
