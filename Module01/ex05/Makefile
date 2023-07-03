@@ -5,7 +5,7 @@ CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
 
 SRCS		= \
 			main.cpp\
-			karen.cpp
+			Harl.cpp
 			
 OBJS		= $(SRCS:.cpp=.o)
 
