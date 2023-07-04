@@ -33,3 +33,33 @@ int main( void ) {
 
   return 0;
 }
+
+
+
+
+// int main( void ) {
+//   std::cout << "\n\n\n";
+//   Fixed a;
+//   Fixed b( a );
+//   Fixed c;
+
+//   c = b;
+
+//   std::cout << "\n\n\n";
+//   std::cout << a.getRawBits() << std::endl;
+//   std::cout << b.getRawBits() << std::endl;
+//   std::cout << c.getRawBits() << std::endl;
+
+//   std::cout << "\n\n\n";
+//   a.setRawBits(2);
+//   b.setRawBits(3);
+//   c.setRawBits(5);
+  
+//   std::cout << "\n\n\n";
+//   std::cout << a.getRawBits() << std::endl;
+//   std::cout << b.getRawBits() << std::endl;
+//   std::cout << c.getRawBits() << std::endl;
+
+//   std::cout << "\n\n\n";
+//   return 0;
+// }

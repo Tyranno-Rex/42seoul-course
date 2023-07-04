@@ -29,7 +29,8 @@ Fixed::Fixed(const int Number)
 
 Fixed::Fixed(const float Number)
 {
-    std::cout << "Float constructor called\n";
+    std::cout << "Float constructor called\n";  
+    // roundf로 사용하지 않으면 근사치로 표현되어서 정확성이 떨어질 수 있음.
     this->RawBits = roundf(Number * (1 << this->fract_bit));
 }
 
