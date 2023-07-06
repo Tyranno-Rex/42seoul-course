@@ -1,3 +1,6 @@
+#ifndef CLAPTRAP_HPP
+#define CLAPTRAP_HPP
+
 #include <iostream>
 #include <string>
 
@@ -26,3 +29,5 @@ public:
     int GetEP() const;
     int GetAD() const;
 };
+
+#endif

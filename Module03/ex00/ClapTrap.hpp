@@ -1,3 +1,6 @@
+#ifndef CLAPTRAP_HPP
+#define CLAPTRAP_HPP
+
 #include <iostream>
 #include <string>
 
@@ -10,7 +13,7 @@ protected:
     unsigned int    AttackDamage;
 
 public:
-    virtual ClapTrap(void);
+    ClapTrap(void);
     ClapTrap(std::string Name);
     ClapTrap(const ClapTrap& ref);
     ClapTrap& operator=(const ClapTrap &ref);
@@ -20,3 +23,5 @@ public:
     void takeDamage(unsigned int amount);
     void beRepaired(unsigned int amount);
 };
+
+#endif
