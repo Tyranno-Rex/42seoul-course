@@ -9,39 +9,35 @@
 
 int main()
 {
-    const Animal*   i = new Cat();
-    const Animal*   j = new Dog();
-
-    std::cout<<i->GetSpecies()<<std::endl;
-    std::cout<<j->GetSpecies()<<std::endl;
-    
-    i->makeSound();
-    j->makeSound();
-
-    delete j;
-    delete i;
-    std::cout<<"---------------------"<<std::endl;
-    std::cout<<std::endl;
-
     const int animalCount = 4;
     Animal* animals[animalCount];
+    Dog *dog;
+    Cat *cat;
+    const std::string statement = "I'm Full\n";
 
-    for (int i = 0; i < animalCount; ++i)
-    {
-        if (i % 2 == 0)
-        {
-            std::cout<<"🐕 New Dog creation"<<std::endl;
-            animals[i] = new Dog();
-            std::cout<<"---------------------"<<std::endl;
-        }
-        else
-        {
-            std::cout<<"🐱 New Cat creation"<<std::endl;
-            animals[i] = new Cat();
-            std::cout<<"---------------------"<<std::endl;
-        }
-    }
-    std::cout<<"All animals are destroyed"<<std::endl;
+    std::cout << "-----------------------\n";
+    std::cout<<"\nDog is Generated\n";
+    animals[0] = new Dog();
+    animals[0]->makeSound();
+    // 다이나믹 케스트로 dog를 클래스 형식을 가져옴
+    dog = dynamic_cast<Dog*>(animals[0]);
+    std::cout << dog->GetDogIdea(0) << "\n";
+    std::string dogIdea = statement;
+    dog->setDogIdea(0, dogIdea);
+    std::cout << dog->GetDogIdea(0);
+
+    std::cout << "-----------------------\n";
+    std::cout<<"Cat is Generated\n";
+    animals[1] = new Cat();
+    animals[1]->makeSound();
+
+        // 다이나믹 케스트로 dog를 클래스 형식을 가져옴
+    cat = dynamic_cast<Cat*>(animals[1]);
+    std::cout << cat->GetCatIdea(1) << "\n";
+    
+    
+    std::cout << "-----------------------\n";
+    std::cout<<"All animals are destroyed"<<"\n";
     for (int i = 0; i < animalCount; ++i)
         delete animals[i];
     return 0;
