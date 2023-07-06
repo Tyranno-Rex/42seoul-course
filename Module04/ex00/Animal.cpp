@@ -1,16 +1,17 @@
 #include "Animal.hpp"
 
-Animal::Animal(void)
+Animal::Animal(void) : type("Animal")
 {
     std::cout << "Animal is created\n";
 }
 
 Animal::Animal(const Animal &ref)
 {
+    this->type = ref.type;
     std::cout << "Copy: Animal is created\n";
 }
 
-const Animal& Animal::operator=(const Animal &ref)
+Animal& Animal::operator=(const Animal &ref)
 {
     std::cout << "= operator is Operation\n";
     this->type = ref.type;

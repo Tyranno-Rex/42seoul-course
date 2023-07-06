@@ -1,6 +1,8 @@
+#ifndef ANIMAL_HPP
+#define ANIMAL_HPP
+
 #include <iostream>
 #include <string>
-
 
 class Animal
 {
@@ -10,8 +12,10 @@ protected:
 public:
     Animal(void);
     Animal(const Animal &ref);
-    const Animal& operator=(const Animal &ref);
+    Animal& operator=(const Animal &ref);
     virtual ~Animal(void);
     virtual void makeSound(void) const;
     std::string GetSpecies(void) const;
 };
+
+#endif

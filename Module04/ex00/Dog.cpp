@@ -2,10 +2,11 @@
 
 Dog::Dog(void)
 {
+    this->type = "Dog";
     std::cout << "Dog is created\n";
 }
 
-Dog::Dog(const Dog &ref)
+Dog::Dog(const Dog &ref) : Animal(ref)
 {
     std::cout << "Copy: Dog is created\n";
 }
@@ -15,7 +16,7 @@ Dog::~Dog(void)
     std::cout << "Dog is extinct\n";
 }
 
-const Dog& Dog::operator=(const Dog &ref)
+Dog& Dog::operator=(const Dog &ref)
 {
     std::cout << "= operator is Operation(Dog)\n";
     this->type = ref.type;

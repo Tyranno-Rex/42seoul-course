@@ -1,6 +1,5 @@
-# include <string>
-# include <iostream>
-
+#ifndef DOG_HPP
+#define DOG_HPP
 # include "Animal.hpp"
 
 class Dog : public Animal
@@ -8,8 +7,9 @@ class Dog : public Animal
 private:
 public:
     Dog (void);
-	Dog (const Dog& to_copy);
+	Dog (const Dog &ref);
     ~Dog(void);
-    const Dog& operator=(const Dog &ref);
-    void makeSound(void) const;
+    Dog& operator=(const Dog &ref);
+    virtual void makeSound(void) const;
 };
+#endif
