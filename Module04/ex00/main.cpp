@@ -4,18 +4,7 @@
 
 int main()
 {
-    // const Animal   meta = Animal();
-    // const Animal   i = Cat();
-    // const Animal   j = Dog();
-
-    // std::cout<<i.GetSpecies()<<std::endl;
-    // std::cout<<j.GetSpecies()<<std::endl;
-
-    // meta.makeSound();
-    // i.makeSound();
-    // j.makeSound();
-
-
+    std::cout << "\n\n\n";
     const Animal*   meta = new Animal();
     const Animal*   i = new Cat();
     const Animal*   j = new Dog();
@@ -31,6 +20,8 @@ int main()
     delete i;
     delete meta;
 
+
+    std::cout << "\n\n\n";
     const WrongAnimal*  w_meta = new WrongAnimal();
     const WrongAnimal*     w_i = new WrongCat();
 
