@@ -39,7 +39,7 @@ void ClapTrap::attack(const std::string &traget)
 {
     if (this->EnergyPoint)
     {
-        std::cout << "ClapTrap: " << this->name << " attack " << traget << ", causing " << this->AttackDamage << " points of damage!\n";
+        std::cout << "ClapTrap: " << this->name << " attack " << traget << " and " << this->AttackDamage << " damage\n";
 		this->EnergyPoint--;
     }
     else
@@ -52,7 +52,7 @@ void ClapTrap::takeDamage(unsigned int amount)
 		this->Hitpoint = 0;
 	else
 		this->Hitpoint -= amount;
-	std::cout << "ClapTrap " << this->name << " has taken " << amount << " damage..." << std::endl;
+	std::cout << "ClapTrap " << this->name << " has taken " << amount << " damage\n";
 	if (this->Hitpoint == 0)
 	{
 		std::cout	<< "ClapTrap " << this->name << " is died" << std::endl; 
@@ -72,4 +72,23 @@ void ClapTrap::beRepaired(unsigned int amount)
     }
     else    
         std::cout << "ClapTrap has low energy, can't Repaired\n";
+}
+
+
+const std::string ClapTrap::GetName()
+{
+	return (this->name);
+}
+
+int ClapTrap::GetHP() const
+{
+	return(this->Hitpoint);
+}
+int ClapTrap::GetEP() const
+{
+	return(this->EnergyPoint);
+}
+int ClapTrap::GetAD() const
+{
+	return(this->AttackDamage);
 }

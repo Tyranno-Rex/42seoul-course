@@ -1,47 +1,32 @@
 #include "FragTrap.hpp"
-
+#include "DiamondTrap.hpp"
 int	main(void)
 {
 	{
-		ClapTrap a, b("seolA");
+		DiamondTrap e, f("SeolA_DMT");
 		std::cout << "\n";
-		a.attack("seolA");
-		b.takeDamage(0);
-		b.beRepaired(0);
-		std::cout << "\n";
-		b.attack("eunseong");
-		a.takeDamage(0);
-		a.beRepaired(0);
-		std::cout << "\n";
-	}
-	std::cout << "\n\n\n\n\n";
-	{
-		ScavTrap c, d("SeolA_ST");
-		std::cout << "\n";
-		c.attack(d.GetName());
-		d.takeDamage(20);
-		d.beRepaired(10);
-		c.guardGate();
-		std::cout << "\n";
-		d.attack(c.GetName());
-		c.takeDamage(20);
-		c.beRepaired(5);
-		d.guardGate();
-		std::cout << "\n";
-	}
-	std::cout << "\n\n\n\n\n";
-	{
-		FragTrap e, f("SeolA_GT");
-		std::cout << "\n";
+		
 		e.attack(f.GetName());
 		f.takeDamage(30);
 		f.beRepaired(20);
+		
+		std::cout << "\n";
 		e.highFivesGuys();
 		std::cout << "\n";
+		
 		f.attack(e.GetName());
 		e.takeDamage(30);
 		e.beRepaired(15);
+
+		std::cout << "\n";
 		f.highFivesGuys();
 		std::cout << "\n";
+
+		std::cout << "e who am i?\n";
+		e.whoAmI();
+		std::cout << "\n\n";
+		std::cout << "f who am i?\n";
+		f.whoAmI();
+		std::cout << "\n\n";
 	}
 }

@@ -18,12 +18,11 @@ ScavTrap::ScavTrap(const ScavTrap &ref)
     std::cout << name << " is Generated(ScavTrap)\n";
 }
 
-
 void ScavTrap::attack(const std::string& target)
 {
     if (this->EnergyPoint)
     {
-        std::cout << "ScavTrap: " << this->name << " attack " << target << ", causing " << this->AttackDamage << " points of damage!\n";
+        std::cout << "ScavTrap: " << this->name << " attack " << target << " and " << this->AttackDamage << " damage\n";
 		this->EnergyPoint--;
     }
     else

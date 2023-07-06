@@ -2,19 +2,7 @@
 
 int	main(void)
 {
-	{
-		ClapTrap a, b("seolA");
-		std::cout << "\n";
-		a.attack("seolA");
-		b.takeDamage(7);
-		b.beRepaired(2);
-		std::cout << "\n";
-		b.attack("eunseong");
-		a.takeDamage(10);
-		a.beRepaired(10);
-		std::cout << "\n";
-	}
-	std::cout << "\n\n\n\n\n";
+	std::cout << "\n-------------EX01 main start-------------\n";
 	{
 		ScavTrap c, d("SeolA_ST");
 		std::cout << "\n";
@@ -24,9 +12,18 @@ int	main(void)
 		c.guardGate();
 		std::cout << "\n";
 		d.attack(c.GetName());
-		c.takeDamage(10);
+		d.attack(c.GetName());
+		c.takeDamage(20);
+		c.takeDamage(20);
 		c.beRepaired(5);
 		d.guardGate();
 		std::cout << "\n";
+
+		ScavTrap c1;
+		c1 = c;
+		std::cout << c.GetName() << " : " << c1.GetName() << "\n";
+		std::cout << c.GetHP() << " : " << c1.GetHP() << "\n";
+		std::cout << c.GetEP() << " : " << c1.GetEP() << "\n";
+		std::cout << c.GetAD() << " : " << c1.GetAD() << "\n";
 	}
 }

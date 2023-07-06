@@ -22,6 +22,12 @@ public:
     void attack(const std::string& target);
     void takeDamage(unsigned int amount);
     void beRepaired(unsigned int amount);
+
+
+    const std::string GetName();
+    int GetHP() const;
+    int GetEP() const;
+    int GetAD() const;
 };
 
 #endif

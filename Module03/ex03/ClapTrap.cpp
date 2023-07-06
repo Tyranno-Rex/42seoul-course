@@ -45,7 +45,7 @@ void ClapTrap::attack(const std::string &traget)
 {
     if (this->EnergyPoint)
     {
-        std::cout << "ClapTrap: " << this->name << " attack " << traget << ", causing " << this->AttackDamage << " points of damage!\n";
+        std::cout << "ClapTrap: " << this->name << " attack " << traget << " and " << this->AttackDamage << " damage\n";
 		this->EnergyPoint--;
     }
     else
