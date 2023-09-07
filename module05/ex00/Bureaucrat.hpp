@@ -7,6 +7,7 @@ class Bureaucrat{
 private:
     const std::string   _name;
     int                 _grade;
+    void                setGrade(int grade);
 
 public:
     // 디폴드 생성자, 생성자, 소멸자

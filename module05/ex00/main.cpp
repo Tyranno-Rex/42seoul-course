@@ -7,6 +7,12 @@ int main()
     Bureaucrat Haeone("haeone");
     Bureaucrat Sullyoon("sullyoon", 120);
 
+    // 
+    Bureaucrat lily("lily", 200);
+    Bureaucrat Kyujin("Kyujin", 0);
+
+    std::cout << "\n";
+    std::cout << "\n";
     std::cout << "Default Name is     " << Eunseong.getName() << "\n";
     std::cout << "Default Grade is    " << Eunseong.getGrade() << "\n";
     std::cout << "\n";
