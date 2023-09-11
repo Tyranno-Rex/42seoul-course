@@ -70,17 +70,30 @@ Form::~Form(void){
     // std::cout << "Form is deleted\n";
 }
 
+std::string Form::getFormName(void){
+    return (this->_name);
+}
+
+int Form::getFormLevel(void){
+    return (this->_access_lvl);
+}
 
 void Form::beSigned(Bureaucrat agent){
-    // 접근 가능 -> form signed -> true로 바꿔야 함.
     if (this->_access_lvl >= agent.getGrade()){
+        std::cout << "can access this Form\n";
         this->_sign = true;
-        std::cout << agent.getName() << "is signed the form " << this->_name;
     }
-    // 접근 불가능 
     else{
-        throw Bureaucrat::GradeTooHighException();
-        std::cout << agent.getName() << " can't signed the form " << this->_name;
+        std::cout << "can't access this Form\n";
+        // throw Bureaucrat::GradeTooHighException();
+    }
+    std::cout << this->getFormName();
+    if (this->_sign == true){
+        std::cout << " is signed\n";
+    }
+    else{
+        std::cout << " isn't signed\n";
+
     }
 }
 

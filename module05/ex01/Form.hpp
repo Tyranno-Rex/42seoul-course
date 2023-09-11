@@ -3,7 +3,7 @@
 #include <ostream>
 #include "Bureaucrat.hpp"
 
-class Form: public Bureaucrat{
+class Form{
 private:
     const std::string   _name;
     int                 _access_lvl;
@@ -20,10 +20,21 @@ public:
     Form(int level, std::string name, bool sign);
     ~Form(void);
     
-    void beSigned(Bureaucrat agent);
-    
     std::string getFormName(void);
     int         getFormLevel(void);
+    
+    void        beSigned(Bureaucrat agent);
+    void        signForm(Bureaucrat agent);
+
+    class GradeTooHighException: public std::exception{
+        public:
+            const char* what() const throw();
+    };
 };
 
 std::ostream &operator<<(std::ostream &oper, Form *form);
+
+
+const char* Bureaucrat::GradeTooHighException::what() const throw(){
+    return "Grade is too High";
+}
