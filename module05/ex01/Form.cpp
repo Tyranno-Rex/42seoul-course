@@ -79,13 +79,20 @@ int Form::getFormLevel(void){
 }
 
 void Form::beSigned(Bureaucrat agent){
-    if (this->_access_lvl >= agent.getGrade()){
-        std::cout << "can access this Form\n";
-        this->_sign = true;
+    try
+    {
+        if (this->_access_lvl >= agent.getGrade()){
+            std::cout << "can access this Form\n";
+            this->_sign = true;
+        }
+        else{
+            std::cout << "can't access this Form\n";
+            throw Form::GradeTooLowException();
+        }
     }
-    else{
-        std::cout << "can't access this Form\n";
-        // throw Bureaucrat::GradeTooHighException();
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
     }
     std::cout << this->getFormName();
     if (this->_sign == true){
@@ -93,7 +100,6 @@ void Form::beSigned(Bureaucrat agent){
     }
     else{
         std::cout << " isn't signed\n";
-
     }
 }
 
@@ -101,4 +107,12 @@ std::ostream &operator<<(std::ostream &oper, Form *form)
 {
     oper << "Form " << form->getFormName() << " level: " << form->getFormLevel() << "\n";
 	return (oper);
+}
+
+const char* Form::GradeTooHighException::what() const throw(){
+    return "Grade is too High";
+}
+
+const char* Form::GradeTooLowException::what() const throw(){
+    return "Grade is too Low";
 }

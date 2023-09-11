@@ -30,11 +30,10 @@ public:
         public:
             const char* what() const throw();
     };
+    class GradeTooLowException: public std::exception{
+        public:
+            const char* what() const throw();
+    };
 };
 
 std::ostream &operator<<(std::ostream &oper, Form *form);
-
-
-const char* Bureaucrat::GradeTooHighException::what() const throw(){
-    return "Grade is too High";
-}
