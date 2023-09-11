@@ -5,24 +5,23 @@
 
 class Form{
 private:
-    const std::string   _name;
+    std::string         _name;
     int                 _access_lvl;
+    int                 _exec_lvl;
     bool                _sign;
 
 public:
     Form(void);
-    Form(int level);
+    Form(const Form &form);
     Form(std::string name);
-    Form(bool sign);
-    Form(int level, std::string name);
-    Form(int level, bool sign);
-    Form(std::string name, bool sign);
-    Form(int level, std::string name, bool sign);
+    Form(int acces_lvl, int exec_lvl);
+    Form(std::string name, int access_lvl, int exec_lvl);
     ~Form(void);
-    
-    std::string getFormName(void);
-    int         getFormLevel(void);
-    
+
+    std::string getFormName(void) const;
+    int         getFormLevel(void) const;
+    int         getExecLevel(void) const;
+
     void        beSigned(Bureaucrat agent);
     void        signForm(Bureaucrat agent);
 

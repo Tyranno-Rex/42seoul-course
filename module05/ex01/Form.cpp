@@ -1,7 +1,7 @@
 #include "Form.hpp"
 
 
-Form::Form(void): _name("default_name"), _access_lvl(1), _sign(false){
+Form::Form(void): _name("default_name"), _access_lvl(150), _exec_lvl(150), _sign(false){
     // std::cout << this->_name << " is created\n" << "access level is " << this->_access_lvl;
     // if (this->_sign == false)
     //     std::cout << "it is not signed\n";
@@ -9,7 +9,7 @@ Form::Form(void): _name("default_name"), _access_lvl(1), _sign(false){
     //     std::cout << "it is signed\n";
 }
 
-Form::Form(int level): _name("default_name"), _access_lvl(level), _sign(false){
+Form::Form(const Form &src): _name(src.getFormName()), _access_lvl(src.getFormLevel()), _exec_lvl(src.getExecLevel()), _sign(false){
     // std::cout << this->_name << " is created\n" << "access level is " << this->_access_lvl;
     // if (this->_sign == false)
     //     std::cout << "it is not signed\n";
@@ -17,7 +17,7 @@ Form::Form(int level): _name("default_name"), _access_lvl(level), _sign(false){
     //     std::cout << "it is signed\n";
 }
 
-Form::Form(std::string name): _name(name), _access_lvl(1), _sign(false){
+Form::Form(std::string name): _name(name), _access_lvl(150), _exec_lvl(150), _sign(false){
     // std::cout << this->_name << " is created\n" << "access level is " << this->_access_lvl;
     // if (this->_sign == false)
     //     std::cout << "it is not signed\n";
@@ -25,40 +25,8 @@ Form::Form(std::string name): _name(name), _access_lvl(1), _sign(false){
     //     std::cout << "it is signed\n";
 }
 
-Form::Form(bool sign): _name("default_name"), _access_lvl(1), _sign(sign){
+Form::Form(std::string name, int access_lvl, int exec_lvl): _name(name), _access_lvl(access_lvl), _exec_lvl(exec_lvl), _sign(false){
     // std::cout << this->_name << " is created\n" << "access level is " << this->_access_lvl;
-    // if (this->_sign == false)
-    //     std::cout << "it is not signed\n";
-    // else 
-    //     std::cout << "it is signed\n";
-}
-
-Form::Form(int level, std::string name): _name(name), _access_lvl(level), _sign(false){
-    // std::cout << this->_name << " is created\n" << "access level is " << this->_access_lvl;
-    // if (this->_sign == false)
-    //     std::cout << "it is not signed\n";
-    // else 
-    //     std::cout << "it is signed\n";
-}
-
-Form::Form(int level, bool sign): _name("default_name"), _access_lvl(level), _sign(sign){
-    // std::cout << this->_name << " is created\n" << "access level is " << this->_access_lvl;
-    // if (this->_sign == false)
-    //     std::cout << "it is not signed\n";
-    // else 
-    //     std::cout << "it is signed\n";
-}
-
-Form::Form(std::string name, bool sign): _name(name), _access_lvl(1), _sign(sign){
-    // std::cout << this->_name << " is created\n" << "access level is " << this->_access_lvl;
-    // if (this->_sign == false)
-    //     std::cout << "it is not signed\n";
-    // else 
-    //     std::cout << "it is signed\n";
-}
-
-Form::Form(int level, std::string name, bool sign): _name(name), _access_lvl(level), _sign(sign){
-    // std::cout << this->_name << " is created\n" << "access level is " << this->_access_lvl << "\n";
     // if (this->_sign == false)
     //     std::cout << "it is not signed\n";
     // else 
@@ -70,23 +38,27 @@ Form::~Form(void){
     // std::cout << "Form is deleted\n";
 }
 
-std::string Form::getFormName(void){
+std::string Form::getFormName(void) const{
     return (this->_name);
 }
 
-int Form::getFormLevel(void){
+int Form::getFormLevel(void) const {
     return (this->_access_lvl);
 }
 
+int Form::getExecLevel(void) const {
+    return (this->_exec_lvl);
+}
+
 void Form::beSigned(Bureaucrat agent){
+    std::cout << "!CHECK!\n[";
     try
     {
-        std::cout << this->_access_lvl << " " << agent.getGrade() << "\n";
         if (this->_access_lvl >= agent.getGrade()){
-            std::cout << "can access this Form\n";
+            std::cout << "you can access this "<< this->getFormName() << " Form]\n";
         }
         else{
-            std::cout << "can't access this Form\n";
+            std::cout << "you can't access this "<< this->getFormName() << " Form]\n";
             throw Form::GradeTooLowException();
         }
     }
@@ -95,16 +67,19 @@ void Form::beSigned(Bureaucrat agent){
         std::cerr << e.what() << '\n';
     }
 }
+
+
+// <bureaucrat> signed <form>
+// Otherwise, it will print something like:
+// <bureaucrat> couldn’t sign <form> because <reason>
 
 void Form::signForm(Bureaucrat agent){
     try
     {
         if (this->_access_lvl >= agent.getGrade()){
-            std::cout << "can access this Form\n";
             this->_sign = true;
         }
         else{
-            std::cout << "can't access this Form\n";
             throw Form::GradeTooLowException();
         }
     }
@@ -112,12 +87,14 @@ void Form::signForm(Bureaucrat agent){
     {
         std::cerr << e.what() << '\n';
     }
-    std::cout << this->getFormName();
     if (this->_sign == true){
-        std::cout << " is signed\n";
+        std::cout << agent.getName() << " signed "<< this->getFormName() << "\n";
     }
     else{
-        std::cout << " isn't signed\n";
+        std::cout << agent.getName() << " couldn't signed "
+        << this->getFormName() << " because this form level(" 
+        << this->getFormLevel() <<  ") is higher than agent grade(" 
+        << agent.getGrade() << ")\n";
     }
 }
 
