@@ -58,7 +58,7 @@ Form::Form(std::string name, bool sign): _name(name), _access_lvl(1), _sign(sign
 }
 
 Form::Form(int level, std::string name, bool sign): _name(name), _access_lvl(level), _sign(sign){
-    // std::cout << this->_name << " is created\n" << "access level is " << this->_access_lvl;
+    // std::cout << this->_name << " is created\n" << "access level is " << this->_access_lvl << "\n";
     // if (this->_sign == false)
     //     std::cout << "it is not signed\n";
     // else 
@@ -79,6 +79,24 @@ int Form::getFormLevel(void){
 }
 
 void Form::beSigned(Bureaucrat agent){
+    try
+    {
+        std::cout << this->_access_lvl << " " << agent.getGrade() << "\n";
+        if (this->_access_lvl >= agent.getGrade()){
+            std::cout << "can access this Form\n";
+        }
+        else{
+            std::cout << "can't access this Form\n";
+            throw Form::GradeTooLowException();
+        }
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
+    }
+}
+
+void Form::signForm(Bureaucrat agent){
     try
     {
         if (this->_access_lvl >= agent.getGrade()){
