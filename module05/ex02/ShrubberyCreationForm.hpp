@@ -11,6 +11,7 @@ public:
     ShrubberyCreationForm(ShrubberyCreationForm &name);
     ~ShrubberyCreationForm(void);
 
+    ShrubberyCreationForm &operator=(const ShrubberyCreationForm &src);
     std::string getName(void) const;
     void execute(Bureaucrat const &executer);
 };
@@ -21,12 +22,12 @@ std::string ShrubberyCreationForm::getName(void) const{
 
 void ShrubberyCreationForm::execute(Bureaucrat const &executer){
     // 145 137
-    if (executer.getGrade())
+    // if (executer.getGrade())
     
 }
 
 
-ShrubberyCreationForm::ShrubberyCreationForm(void): _name("default")
+ShrubberyCreationForm::ShrubberyCreationForm(void): Form("ShrubberyCreationForm", 145, 137), _name("default_name")
 {
     std::cout << this->_name << "\n";
 }
