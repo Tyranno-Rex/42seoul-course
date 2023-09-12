@@ -69,6 +69,10 @@ void Form::beSigned(Bureaucrat agent){
 }
 
 
+bool Form::isSigned(void){
+    return (this->_sign);
+}
+
 // <bureaucrat> signed <form>
 // Otherwise, it will print something like:
 // <bureaucrat> couldn’t sign <form> because <reason>

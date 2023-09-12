@@ -24,6 +24,7 @@ public:
 
     void        beSigned(Bureaucrat agent);
     void        signForm(Bureaucrat agent);
+    bool        isSigned(void);
 
     class GradeTooHighException: public std::exception{
         public:
