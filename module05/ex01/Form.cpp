@@ -50,12 +50,17 @@ int Form::getExecLevel(void) const {
     return (this->_exec_lvl);
 }
 
+bool Form::getFormSign(void) const{
+    return (this->_sign);
+}
+
 void Form::beSigned(Bureaucrat agent){
     std::cout << "!CHECK!\n[";
     try
     {
         if (this->_sign_lvl >= agent.getGrade()){
             std::cout << "you can access this "<< this->getFormName() << " Form]\n";
+            this->_sign = true;
         }
         else{
             std::cout << "you can't access this "<< this->getFormName() << " Form]\n";
@@ -68,25 +73,10 @@ void Form::beSigned(Bureaucrat agent){
     }
 }
 
-
 // <bureaucrat> signed <form>
 // Otherwise, it will print something like:
 // <bureaucrat> couldn’t sign <form> because <reason>
-
 void Form::signForm(Bureaucrat agent){
-    try
-    {
-        if (this->_sign_lvl >= agent.getGrade()){
-            this->_sign = true;
-        }
-        else{
-            throw Form::GradeTooLowException();
-        }
-    }
-    catch(const std::exception& e)
-    {
-        std::cerr << e.what() << '\n';
-    }
     if (this->_sign == true){
         std::cout << agent.getName() << " signed "<< this->getFormName() << "\n";
     }
@@ -100,7 +90,10 @@ void Form::signForm(Bureaucrat agent){
 
 std::ostream &operator<<(std::ostream &oper, Form *form)
 {
-    oper << "Form " << form->getFormName() << " level: " << form->getFormLevel() << "\n";
+    oper 
+    << "Form Name:          " << form->getFormName() << "\n"
+    << "Form Sign Level:    " << form->getFormLevel() << "\n"
+    << "Form Exec Level:    " << form->getExecLevel() << "\n";
 	return (oper);
 }
 

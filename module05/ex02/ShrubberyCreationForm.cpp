@@ -13,7 +13,7 @@ ShrubberyCreationForm::~ShrubberyCreationForm(void){
 }
 
 void ShrubberyCreationForm::execute(Bureaucrat const &executer){
-    if (this->isSigned() == false){
+    if (this-getFormSign() == false){
         std::cout << "this form isn't signed\n";
         std::cout << "go sign first\n";
         return ;
@@ -48,7 +48,7 @@ std::string ShrubberyCreationForm::getNameFile(void) const{
 
 
 std::ostream &operator<<(std::ostream &oper, ShrubberyCreationForm *shru){
-    oper << "Form " << shru->getNameFile() << "\nSign or Not: " << shru->isSigned()
+    oper << "Form " << shru->getNameFile() << "\nSign or Not: " << shru->getFormSign()
     << "\nsign level: " << shru->getFormLevel() << "\nExec level: " << shru->getExecLevel() << "\n";
     return oper;
 }

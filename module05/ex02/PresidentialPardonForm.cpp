@@ -11,7 +11,7 @@ PresidentialPardonForm::~PresidentialPardonForm(void){
 }
 
 void PresidentialPardonForm::execute(Bureaucrat const &executer){
-    if (this->isSigned() == false){
+    if (this->getFormSign() == false){
         std::cout << "this form isn't signed\n";
         std::cout << "go sign first\n";
         return ;
@@ -32,7 +32,7 @@ std::string PresidentialPardonForm::getNameFile(void) const{
 }
 
 std::ostream &operator<<(std::ostream &oper, PresidentialPardonForm *pres){
-    oper << "Form " << pres->getNameFile() << "\nSign or Not: " << pres->isSigned()
+    oper << "Form " << pres->getNameFile() << "\nSign or Not: " << pres->getFormSign()
     << "\nsign level: " << pres->getFormLevel() << "\nExec level: " << pres->getExecLevel() << "\n";
     return oper;
 }

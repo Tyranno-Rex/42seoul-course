@@ -25,11 +25,12 @@ public:
     std::string getFormName(void) const;
     int         getFormLevel(void) const;
     int         getExecLevel(void) const;
+    bool        getFormSign(void) const;
 
     void        beSigned(Bureaucrat agent);
     void        signForm(Bureaucrat agent);
-    bool        isSigned(void);
 
+    Form &operator=(const Form &src);
     class GradeTooHighException: public std::exception{
         public:
             const char* what() const throw();

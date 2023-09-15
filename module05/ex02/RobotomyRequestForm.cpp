@@ -14,7 +14,7 @@ RobotomyRequestForm::~RobotomyRequestForm(void){
 }
 
 void RobotomyRequestForm::execute(Bureaucrat const &executer){
-    if (this->isSigned() == false){
+    if (this->getFormSign() == false){
         std::cout << "this form isn't signed\n";
         std::cout << "go sign first\n";
         return ;
@@ -41,7 +41,7 @@ std::string RobotomyRequestForm::getNameFile(void) const{
 }
 
 std::ostream &operator<<(std::ostream &oper, RobotomyRequestForm *Robo){
-    oper << "Form " << Robo->getNameFile() << "\nSign or Not: " << Robo->isSigned()
+    oper << "Form " << Robo->getNameFile() << "\nSign or Not: " << Robo->getFormSign()
     << "\nsign level: " << Robo->getFormLevel() << "\nExec level: " << Robo->getExecLevel() << "\n";
     return oper;
 }

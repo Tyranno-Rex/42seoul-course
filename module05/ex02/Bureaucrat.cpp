@@ -61,6 +61,14 @@ int Bureaucrat::getGrade() const {
     return this->_grade;
 }
 
+void Bureaucrat::increment(void){
+    this->_grade += 1;
+}
+
+void Bureaucrat::decrement(void){
+    this->_grade -= 1;
+}
+
 Bureaucrat &Bureaucrat::operator=(const Bureaucrat &ref){
     std::cout << "<< overloading is processed" << "\n";
     this->_grade = ref.getGrade();
@@ -76,6 +84,6 @@ const char* Bureaucrat::GradeTooLowException::what() const throw(){
 
 std::ostream &operator<<(std::ostream &oper, Bureaucrat *Bur)
 {
-    oper << "Bureaucrat " << Bur->getName() << " grade: " << Bur->getGrade() << "\n";
+    oper << Bur->getName() << ", bureaucrat grade " << Bur->getGrade() << "\n";
 	return (oper);
 }

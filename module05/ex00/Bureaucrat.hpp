@@ -21,6 +21,10 @@ public:
     std::string getName() const;
     int         getGrade() const;
 
+    //  increment or decrement the bureaucrat grade
+    void increment(void);
+    void decrement(void);
+
     // 오버로딩
     Bureaucrat &operator=(const Bureaucrat &ref);
 

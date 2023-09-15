@@ -12,6 +12,8 @@ SRCS		= \
 			PresidentialPardonForm.cpp\
 			Intern.cpp
 
+Shrubbery = *_shrubbery
+
 OBJS		= $(SRCS:.cpp=.o)
 
 all: $(NAME)
@@ -20,7 +22,7 @@ $(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) -o $@ $(LDFLAGS)
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(Shrubbery)
 
 fclean: clean
 	$(RM) $(NAME)
