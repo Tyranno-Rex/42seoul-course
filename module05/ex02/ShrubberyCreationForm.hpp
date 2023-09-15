@@ -1,3 +1,6 @@
+#pragma once
+#ifndef SHRUBBERYCREATIONFORM_HPP
+#define SHRUBBERYCREATIONFORM_HPP
 #include "AForm.hpp"
 
 class ShrubberyCreationForm : public Form
@@ -15,3 +18,7 @@ public:
     std::string getNameFile(void) const;
     void execute(Bureaucrat const &executer);
 };
+
+std::ostream &operator<<(std::ostream &oper, ShrubberyCreationForm *shru);
+
+#endif

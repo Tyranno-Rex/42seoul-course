@@ -95,7 +95,7 @@ void Form::signForm(Bureaucrat agent){
         std::cout << agent.getName() << " signed "<< this->getFormName() << "\n";
     }
     else{
-        std::cout << agent.getName() << " couldn't signed "
+        std::cout << agent.getName() << " couldn't signed\n"
         << this->getFormName() << " because this form level(" 
         << this->getFormLevel() <<  ") is higher than agent grade(" 
         << agent.getGrade() << ")\n";
