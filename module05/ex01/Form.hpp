@@ -1,7 +1,12 @@
+#ifndef FORM_HPP
+#define FORM_HPP
+
 #include <iostream>
 #include <string>
 #include <ostream>
 #include "Bureaucrat.hpp"
+
+class Bureaucrat;
 
 class Form{
 private:
@@ -37,3 +42,5 @@ public:
 };
 
 std::ostream &operator<<(std::ostream &oper, Form *form);
+
+#endif

@@ -20,10 +20,10 @@ void ShrubberyCreationForm::execute(Bureaucrat const &executer) const {
     }
 
     if (executer.getGrade() < 137){
-        std::cout << "you can assign the this form\n";
+        std::cout << "you can execute the this form\n";
     }
     else{
-        std::cout << "you can't assign the this form\n";
+        std::cout << "you can't execute the this form\n";
         return ;
     }
     std::ofstream outfile((this->getNameFile() + "_shrubbery").c_str());

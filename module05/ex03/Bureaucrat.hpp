@@ -1,7 +1,12 @@
+#ifndef BUREAUCRAT_HPP
+#define BUREAUCRAT_HPP
+
 #include <iostream>
 #include <ostream>
 #include <string>
+#include "AForm.hpp"
 
+class AForm;
 
 class Bureaucrat{
 private:
@@ -20,6 +25,8 @@ public:
     // 클래스 내의 함수
     std::string getName() const;
     int         getGrade() const;
+    void        signForm(AForm &form) const;
+    void        executeForm(AForm &form) const;
 
     //  increment or decrement the bureaucrat grade
     void increment(void);
@@ -41,3 +48,5 @@ public:
 };
 
 std::ostream &operator<<(std::ostream &oper, Bureaucrat *Bur);
+
+#endif

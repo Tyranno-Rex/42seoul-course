@@ -22,7 +22,6 @@ int main()
     std::cout << "new album grade(exec)         :" << newAlbum1->getExecLevel() << "\n";
     std::cout << "new album grade(exec)         :" << newAlbum1->getFormSign() << "\n";
     newAlbum1->beSigned(Bae);
-    newAlbum1->signForm(Bae);
     newAlbum1->execute(Bae);
 
     std::cout << "\n\n";

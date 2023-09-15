@@ -4,7 +4,7 @@
 
 int main()
 {
-    Bureaucrat Bae("bae", 50);
+    Bureaucrat Bae("bae", 30);
     Bureaucrat JYP("jyp", 1);
 
     ShrubberyCreationForm ShrubberyForm;
@@ -14,21 +14,21 @@ int main()
 
     std::cout << "\n\n";
     ShrubberyForm.beSigned(Bae);
-    ShrubberyForm.signForm(Bae);
+    Bae.signForm(ShrubberyForm);
     ShrubberyForm.execute(Bae);
 
     std::cout << "\n\n";
     RobotForm.beSigned(Bae);
-    RobotForm.signForm(Bae);
+    Bae.signForm(RobotForm);
     RobotForm.execute(Bae);
 
     std::cout << "\n\n";
     PresidentialForm.beSigned(Bae);
-    PresidentialForm.signForm(Bae);
+    Bae.signForm(PresidentialForm);
     PresidentialForm.execute(Bae);
 
     std::cout << "\n\n";
     PresidentialForm.beSigned(JYP);
-    PresidentialForm.signForm(JYP);
+    JYP.signForm(PresidentialForm);
     PresidentialForm.execute(JYP);
 }

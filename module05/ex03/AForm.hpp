@@ -7,6 +7,9 @@
 #include <fstream>
 #include "Bureaucrat.hpp"
 
+
+class Bureaucrat;
+
 class AForm{
 private:
     std::string         _name;
@@ -28,7 +31,6 @@ public:
     bool        getFormSign(void) const;
 
     void        beSigned(Bureaucrat agent);
-    void        signForm(Bureaucrat agent);
 
     AForm &operator=(const AForm &src);
 

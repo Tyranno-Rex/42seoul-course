@@ -1,7 +1,12 @@
+#ifndef BUREAUCRAT_HPP
+#define BUREAUCRAT_HPP
+
+#include "AForm.hpp"
 #include <iostream>
 #include <ostream>
 #include <string>
 
+class AForm;
 
 class Bureaucrat{
 private:
@@ -20,6 +25,8 @@ public:
     // 클래스 내의 함수
     std::string getName() const;
     int         getGrade() const;
+    void        signForm(AForm &form) const;
+    void        executeForm(AForm &form) const;
 
     //  increment or decrement the bureaucrat grade
     void increment(void);
@@ -27,7 +34,6 @@ public:
 
     // 오버로딩
     Bureaucrat &operator=(const Bureaucrat &ref);
-
 
     // 예외처리 exception
     class GradeTooHighException : public std::exception {
@@ -38,6 +44,10 @@ public:
         public:
             const char* what() const throw();
     };
+
+
 };
 
 std::ostream &operator<<(std::ostream &oper, Bureaucrat *Bur);
+
+#endif

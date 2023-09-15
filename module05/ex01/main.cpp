@@ -1,4 +1,5 @@
 #include "Form.hpp"
+#include "Bureaucrat.hpp"
 
 int main()
 {
@@ -10,16 +11,19 @@ int main()
 
     std::cout << "\n\n";
     album1.beSigned(Bae);
-    album1.signForm(Bae);
+    Bae.signForm(album1);
+
     std::cout << "\n\n";
     album2.beSigned(Bae);
-    album2.signForm(Bae);
+    Bae.signForm(album2);
+    
     std::cout << "\n\n";
     album1.beSigned(JustFan);
-    album1.signForm(JustFan);
+    JustFan.signForm(album1);
+    
     std::cout << "\n\n";
     album2.beSigned(JustFan);
-    album2.signForm(JustFan);
+    JustFan.signForm(album2);
 
     std::cout << "\n\n";
     Form *NewAlbum = new Form("Dice");

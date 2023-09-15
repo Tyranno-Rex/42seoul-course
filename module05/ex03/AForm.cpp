@@ -72,24 +72,6 @@ void AForm::beSigned(Bureaucrat agent){
     }
 }
 
-// <bureaucrat> signed <Aform>
-// Otherwise, it will print something like:
-// <bureaucrat> couldn’t sign <Aform> because <reason>
-void AForm::signForm(Bureaucrat agent){
-    if (this->_sign == true){
-        std::cout << agent.getName() << " signed "<< this->getFormName() << "\n";
-        if (this->getExecLevel() <  agent.getGrade()){
-            std::cout << agent.getName() << " couldn't signed "
-            << this->getFormName() << " because this Aform level(" 
-            << this->getSignLevel() <<  ") is higher than agent grade(" 
-            << agent.getGrade() << ")\n";
-        }
-    }
-    else{
-        std::cout << agent.getName() << " isn't signed "<< this->getFormName() << "\n";
-    }
-}
-
 std::ostream &operator<<(std::ostream &oper, AForm *Aform)
 {
     oper 

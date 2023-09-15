@@ -53,6 +53,34 @@ Bureaucrat::~Bureaucrat(void){
     // std::cout << "Bureaucrat is destoryed\n";
 }
 
+
+void Bureaucrat::signForm(AForm &form) const{
+    if (this->getGrade() < form.getSignLevel()){
+        std::cout << this->getName() << " signed "<< form.getFormName() << "\n";
+        form.beSigned(*this);
+    }
+    else{
+        std::cout << this->getName() << " couldn't signed "
+        << form.getFormName() << " because this form level(" 
+        << form.getSignLevel() <<  ") is higher than agent grade(" 
+        << this->getGrade() << ")\n";
+    }
+}
+
+
+void	Bureaucrat::executeForm(AForm &form) const{
+    if (this->getGrade() < form.getExecLevel()){
+		form.execute(*this);
+		std::cout << this->getName() << " executed " << form.getFormName() << "\n";
+	}
+    else{
+        std::cout << this->getName() << " couldn't execute "
+        << form.getFormName() << " because this form level(" 
+        << form.getExecLevel() <<  ") is higher than agent grade(" 
+        << this->getGrade() << ")\n";
+    }
+}
+
 std::string Bureaucrat::getName() const {
     return this->_name;
 }
