@@ -19,12 +19,11 @@ public:
     ~Form(void);
 
     std::string getFormName(void) const;
-    int         getFormLevel(void) const;
+    int         getSignLevel(void) const;
     int         getExecLevel(void) const;
     bool        getFormSign(void) const;
 
     void        beSigned(Bureaucrat agent);
-    void        signForm(Bureaucrat agent);
 
     Form &operator=(const Form &src);
     class GradeTooHighException: public std::exception{

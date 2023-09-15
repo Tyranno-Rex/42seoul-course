@@ -13,6 +13,23 @@ void Bureaucrat::setGrade(int grade){
         this->_grade = grade;
 }
 
+
+
+// <bureaucrat> signed <form>
+// Otherwise, it will print something like:
+// <bureaucrat> couldn’t sign <form> because <reason>
+void Bureaucrat::signForm(Form &form){
+
+    if (form->_sign == true){
+        std::cout << this. << " signed "<< this->getFormName() << "\n";
+    }
+    else{
+        std::cout << agent.getName() << " couldn't signed "
+        << this->getFormName() << " because this form level(" 
+        << this->getSignLevel() <<  ") is higher than agent grade(" 
+        << agent.getGrade() << ")\n";
+    }
+}
 Bureaucrat::Bureaucrat(void): _name("EunSeong"), _grade(1){
     // std::cout << "Bureaucrat is Created\n";
     // std::cout << "Bureaucrat name is " << this->_name << " and Grade is " << this->_grade << "\n";

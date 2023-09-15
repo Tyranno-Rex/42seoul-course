@@ -4,7 +4,7 @@
 // #include "ShrubberyCreationForm.hpp"
 #include "AForm.hpp"
 
-class RobotomyRequestForm : public Form
+class RobotomyRequestForm : public AForm
 {
 private:
     const std::string _name;
@@ -17,7 +17,7 @@ public:
 
     RobotomyRequestForm &operator=(const RobotomyRequestForm &src);
     std::string getNameFile(void) const;
-    void execute(Bureaucrat const &executer);
+    void execute(Bureaucrat const &executer) const;
 };
 
 std::ostream &operator<<(std::ostream &oper, RobotomyRequestForm *robo);

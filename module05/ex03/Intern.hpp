@@ -16,7 +16,7 @@ public:
     Intern(const Intern &src);
     ~Intern(void);
     Intern &operator=(const Intern &src);
-    Form *makeForm(const std::string form, const std::string target);
+    AForm *makeForm(const std::string form, const std::string target);
 };
 
 #endif

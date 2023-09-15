@@ -1,10 +1,10 @@
 #include "ShrubberyCreationForm.hpp"
 
-ShrubberyCreationForm::ShrubberyCreationForm(void): Form("ShrubberyCreationForm", 145, 137), _name("default_name"){
+ShrubberyCreationForm::ShrubberyCreationForm(void): AForm("ShrubberyCreationForm", 145, 137), _name("default_name"){
     // std::cout << this->_name << "\n";
 }
 
-ShrubberyCreationForm::ShrubberyCreationForm(std::string name): Form("ShrubberyCreationForm", 145, 137), _name(name){
+ShrubberyCreationForm::ShrubberyCreationForm(std::string name): AForm("ShrubberyCreationForm", 145, 137), _name(name){
     // std::cout << this->_name << "\n";
 }
 
@@ -12,7 +12,7 @@ ShrubberyCreationForm::~ShrubberyCreationForm(void){
     // std::cout << this->_name << " is deleted\n";
 }
 
-void ShrubberyCreationForm::execute(Bureaucrat const &executer){
+void ShrubberyCreationForm::execute(Bureaucrat const &executer) const {
     if (this-getFormSign() == false){
         std::cout << "this form isn't signed\n";
         std::cout << "go sign first\n";
@@ -46,9 +46,8 @@ std::string ShrubberyCreationForm::getNameFile(void) const{
     return (this->_name);
 }
 
-
 std::ostream &operator<<(std::ostream &oper, ShrubberyCreationForm *shru){
     oper << "Form " << shru->getNameFile() << "\nSign or Not: " << shru->getFormSign()
-    << "\nsign level: " << shru->getFormLevel() << "\nExec level: " << shru->getExecLevel() << "\n";
+    << "\nsign level: " << shru->getSignLevel() << "\nExec level: " << shru->getExecLevel() << "\n";
     return oper;
 }

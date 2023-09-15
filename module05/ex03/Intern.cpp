@@ -19,15 +19,15 @@ Intern &Intern::operator=(const Intern &src){
 	return *this;
 }
 
-static Form	*makePresident(const std::string target){
+static AForm	*makePresident(const std::string target){
 	return (new PresidentialPardonForm(target));
 }
 
-static Form	*makeRobot(const std::string target){
+static AForm	*makeRobot(const std::string target){
 	return (new RobotomyRequestForm(target));
 }
 
-static Form	*makeShrubbery(const std::string target){
+static AForm	*makeShrubbery(const std::string target){
 	return (new ShrubberyCreationForm(target));
 }
 
@@ -36,13 +36,13 @@ static Form	*makeShrubbery(const std::string target){
 // Form* rrf;
 // rrf = someRandomIntern.makeForm("robotomy request", "Bender");
 
-Form	*Intern::makeForm(const std::string form, const std::string target){
-    std::map<std::string, Form *(*)(const std::string)> all_forms;
+AForm	*Intern::makeForm(const std::string form, const std::string target){
+    std::map<std::string, AForm *(*)(const std::string)> all_forms;
     all_forms["PresidentialPardonForm"] = &makePresident;
     all_forms["RobotomyRequestForm"] = &makeRobot;
     all_forms["ShrubberyCreationForm"] = &makeShrubbery;
 
-    std::map<std::string, Form *(*)(const std::string)>::iterator it = all_forms.find(form);
+    std::map<std::string, AForm *(*)(const std::string)>::iterator it = all_forms.find(form);
     if (it != all_forms.end()) {
         std::cout << "Intern creates " << form << " now\n";
         return (it->second(target));

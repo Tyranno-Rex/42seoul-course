@@ -9,7 +9,7 @@ Form::Form(void): _name("default_name"), _sign_lvl(150), _exec_lvl(150), _sign(f
     //     std::cout << "it is signed\n";
 }
 
-Form::Form(const Form &src): _name(src.getFormName()), _sign_lvl(src.getFormLevel()), _exec_lvl(src.getExecLevel()), _sign(false){
+Form::Form(const Form &src): _name(src.getFormName()), _sign_lvl(src.getSignLevel()), _exec_lvl(src.getExecLevel()), _sign(false){
     // std::cout << this->_name << " is created\n" << "access level is " << this->_sign_lvl;
     // if (this->_sign == false)
     //     std::cout << "it is not signed\n";
@@ -42,7 +42,7 @@ std::string Form::getFormName(void) const{
     return (this->_name);
 }
 
-int Form::getFormLevel(void) const {
+int Form::getSignLevel(void) const {
     return (this->_sign_lvl);
 }
 
@@ -73,26 +73,11 @@ void Form::beSigned(Bureaucrat agent){
     }
 }
 
-// <bureaucrat> signed <form>
-// Otherwise, it will print something like:
-// <bureaucrat> couldn’t sign <form> because <reason>
-void Form::signForm(Bureaucrat agent){
-    if (this->_sign == true){
-        std::cout << agent.getName() << " signed "<< this->getFormName() << "\n";
-    }
-    else{
-        std::cout << agent.getName() << " couldn't signed "
-        << this->getFormName() << " because this form level(" 
-        << this->getFormLevel() <<  ") is higher than agent grade(" 
-        << agent.getGrade() << ")\n";
-    }
-}
-
 std::ostream &operator<<(std::ostream &oper, Form *form)
 {
     oper 
     << "Form Name:          " << form->getFormName() << "\n"
-    << "Form Sign Level:    " << form->getFormLevel() << "\n"
+    << "Form Sign Level:    " << form->getSignLevel() << "\n"
     << "Form Exec Level:    " << form->getExecLevel() << "\n";
 	return (oper);
 }

@@ -7,7 +7,7 @@
 #include <fstream>
 #include "Bureaucrat.hpp"
 
-class Form{
+class AForm{
 private:
     std::string         _name;
     int                 _sign_lvl;
@@ -15,23 +15,24 @@ private:
     bool                _sign;
 
 public:
-    Form(void);
-    Form(const Form &form);
-    Form(std::string name);
-    Form(int acces_lvl, int exec_lvl);
-    Form(std::string name, int access_lvl, int exec_lvl);
-    
-    virtual ~Form(void);
+    AForm(void);
+    AForm(const AForm &form);
+    AForm(std::string name);
+    AForm(int acces_lvl, int exec_lvl);
+    AForm(std::string name, int access_lvl, int exec_lvl);
+    ~AForm(void);
 
     std::string getFormName(void) const;
-    int         getFormLevel(void) const;
+    int         getSignLevel(void) const;
     int         getExecLevel(void) const;
     bool        getFormSign(void) const;
 
     void        beSigned(Bureaucrat agent);
     void        signForm(Bureaucrat agent);
 
-    Form &operator=(const Form &src);
+    AForm &operator=(const AForm &src);
+
+    virtual void execute(Bureaucrat const &executor) const = 0;
     class GradeTooHighException: public std::exception{
         public:
             const char* what() const throw();
@@ -42,6 +43,6 @@ public:
     };
 };
 
-std::ostream &operator<<(std::ostream &oper, Form *form);
+std::ostream &operator<<(std::ostream &oper, AForm *form);
 
 #endif

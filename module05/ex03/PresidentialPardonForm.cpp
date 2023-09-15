@@ -1,17 +1,18 @@
 #include "PresidentialPardonForm.hpp"
 
-PresidentialPardonForm::PresidentialPardonForm(void): Form("PresidentialPardonForm", 25, 5), _name("default_name"){
+PresidentialPardonForm::PresidentialPardonForm(void): AForm("PresidentialPardonForm", 25, 5), _name("default_name"){
     // std::cout << this->_name << "\n";
 }
-PresidentialPardonForm::PresidentialPardonForm(std::string name): Form("PresidentialPardonForm", 25, 5), _name(name){
+PresidentialPardonForm::PresidentialPardonForm(std::string name): AForm("PresidentialPardonForm", 25, 5), _name(name){
     // std::cout << this->_name << "\n";
 }
 PresidentialPardonForm::~PresidentialPardonForm(void){
     // std::cout << this->_name << " is deleted\n";
 }
 
-void PresidentialPardonForm::execute(Bureaucrat const &executer){
-    if (this->getFormSign() == false){
+void PresidentialPardonForm::execute(Bureaucrat const &executer) const{
+    bool check = this->getFormSign();
+    if (check == false){
         std::cout << "this form isn't signed\n";
         std::cout << "go sign first\n";
         return ;
@@ -33,6 +34,6 @@ std::string PresidentialPardonForm::getNameFile(void) const{
 
 std::ostream &operator<<(std::ostream &oper, PresidentialPardonForm *pres){
     oper << "Form " << pres->getNameFile() << "\nSign or Not: " << pres->getFormSign()
-    << "\nsign level: " << pres->getFormLevel() << "\nExec level: " << pres->getExecLevel() << "\n";
+    << "\nsign level: " << pres->getSignLevel() << "\nExec level: " << pres->getExecLevel() << "\n";
     return oper;
 }

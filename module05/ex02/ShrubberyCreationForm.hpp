@@ -3,7 +3,7 @@
 #define SHRUBBERYCREATIONFORM_HPP
 #include "AForm.hpp"
 
-class ShrubberyCreationForm : public Form
+class ShrubberyCreationForm : public AForm
 {
 private:
     const std::string _name;
@@ -16,7 +16,7 @@ public:
 
     ShrubberyCreationForm &operator=(const ShrubberyCreationForm &src);
     std::string getNameFile(void) const;
-    void execute(Bureaucrat const &executer);
+    void execute(Bureaucrat const &executer) const;
 };
 
 std::ostream &operator<<(std::ostream &oper, ShrubberyCreationForm *shru);

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <ostream>
 #include <string>
-
+#include "Form.hpp"
 
 class Bureaucrat{
 private:
@@ -27,8 +27,8 @@ public:
 
     // 오버로딩
     Bureaucrat &operator=(const Bureaucrat &ref);
-
-
+    void        signForm(Form &form);
+    
     // 예외처리 exception
     class GradeTooHighException : public std::exception {
         public:
