@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <ostream>
+#include <fstream>
 #include "Bureaucrat.hpp"
 
 class Form{
