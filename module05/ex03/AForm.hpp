@@ -20,7 +20,8 @@ public:
     Form(std::string name);
     Form(int acces_lvl, int exec_lvl);
     Form(std::string name, int access_lvl, int exec_lvl);
-    ~Form(void);
+    
+    virtual ~Form(void);
 
     std::string getFormName(void) const;
     int         getFormLevel(void) const;

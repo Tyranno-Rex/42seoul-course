@@ -27,7 +27,7 @@ public:
 
     // 오버로딩
     Bureaucrat &operator=(const Bureaucrat &ref);
-
+    void executeForm(Form const & form);
 
     // 예외처리 exception
     class GradeTooHighException : public std::exception {

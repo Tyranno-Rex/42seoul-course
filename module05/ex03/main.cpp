@@ -9,11 +9,20 @@ int main()
     Bureaucrat JYP("jyp", 1);
 
     Intern *intern = new Intern();
-    Form *newAlbum = intern->makeForm("ShrubberyCreationForm", "newAlbum");
+    
+    Form *newAlbum1 = intern->makeForm("ShrubberyCreationForm", "DICE");
+    Form *newAlbum2 = intern->makeForm("RobotomyRequestForm", "Love me like this");
+    Form *newAlbum3 = intern->makeForm("PresidentialPardonForm", "Party O'Clock");
 
     std::cout << "\n\n";
-    std::cout << "new album "
-    std::cout << newAlbum->getFormName();
+
+    std::cout << "new album Dice is Created\n";
+    std::cout << "new album name                :" << newAlbum1->getFormName() << "\n";
+    std::cout << "new album grade(sign)         :" << newAlbum1->getFormLevel() << "\n";
+    std::cout << "new album grade(exec)         :" << newAlbum1->getFormLevel() << "\n";
+    std::cout << "new album grade(exec)         :" << newAlbum1->getFormLevel() << "\n";
+
+    newAlbum1->execute(*Bae);
 
     std::cout << "\n\n";
 }
