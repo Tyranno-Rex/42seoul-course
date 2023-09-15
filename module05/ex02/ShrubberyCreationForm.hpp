@@ -1,9 +1,10 @@
 #include "AForm.hpp"
+#include "ostream"
 
 class ShrubberyCreationForm : public Form
 {
 private:
-    std::string _name;
+    const std::string _name;
 
 public:
     ShrubberyCreationForm(void);
@@ -38,7 +39,11 @@ void ShrubberyCreationForm::execute(Bureaucrat const &executer){
     else{
         std::cout << "you can't assign the this form\n";
     }
+    std::ostream outfile (this->getName().append("_shrubbery").c_str());
+
 }
+
+
 
 std::string ShrubberyCreationForm::getName(void) const{
     return (this->_name);
