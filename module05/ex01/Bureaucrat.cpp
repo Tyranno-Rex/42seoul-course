@@ -2,11 +2,11 @@
 
 void Bureaucrat::setGrade(int grade){
     if (grade > 150){
-        this->_grade = -1;
+        this->_grade = 10000;
         throw Bureaucrat::GradeTooLowException();
     }
     else if (grade < 1){
-        this->_grade = -1;
+        this->_grade = 10000;
         throw Bureaucrat::GradeTooHighException();
     }
     else
@@ -24,7 +24,7 @@ void Bureaucrat::signForm(Form &form) const{
         form.beSigned(*this);
     }
     else{
-        std::cout << this->getName() << " couldn't signed "
+        std::cout << this->getName() << " couldn't sign "
         << form.getFormName() << " because this form level(" 
         << form.getSignLevel() <<  ") is higher than agent grade(" 
         << this->getGrade() << ")\n";
@@ -48,7 +48,7 @@ Bureaucrat::Bureaucrat(int grade): _name("EunSeong"){
     catch(...)
     {
         std::cerr << "ERROR\n";
-        std::cerr << this->getName() <<  "'s grade " << grade <<  " is in Wrong Range of Grade(Invalid values are stored as -1.)\n";
+        std::cerr << this->getName() <<  "'s grade " << grade <<  " is in Wrong Range of Grade(Invalid values are stored as 10000.)\n";
     }
     // std::cout << "Bureaucrat is Created\n";
     // std::cout << "Bureaucrat name is " << this->_name << " and Grade is " << this->_grade << "\n";
@@ -61,7 +61,7 @@ Bureaucrat::Bureaucrat(std::string name, int grade): _name(name){
     catch(...)
     {
         std::cerr << "ERROR\n";
-        std::cerr << this->getName() <<  "'s grade " << grade <<  " is in Wrong Range of Grade(Invalid values are stored as -1.)\n";
+        std::cerr << this->getName() <<  "'s grade " << grade <<  " is in Wrong Range of Grade(Invalid values are stored as 10000.)\n";
     }
     // std::cout << "Bureaucrat is Created\n";
     // std::cout << "Bureaucrat name is " << this->_name << " and Grade is " << this->_grade << "\n";
