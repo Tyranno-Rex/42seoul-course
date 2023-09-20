@@ -39,27 +39,39 @@ float ScalarConverter::getFloat(){
 #include <cstring>
 
 void ScalarConverter::convertall(std::string target){
-    if (target.length() != 1){
-
-        throw "error";
-    }
-    char *cstr = new char[target.length() + 1];
-    strcpy(cstr, target.c_str());
-    // double로 저장하고 나머지 처리
-    // convert string to double
-    this->_value_double = atof(cstr);
+    // You have to handle these pseudo literals as well (you know, for fun): -inf, +inf and nan.
+    if (!target.compare("+inf") || !target.compare("-inf") 
+        || !target.compare("inf") || !target.compare("inff")
+        || !target.compare("nan"))
+		{
+            std::string CharInt = "Impossible"; 
+            std::string FloatDouble;
+			if (!target.compare("nan"))
+				FloatDouble = "nan";
+			else if (!target.compare("+inf") || !target.compare("inf") 
+                    || !target.compare("+inff"))
+				FloatDouble = "inf";
+			else if (!target.compare("-inf"))
+				FloatDouble = "-inf";
+			std::cout << "char:     " << CharInt << "\n";
+			std::cout << "int:      " << CharInt << "\n";
+			std::cout << "float:    " << FloatDouble << 'f' << "\n";
+			std::cout << "double:   " << FloatDouble << "\n";
+			return ;
+		}
+    
+    this->_value_double = atof(target.c_str());
     std::cout << "check double\n" << "\n";
     std::cout << this->_value_double << "\n";
-    
-    // this->_value_char = static_cast<unsigned char>();
-    // this->_value_int = static_cast<int>(this->getChar());
-    // this->_value_double = static_cast<double>(this->getChar());
-    // this->_value_float = static_cast<float>(this->getChar());
+    this->_value_char = static_cast<unsigned char>(this->_value_double);
+    this->_value_int = static_cast<int>(this->_value_double);
+    this->_value_double = static_cast<double>(this->_value_double);
+    this->_value_float = static_cast<float>(this->_value_double);
 }
 
 void ScalarConverter::printAll(){
-    std::cout << "char value    : " << this->_value_char << "\n";
-    std::cout << "int value     : " << this->_value_int << "\n";
-    std::cout << "float value   : " << this->_value_float << "\n";
-    std::cout << "double value  : " << this->_value_double << "\n";
+    std::cout << "char      : " << this->_value_char << "\n";
+    std::cout << "int       : " << this->_value_int << "\n";
+    std::cout << "float     : " << this->_value_float << "\n";
+    std::cout << "double    : " << this->_value_double << "\n";
 }

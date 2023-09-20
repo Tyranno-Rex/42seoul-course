@@ -15,5 +15,5 @@ int main(int argc, char **argv){
         • double
     */
    ScalarConverter test(argv[1]);
-//    test.printAll();
+   test.printAll();
 }
