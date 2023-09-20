@@ -1,5 +1,3 @@
-#include <iostream>
-#include <string>
 #include "ScalarConverter.hpp"
 
 void ft_error(std::string msg){
@@ -17,5 +15,5 @@ int main(int argc, char **argv){
         • double
     */
    ScalarConverter test(argv[1]);
-   test.printAll();
+//    test.printAll();
 }
