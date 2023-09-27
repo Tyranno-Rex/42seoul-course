@@ -10,13 +10,13 @@ void ScalarConverter::convert(std::string target){
 
 ScalarConverter::ScalarConverter(std::string target)
 {
-    std::cout << "Constructor is Generated\n";
+    // std::cout << "Constructor is Generated\n";
     ScalarConverter::convert(target);
 }
 
 ScalarConverter::~ScalarConverter(void)
 {
-    std::cout << "Destructor is Generated\n";
+    // std::cout << "Destructor is Generated\n";
 }
 
 char ScalarConverter::getChar(){
@@ -61,7 +61,7 @@ int ScalarConverter::WhatType(std::string target){
         if (!target.compare("nan"))
             FloatDouble = "nan";
         else if (!target.compare("+inf") || !target.compare("inf") 
-                || !target.compare("+inff"))
+                || !target.compare("+inff") || !target.compare("inff"))
             FloatDouble = "inf";
         else if (!target.compare("-inf"))
             FloatDouble = "-inf";
@@ -96,7 +96,7 @@ int ScalarConverter::WhatType(std::string target){
     }
 
     // float형
-    if (target.find_first_not_of(".f+-0123456789") == std::string::npos)
+    if (target.find_first_not_of("f.+-0123456789") == std::string::npos)
 	{
 		if (target.find_first_of("f") != target.find_last_of("f") 
             || target.find_first_of(".") != target.find_last_of(".") 
@@ -115,7 +115,10 @@ void ScalarConverter::convertall(std::string target){
     
     int type = WhatType(target);
     if (type == ERROR) {
-            std::cout << "input type is ERROR\n";
+        std::cout << "input type is ERROR\n";
+    }
+    else if (type == SPEC_VALUE) {
+        std::cout << "\n";
     }
     else{
         if (type == CHAR){
@@ -124,26 +127,23 @@ void ScalarConverter::convertall(std::string target){
         else if (type == INT){
             std::cout << "input type is INT\n";
         }
-        else if (type == FLOAT){
-            std::cout << "input type is FLOAT\n";
-        }
         else if (type == DOUBLE){
             std::cout << "input type is DOUBLE\n";
         }
+        else if (type == FLOAT){
+            std::cout << "input type is FLOAT\n";
+        }
+
 
         this->_value_double = atof(target.c_str());
-        // std::cout << this->_value_double << "\n";
-
         this->_value_char = static_cast<unsigned char>(this->_value_double);
         this->_value_int = static_cast<int>(this->_value_double);
         this->_value_double = static_cast<double>(this->_value_double);
         this->_value_float = static_cast<float>(this->_value_double);
-    }
-}
 
-void ScalarConverter::printAll(){
-    std::cout << "char      : " << this->_value_char << "\n";
-    std::cout << "int       : " << this->_value_int << "\n";
-    std::cout << "float     : " << this->_value_float << "\n";
-    std::cout << "double    : " << this->_value_double << "\n";
+        std::cout << "char      : " << this->_value_char << "\n";
+        std::cout << "int       : " << this->_value_int << "\n";
+        std::cout << "float     : " << this->_value_float << "\n";
+        std::cout << "double    : " << this->_value_double << "\n";
+    }
 }

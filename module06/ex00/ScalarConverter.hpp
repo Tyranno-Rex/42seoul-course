@@ -35,7 +35,6 @@ public:
 
     int     WhatType(std::string target);
     void    convertall(std::string target);
-    void    printAll();
 
     class WrongValue : public std::exception{
         public:
