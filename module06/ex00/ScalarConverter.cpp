@@ -38,28 +38,97 @@ float ScalarConverter::getFloat(){
 #include <stdlib.h>
 #include <cstring>
 
-void ScalarConverter::convertall(std::string target){
-    // You have to handle these pseudo literals as well (you know, for fun): -inf, +inf and nan.
+#define ERROR -42
+#define EMPTY -1
+#define SPEC_VALUE -2
+#define CHAR -3
+#define INT -4
+#define FLOAT -5
+#define DOUBLE -6
+
+int WhatType(std::string target){
+
+    // 비어있는 값 처리
+    if (target.empty()){
+        throw ScalarConverter::WrongValue();
+        return EMPTY;
+    }
+
+    // 사이즈가 1개임
+    if (target.length() == 1){
+        if (std::isprint(target[0]))
+            return CHAR;
+        else
+            return ERROR;
+    }
+
+    // 특이값 처리
     if (!target.compare("+inf") || !target.compare("-inf") 
         || !target.compare("inf") || !target.compare("inff")
         || !target.compare("nan"))
-		{
-            std::string CharInt = "Impossible"; 
-            std::string FloatDouble;
-			if (!target.compare("nan"))
-				FloatDouble = "nan";
-			else if (!target.compare("+inf") || !target.compare("inf") 
-                    || !target.compare("+inff"))
-				FloatDouble = "inf";
-			else if (!target.compare("-inf"))
-				FloatDouble = "-inf";
-			std::cout << "char:     " << CharInt << "\n";
-			std::cout << "int:      " << CharInt << "\n";
-			std::cout << "float:    " << FloatDouble << 'f' << "\n";
-			std::cout << "double:   " << FloatDouble << "\n";
-			return ;
-		}
+    {
+        std::string CharInt = "Impossible"; 
+        std::string FloatDouble;
+        if (!target.compare("nan"))
+            FloatDouble = "nan";
+        else if (!target.compare("+inf") || !target.compare("inf") 
+                || !target.compare("+inff"))
+            FloatDouble = "inf";
+        else if (!target.compare("-inf"))
+            FloatDouble = "-inf";
+        std::cout << "char:     " << CharInt << "\n";
+        std::cout << "int:      " << CharInt << "\n";
+        std::cout << "float:    " << FloatDouble << 'f' << "\n";
+        std::cout << "double:   " << FloatDouble << "\n";
+        return SPEC_VALUE;
+    }
     
+    // int형
+    // 숫자를 찾고 해당 문자열에 해당 되는 문자열이 따로 없으면 INT형을 반환
+    if (target.find_first_not_of("+-0123456789") == std::string::npos){
+        int pos_p = target.find('+');
+        int pos_n = target.find('-');
+        if (pos_p != std::string::npos && pos_p != 0){
+            return ERROR;
+        }
+        if (pos_n != std::string::npos && pos_n != 0){
+            return ERROR;
+        }
+        return INT;
+    }
+
+    // float형
+    if (target.find_first_not_of(".f+-0123456789") == std::string::npos)
+	{
+		if (target.find_first_of("f") != target.find_last_of("f") 
+            || target.find_first_of(".") != target.find_last_of(".") 
+            || target.find_first_of(".") == 0 
+            || target.find_first_of("f") != target.length() - 1
+			|| target.find_first_of("f") - target.find_first_of(".") == 1) 
+			return (ERROR);
+		else
+			return (FLOAT);
+	}
+
+
+    if (target.find_first_not_of("+-0123456789") == std::string::npos){
+		if (target.find_first_of(".") != target.find_last_of(".") 
+            || target.find_first_of(".") == 0 )
+			return (ERROR);
+		else
+			return (DOUBLE);
+    }
+
+    return (ERROR);
+}
+
+void ScalarConverter::convertall(std::string target){
+    // You have to handle these pseudo literals as well (you know, for fun): -inf, +inf and nan.
+    
+    int type = WhatType(target);
+    if (type == ERROR) {
+        std:;cout << 
+    }
     this->_value_double = atof(target.c_str());
     std::cout << "check double\n" << "\n";
     std::cout << this->_value_double << "\n";

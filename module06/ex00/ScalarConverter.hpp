@@ -24,8 +24,16 @@ public:
     float   getFloat();
     double  getDouble();
 
+    int     WhatType(std::string target);
     void    convertall(std::string target);
     void    printAll();
+
+    class WrongValue : public std::exception{
+        public:
+            const char *what() const throw(){
+                return ("Invaild input\n");
+            }
+    };
 };
 
 #endif
