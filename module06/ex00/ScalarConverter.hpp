@@ -4,6 +4,15 @@
 #include <iostream>
 #include <string>
 #include <stdlib.h>
+#include <cstring>
+
+#define ERROR -42
+#define EMPTY -1
+#define SPEC_VALUE -2
+#define CHAR -3
+#define INT -4
+#define FLOAT -5
+#define DOUBLE -6
 
 class ScalarConverter
 {

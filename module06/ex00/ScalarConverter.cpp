@@ -35,18 +35,7 @@ float ScalarConverter::getFloat(){
     return this->_value_float;
 }
 
-#include <stdlib.h>
-#include <cstring>
-
-#define ERROR -42
-#define EMPTY -1
-#define SPEC_VALUE -2
-#define CHAR -3
-#define INT -4
-#define FLOAT -5
-#define DOUBLE -6
-
-int WhatType(std::string target){
+int ScalarConverter::WhatType(std::string target){
 
     // 비어있는 값 처리
     if (target.empty()){
@@ -88,13 +77,22 @@ int WhatType(std::string target){
     if (target.find_first_not_of("+-0123456789") == std::string::npos){
         int pos_p = target.find('+');
         int pos_n = target.find('-');
-        if (pos_p != std::string::npos && pos_p != 0){
+        if (target.find('+') != std::string::npos && pos_p != 0){
             return ERROR;
         }
-        if (pos_n != std::string::npos && pos_n != 0){
+        if (target.find('-') != std::string::npos && pos_n != 0){
             return ERROR;
         }
         return INT;
+    }
+
+    // double 형
+    if (target.find_first_not_of(".+-0123456789") == std::string::npos){
+		if (target.find_first_of(".") != target.find_last_of(".") 
+            || target.find_first_of(".") == 0 )
+			return (ERROR);
+		else
+			return (DOUBLE);
     }
 
     // float형
@@ -109,16 +107,6 @@ int WhatType(std::string target){
 		else
 			return (FLOAT);
 	}
-
-
-    if (target.find_first_not_of("+-0123456789") == std::string::npos){
-		if (target.find_first_of(".") != target.find_last_of(".") 
-            || target.find_first_of(".") == 0 )
-			return (ERROR);
-		else
-			return (DOUBLE);
-    }
-
     return (ERROR);
 }
 
@@ -127,15 +115,30 @@ void ScalarConverter::convertall(std::string target){
     
     int type = WhatType(target);
     if (type == ERROR) {
-        std:;cout << 
+            std::cout << "input type is ERROR\n";
     }
-    this->_value_double = atof(target.c_str());
-    std::cout << "check double\n" << "\n";
-    std::cout << this->_value_double << "\n";
-    this->_value_char = static_cast<unsigned char>(this->_value_double);
-    this->_value_int = static_cast<int>(this->_value_double);
-    this->_value_double = static_cast<double>(this->_value_double);
-    this->_value_float = static_cast<float>(this->_value_double);
+    else{
+        if (type == CHAR){
+            std::cout << "input type is CHAR\n";
+        }
+        else if (type == INT){
+            std::cout << "input type is INT\n";
+        }
+        else if (type == FLOAT){
+            std::cout << "input type is FLOAT\n";
+        }
+        else if (type == DOUBLE){
+            std::cout << "input type is DOUBLE\n";
+        }
+
+        this->_value_double = atof(target.c_str());
+        // std::cout << this->_value_double << "\n";
+
+        this->_value_char = static_cast<unsigned char>(this->_value_double);
+        this->_value_int = static_cast<int>(this->_value_double);
+        this->_value_double = static_cast<double>(this->_value_double);
+        this->_value_float = static_cast<float>(this->_value_double);
+    }
 }
 
 void ScalarConverter::printAll(){
