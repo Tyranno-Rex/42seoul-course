@@ -148,8 +148,8 @@ void ScalarConverter::convertall(std::string target){
             this->_value_double = static_cast<double>(this->_value_double);
             this->_value_float = static_cast<float>(this->_value_double);
             std::cout << "int       : " << this->_value_int << "\n";
-            std::cout << "float     : " << this->_value_float << "f\n";
-            std::cout << "double    : " << this->_value_double << "\n";
+            std::cout << "float     : " << this->_value_float << ".0f\n";
+            std::cout << "double    : " << this->_value_double << ".0\n";
         }
         else if (type == DOUBLE){
             std::cout << "input type is DOUBLE\n";

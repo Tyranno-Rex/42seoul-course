@@ -1,45 +1,64 @@
 #include "Base.hpp"
 
-Base::Base(void)
+
+Base *generate(void)
 {
-    this->_A = 0;
-    this->_B = 0;
-    this->_C = 0;
-    // std::cout << "Constructor is Generated\n";
+    int randomValue = std::rand() % 3;
+    if (randomValue == 0) {
+        return new A();
+    } else if (randomValue == 1) {
+        return new B();
+    } else {
+        return new C();
+    }
 }
 
-Base::Base(const Base &src)
-{
-    // std::cout << "Copy Constructor is Generated\n";
-    *this = src;
+void identify(Base *p){
+    Base *base;
+
+    if (p == NULL){
+        std::cerr << "wrong input in identify func\n";
+    }
+    base = dynamic_cast<A *>(p);
+    if (base != NULL){
+        std::cout << "A: " << p << "\n";
+    }
+    base = dynamic_cast<B *>(p);
+    if (base != NULL){
+        std::cout << "B: " << p << "\n";
+    }
+    base = dynamic_cast<C *>(p);
+    if (base != NULL){
+        std::cout << "C: " << p << "\n";
+    }
 }
 
-Base::~Base(void)
+void identify(Base& p)
 {
-    // std::cout << "Constructor is Destroyed\n";
-}
+	try
+	{
+		A& AIdentifier = dynamic_cast<A &>(p);
+		std::cout << &AIdentifier << " is A\n";
+	}
+	catch(const std::exception& e)
+	{
+	}
 
+	try
+	{
+		B& BIdentifier = dynamic_cast<B &>(p);
+		std::cout << &BIdentifier << " is B\n";
+	}
+	catch(const std::exception& e)
+	{
+	}
 
-Base *Base::generate(void)
-{
-    Base* tmp = new Base;
-    srand(time(NULL));
-
-    int A = rand()%100000000;
-    int B = rand()%100000000;
-    int C = rand()%100000000;
-    std::cout<<"A, B, C is generated: "<< A << ", "<< B << ", " << C << "\n";
-    tmp->_A = reinterpret_cast<uintptr_t *>(A);
-    tmp->_B = reinterpret_cast<uintptr_t *>(B);
-    tmp->_C = reinterpret_cast<uintptr_t *>(C);
-    std::cout<<"A, B, C is modifyed : "<< tmp->_A << ", "<< tmp->_B << ", " << tmp->_C << "\n";
-    return tmp;
-}
-
-
-void Base::idenify(Base *p){
-    int A, B, C;
-
-    A = reinterpret_cast<int>(p->_A);
-    std::cout << A << B << C << "\n";
+	try
+	{
+		C& CIdentifier = dynamic_cast<C&>(p);
+		std::cout << &CIdentifier << " is C\n";
+	}
+	catch(const std::exception& e)
+	{
+	}
 }
