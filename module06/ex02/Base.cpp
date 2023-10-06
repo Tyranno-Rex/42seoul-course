@@ -3,6 +3,7 @@
 
 Base *generate(void)
 {
+    srand(time(NULL));
     int randomValue = std::rand() % 3;
     if (randomValue == 0) {
         return new A();
