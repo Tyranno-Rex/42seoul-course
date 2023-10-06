@@ -31,16 +31,40 @@ public:
     Array(void);
     Array(unsigned int size);
     Array(const Array &src);
+    Array &operator=(Array &src);
     ~Array(void);
 
 };
 
 template <typename T>
-Array<T>::Array(void): _array(new T[0]), _size(0) {}
+Array<T> &Array<T>::operator=(Array &src){
+    this->_array = src._array;
+    this->_size = src._size;
+
+}
+
+template <typename T>
+Array<T>::Array(const Array &src){
+    this->_array = src._array;
+    this->_size = src._size;
+}
+
+template <typename T>
+Array<T>::Array(void){
+    this->_array = new T[0];
+    this->_size = 0;
+} 
+
+template <typename T>
+Array<T>::Array(unsigned int size){
+    this->_array = new T[size];
+    this->_size = size;
+}
 
 template <typename T>
 Array<T>::~Array(void)
 {
     if (_array != NULL)
         delete [] _array;
+
 }
