@@ -46,7 +46,10 @@ int ScalarConverter::WhatType(std::string target){
     // 사이즈가 1개임
     if (target.length() == 1){
         if (std::isprint(target[0]))
-            return CHAR;
+            if (std::isdigit(target[0]))
+                return INT;
+            else
+                return CHAR;
         else
             return ERROR;
     }
@@ -137,7 +140,10 @@ void ScalarConverter::convertall(std::string target){
         else if (type == INT){
             std::cout << "input type is INT\n";
             this->_value_double = atof(target.c_str());
-            if (this->_value_double >= 0 && this->_value_double <= 126){
+            if (this->_value_double >= 0 && this->_value_double <= 32){
+                std::cout << "char      : Non displayable" << "\n";
+            }
+            else if (this->_value_double > 0 && this->_value_double <= 126){
                 this->_value_char = static_cast<unsigned char>(this->_value_double);
                 std::cout << "char      : " << this->_value_char << "\n";
             }

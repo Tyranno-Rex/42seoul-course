@@ -6,6 +6,7 @@ void leak(){
 
 int main(void)
 {
+    srand(time(NULL));
     const int len = 10;
     Base *generatedClasses[len];
 

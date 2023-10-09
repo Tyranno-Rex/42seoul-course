@@ -3,8 +3,10 @@
 
 Base *generate(void)
 {
-    srand(time(NULL));
-    int randomValue = std::rand() % 3;
+    int number = int(rand() % 3);
+    std::cout << "random number: " << number << "\n";
+    int randomValue =  number;
+
     if (randomValue == 0) {
         return new A();
     } else if (randomValue == 1) {
@@ -36,30 +38,29 @@ void identify(Base *p){
 
 void identify(Base& p)
 {
-	try
-	{
-		A& AIdentifier = dynamic_cast<A &>(p);
-		std::cout << &AIdentifier << " is A\n";
-	}
-	catch(const std::exception& e)
-	{
-	}
-
-	try
-	{
-		B& BIdentifier = dynamic_cast<B &>(p);
-		std::cout << &BIdentifier << " is B\n";
-	}
-	catch(const std::exception& e)
-	{
-	}
-
-	try
-	{
-		C& CIdentifier = dynamic_cast<C&>(p);
-		std::cout << &CIdentifier << " is C\n";
-	}
-	catch(const std::exception& e)
-	{
-	}
+    try
+    {
+        A& AIdentifier = dynamic_cast<A &>(p);
+        std::cout << &AIdentifier << " is A\n";
+    }
+    catch (const std::exception& e)
+    {
+        try
+        {
+            B& BIdentifier = dynamic_cast<B &>(p);
+            std::cout << &BIdentifier << " is B\n";
+        }
+        catch(const std::exception& e)
+        {
+            try
+            {
+                C& CIdentifier = dynamic_cast<C&>(p);
+                std::cout << &CIdentifier << " is C\n";
+            }
+            catch(const std::exception& e)
+            {
+                std::cerr << "ERROR: " << e.what() << "\n";
+            }
+        }
+    }
 }
