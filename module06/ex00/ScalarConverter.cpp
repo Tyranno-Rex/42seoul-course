@@ -161,7 +161,10 @@ void ScalarConverter::convertall(std::string target){
             std::cout << "input type is DOUBLE\n";
             this->_value_double = atof(target.c_str());
 
-            if (this->_value_double >= 0 && this->_value_double <= 126){
+            if (this->_value_double >= 0 && this->_value_double <= 32){
+                std::cout << "char      : Non displayable" << "\n";
+            }
+            else if (this->_value_double >= 0 && this->_value_double <= 126){
                 this->_value_char = static_cast<unsigned char>(this->_value_double);
                 std::cout << "char      : " << this->_value_char << "\n";
             }
@@ -169,17 +172,32 @@ void ScalarConverter::convertall(std::string target){
                 std::cout << "char      : " << "Impossilble to display" << "\n";
             }
             this->_value_int = static_cast<int>(this->_value_double);
+            std::cout << "int       : " << this->_value_int << "\n";
+
+
             this->_value_double = static_cast<double>(this->_value_double);
             this->_value_float = static_cast<float>(this->_value_double);
+            if (this->_value_double - this->_value_int == 0){
+                std::cout << "double    : " << this->_value_double << ".0\n";
+            }else{
+                std::cout << "double    : " << this->_value_double << "\n";
+            }
+            if (this->_value_float - this->_value_int == 0){
+                std::cout << "float     : " << this->_value_float <<  ".0f\n";
+            }else{
+                std::cout << "float     : " << this->_value_float <<  "f\n";
+            }
 
-            std::cout << "int       : " << this->_value_int << "\n";
-            std::cout << "float     : " << this->_value_float <<  "f\n";
-            std::cout << "double    : " << this->_value_double << "\n";
+
+
         }
         else if (type == FLOAT){
             std::cout << "input type is FLOAT\n";
             this->_value_double = atof(target.c_str());
-            if (this->_value_double >= 0 && this->_value_double <= 126){
+            if (this->_value_double >= 0 && this->_value_double <= 32){
+                std::cout << "char      : Non displayable" << "\n";
+            }
+            else if (this->_value_double >= 0 && this->_value_double <= 126){
                 this->_value_char = static_cast<unsigned char>(this->_value_double);
                 std::cout << "char      : " << this->_value_char << "\n";
             }
@@ -190,8 +208,16 @@ void ScalarConverter::convertall(std::string target){
             this->_value_double = static_cast<double>(this->_value_double);
             this->_value_float = static_cast<float>(this->_value_double);
             std::cout << "int       : " << this->_value_int << "\n";
-            std::cout << "float     : " << this->_value_float << "f\n";
-            std::cout << "double    : " << this->_value_double << "\n";
+            if (this->_value_double - this->_value_int == 0){
+                std::cout << "double    : " << this->_value_double << ".0\n";
+            }else{
+                std::cout << "double    : " << this->_value_double << "\n";
+            }
+            if (this->_value_float - this->_value_int == 0){
+                std::cout << "float     : " << this->_value_float <<  ".0f\n";
+            }else{
+                std::cout << "float     : " << this->_value_float <<  "f\n";
+            }
         }
 
     }
