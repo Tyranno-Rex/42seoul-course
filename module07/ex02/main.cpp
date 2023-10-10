@@ -42,7 +42,7 @@ int main(){
     Array<int> tmp_int_Array[10];
     *tmp_int_Array=Array_Int;
 
-    std::cout << Red << "ARRAY COPY: " << White;
+    std::cout << Red << "ARRAY COPY(INT COPY): " << White;
     tmp_int_Array->printAll();
     std::cout << "\n\n";
 
