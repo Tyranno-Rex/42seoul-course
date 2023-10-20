@@ -59,7 +59,7 @@ void read_data(std::fstream &file, BitcoinExchange &btc, int version){
 			else if (version == 2)
 				value = line.substr(line.find('|') + 1);
 		}
-		catch ( std::out_of_range const &e ){
+		catch (std::out_of_range const &e){
 			std::cerr << "Error: no value" << std::endl;
 			continue ;
 		}

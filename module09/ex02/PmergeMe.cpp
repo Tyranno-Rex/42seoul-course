@@ -1,6 +1,5 @@
 #include "PmergeMe.hpp"
 
-
 PmergeMe::PmergeMe(int ac, char** av) {
     std::deque<int> deque_sort_algo;
     std::list<int>  list_sort_algo;
@@ -29,8 +28,10 @@ void PmergeMe::PrintAll(std::deque<int> deque_sort_algo, std::list<int> list_sor
 
     std::cout << "After: ";
     display(deque_sort_algo);
-    std::cout << "Time to process a range of " << deque_sort_algo.size() << " elements with std::deque container: " << time1 << " us" << std::endl;
-    std::cout << "Time to process a range of " << list_sort_algo.size() << " elements with std::list container: " << time2 << " us" << std::endl;
+    std::cout << "Time to process a range of " << deque_sort_algo.size() 
+        << " elements with std::deque container: " << time1 << " us" << std::endl;
+    std::cout << "Time to process a range of " << list_sort_algo.size() 
+        << " elements with std::list container: " << time2 << " us" << std::endl;
 }
 
 template <typename T>
@@ -42,108 +43,71 @@ void PmergeMe::display(const T& container)
     std::cout << std::endl;
 }
 
-void PmergeMe::mergeInsertSortDeque(std::deque<int>& arr)
-{
-    std::deque<int>::iterator it1, it2;
-    for (it1 = arr.begin() + 1; it1 != arr.end(); ++it1)
-    {
-        int temp = *it1;
-        it2 = it1;
-        while (it2 != arr.begin() && *(it2-1) > temp)
-        {
-            *it2 = *(it2-1);
-            --it2;
-        }
-        *it2 = temp;
+void PmergeMe::mergeInsertSortDeque(std::deque<int>& arr) {
+    if (arr.size() <= 1) {
+        return; 
     }
-}
+    std::deque<int> left(arr.begin(), arr.begin() + arr.size() / 2);
+    std::deque<int> right(arr.begin() + arr.size() / 2, arr.end());
+    mergeInsertSortDeque(left);
+    mergeInsertSortDeque(right);
+    arr.clear();
+    std::deque<int>::iterator it1 = left.begin();
+    std::deque<int>::iterator it2 = right.begin();
 
-void PmergeMe::fordJohnson(std::deque<int>& arr1, std::deque<int>& arr2, std::deque<int>& result)
-{
-    mergeInsertSortDeque(arr1);
-    mergeInsertSortDeque(arr2);
-
-    std::deque<int>::iterator it1 = arr1.begin();
-    std::deque<int>::iterator it2 = arr2.begin();
-
-    while (it1 != arr1.end() && it2 != arr2.end())
-    {
-        if (*it1 < *it2)
-        {
-            result.push_back(*it1);
+    while (it1 != left.end() && it2 != right.end()) {
+        if (*it1 < *it2) {
+            arr.push_back(*it1);
             ++it1;
-        }
-        else
-        {
-            result.push_back(*it2);
+        } else {
+            arr.push_back(*it2);
             ++it2;
         }
     }
 
-    while (it1 != arr1.end())
-    {
-        result.push_back(*it1);
+    while (it1 != left.end()) {
+        arr.push_back(*it1);
         ++it1;
     }
 
-    while (it2 != arr2.end())
-    {
-        result.push_back(*it2);
+    while (it2 != right.end()) {
+        arr.push_back(*it2);
         ++it2;
     }
 }
 
-void PmergeMe::mergeInsertSortList(std::list<int>& arr)
-{
-    std::list<int>::iterator it1, it2;
-    for (it1 = ++arr.begin(); it1 != arr.end(); ++it1)
-    {
-        int temp = *it1;
-        it2 = it1;
-        while (it2 != arr.begin() && *(--it2) > temp)
-        {
-            std::list<int>::iterator prev_it = it2;
-            std::list<int>::iterator next_it = prev_it;
-            ++next_it;
-            *next_it = *prev_it;
-        }
-        std::list<int>::iterator next_it = it2;
-        ++next_it;
-        *next_it = temp;
+void PmergeMe::mergeInsertSortList(std::list<int>& arr) {
+    if (arr.size() <= 1) {
+        return; 
     }
-}
-
-void PmergeMe::fordJohnson(std::list<int>& arr1, std::list<int>& arr2, std::list<int>& result)
-{
-    mergeInsertSortList(arr1);
-    mergeInsertSortList(arr2);
-
-    std::list<int>::iterator it1 = arr1.begin();
-    std::list<int>::iterator it2 = arr2.begin();
-
-    while (it1 != arr1.end() && it2 != arr2.end())
-    {
-        if (*it1 < *it2)
-        {
-            result.push_back(*it1);
-            ++it1;
-        }
-        else
-        {
-            result.push_back(*it2);
-            ++it2;
+    std::list<int> left, right;
+    std::list<int>::iterator it = arr.begin();
+    for (int i = 0; i < int(arr.size()) / 2; ++i) {
+        left.push_back(*it);
+        ++it;
+    }
+    while (it != arr.end()) {
+        right.push_back(*it);
+        ++it;
+    }
+    mergeInsertSortList(left);
+    mergeInsertSortList(right);
+    arr.clear();
+    while (!left.empty() && !right.empty()) {
+        if (left.front() < right.front()) {
+            arr.push_back(left.front());
+            left.pop_front();
+        } else {
+            arr.push_back(right.front());
+            right.pop_front();
         }
     }
-
-    while (it1 != arr1.end())
-    {
-        result.push_back(*it1);
-        ++it1;
+    while (!left.empty()) {
+        arr.push_back(left.front());
+        left.pop_front();
     }
-
-    while (it2 != arr2.end())
-    {
-        result.push_back(*it2);
-        ++it2;
+    while (!right.empty()) {
+        arr.push_back(right.front());
+        right.pop_front();
     }
 }
