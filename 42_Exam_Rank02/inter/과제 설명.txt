@@ -1,0 +1,42 @@
+Assignment name  : inter
+Expected files   : inter.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Écrire un programme qui prend en paramètres deux chaînes de caractères et qui
+affiche sans doublon les caractères communs aux deux chaînes.
+
+L'affichage se fera dans l'ordre d'apparition dans la premiere chaîne.
+L'affichage doit être suivi d'un '\n'.
+
+Si le nombre de paramètres transmis est différent de 2, le programme affiche
+'\n'.
+
+Exemples:
+$>./inter "padinton" "paqefwtdjetyiytjneytjoeyjnejeyj" | cat -e
+padinto$
+$>./inter ddf6vewg64f gtwthgdwthdwfteewhrtag6h4ffdhsd | cat -e
+df6ewg4$
+$>./inter "rien" "cette phrase ne cache rien" | cat -e
+rien$
+$>./inter | cat -e
+$
+
+#include <unistd.h> - write()
+
+main 명령행 인자 argc(ARGument Count), argv(ARGument Vector) 사용
+
+agrc : 명령행 인자의 개수
+argv : 명령행 인자 데이터 또는 값
+
+기본적으로 argv의 첫번째 인덱스 데이터(argv[0])에는 
+프로그램의 실행경로가 고정적으로 저장되어져있다.
+따라서 argc도 기본 값은 1이다.
+
+inter : 첫번째 인자 문자열의 각 문자들 중
+두번째 인자 문자열에도 속해있는 문자 출력
+단, 이미 출력된 문자를 중복 출력할 수 없다.
+
+만약 인자가 2개가 아닐 경우 '\n'를 출력하고 프로그램을 종료한다.
+
+dupl_check 함수 구현 - 어떠한 문자열에서 출력하려는 문자의 중복 체크

@@ -1,0 +1,47 @@
+Assignment name  : union
+Expected files   : union.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes two strings and displays, without doubles, the
+characters that appear in either one of the strings.
+
+The display will be in the order characters appear in the command line, and
+will be followed by a \n.
+
+If the number of arguments is not 2, the program displays \n.
+
+Example:
+
+$>./union zpadinton "paqefwtdjetyiytjneytjoeyjnejeyj" | cat -e
+zpadintoqefwjy$
+$>./union ddf6vewg64f gtwthgdwthdwfteewhrtag6h4ffdhsd | cat -e
+df6vewg4thras$
+$>./union "rien" "cette phrase ne cache rien" | cat -e
+rienct phas$
+$>./union | cat -e
+$
+$>
+$>./union "rien" | cat -e
+$
+$>
+
+
+#include <unistd.h> - write()
+
+main 명령행 인자 argc(ARGument Count), argv(ARGument Vector) 사용
+
+agrc : 명령행 인자의 개수
+argv : 명령행 인자 데이터 또는 값
+
+기본적으로 argv의 첫번째 인덱스 데이터(argv[0])에는 
+프로그램의 실행경로가 고정적으로 저장되어져있다.
+따라서 argc도 기본 값은 1이다.
+
+union : 첫번째 인자 문자열부터 두번째 인자 문자열까지 
+구성된 문자들을 순서대로 출력.
+단, 이미 출력된 문자를 중복 출력할 수 없다.
+
+만약 인자가 2개가 아닐 경우 '\n'를 출력하고 프로그램을 종료한다.
+
+dupl_check 함수 구현 - 어떠한 문자열에서 출력하려는 문자의 중복 체크
