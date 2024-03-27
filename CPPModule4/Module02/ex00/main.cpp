@@ -1,0 +1,65 @@
+#include <iostream>
+#include "Fixed.hpp"
+
+/*
+Default constructor called
+Copy constructor called
+Assignation operator called // <-- This line may be missing depending on your implementation
+getRawBits member function called
+Default constructor called
+Assignation operator called
+getRawBits member function called
+getRawBits member function called
+0
+getRawBits member function called
+0
+getRawBits member function called
+0
+Destructor called
+Destructor called
+Destructor called
+*/
+
+int main( void ) {
+  Fixed a;
+  Fixed b( a );
+  Fixed c;
+
+  c = b;
+
+  std::cout << a.getRawBits() << std::endl;
+  std::cout << b.getRawBits() << std::endl;
+  std::cout << c.getRawBits() << std::endl;
+
+  return 0;
+}
+
+
+
+
+// int main( void ) {
+//   std::cout << "\n\n\n";
+//   Fixed a;
+//   Fixed b( a );
+//   Fixed c;
+
+//   c = b;
+
+//   std::cout << "\n\n\n";
+//   std::cout << a.getRawBits() << std::endl;
+//   std::cout << b.getRawBits() << std::endl;
+//   std::cout << c.getRawBits() << std::endl;
+
+//   std::cout << "\n\n\n";
+//   a.setRawBits(2);
+//   b.setRawBits(3);
+//   c.setRawBits(5);
+  
+//   std::cout << "\n\n\n";
+//   std::cout << a.getRawBits() << std::endl;
+//   std::cout << b.getRawBits() << std::endl;
+//   std::cout << c.getRawBits() << std::endl;
+
+//   std::cout << "\n\n\n";
+//   return 0;
+// }
