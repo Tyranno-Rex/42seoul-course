@@ -61,7 +61,7 @@ An implementation of an IRC server in C++, handling multiple clients and various
 ## How to Use This Repository
 Each project is contained in its own directory with a README file explaining the specifics of that project. To navigate through the projects:
 
-1. Clone this repository: `git clone https://github.com/yourusername/42seoul-projects.git`
+1. Clone this repository: `git clone https://github.com/Tyranno-Rex/42seoul-course.git`
 2. Navigate to the desired project directory: `cd project-name`
 3. Follow the instructions in the README file of each project to build and run the project.
 
