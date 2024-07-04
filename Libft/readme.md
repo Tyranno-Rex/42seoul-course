@@ -102,6 +102,10 @@ int main() {
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Summary
+- [notion] : https://www.notion.so/0-libft-5eac5697c9f340a28a47601182c109cb
+
 ```
 
 이 README 파일은 `libft` 프로젝트의 각 함수에 대한 간단한 설명과 프로젝트의 사용법 및 설치 방법을 포함하고 있습니다. 필요에 따라 내용을 추가하거나 수정할 수 있습니다.
