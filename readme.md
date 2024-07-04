@@ -67,8 +67,3 @@ Each project is contained in its own directory with a README file explaining the
 
 ## Acknowledgements
 I would like to thank the 42seoul community for their support and guidance throughout these projects.
-
----
-
-Feel free to reach out if you have any questions or suggestions!
-
