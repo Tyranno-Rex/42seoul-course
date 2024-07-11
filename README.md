@@ -71,13 +71,3 @@ PROJECT_MULTI : YES
 PROJECT_SUBPROJECT : libft, get_next_line, ft_printf, Born2BeRoot, exam-rank02, so_long, minitalk, push_swap, exam-rank03, philosophers, minishell, exam-rank04, netpractice, cpp-module-04, cube3d, cpp-module-09, ft_irc
 PROJECT_CATEGORY : 'NONE'
 PROJECT_NOTION : 'https://uttermost-meteoroid-5fa.notion.site/355b96e0fca04a1a80d6eb774e9c7f6b?v=1351c2ffa3ba40238e0439828b8dded8&pvs=4'
-
-## Project Crawling
-PROJECT_NAME :
-PROJECT_DESCRIPTION :
-PROJECT_URL :
-PROJECT_COMPLETION_STATUS :
-PROJECT_MULTI :
-PROJECT_SUBPROJECT :
-PROJECT_CATEGORY :
-PROJECT_NOTION : 
