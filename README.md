@@ -66,8 +66,8 @@ Each project is contained in its own directory with a README file explaining the
 PROJECT_NAME : 42seoul-course
 PROJECT_DESCRIPTION : This repository contains all the projects I completed during my time at 42seoul. Each project helped me develop a deeper understanding of various programming concepts and improve my skills. Can check the details of each project in the README file of the respective project directory.
 PROJECT_URL : 'https://github.com/Tyranno-Rex/42seoul-course'
-PROJECT_COMPLETION_STATUS : COMPLETED
-PROJECT_MULTI : YES
+PROJECT_COMPLETION_STATUS : TRUE
+PROJECT_MULTI : TRUE
 PROJECT_SUBPROJECT : libft, get_next_line, ft_printf, Born2BeRoot, exam-rank02, so_long, minitalk, push_swap, exam-rank03, philosophers, minishell, exam-rank04, netpractice, cpp-module-04, cube3d, cpp-module-09, ft_irc
 PROJECT_CATEGORY : 'NONE'
 PROJECT_NOTION : 'https://uttermost-meteoroid-5fa.notion.site/355b96e0fca04a1a80d6eb774e9c7f6b?v=1351c2ffa3ba40238e0439828b8dded8&pvs=4'
