@@ -49,9 +49,6 @@ A project in C++ that delves into object-oriented programming, including inherit
 ### cube3d
 A 3D game using raycasting, inspired by Wolfenstein 3D. This project covers graphics programming, game development, and mathematical computations.
 
-### exam-rank-05
-An advanced programming exam that challenges the ability to solve complex problems efficiently.
-
 ### cpp-module-09
 A C++ project focusing on advanced concepts such as templates, STL, and metaprogramming.
 
@@ -65,5 +62,22 @@ Each project is contained in its own directory with a README file explaining the
 2. Navigate to the desired project directory: `cd project-name`
 3. Follow the instructions in the README file of each project to build and run the project.
 
-## Acknowledgements
-I would like to thank the 42seoul community for their support and guidance throughout these projects.
+## Project Crawling
+PROJECT_NAME : 42seoul-course
+PROJECT_DESCRIPTION : This repository contains all the projects I completed during my time at 42seoul. Each project helped me develop a deeper understanding of various programming concepts and improve my skills. Can check the details of each project in the README file of the respective project directory.
+PROJECT_URL : 'https://github.com/Tyranno-Rex/42seoul-course'
+PROJECT_COMPLETION_STATUS : COMPLETED
+PROJECT_MULTI : YES
+PROJECT_SUBPROJECT : libft, get_next_line, ft_printf, Born2BeRoot, exam-rank02, so_long, minitalk, push_swap, exam-rank03, philosophers, minishell, exam-rank04, netpractice, cpp-module-04, cube3d, cpp-module-09, ft_irc
+PROJECT_CATEGORY : 'NONE'
+PROJECT_NOTION : 'https://uttermost-meteoroid-5fa.notion.site/355b96e0fca04a1a80d6eb774e9c7f6b?v=1351c2ffa3ba40238e0439828b8dded8&pvs=4'
+
+## Project Crawling
+PROJECT_NAME :
+PROJECT_DESCRIPTION :
+PROJECT_URL :
+PROJECT_COMPLETION_STATUS :
+PROJECT_MULTI :
+PROJECT_SUBPROJECT :
+PROJECT_CATEGORY :
+PROJECT_NOTION : 

@@ -104,4 +104,12 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Summary
 - [notion] : https://www.notion.so/0-libft-5eac5697c9f340a28a47601182c109cb
 
-```
+## Project Crawling
+PROJECT_NAME : libft
+PROJECT_DESCRIPTION : A custom implementation of standard C library functions, providing a range of functions for string manipulation, memory management, and linked list operations. The goal is to deepen understanding of fundamental C programming concepts and create a reusable library for future projects.
+PROJECT_URL : 'https://github.com/Tyranno-Rex/42seoul-course/tree/main/libft'
+PROJECT_COMPLETION_STATUS : TRUE
+PROJECT_MULTI : FALSE
+PROJECT_SUBPROJECT : NONE
+PROJECT_CATEGORY : 'implemnt'
+PROJECT_NOTION : 'https://www.notion.so/0-libft-5eac5697c9f340a28a47601182c109cb'
