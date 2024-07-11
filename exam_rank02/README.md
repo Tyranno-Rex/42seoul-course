@@ -30,7 +30,7 @@ Implement the program `union` which takes two strings and displays their union, 
 - Debug and test your solutions thoroughly before submission.
 
 ## Project Crawling
-PROJECT_NAME : exam-rank-02
+PROJECT_NAME : exam-rank02
 PROJECT_DESCRIPTION : This exam consists of solving two out of four possible problems: ft_printf, get_next_line, inter, and union. Candidates must implement the specified functions or programs according to the given requirements.
 PROJECT_URL : 'https://github.com/Tyranno-Rex/42seoul-course/tree/main/exam_rank02'
 PROJECT_COMPLETION_STATUS : TRUE
