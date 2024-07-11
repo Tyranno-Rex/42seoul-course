@@ -1,73 +1,56 @@
-# ✅ Exam_Rank-03
-The aim of the projects is to write a program that will read an "operation file" and print the result in the terminal.
-## Micro_paint
-Example operation file:
-```
-10 10 _
-r 1.2 1.2 3.01 3.02 j
-R 5.2 5.2 7.01 7.02 j
-```
-## Compilation
-```
-gcc micro_paint.c
-```
+
+# exam_rank04 : Microshell
+
+## Introduction
+
+Microshell is a simple command-line interpreter implemented in C, capable of executing basic commands and handling pipe operations.
+
+## Functionality
+
+The microshell program provides the following functionality:
+
+- **Command Execution**: Executes commands entered via command-line arguments.
+- **Built-in Command**: Supports the `cd` command to change the current working directory.
+- **Piping**: Allows for basic pipe (`|`) operations between commands.
+- **Error Handling**: Provides basic error messages for command execution failures.
+
+## Files
+
+- `microshell.c`: Contains the main implementation of the microshell program.
+- `microshell.h`: Header file for microshell, defining functions and including necessary libraries.
+- `README.md`: This file, providing an overview of the project and its functionality.
+
 ## Usage
-```
-./a.out <operation file>
-```
-## Output
-```
-__________
-__________
-__jjj_____
-__j_j_____
-__jjj_____
-__________
-______jjjj
-______jjjj
-______jjjj
-______jjjj
-```
-## Mini_paint
-Example operation file:
-```
-25 25 ,
-C 11.45 11.86 10.3 o
-c 11.45 11.86 10.3 $
-```
-## Compilation
-```
-gcc mini_paint.c
-```
-## Usage
-```
-./a.out <operation file>
-```
-## Output
-```
-,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,$$$$$$,,,,,,,,,,
-,,,,,,,$$oooooo$$,,,,,,,,
-,,,,,$$oooooooooo$$,,,,,,
-,,,,$$oooooooooooo$$,,,,,
-,,,$$oooooooooooooo$,,,,,
-,,,$oooooooooooooooo$,,,,
-,,$ooooooooooooooooo$,,,,
-,,$oooooooooooooooooo$,,,
-,,$oooooooooooooooooo$,,,
-,,$oooooooooooooooooo$,,,
-,,$oooooooooooooooooo$,,,
-,,$oooooooooooooooooo$,,,
-,,$oooooooooooooooooo$,,,
-,,$oooooooooooooooooo$,,,
-,,,$oooooooooooooooo$,,,,
-,,,$oooooooooooooooo$,,,,
-,,,,$oooooooooooooo$,,,,,
-,,,,,$oooooooooooo$,,,,,,
-,,,,,,$ooooooooo$$,,,,,,,
-,,,,,,,$$$oooo$$$,,,,,,,,
-,,,,,,,,,,$$$$,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,
-```
+
+To use microshell, compile the `microshell.c` file using a C compiler (e.g., `gcc`). Execute the compiled binary with appropriate command-line arguments to run commands and see their output.
+
+### Example Usage
+
+1. Compile the program:
+   ```bash
+   gcc -o microshell microshell.c
+   ```
+
+2. Run the microshell with commands:
+   ```bash
+   ./microshell ls -l | grep README.md ; cd ..
+   ```
+
+   This example demonstrates listing files in long format, piping the output to search for `README.md`, and changing the directory one level up.
+
+## Notes
+
+- Ensure proper command-line arguments when using the microshell to avoid errors related to command execution and piping operations.
+- The program uses basic error handling to report issues with command execution and changes to the directory.
+
+---
+
+## Project Crawling
+PROJECT_NAME : exam_rank04
+PROJECT_DESCRIPTION : An exam testing the ability to implement more complex programs and handle advanced programming scenarios. microshell is a simple command-line interpreter capable of executing basic commands and handling pipe operations.
+PROJECT_URL : 'https://github.com/Tyranno-Rex/42seoul-course/tree/main/exam_rank04'
+PROJECT_COMPLETION_STATUS : TRUE
+PROJECT_MULTI : FALSE
+PROJECT_SUBPROJECT : NONE
+PROJECT_CATEGORY : implement
+PROJECT_NOTION : 'NONE'

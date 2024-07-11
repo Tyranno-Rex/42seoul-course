@@ -71,3 +71,15 @@ gcc mini_paint.c
 ,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,
 ```
+
+---
+
+## Project Crawling
+PROJECT_NAME : exam_rank03
+PROJECT_DESCRIPTION : 'The aim of the projects is to write a program that will read an "operation file" and print the result in the terminal.'
+PROJECT_URL : 'https://github.com/Tyranno-Rex/42seoul-course/tree/main/exam_rank03'
+PROJECT_COMPLETION_STATUS : TRUE
+PROJECT_MULTI : FALSE
+PROJECT_SUBPROJECT : NONE
+PROJECT_CATEGORY : 'implement'
+PROJECT_NOTION : 'NONE'
