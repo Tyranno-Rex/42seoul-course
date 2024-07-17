@@ -85,7 +85,7 @@ This will generate an executable or library depending on your `Makefile` configu
 For detailed information, refer to `ft_printf.pdf`.
 
 ## Project Crawling
-PROJECT_NAME : get_next_line
+PROJECT_NAME : ft_printf
 PROJECT_DESCRIPTION : This project aims to recreate the functionality of the standard C library function `printf` from scratch. The function `ft_printf` provides formatted output to the standard output stream or another destination specified by the user.
 PROJECT_URL : 'https://github.com/Tyranno-Rex/42seoul-course/tree/main/get_next_line'
 PROJECT_COMPLETION_STATUS : TRUE
