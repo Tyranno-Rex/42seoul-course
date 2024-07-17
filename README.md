@@ -68,6 +68,6 @@ PROJECT_DESCRIPTION : This repository contains all the projects I completed duri
 PROJECT_URL : 'https://github.com/Tyranno-Rex/42seoul-course'
 PROJECT_COMPLETION_STATUS : TRUE
 PROJECT_MULTI : TRUE
-PROJECT_SUBPROJECT : libft, get_next_line, ft_printf, Born2BeRoot, exam_rank02, so_long, minitalk, push_swap, exam_rank03, philosopher, minishell, exam_rank04, netpractice, CPPModule4, cub3d, CPPModule9, ft_irc
+PROJECT_SUBPROJECT : libft, get_next_line, ft_printf, Born2BeRoot, exam_rank02, so_long, minitalk, push_swap, exam_rank03, philosophers, minishell, exam_rank04, netpractice, CPPModule4, cub3d, CPPModule9, ft_irc
 PROJECT_CATEGORY : 'NONE'
 PROJECT_NOTION : 'https://uttermost-meteoroid-5fa.notion.site/355b96e0fca04a1a80d6eb774e9c7f6b?v=1351c2ffa3ba40238e0439828b8dded8&pvs=4'
