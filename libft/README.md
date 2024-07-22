@@ -111,5 +111,5 @@ PROJECT_URL : 'https://github.com/Tyranno-Rex/42seoul-course/tree/main/libft'
 PROJECT_COMPLETION_STATUS : TRUE
 PROJECT_MULTI : FALSE
 PROJECT_SUBPROJECT : NONE
-PROJECT_CATEGORY : 'implemnt'
+PROJECT_CATEGORY : 'implement'
 PROJECT_NOTION : 'https://www.notion.so/0-libft-5eac5697c9f340a28a47601182c109cb'
