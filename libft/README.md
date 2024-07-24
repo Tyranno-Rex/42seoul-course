@@ -1,6 +1,3 @@
-#LIBFT
-
-```markdown
 # Libft
 
 Libft is a custom implementation of standard C library functions. This library provides a range of functions for string manipulation, memory management, and linked list operations. The goal of this project is to deepen understanding of fundamental C programming concepts and to create a reusable library for future projects.
